@@ -1,0 +1,27 @@
+[
+  {
+    "scenario_id": "demo-monsoon-001",
+    "scenario_type": "flood_forecast",
+    "model_version": "b1-demo-1.0.0",
+    "input_dataset_version": "demo-2026-10",
+    "crs": "EPSG:4326",
+    "time_step_minutes": 15,
+    "parameters": {"rainfall_multiplier": 1.2, "forecast_hours": 24},
+    "assumptions_url": "s3://ukai-demo/scenarios/demo-monsoon-001/inputs/assumptions.md",
+    "data_mode": "demo",
+    "inputs": [
+      {
+        "input_type": "rainfall_forecast",
+        "storage_uri": "s3://ukai-demo/scenarios/demo-monsoon-001/inputs/rainfall-forecast.parquet",
+        "checksum": "sha256:7f3f2d2f66c1cf3ee9ccad5df4ca590e1f9f3837aa9c04158d2bde40ea5ee03a",
+        "dataset_version": "imdgfs-2026-10-02"
+      },
+      {
+        "input_type": "reservoir_curve",
+        "storage_uri": "s3://ukai-demo/reference/reservoir-curve-v1.csv",
+        "checksum": "sha256:6794c47da6574d49475bd36c22f1a10cf8858f2a0db77f42a9923a2e6ee6e5e9",
+        "dataset_version": "curve-v1"
+      }
+    ]
+  }
+]

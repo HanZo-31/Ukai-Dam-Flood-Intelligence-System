@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "synthetic-h02-hr-int-v1",
+  "scenario_type": "hypothetical",
+  "status": "draft",
+  "model_version": "synthetic-context-model-1.0.0",
+  "input_dataset_version": "synthetic-input-release-1.0.0",
+  "crs": "EPSG:32643",
+  "time_step_minutes": 15,
+  "data_mode": "demo",
+  "data_kind": "demo",
+  "run_id": "synthetic-h02-hr-int-run-v1",
+  "run_timestamp": "2026-10-05T10:00:00Z",
+  "time_coverage": {
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2026-01-01T06:00:00Z"
+  },
+  "historical_event_id": null,
+  "parameters": {
+    "reservoir_level_m": 101,
+    "peak_inflow_m3s": 20,
+    "peak_release_m3s": 15,
+    "breach_width_m": null,
+    "breach_formation_minutes": null
+  },
+  "parameter_units": {
+    "reservoir_level_m": "m",
+    "peak_inflow_m3s": "m3/s",
+    "peak_release_m3s": "m3/s",
+    "breach_width_m": "m",
+    "breach_formation_minutes": "min"
+  },
+  "datasets": [
+    {
+      "dataset_id": "synthetic-input-001",
+      "version": "1.0.0",
+      "source_reference": "inputs/synthetic-input.csv",
+      "source_label": "demo",
+      "license": "LicenseRef-Synthetic-Example",
+      "checksum": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+      "crs": "EPSG:32643",
+      "time_coverage": {
+        "start": "2026-01-01T00:00:00Z",
+        "end": "2026-01-01T06:00:00Z"
+      },
+      "quality_notes": "Invented metadata-only fixture; no real observations or model outputs."
+    }
+  ],
+  "assets": {
+    "max_depth_cog": "results/max_depth.tif",
+    "max_velocity_cog": "results/max_velocity.tif",
+    "arrival_time_cog": "results/arrival_time.tif",
+    "extent_geojson": "results/extent.geojson"
+  },
+  "asset_metadata": {
+    "max_depth_cog": {
+      "checksum": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "m",
+      "nodata": -9999,
+      "time_coverage": {
+        "start": "2026-01-01T00:00:00Z",
+        "end": "2026-01-01T06:00:00Z"
+      }
+    },
+    "max_velocity_cog": {
+      "checksum": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "m/s",
+      "nodata": -9999,
+      "time_coverage": {
+        "start": "2026-01-01T00:00:00Z",
+        "end": "2026-01-01T06:00:00Z"
+      }
+    },
+    "arrival_time_cog": {
+      "checksum": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "min",
+      "nodata": -9999,
+      "time_coverage": {
+        "start": "2026-01-01T00:00:00Z",
+        "end": "2026-01-01T06:00:00Z"
+      }
+    },
+    "extent_geojson": {
+      "checksum": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+      "format": "geojson",
+      "crs": "EPSG:4326",
+      "unit": "1",
+      "nodata": null,
+      "time_coverage": {
+        "start": "2026-01-01T00:00:00Z",
+        "end": "2026-01-01T06:00:00Z"
+      }
+    }
+  },
+  "summary": {
+    "max_depth_m": 1.2,
+    "flooded_area_km2": 0.02,
+    "population_exposed": null,
+    "buildings_exposed": null,
+    "roads_affected_km": null,
+    "critical_facilities_exposed": null
+  },
+  "assumptions_url": "prototype-context.synthetic.json",
+  "assumptions_checksum": "sha256:eb34396ab71f41aab526d5d9936dbf97b7d5679c9d8ca3a46fdacde5db6faa8d",
+  "quality": {
+    "validation_status": "pending",
+    "approved_by": null,
+    "approved_at": null,
+    "report_reference": "reports/quality.json",
+    "report_checksum": "sha256:5555555555555555555555555555555555555555555555555555555555555555"
+  }
+}

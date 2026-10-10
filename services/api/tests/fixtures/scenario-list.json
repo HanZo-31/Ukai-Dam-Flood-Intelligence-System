@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "scenario_id": "b2-approved-001",
+      "scenario_type": "hypothetical",
+      "status": "approved",
+      "model_version": "synthetic-gis-fixture-1.0.0",
+      "input_dataset_version": "synthetic-gis-input-release-1.0.0",
+      "crs": "EPSG:32643",
+      "data_mode": "demo",
+      "data_kind": "demo",
+      "historical_event_id": null,
+      "coverage_start": "2026-01-01T00:00:00Z",
+      "coverage_end": "2026-01-01T06:00:00Z"
+    }
+  ],
+  "pagination": {"limit": 20, "offset": 0, "next_offset": null}
+}

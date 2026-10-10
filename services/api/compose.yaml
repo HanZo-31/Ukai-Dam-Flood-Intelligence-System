@@ -1,0 +1,56 @@
+# Standalone API-only stack: never starts/rebuilds B1's database.
+services:
+  api:
+    image: ukai-b2-api:local
+    build:
+      context: ../..
+      dockerfile: services/api/Dockerfile
+      target: runtime
+    init: true
+    user: "10001:10001"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      B2_ENV: production
+      B2_STORAGE_ID: ${B2_STORAGE_ID:?Set the agreed object-store identity}
+      B2_ALLOWED_HOSTS: ${B2_ALLOWED_HOSTS:-127.0.0.1,localhost,api}
+      B2_CORS_ORIGINS: ${B2_CORS_ORIGINS:-[]}
+      DATABASE_URL_FILE: /run/secrets/b2_database_url
+      OBJECT_STORAGE_ROOT: /objects
+      TMPDIR: /tmp
+      B2_WORKERS: "1"
+      B2_DOWNLOAD_MAX_BYTES: ${B2_DOWNLOAD_MAX_BYTES:-536870912}
+      B2_DOWNLOAD_VERIFY_SECONDS: ${B2_DOWNLOAD_VERIFY_SECONDS:-60}
+      B2_DOWNLOAD_STREAM_SECONDS: ${B2_DOWNLOAD_STREAM_SECONDS:-300}
+      B2_SCRATCH_MIN_BYTES: ${B2_SCRATCH_MIN_BYTES:-8388608}
+    secrets: [b2_database_url]
+    volumes:
+      - type: bind
+        source: ${B2_OBJECT_STORAGE_PATH:?Set an existing container-compatible object directory}
+        target: /objects
+        read_only: true
+        bind:
+          create_host_path: false
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=${B2_TMPFS_SIZE:-1g},uid=10001,gid=10001,mode=0700
+    ports:
+      - "127.0.0.1:${B2_API_PORT:-8000}:8000"
+    networks: [catalogue]
+    mem_limit: ${B2_MEMORY_LIMIT:-2g}
+    cpus: 1.0
+    pids_limit: 128
+    restart: unless-stopped
+    stop_grace_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+secrets:
+  b2_database_url:
+    file: ${B2_DATABASE_URL_FILE:?Set a private database URL secret file}
+networks:
+  catalogue:
+    external: true
+    name: ${B2_DATABASE_NETWORK:?Set the existing database network name}

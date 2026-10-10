@@ -1,0 +1,9 @@
+{
+  "reservoir_level_m": 101.25,
+  "inflow_m3s": 20.0,
+  "release_m3s": 15.0,
+  "timestamp": "2026-01-01T00:00:00Z",
+  "data_mode": "demo",
+  "data_kind": "demo",
+  "is_live": false
+}

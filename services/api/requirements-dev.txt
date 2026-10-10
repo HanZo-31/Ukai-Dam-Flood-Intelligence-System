@@ -1,0 +1,4 @@
+# B2 documentation validation only; preserve the existing B1 runtime pins.
+-r ../../requirements.txt
+openapi-spec-validator==0.9.0
+jsonschema==4.26.0

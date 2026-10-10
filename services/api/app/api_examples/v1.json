@@ -1,0 +1,358 @@
+{
+  "downloads": {
+    "assumptions": {
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename=\"assumptions.txt\"",
+        "content-length": "111",
+        "etag": "\"sha256:384ee54f1609283d0fb55c7a89f63178984fd30bd2060efc4ba19b808dd28d27\"",
+        "x-content-type-options": "nosniff"
+      },
+      "media_type": "text/plain; charset=utf-8",
+      "partial_headers": {
+        "content-length": "16",
+        "content-range": "bytes 0-15/111",
+        "etag": "\"sha256:384ee54f1609283d0fb55c7a89f63178984fd30bd2060efc4ba19b808dd28d27\""
+      },
+      "text": "Synthetic GIS fixture, not a flood prediction or observed historical event. No scientific approval is claimed.\n",
+      "url": "/api/v1/scenarios/b2-approved-001/assumptions?data_mode=demo"
+    },
+    "cog": {
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename=\"max_depth_cog.tif\"",
+        "content-length": "2400",
+        "etag": "\"sha256:2d7833e288cc18fc46607ecd3a85db0b3ad6d6522ae6c2a4cd0ddee4d9afd0c6\"",
+        "x-content-type-options": "nosniff"
+      },
+      "media_type": "image/tiff",
+      "partial_headers": {
+        "content-length": "16",
+        "content-range": "bytes 0-15/2400",
+        "etag": "\"sha256:2d7833e288cc18fc46607ecd3a85db0b3ad6d6522ae6c2a4cd0ddee4d9afd0c6\""
+      },
+      "url": "/api/v1/scenarios/b2-approved-001/assets/max_depth_cog?data_mode=demo"
+    },
+    "geojson": {
+      "geojson": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  [
+                    73.1003275850528,
+                    20.76913178130827
+                  ],
+                  [
+                    73.10011064249062,
+                    20.786471092157058
+                  ],
+                  [
+                    73.08167287334453,
+                    20.786265981935436
+                  ],
+                  [
+                    73.08189191812734,
+                    20.768926857598164
+                  ],
+                  [
+                    73.1003275850528,
+                    20.76913178130827
+                  ]
+                ]
+              ],
+              "type": "Polygon"
+            },
+            "properties": {
+              "not_a_prediction": true,
+              "synthetic": true
+            },
+            "type": "Feature"
+          }
+        ],
+        "synthetic": true,
+        "type": "FeatureCollection"
+      },
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename=\"export_geojson.geojson\"",
+        "content-length": "397",
+        "etag": "\"sha256:0af87e5bfa5b2580e014aad709db4af47c2e849e3e35a2c7297f46ca28e157cd\"",
+        "x-content-type-options": "nosniff"
+      },
+      "media_type": "application/geo+json",
+      "partial_headers": {
+        "content-length": "16",
+        "content-range": "bytes 0-15/397",
+        "etag": "\"sha256:0af87e5bfa5b2580e014aad709db4af47c2e849e3e35a2c7297f46ca28e157cd\""
+      },
+      "url": "/api/v1/scenarios/b2-approved-001/assets/export_geojson?data_mode=demo"
+    }
+  },
+  "notice": "Synthetic HTTP examples only; not predictions, observations, or scientific approval.",
+  "problems": {
+    "invalid_request": {
+      "detail": "The request parameters are invalid.",
+      "instance": "/api/v1/scenarios",
+      "status": 422,
+      "title": "Invalid request",
+      "type": "about:blank"
+    },
+    "method_not_allowed": {
+      "detail": "Method Not Allowed",
+      "instance": "/api/v1/health",
+      "status": 405,
+      "title": "Method not allowed",
+      "type": "about:blank"
+    },
+    "not_found": {
+      "detail": "The scenario does not exist or is not published.",
+      "instance": "/api/v1/scenarios/b2-missing",
+      "status": 404,
+      "title": "Not found",
+      "type": "about:blank"
+    },
+    "range": {
+      "detail": "Requested range is not satisfiable.",
+      "instance": "/api/v1/scenarios/b2-approved-001/assets/max_depth_cog",
+      "status": 416,
+      "title": "Range not satisfiable",
+      "type": "about:blank"
+    },
+    "status_not_found": {
+      "detail": "No demo status reading is available.",
+      "instance": "/api/v1/status/current",
+      "status": 404,
+      "title": "Not found",
+      "type": "about:blank"
+    },
+    "unavailable": {
+      "detail": "The registered artifact is unavailable.",
+      "instance": "/api/v1/scenarios/b2-approved-001/assets/export_geojson",
+      "status": 503,
+      "title": "Service unavailable",
+      "type": "about:blank"
+    },
+    "unexpected": {
+      "detail": "The request could not be completed.",
+      "instance": "/api/v1/scenarios",
+      "status": 500,
+      "title": "Internal server error",
+      "type": "about:blank"
+    }
+  },
+  "responses": {
+    "current_status": {
+      "data_kind": "demo",
+      "data_mode": "demo",
+      "inflow_m3s": 20.0,
+      "is_live": false,
+      "release_m3s": 15.0,
+      "reservoir_level_m": 101.25,
+      "timestamp": "2026-01-01T00:00:00Z"
+    },
+    "export": {
+      "asset_type": "export_geojson",
+      "checksum": "sha256:0af87e5bfa5b2580e014aad709db4af47c2e849e3e35a2c7297f46ca28e157cd",
+      "coverage_end": "2026-01-01T06:00:00Z",
+      "coverage_start": "2026-01-01T00:00:00Z",
+      "crs": "EPSG:4326",
+      "data_kind": "demo",
+      "data_mode": "demo",
+      "download_url": "/api/v1/scenarios/b2-approved-001/assets/export_geojson?data_mode=demo",
+      "format": "geojson",
+      "input_dataset_version": "synthetic-gis-input-release-1.0.0",
+      "model_version": "synthetic-gis-fixture-1.0.0",
+      "scenario_id": "b2-approved-001",
+      "unit": "1"
+    },
+    "health": {
+      "api_version": "v1",
+      "service": "ukai-flood-api",
+      "status": "ok"
+    },
+    "historical_events": {
+      "items": [
+        {
+          "coverage_end": "1998-01-02T00:00:00Z",
+          "coverage_start": "1998-01-01T00:00:00Z",
+          "data_mode": "demo",
+          "datasets": [],
+          "event_id": "b2-catalog-event",
+          "name": "Synthetic event metadata for HTTP testing",
+          "observed_coverage": "Synthetic fixture; no observed historical data claimed",
+          "replay": {
+            "available": false,
+            "example": null,
+            "scenarios_url": "/api/v1/scenarios?data_mode=demo&scenario_type=historical_replay&historical_event_id=b2-catalog-event"
+          },
+          "source_labels": [],
+          "source_urls": [
+            "https://example.org/synthetic-event"
+          ]
+        }
+      ],
+      "pagination": {
+        "limit": 20,
+        "next_offset": null,
+        "offset": 0
+      }
+    },
+    "impact": {
+      "buildings_exposed": null,
+      "critical_facilities_exposed": null,
+      "data_kind": "demo",
+      "data_mode": "demo",
+      "flooded_area_km2": 3.6864,
+      "input_dataset_version": "synthetic-gis-input-release-1.0.0",
+      "max_depth_m": 0.5,
+      "model_version": "synthetic-gis-fixture-1.0.0",
+      "population_exposed": null,
+      "roads_affected_km": null,
+      "scenario_id": "b2-approved-001"
+    },
+    "layers": {
+      "data_kind": "demo",
+      "data_mode": "demo",
+      "input_dataset_version": "synthetic-gis-input-release-1.0.0",
+      "layers": [
+        {
+          "asset_type": "arrival_time_cog",
+          "checksum": "sha256:3cdd64efcc0a4ea61aabcde623dbfa745a664cfe31d69559d759c065478db96c",
+          "coverage_end": "2026-01-01T06:00:00Z",
+          "coverage_start": "2026-01-01T00:00:00Z",
+          "crs": "EPSG:32643",
+          "format": "cog",
+          "nodata": -9999.0,
+          "unit": "min",
+          "url": "/api/v1/scenarios/b2-approved-001/assets/arrival_time_cog?data_mode=demo"
+        },
+        {
+          "asset_type": "extent_geojson",
+          "checksum": "sha256:0af87e5bfa5b2580e014aad709db4af47c2e849e3e35a2c7297f46ca28e157cd",
+          "coverage_end": "2026-01-01T06:00:00Z",
+          "coverage_start": "2026-01-01T00:00:00Z",
+          "crs": "EPSG:4326",
+          "format": "geojson",
+          "nodata": null,
+          "unit": "1",
+          "url": "/api/v1/scenarios/b2-approved-001/assets/extent_geojson?data_mode=demo"
+        },
+        {
+          "asset_type": "max_depth_cog",
+          "checksum": "sha256:2d7833e288cc18fc46607ecd3a85db0b3ad6d6522ae6c2a4cd0ddee4d9afd0c6",
+          "coverage_end": "2026-01-01T06:00:00Z",
+          "coverage_start": "2026-01-01T00:00:00Z",
+          "crs": "EPSG:32643",
+          "format": "cog",
+          "nodata": -9999.0,
+          "unit": "m",
+          "url": "/api/v1/scenarios/b2-approved-001/assets/max_depth_cog?data_mode=demo"
+        },
+        {
+          "asset_type": "max_velocity_cog",
+          "checksum": "sha256:9126d3ae78ced21cbab095f2d8f472f36666852b98ba29eb3ec5df8a3e6ed4ee",
+          "coverage_end": "2026-01-01T06:00:00Z",
+          "coverage_start": "2026-01-01T00:00:00Z",
+          "crs": "EPSG:32643",
+          "format": "cog",
+          "nodata": -9999.0,
+          "unit": "m/s",
+          "url": "/api/v1/scenarios/b2-approved-001/assets/max_velocity_cog?data_mode=demo"
+        }
+      ],
+      "model_version": "synthetic-gis-fixture-1.0.0",
+      "scenario_id": "b2-approved-001"
+    },
+    "scenario_detail": {
+      "assumptions": {
+        "checksum": "sha256:384ee54f1609283d0fb55c7a89f63178984fd30bd2060efc4ba19b808dd28d27",
+        "url": "/api/v1/scenarios/b2-approved-001/assumptions?data_mode=demo"
+      },
+      "coverage_end": "2026-01-01T06:00:00Z",
+      "coverage_start": "2026-01-01T00:00:00Z",
+      "crs": "EPSG:32643",
+      "data_kind": "demo",
+      "data_mode": "demo",
+      "datasets": [
+        {
+          "checksum": "sha256:9f497a2700157184ada41895465b06fcfe807d89e1820e74fc88d2990cd7849f",
+          "coverage_end": "2026-01-01T06:00:00Z",
+          "coverage_start": "2026-01-01T00:00:00Z",
+          "crs": null,
+          "dataset_id": "synthetic-gis-input",
+          "license": "LicenseRef-Synthetic-Example",
+          "source_label": "demo",
+          "version": "1.0.0"
+        }
+      ],
+      "historical_event_id": null,
+      "input_dataset_version": "synthetic-gis-input-release-1.0.0",
+      "links": {
+        "layers": "/api/v1/scenarios/b2-approved-001/layers?data_mode=demo",
+        "self": "/api/v1/scenarios/b2-approved-001?data_mode=demo"
+      },
+      "model_version": "synthetic-gis-fixture-1.0.0",
+      "parameter_units": {
+        "breach_formation_minutes": "min",
+        "breach_width_m": "m",
+        "peak_inflow_m3s": "m3/s",
+        "peak_release_m3s": "m3/s",
+        "reservoir_level_m": "m"
+      },
+      "parameters": {
+        "breach_formation_minutes": null,
+        "breach_width_m": null,
+        "peak_inflow_m3s": 20.0,
+        "peak_release_m3s": 15.0,
+        "reservoir_level_m": 101.0
+      },
+      "quality": {
+        "approved_at": "2026-10-05T10:15:00Z",
+        "approved_by": "synthetic-fixture-reviewer",
+        "validation_status": "pass"
+      },
+      "run_id": "b2-approved-001-run",
+      "run_timestamp": "2026-10-05T10:00:00Z",
+      "scenario_id": "b2-approved-001",
+      "scenario_type": "hypothetical",
+      "schema_version": "1.0.0",
+      "status": "approved",
+      "summary": {
+        "buildings_exposed": null,
+        "critical_facilities_exposed": null,
+        "flooded_area_km2": 3.6864,
+        "max_depth_m": 0.5,
+        "population_exposed": null,
+        "roads_affected_km": null
+      },
+      "time_step_minutes": 15
+    },
+    "scenario_list": {
+      "items": [
+        {
+          "coverage_end": "2026-01-01T06:00:00Z",
+          "coverage_start": "2026-01-01T00:00:00Z",
+          "crs": "EPSG:32643",
+          "data_kind": "demo",
+          "data_mode": "demo",
+          "historical_event_id": null,
+          "input_dataset_version": "synthetic-gis-input-release-1.0.0",
+          "model_version": "synthetic-gis-fixture-1.0.0",
+          "scenario_id": "b2-approved-001",
+          "scenario_type": "hypothetical",
+          "status": "approved"
+        }
+      ],
+      "pagination": {
+        "limit": 20,
+        "next_offset": null,
+        "offset": 0
+      }
+    }
+  }
+}

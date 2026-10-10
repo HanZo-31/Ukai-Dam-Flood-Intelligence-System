@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "profile_id": "b2-local-provisional-2026-10-06",
+  "approval": {
+    "status": "delegated_local_provisional",
+    "scope": "synthetic local engineering checkpoints only",
+    "evidence": "User delegated selection of the preferable option in this chat on 2026-10-06; assistant selected the previously proposed provisional targets before measuring.",
+    "team_a_final_sla_approved": false
+  },
+  "catalogue_extra_scenarios": 100,
+  "json_concurrency": 5,
+  "artifact_concurrency": 2,
+  "json_duration_seconds": 60,
+  "artifact_duration_seconds": 45,
+  "mixed_duration_seconds": 60,
+  "max_phase_seconds": 240,
+  "json_min_samples_per_route": 100,
+  "artifact_min_samples": 40,
+  "http_timeout_seconds": 60,
+  "targets": {
+    "json_p95_ms": 500,
+    "full_transfer_p95_ms": 15000,
+    "head_range_p95_ms": 5000,
+    "unexpected_errors": 0,
+    "oom_events": 0,
+    "max_memory_fraction": 0.9,
+    "scratch_reserve_bytes": 8388608,
+    "scratch_recovery_tolerance_bytes": 4194304
+  },
+  "cache_conditions": "Warm filesystem/DB/connection caches after explicit warmups; no OS cache drop.",
+  "load_model": "Closed-loop clients with zero think time, separate JSON/artifact phases and five JSON plus two artifact clients in the mixed phase; not fixed-arrival-rate capacity.",
+  "fixture_scope": "Real synthetic 341 MiB COG; 100 additional clearly synthetic catalogue identities, reusing verified small GIS bytes; no Team A scientific acceptance."
+}

@@ -1,0 +1,18 @@
+{
+  "scenario_id": "test-rainfall-001",
+  "scenario_type": "flood_forecast",
+  "model_version": "b1-test-1.0.0",
+  "input_dataset_version": "test-2026-10",
+  "crs": "EPSG:4326",
+  "time_step_minutes": 15,
+  "parameters": {"forecast_hours": 6},
+  "data_mode": "demo",
+  "inputs": [
+    {
+      "input_type": "rainfall_forecast",
+      "storage_uri": "file:///tmp/rainfall.parquet",
+      "checksum": "sha256:7f3f2d2f66c1cf3ee9ccad5df4ca590e1f9f3837aa9c04158d2bde40ea5ee03a",
+      "dataset_version": "test-1"
+    }
+  ]
+}

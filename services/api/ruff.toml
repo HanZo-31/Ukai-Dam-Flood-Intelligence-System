@@ -1,0 +1,21 @@
+target-version = "py313"
+
+[lint]
+# Stable correctness/import/syntax baseline, not an all-rules style certificate.
+select = ["E4", "E9", "F"]
+
+[lint.per-file-ignores]
+# Production configuration must be validated before B1 loads its development .env.
+"services/api/app/main.py" = ["E402"]
+# These CLIs deliberately add the project root before importing project modules.
+"scripts/b2_*.py" = ["E402"]
+"scripts/check_b2_*.py" = ["E402"]
+"scripts/export_b2_openapi.py" = ["E402"]
+"scripts/package_b2_handoff.py" = ["E402"]
+"scripts/rehearse_b2_*.py" = ["E402"]
+"scripts/verify_b2_handoff_source.py" = ["E402"]
+"scripts/check_prototype_metadata.py" = ["E402"]
+"scripts/export_prototype_context_schema.py" = ["E402"]
+"tests/test_prototype_contracts.py" = ["E402"]
+"scripts/backup_db.py" = ["E402"]
+"scripts/prepare_remaining_scenarios.py" = ["E402"]

@@ -1,0 +1,782 @@
+{
+  "$defs": {
+    "AssetMetadata": {
+      "additionalProperties": false,
+      "properties": {
+        "checksum": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "title": "Checksum",
+          "type": "string"
+        },
+        "crs": {
+          "pattern": "^EPSG:[1-9][0-9]*$",
+          "title": "Crs",
+          "type": "string"
+        },
+        "format": {
+          "enum": [
+            "cog",
+            "geojson",
+            "kml"
+          ],
+          "title": "Format",
+          "type": "string"
+        },
+        "nodata": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Nodata"
+        },
+        "time_coverage": {
+          "$ref": "#/$defs/TimeCoverage"
+        },
+        "unit": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "checksum",
+        "format",
+        "crs",
+        "unit",
+        "time_coverage",
+        "nodata"
+      ],
+      "title": "AssetMetadata",
+      "type": "object"
+    },
+    "DatasetVersionReference": {
+      "additionalProperties": false,
+      "properties": {
+        "checksum": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "title": "Checksum",
+          "type": "string"
+        },
+        "crs": {
+          "anyOf": [
+            {
+              "pattern": "^EPSG:[1-9][0-9]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Crs"
+        },
+        "dataset_id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "license": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "License",
+          "type": "string"
+        },
+        "quality_notes": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "Quality Notes",
+          "type": "string"
+        },
+        "source_label": {
+          "enum": [
+            "observed",
+            "simulated",
+            "assumed",
+            "demo"
+          ],
+          "title": "Source Label",
+          "type": "string"
+        },
+        "source_reference": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "title": "Source Reference",
+          "type": "string"
+        },
+        "time_coverage": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TimeCoverage"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "version": {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id",
+        "version",
+        "source_reference",
+        "source_label",
+        "license",
+        "checksum",
+        "crs",
+        "time_coverage",
+        "quality_notes"
+      ],
+      "title": "DatasetVersionReference",
+      "type": "object"
+    },
+    "ImpactSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "buildings_exposed": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Buildings Exposed"
+        },
+        "critical_facilities_exposed": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Critical Facilities Exposed"
+        },
+        "flooded_area_km2": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Flooded Area Km2"
+        },
+        "max_depth_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Max Depth M"
+        },
+        "population_exposed": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Population Exposed"
+        },
+        "roads_affected_km": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Roads Affected Km"
+        }
+      },
+      "required": [
+        "max_depth_m",
+        "flooded_area_km2",
+        "population_exposed",
+        "buildings_exposed"
+      ],
+      "title": "ImpactSummary",
+      "type": "object"
+    },
+    "ParameterUnits": {
+      "additionalProperties": false,
+      "properties": {
+        "breach_formation_minutes": {
+          "const": "min",
+          "title": "Breach Formation Minutes",
+          "type": "string"
+        },
+        "breach_width_m": {
+          "const": "m",
+          "title": "Breach Width M",
+          "type": "string"
+        },
+        "peak_inflow_m3s": {
+          "const": "m3/s",
+          "title": "Peak Inflow M3S",
+          "type": "string"
+        },
+        "peak_release_m3s": {
+          "const": "m3/s",
+          "title": "Peak Release M3S",
+          "type": "string"
+        },
+        "reservoir_level_m": {
+          "const": "m",
+          "title": "Reservoir Level M",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reservoir_level_m",
+        "peak_inflow_m3s",
+        "peak_release_m3s",
+        "breach_width_m",
+        "breach_formation_minutes"
+      ],
+      "title": "ParameterUnits",
+      "type": "object"
+    },
+    "QualityReview": {
+      "additionalProperties": false,
+      "properties": {
+        "approved_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Approved At"
+        },
+        "approved_by": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "^\\S(?:.*\\S)?$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Approved By"
+        },
+        "report_checksum": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "title": "Report Checksum",
+          "type": "string"
+        },
+        "report_reference": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "title": "Report Reference",
+          "type": "string"
+        },
+        "validation_status": {
+          "enum": [
+            "pending",
+            "pass",
+            "fail"
+          ],
+          "title": "Validation Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "validation_status",
+        "approved_by",
+        "approved_at",
+        "report_reference",
+        "report_checksum"
+      ],
+      "title": "QualityReview",
+      "type": "object"
+    },
+    "ScenarioParameters": {
+      "additionalProperties": false,
+      "properties": {
+        "breach_formation_minutes": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Breach Formation Minutes"
+        },
+        "breach_width_m": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Breach Width M"
+        },
+        "peak_inflow_m3s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Peak Inflow M3S"
+        },
+        "peak_release_m3s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Peak Release M3S"
+        },
+        "reservoir_level_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reservoir Level M"
+        }
+      },
+      "required": [
+        "reservoir_level_m",
+        "peak_inflow_m3s",
+        "peak_release_m3s",
+        "breach_width_m",
+        "breach_formation_minutes"
+      ],
+      "title": "ScenarioParameters",
+      "type": "object"
+    },
+    "TimeCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+          "title": "End",
+          "type": "string"
+        },
+        "start": {
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+          "title": "Start",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "TimeCoverage",
+      "type": "object"
+    }
+  },
+  "$id": "urn:ukai:contracts:published-scenario:combined-local-draft:1.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "approved"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assets": {
+            "required": [
+              "arrival_time_cog",
+              "extent_geojson",
+              "max_depth_cog",
+              "max_velocity_cog"
+            ]
+          },
+          "quality": {
+            "properties": {
+              "approved_at": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "approved_by": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "validation_status": {
+                "const": "pass"
+              }
+            }
+          },
+          "run_timestamp": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "schema_version": {
+            "const": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.0.0"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "properties": {
+          "run_timestamp": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "run_timestamp_unknown_reason": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1.0-local-draft"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "else": {
+          "properties": {
+            "run_timestamp_unknown_reason": {
+              "type": "null"
+            }
+          }
+        },
+        "if": {
+          "properties": {
+            "run_timestamp": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "run_timestamp"
+          ]
+        },
+        "properties": {
+          "quality": {
+            "properties": {
+              "validation_status": {
+                "const": "pending"
+              }
+            }
+          },
+          "status": {
+            "const": "draft"
+          }
+        },
+        "then": {
+          "properties": {
+            "run_timestamp_unknown_reason": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "run_timestamp_unknown_reason"
+          ]
+        }
+      }
+    }
+  ],
+  "description": "Strict V1 publication plus an explicitly unapproved local draft extension. Runtime semantic and object verification gates also apply.",
+  "properties": {
+    "asset_metadata": {
+      "additionalProperties": {
+        "$ref": "#/$defs/AssetMetadata"
+      },
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "max_depth_cog",
+          "max_velocity_cog",
+          "arrival_time_cog",
+          "extent_geojson",
+          "duration_cog",
+          "hazard_cog",
+          "exposure_geojson",
+          "export_geojson",
+          "export_kml"
+        ]
+      },
+      "title": "Asset Metadata",
+      "type": "object"
+    },
+    "assets": {
+      "additionalProperties": {
+        "maxLength": 2048,
+        "minLength": 1,
+        "type": "string"
+      },
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "max_depth_cog",
+          "max_velocity_cog",
+          "arrival_time_cog",
+          "extent_geojson",
+          "duration_cog",
+          "hazard_cog",
+          "exposure_geojson",
+          "export_geojson",
+          "export_kml"
+        ]
+      },
+      "title": "Assets",
+      "type": "object"
+    },
+    "assumptions_checksum": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "title": "Assumptions Checksum",
+      "type": "string"
+    },
+    "assumptions_url": {
+      "maxLength": 2048,
+      "minLength": 1,
+      "title": "Assumptions Url",
+      "type": "string"
+    },
+    "crs": {
+      "pattern": "^EPSG:[1-9][0-9]*$",
+      "title": "Crs",
+      "type": "string"
+    },
+    "data_kind": {
+      "enum": [
+        "observed",
+        "simulated",
+        "assumed",
+        "demo"
+      ],
+      "title": "Data Kind",
+      "type": "string"
+    },
+    "data_mode": {
+      "enum": [
+        "demo",
+        "production"
+      ],
+      "title": "Data Mode",
+      "type": "string"
+    },
+    "datasets": {
+      "items": {
+        "$ref": "#/$defs/DatasetVersionReference"
+      },
+      "minItems": 1,
+      "title": "Datasets",
+      "type": "array"
+    },
+    "historical_event_id": {
+      "anyOf": [
+        {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Historical Event Id"
+    },
+    "input_dataset_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$",
+      "title": "Input Dataset Version",
+      "type": "string"
+    },
+    "model_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$",
+      "title": "Model Version",
+      "type": "string"
+    },
+    "parameter_units": {
+      "$ref": "#/$defs/ParameterUnits"
+    },
+    "parameters": {
+      "$ref": "#/$defs/ScenarioParameters"
+    },
+    "quality": {
+      "$ref": "#/$defs/QualityReview"
+    },
+    "run_id": {
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "run_timestamp": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Run Timestamp"
+    },
+    "run_timestamp_unknown_reason": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Run Timestamp Unknown Reason"
+    },
+    "scenario_id": {
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+      "title": "Scenario Id",
+      "type": "string"
+    },
+    "scenario_type": {
+      "enum": [
+        "historical_replay",
+        "hypothetical"
+      ],
+      "title": "Scenario Type",
+      "type": "string"
+    },
+    "schema_version": {
+      "enum": [
+        "1.0.0",
+        "1.1.0-local-draft"
+      ],
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "approved",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "summary": {
+      "$ref": "#/$defs/ImpactSummary"
+    },
+    "time_coverage": {
+      "$ref": "#/$defs/TimeCoverage"
+    },
+    "time_step_minutes": {
+      "exclusiveMinimum": 0,
+      "title": "Time Step Minutes",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "scenario_type",
+    "status",
+    "model_version",
+    "input_dataset_version",
+    "crs",
+    "time_step_minutes",
+    "data_mode",
+    "data_kind",
+    "run_id",
+    "run_timestamp",
+    "time_coverage",
+    "parameters",
+    "parameter_units",
+    "datasets",
+    "assets",
+    "asset_metadata",
+    "summary",
+    "assumptions_url",
+    "assumptions_checksum",
+    "quality"
+  ],
+  "title": "PublishedScenarioManifest",
+  "type": "object"
+}

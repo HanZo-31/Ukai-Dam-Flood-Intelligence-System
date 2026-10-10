@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "event_id": "b2-catalog-event",
+      "name": "Synthetic event metadata for HTTP testing",
+      "coverage_start": "1998-01-01T00:00:00Z",
+      "coverage_end": "1998-01-02T00:00:00Z",
+      "observed_coverage": "Synthetic fixture; no observed historical data claimed",
+      "source_urls": ["https://example.org/synthetic-event"],
+      "data_mode": "demo",
+      "source_labels": [],
+      "datasets": [],
+      "replay": {
+        "available": false,
+        "scenarios_url": "/api/v1/scenarios?data_mode=demo&scenario_type=historical_replay&historical_event_id=b2-catalog-event",
+        "example": null
+      }
+    }
+  ],
+  "pagination": {"limit": 20, "offset": 0, "next_offset": null}
+}

@@ -1,0 +1,785 @@
+{
+  "$defs": {
+    "Arrival": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "const": "min",
+          "title": "Unit",
+          "type": "string"
+        },
+        "origin": {
+          "const": "simulation_start",
+          "title": "Origin",
+          "type": "string"
+        },
+        "reference_timestamp": {
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+          "title": "Reference Timestamp",
+          "type": "string"
+        },
+        "threshold_m": {
+          "title": "Threshold M",
+          "type": "number"
+        },
+        "temporal_resolution_minutes": {
+          "exclusiveMinimum": 0,
+          "title": "Temporal Resolution Minutes",
+          "type": "number"
+        },
+        "original_unit": {
+          "const": "h",
+          "title": "Original Unit",
+          "type": "string"
+        },
+        "conversion_factor": {
+          "title": "Conversion Factor",
+          "type": "integer"
+        },
+        "conversion": {
+          "const": "valid_cells_times_60_nodata_preserved",
+          "title": "Conversion",
+          "type": "string"
+        },
+        "original_reference": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Original Reference",
+          "type": "string"
+        },
+        "original_checksum": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "title": "Original Checksum",
+          "type": "string"
+        },
+        "evidence_references": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Evidence References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "unit",
+        "origin",
+        "reference_timestamp",
+        "threshold_m",
+        "temporal_resolution_minutes",
+        "original_unit",
+        "conversion_factor",
+        "conversion",
+        "original_reference",
+        "original_checksum",
+        "evidence_references"
+      ],
+      "title": "Arrival",
+      "type": "object"
+    },
+    "DatasetIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "dataset_id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "version": {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id",
+        "version"
+      ],
+      "title": "DatasetIdentity",
+      "type": "object"
+    },
+    "Derivation": {
+      "additionalProperties": false,
+      "properties": {
+        "processor": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Processor",
+          "type": "string"
+        },
+        "processor_version": {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "Processor Version",
+          "type": "string"
+        },
+        "source_scenario_id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "title": "Source Scenario Id",
+          "type": "string"
+        },
+        "derivative_scenario_id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "title": "Derivative Scenario Id",
+          "type": "string"
+        },
+        "derivative_run_id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "title": "Derivative Run Id",
+          "type": "string"
+        },
+        "operations": {
+          "items": {
+            "$ref": "#/$defs/Operation"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "title": "Operations",
+          "type": "array"
+        },
+        "evidence_references": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Evidence References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "processor",
+        "processor_version",
+        "source_scenario_id",
+        "derivative_scenario_id",
+        "derivative_run_id",
+        "operations",
+        "evidence_references"
+      ],
+      "title": "Derivation",
+      "type": "object"
+    },
+    "Engine": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "software_version": {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^\\S(?:.*\\S)?$",
+          "title": "Software Version",
+          "type": "string"
+        },
+        "build": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Build"
+        },
+        "build_unavailable_reason": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Build Unavailable Reason"
+        },
+        "source_checksum": {
+          "anyOf": [
+            {
+              "pattern": "^sha256:[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Checksum"
+        },
+        "source_checksum_unavailable_reason": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Checksum Unavailable Reason"
+        }
+      },
+      "required": [
+        "name",
+        "software_version",
+        "build",
+        "build_unavailable_reason",
+        "source_checksum",
+        "source_checksum_unavailable_reason"
+      ],
+      "title": "Engine",
+      "type": "object"
+    },
+    "Forcing": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "hypothetical_assumption",
+            "reconstructed_historical"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "source_label": {
+          "const": "assumed",
+          "title": "Source Label",
+          "type": "string"
+        },
+        "description": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "datasets": {
+          "items": {
+            "$ref": "#/$defs/DatasetIdentity"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Datasets",
+          "type": "array"
+        },
+        "provenance_references": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Provenance References",
+          "type": "array"
+        },
+        "uncertainties": {
+          "items": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Uncertainties",
+          "type": "array"
+        }
+      },
+      "required": [
+        "kind",
+        "source_label",
+        "description",
+        "datasets",
+        "provenance_references",
+        "uncertainties"
+      ],
+      "title": "Forcing",
+      "type": "object"
+    },
+    "Limitations": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Calibration",
+          "type": "string"
+        },
+        "terrain_bathymetry": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Terrain Bathymetry",
+          "type": "string"
+        },
+        "vertical_datum": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Vertical Datum",
+          "type": "string"
+        },
+        "exposure": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Exposure",
+          "type": "string"
+        },
+        "source_uncertainties": {
+          "items": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Source Uncertainties",
+          "type": "array"
+        }
+      },
+      "required": [
+        "calibration",
+        "terrain_bathymetry",
+        "vertical_datum",
+        "exposure",
+        "source_uncertainties"
+      ],
+      "title": "Limitations",
+      "type": "object"
+    },
+    "Operation": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "enum": [
+            "arrival_hours_to_minutes",
+            "coordinate_window_alignment",
+            "strict_cog_packaging",
+            "band_metadata",
+            "extent_geojson_normalization",
+            "identity_correction"
+          ],
+          "title": "Name",
+          "type": "string"
+        },
+        "parameters_and_method": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Parameters And Method",
+          "type": "string"
+        },
+        "evidence_references": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Evidence References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "parameters_and_method",
+        "evidence_references"
+      ],
+      "title": "Operation",
+      "type": "object"
+    },
+    "Original": {
+      "additionalProperties": false,
+      "properties": {
+        "scenario_id": {
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+          "title": "Scenario Id",
+          "type": "string"
+        },
+        "status": {
+          "const": "draft",
+          "title": "Status",
+          "type": "string"
+        },
+        "scenario_type": {
+          "enum": [
+            "hypothetical_release",
+            "hypothetical",
+            "historical_replay"
+          ],
+          "title": "Scenario Type",
+          "type": "string"
+        },
+        "validation_status": {
+          "const": "not_validated",
+          "title": "Validation Status",
+          "type": "string"
+        },
+        "manifest_reference": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Manifest Reference",
+          "type": "string"
+        },
+        "manifest_checksum": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "title": "Manifest Checksum",
+          "type": "string"
+        },
+        "asset_checksums": {
+          "additionalProperties": {
+            "pattern": "^sha256:[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "maxProperties": 64,
+          "minProperties": 1,
+          "propertyNames": {
+            "maxLength": 512,
+            "minLength": 1
+          },
+          "title": "Asset Checksums",
+          "type": "object"
+        }
+      },
+      "required": [
+        "scenario_id",
+        "status",
+        "scenario_type",
+        "validation_status",
+        "manifest_reference",
+        "manifest_checksum",
+        "asset_checksums"
+      ],
+      "title": "Original",
+      "type": "object"
+    },
+    "PreservedWSE": {
+      "additionalProperties": false,
+      "properties": {
+        "reference": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        },
+        "checksum": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "title": "Checksum",
+          "type": "string"
+        },
+        "vertical_datum": {
+          "const": "unknown",
+          "title": "Vertical Datum",
+          "type": "string"
+        },
+        "reason_not_registered": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Reason Not Registered",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reference",
+        "checksum",
+        "vertical_datum",
+        "reason_not_registered"
+      ],
+      "title": "PreservedWSE",
+      "type": "object"
+    },
+    "TimeCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?(?:Z|[+-]\\d{2}:\\d{2})$",
+          "title": "End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "TimeCoverage",
+      "type": "object"
+    },
+    "Timing": {
+      "additionalProperties": false,
+      "properties": {
+        "time_step_meaning": {
+          "const": "result_output_interval",
+          "title": "Time Step Meaning",
+          "type": "string"
+        },
+        "result_output_interval_minutes": {
+          "exclusiveMinimum": 0,
+          "title": "Result Output Interval Minutes",
+          "type": "integer"
+        },
+        "computation_step_seconds": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Computation Step Seconds"
+        },
+        "forcing_interval_minutes": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Forcing Interval Minutes"
+        },
+        "mapping_interval_minutes": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Mapping Interval Minutes"
+        },
+        "unavailable_reasons": {
+          "additionalProperties": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxProperties": 3,
+          "propertyNames": {
+            "enum": [
+              "computation_step_seconds",
+              "forcing_interval_minutes",
+              "mapping_interval_minutes"
+            ]
+          },
+          "title": "Unavailable Reasons",
+          "type": "object"
+        },
+        "coverage_clock_kind": {
+          "enum": [
+            "model_clock",
+            "observed_event"
+          ],
+          "title": "Coverage Clock Kind",
+          "type": "string"
+        },
+        "timezone_convention": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Timezone Convention",
+          "type": "string"
+        },
+        "evidence_references": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "title": "Evidence References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "time_step_meaning",
+        "result_output_interval_minutes",
+        "computation_step_seconds",
+        "forcing_interval_minutes",
+        "mapping_interval_minutes",
+        "unavailable_reasons",
+        "coverage_clock_kind",
+        "timezone_convention",
+        "evidence_references"
+      ],
+      "title": "Timing",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "scenario_id": {
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+      "title": "Scenario Id",
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "model_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$",
+      "title": "Model Version",
+      "type": "string"
+    },
+    "input_dataset_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$",
+      "title": "Input Dataset Version",
+      "type": "string"
+    },
+    "time_coverage": {
+      "$ref": "#/$defs/TimeCoverage"
+    },
+    "engine": {
+      "$ref": "#/$defs/Engine"
+    },
+    "scenario_family": {
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,149}$",
+      "title": "Scenario Family",
+      "type": "string"
+    },
+    "calibration_status": {
+      "const": "uncalibrated",
+      "title": "Calibration Status",
+      "type": "string"
+    },
+    "scientific_validation_status": {
+      "const": "not_validated",
+      "title": "Scientific Validation Status",
+      "type": "string"
+    },
+    "prototype": {
+      "const": true,
+      "title": "Prototype",
+      "type": "boolean"
+    },
+    "original": {
+      "$ref": "#/$defs/Original"
+    },
+    "forcing": {
+      "$ref": "#/$defs/Forcing"
+    },
+    "arrival": {
+      "$ref": "#/$defs/Arrival"
+    },
+    "timing": {
+      "$ref": "#/$defs/Timing"
+    },
+    "limitations": {
+      "$ref": "#/$defs/Limitations"
+    },
+    "assumptions": {
+      "items": {
+        "maxLength": 1000,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 32,
+      "minItems": 1,
+      "title": "Assumptions",
+      "type": "array"
+    },
+    "unavailable_products": {
+      "additionalProperties": {
+        "maxLength": 1000,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxProperties": 32,
+      "propertyNames": {
+        "enum": [
+          "max_depth_m",
+          "flooded_area_km2",
+          "population_exposed",
+          "buildings_exposed",
+          "roads_affected_km",
+          "critical_facilities_exposed",
+          "duration_cog",
+          "hazard_cog",
+          "exposure_geojson",
+          "breach_width_m",
+          "breach_formation_minutes",
+          "max_wse_cog"
+        ]
+      },
+      "title": "Unavailable Products",
+      "type": "object"
+    },
+    "preserved_wse": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PreservedWSE"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "derivation": {
+      "$ref": "#/$defs/Derivation"
+    }
+  },
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "run_id",
+    "model_version",
+    "input_dataset_version",
+    "time_coverage",
+    "engine",
+    "scenario_family",
+    "calibration_status",
+    "scientific_validation_status",
+    "prototype",
+    "original",
+    "forcing",
+    "arrival",
+    "timing",
+    "limitations",
+    "assumptions",
+    "unavailable_products",
+    "preserved_wse",
+    "derivation"
+  ],
+  "title": "PrototypeContext",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ukai:contracts:prototype-context:1.0.0",
+  "description": "Local uncalibrated prototype context. Runtime binding, byte/GIS verification and operator admission are additional gates."
+}

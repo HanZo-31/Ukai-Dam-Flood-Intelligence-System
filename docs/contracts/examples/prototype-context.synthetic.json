@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "synthetic-h02-hr-int-v1",
+  "run_id": "synthetic-h02-hr-int-run-v1",
+  "model_version": "synthetic-context-model-1.0.0",
+  "input_dataset_version": "synthetic-input-release-1.0.0",
+  "time_coverage": {
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2026-01-01T06:00:00Z"
+  },
+  "engine": {
+    "name": "Synthetic metadata example",
+    "software_version": "example-only-1.0.0",
+    "build": null,
+    "build_unavailable_reason": "No real engine used by this metadata example.",
+    "source_checksum": null,
+    "source_checksum_unavailable_reason": "No real solver source used by this metadata example."
+  },
+  "scenario_family": "synthetic-release-example",
+  "calibration_status": "uncalibrated",
+  "scientific_validation_status": "not_validated",
+  "prototype": true,
+  "original": {
+    "scenario_id": "synthetic-h02-source-v1",
+    "status": "draft",
+    "scenario_type": "hypothetical_release",
+    "validation_status": "not_validated",
+    "manifest_reference": "original/scenario_manifest.json",
+    "manifest_checksum": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+    "asset_checksums": {
+      "assets/arrival_time.tif": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+      "assets/max_depth.tif": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "assets/max_velocity.tif": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+      "assets/extent.geojson": "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+    }
+  },
+  "forcing": {
+    "kind": "hypothetical_assumption",
+    "source_label": "assumed",
+    "description": "Synthetic assumed forcing for metadata illustration only; no actual Part A data.",
+    "datasets": [
+      {
+        "dataset_id": "synthetic-input-001",
+        "version": "1.0.0"
+      }
+    ],
+    "provenance_references": [
+      "evidence/example-only-provenance.md"
+    ],
+    "uncertainties": [
+      "No real forcing or observations supplied."
+    ]
+  },
+  "arrival": {
+    "unit": "min",
+    "origin": "simulation_start",
+    "reference_timestamp": "2026-01-01T00:00:00Z",
+    "threshold_m": 0.1,
+    "temporal_resolution_minutes": 15,
+    "original_unit": "h",
+    "conversion_factor": 60,
+    "conversion": "valid_cells_times_60_nodata_preserved",
+    "original_reference": "assets/arrival_time.tif",
+    "original_checksum": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+    "evidence_references": [
+      "evidence/example-only-arrival.md"
+    ]
+  },
+  "timing": {
+    "time_step_meaning": "result_output_interval",
+    "result_output_interval_minutes": 15,
+    "computation_step_seconds": null,
+    "forcing_interval_minutes": null,
+    "mapping_interval_minutes": null,
+    "unavailable_reasons": {
+      "computation_step_seconds": "No real engine execution.",
+      "forcing_interval_minutes": "No actual forcing supplied.",
+      "mapping_interval_minutes": "No actual mapping run supplied."
+    },
+    "coverage_clock_kind": "model_clock",
+    "timezone_convention": "Synthetic UTC model-clock anchor solely for illustrating aware timestamps.",
+    "evidence_references": [
+      "evidence/example-only-timing.md"
+    ]
+  },
+  "limitations": {
+    "calibration": "Uncalibrated synthetic metadata, no observations or independent validation.",
+    "terrain_bathymetry": "No terrain or bathymetry processed by this example.",
+    "vertical_datum": "Unknown; no elevation interpretation accepted.",
+    "exposure": "No exposure inputs or calculations.",
+    "source_uncertainties": [
+      "Source file hashes below are placeholders."
+    ]
+  },
+  "assumptions": [
+    "Example only; no scientific approval or actual Part A transformation is claimed."
+  ],
+  "unavailable_products": {
+    "population_exposed": "No exposure data.",
+    "buildings_exposed": "No exposure data.",
+    "roads_affected_km": "No exposure data.",
+    "critical_facilities_exposed": "No exposure data.",
+    "duration_cog": "Not supplied.",
+    "hazard_cog": "No agreed classes.",
+    "exposure_geojson": "Not supplied.",
+    "breach_width_m": "Release scenario, no breach facts.",
+    "breach_formation_minutes": "Release scenario, no breach facts."
+  },
+  "preserved_wse": null,
+  "derivation": {
+    "processor": "Synthetic metadata example generator",
+    "processor_version": "example-only-1.0.0",
+    "source_scenario_id": "synthetic-h02-source-v1",
+    "derivative_scenario_id": "synthetic-h02-hr-int-v1",
+    "derivative_run_id": "synthetic-h02-hr-int-run-v1",
+    "operations": [
+      {
+        "name": "arrival_hours_to_minutes",
+        "parameters_and_method": "Illustrates valid cells times 60 with nodata preserved; no actual raster transformed.",
+        "evidence_references": [
+          "evidence/example-only-arrival.md"
+        ]
+      },
+      {
+        "name": "coordinate_window_alignment",
+        "parameters_and_method": "Illustrates coordinate-derived alignment; no actual raster window computed.",
+        "evidence_references": [
+          "evidence/example-only-alignment.md"
+        ]
+      }
+    ],
+    "evidence_references": [
+      "evidence/example-only-derivation.md"
+    ]
+  }
+}
