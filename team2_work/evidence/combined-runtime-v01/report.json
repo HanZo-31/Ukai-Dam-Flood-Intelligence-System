@@ -1,0 +1,243 @@
+{
+  "started_at": "2026-10-08T19:22:33.860526+05:30",
+  "passed": true,
+  "checks": [
+    {
+      "check": "fresh owned database imported four references",
+      "passed": true
+    },
+    {
+      "check": "actual frontend served",
+      "passed": true
+    },
+    {
+      "check": "candidate capability through same origin",
+      "passed": true
+    },
+    {
+      "check": "duplicate launch reuses instance",
+      "passed": true
+    },
+    {
+      "check": "duplicate creates no extra child",
+      "passed": true
+    },
+    {
+      "check": "actual candidate POST/reference selection",
+      "passed": true
+    },
+    {
+      "check": "returned reference link matches actual API run",
+      "passed": true
+    },
+    {
+      "check": "actual asset download hash through proxy",
+      "passed": true
+    },
+    {
+      "check": "owned candidate interrupted for recovery test",
+      "passed": true
+    },
+    {
+      "check": "degraded candidate is explicit",
+      "passed": true
+    },
+    {
+      "check": "actual reference API survives candidate failure",
+      "passed": true
+    },
+    {
+      "check": "supervisor clean exit",
+      "passed": true
+    },
+    {
+      "check": "status stopped",
+      "passed": true
+    },
+    {
+      "check": "database marker removed",
+      "passed": true
+    },
+    {
+      "check": "all owned listeners stopped",
+      "passed": true
+    },
+    {
+      "check": "warm restart has new owned children",
+      "passed": true
+    },
+    {
+      "check": "warm restart does not reimport references",
+      "passed": true
+    },
+    {
+      "check": "saved job recovers across restart",
+      "passed": true
+    },
+    {
+      "check": "supervisor clean exit",
+      "passed": true
+    },
+    {
+      "check": "status stopped",
+      "passed": true
+    },
+    {
+      "check": "database marker removed",
+      "passed": true
+    },
+    {
+      "check": "all owned listeners stopped",
+      "passed": true
+    }
+  ],
+  "target_database": "ukai_b_integration_team2_a20dc8ca331e1f2e",
+  "ports": {
+    "database": 62933,
+    "api": 62934,
+    "web": 62935,
+    "candidate": 62936
+  },
+  "state": "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\evidence\\combined-runtime-v01\\local-runtime-state",
+  "source_hashes": {
+    "SSD_PACKAGE_ID.txt": "07e808fb64535281d5d52fd2171135c1625c2cab7f5038595940e1f8e206d73c",
+    "SSD_CHECKSUMS.sha256": "6b9689039f4408e33bda0479a7c76c19b384912bb0d92c0b29705330c6579c2a",
+    "scripts/ssd_runtime.py": "ab1f92de6657046613b4df6dff03c66ee829fce955e69f7a1bbffb48b68870bc",
+    "scripts/ssd_web_server.cjs": "43e447df1450e94c804da77aeca74268ea2f4219f6aa027e72afca3aa368fc4a",
+    "part_a/CHECKSUMS.sha256": "0d0f2eb35f49f37b2531cd256148c6a8380df4fd36cf02450759d05b7f1dd166",
+    "part_a/FILE_INVENTORY.csv": "696d1a05c16ac245d98bc735566acb31dc2a3f23dbe9309ee6c26ec326cdd5c3",
+    "part_a/input-catalog.json": "593aa1d5f8df93b83650f58ed09104684fcb4d3d5fd5c33151bccf066015c875",
+    "part_a/prototype-context.json": "f3f6b837947518791c4166148baf5228bf896398b51b9b79b18ec4f04c0d7222",
+    "part_a/prototype-manifest.json": "3c3b193dbd56504d4eddf00f30338ea96d99e2599950e94c2321b6063c2079dc",
+    "part_a/START_HERE.md": "7a848fd268b38fe72473eb770aed4d03a82f8f800cc20611eea440950617db28",
+    "part_a/assets/arrival_time.tif": "b7db5fdc9e4a9829698f9bb64b49e78bf99b065b694e13299de5875ae3da550a",
+    "part_a/assets/extent.geojson": "cb2d04d533dd2699b60bc66f8a1bfe46d276850df8caee96e8e8f2676b1ea589",
+    "part_a/assets/max_depth.tif": "7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+    "part_a/assets/max_velocity.tif": "84c1341f45f1fd671cc4147be7a870da58bce4da1d7588d2078e55f66433663e",
+    "part_a/evidence/engine.json": "b6f3e7784916bd29e68be9caa06fc3cf951867fea4152cbc2177aafd409b6817",
+    "part_a/evidence/input_release.json": "94518330b94dde7c076acc167936deadc4d642a66ebe870dcd22d4f08198e9ee",
+    "part_a/evidence/input_source_description.md": "9b986b93ea83a0379e2055ab2bbed22a5264ff9e00a1f2232e60bc2be836ee62",
+    "part_a/evidence/timing.json": "c125daab497bad7010fd1c0077c6871948423db4bcbcff6ab65ac0a066b03225",
+    "part_a/inputs/forcing.u05": "b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+    "part_a/inputs/geometry.g01": "e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "part_a/inputs/plan.p04": "b58189476279a3a55595039fbc8287a683b6ead295e5e5d00b920d0d3fbd2273",
+    "part_a/inputs/terrain.tif": "c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+    "part_a/original/proposed_additions.json": "ab556d509934155644ffbb214d8f75bb7e7473cf47a90deccf6e4ca3809ff5f6",
+    "part_a/original/qa_report.md": "116c0590054d5a9f7eb8e2916c46875cb44810bc460da54e391b3b00f77d98c3",
+    "part_a/original/run_log.md": "d1594ecadbd73339ce9e821032b73b4e7ccbc9f92b0631321b3a47cf1d40fc7e",
+    "part_a/original/scenario_manifest.json": "40a25e910dad9513e18d1956ed972aa6656f7d6b27402f00e9fddd003f7550a3",
+    "part_a/preserved_optional/max_wse.tif": "1ecf619987a4c541580a16a2a7e95faad788a16b85de60923082a1c7dbf28630",
+    "part_a/reports/pixel-edge-extent-evidence.json": "ed8193b89d532eb90963b4fb3b162b5577ead6e56940d57a12d60b9b5e7be455",
+    "part_a/reports/preparation-checks.json": "14245b96b4bf296feb965480213f8d051a095b4a9c01b118c8c239f06b0cca4d",
+    "part_a/reports/previous-derivative-extent.geojson": "13b40d9fa930d52b2f26711844bc7fbc85409a842b2156d98b00cf49b7f598cd",
+    "part_a/reports/quality.json": "27f4f5fe1cc7c37f34a253f413f7a58e7ce0d6221316d7c22ad5a595ea5cc12f",
+    "part_a/reports/second-review.json": "7af466b851aa9cbd07709b2c5967cbc73ab7dd1e3dddd563365a0bd63917be9c",
+    "part_a/evidence/source_checks/DERIVATION_RECORD.json": "e25a3b541864a153853fb5b94fb31f902f98e17be10968260f3d622b6ef9ef9a",
+    "part_a/evidence/source_checks/EXTENT_DERIVATION_RECORD.json": "96ce8dc0c5c94778db43c61981db70a9edaa28cf78b4ec7e8bcc3babee7544ba",
+    "part_a/evidence/source_checks/EXTENT_PIXEL_EDGE_REPORT.json": "a8973c6865792ead603b14b17c3eb948e64dece92c2fcaecdb091eedd5d15b02",
+    "part_a/evidence/source_checks/EXTENT_PIXEL_EDGE_SECOND_REVIEW.json": "0a69c3c045d1b090a04674f9f9a024efde1e21e42934c6db9f9cc29caad6b244",
+    "part_a/evidence/source_checks/EXTENT_PIXEL_EDGE_SECOND_REVIEW_generic.json": "3ec47cd6ca6b950eed3c489b6c30baf3bb694556cdcf2f988a875c9376c175b7",
+    "part_a/evidence/source_checks/RASTER_CONSISTENCY.json": "85580b6c7d888790f9a5dc59d3e31ecb89147c0af0e2b0aac0ab4833cc809bac",
+    "part_a/evidence/source_checks/VERIFY_FIRST_CHECK.json": "170b91d8fcb15f1f091cac407a4436b7bdd60ade7f875c597bbfa77f155b3e7c",
+    "part_a/evidence/source_checks/VERIFY_SECOND_PASS.json": "13dfb8a17cac01b4d4195a08a9c860e915e856b6559fd6966058e74d05262f9c",
+    "part_a/evidence/source_checks/VERIFY_SECOND_PASS_generic.json": "e94c5a9b95faaa9b729e6ea4a2136b3333df1b681f322fa98e7e62a646c9414b",
+    "part_a/evidence/source_records/H02_FACTS_VERIFIED_2026-10-07.md": "4e1f445dd40b1ca1136b2be3bd753baebfc05a5134eb45f57cd88978729484b0",
+    "part_a/evidence/source_records/LOCAL_CHECKS_RESULTS_2026-10-08.md": "fe69a335de42328b872e17cf3005c3146775d936672fe72e49ecba4ff1dfc360",
+    "part_a/evidence/source_records/RUN_TIMESTAMPS_ALL_PLANS_2026-10-07.md": "21e56383c23357305a437d370934089d0806213a0bf2f69763484924d5fbce35",
+    "part_a/original/assets/arrival_time.tif": "4ba960ed3b21c2ffa7fd6ab54979d78965c036ad75c3f08c186dc80901d370b1",
+    "part_a/original/assets/extent.geojson": "587b5f70343ef834a81762dc55b8b3ef140edd90ee9e417315cacc33a7a08e48",
+    "part_a/original/assets/max_depth.tif": "c3ce09c11f23d6153883d0ae59d3c48255b520350d581c5072bd5b1f4fd31e70",
+    "part_a/original/assets/max_velocity.tif": "a956bf18a70b42d22784e24241a6ea40c3aa1bc4007124638c8e6575d0bcc354",
+    "part_a/original/assets/max_wse.tif": "1ecf619987a4c541580a16a2a7e95faad788a16b85de60923082a1c7dbf28630",
+    "part_a/original/provenance/raster_qa.json": "67a85cc0137250c115a6ad381ea53d4a169d3082237c89c5af08cf76f7f05f02",
+    "receipts/h01/CHECKSUMS.sha256": "242c5421ec48cc3baa40b9870e52654d96d00f1637dc3450022484aecddfea68",
+    "receipts/h01/FILE_INVENTORY.csv": "def8970bf33149e8af879b43216e21f2aefcee129fc5a6e49e809b81347ce62c",
+    "receipts/h01/input-catalog.json": "0fbf3b648686dff2557346542528f855be20d36605f6653d4f7965f375c7a62e",
+    "receipts/h01/prototype-context.json": "cc04045422452216eed9f797cf259154dd088253f68ff12da2811858f4f049ad",
+    "receipts/h01/prototype-manifest.json": "12bd2a40793d4b8474e46b5c03cee07875947de76460b5262b18623fccf20606",
+    "receipts/h01/assets/arrival_time.tif": "ef59040cefc278055eb8953976a13c3981a8c75ef7e73e7d723429fe5de6607f",
+    "receipts/h01/assets/extent.geojson": "0da5b7e419693f4ce56bbb2c76a52fe161303802d2946500081c0d2c0a87c13f",
+    "receipts/h01/assets/max_depth.tif": "14e9beedb28933b1689a23c687b67821dc98784a5cf91df69479c6927dce838e",
+    "receipts/h01/assets/max_velocity.tif": "ac2c1696b19dbbf687e9bf8e668e9ea68781ca38b331389c0894dd34f703bf4f",
+    "receipts/h01/evidence/input_release.json": "51d86d033be9641369e511135fdd7b5fbf8975ffbdc36b3daa3fb8b8fe0aed7f",
+    "receipts/h01/evidence/timing.json": "9d07a1dca6c972bf905b42a85bf9b65eb1a655107b400a739362c86e2ae2a19f",
+    "receipts/h01/inputs/forcing.u04": "2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+    "receipts/h01/inputs/geometry.g01": "e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "receipts/h01/inputs/plan.p03": "2844a4e6df6c14c08a66778f2edc497048d29dc7f257250cd68c74de875ea302",
+    "receipts/h01/inputs/terrain.tif": "c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+    "receipts/h01/original/proposed_additions.json": "ab556d509934155644ffbb214d8f75bb7e7473cf47a90deccf6e4ca3809ff5f6",
+    "receipts/h01/original/qa_report.md": "3ffe9dea1c256a1087b703009aedb44c24b38c8a0ed6027c59fa28a749ba0319",
+    "receipts/h01/original/run_log.md": "b724dd45afe0d0e1327fdc0200d0945530b1f020260759f3dd8118f77d4901cd",
+    "receipts/h01/original/scenario_manifest.json": "81a2a35e768d2f4101aa7c0518679bd52b2924aa360c372e3360543491295e10",
+    "receipts/h01/reports/pixel-edge-extent-evidence.json": "3e03c355120c30eccb8b6d107c2191c8fd1b7a2deed21b6603b7af655526382a",
+    "receipts/h01/reports/quality.json": "b9969413e5228f06a0ae7f077d6bfedd593a84e256a547e6bc248ebba761f249",
+    "receipts/h01/original/assets/arrival_time.tif": "e8ef4d4028a15b8e99dcc2defb982212ec82af3f0a32d03a072d8323a51bc378",
+    "receipts/h01/original/assets/extent.geojson": "821f5a375f9f69a78b5f5c4676531ad698b6d1e95966771f51263de13cbc65cf",
+    "receipts/h01/original/assets/max_depth.tif": "69c025bb8951f599415996d7abb350f31cbab306a8c0ba7a7bb02e2e9e32d8eb",
+    "receipts/h01/original/assets/max_velocity.tif": "b1d8b6ca9e7c136d7fa959cf94c7cfc3af6a33470c86cfcba19e7f0f1dd4d662",
+    "receipts/h01/original/assets/max_wse.tif": "e852b277f8cd32eb7eceeeca3a4b1c294456e64564fbe92699585d52158ec6fb",
+    "receipts/h01/original/provenance/raster_qa.json": "2bd73a9167d0441a207d63ce859fbc059b45964f45145cd03f04a3017c12b9e3",
+    "receipts/h03/CHECKSUMS.sha256": "50cccef749e39dbc36823708ec08bc05339e6db6b22556356ba5fc45f6276306",
+    "receipts/h03/FILE_INVENTORY.csv": "8befd36534928775b49090e5a53d256b0e233106f1413c934368f5fcbaf4e251",
+    "receipts/h03/input-catalog.json": "862d3d7b34d3a74403a0224c78bb4d67482eea2e567daa27797b513a18d363b0",
+    "receipts/h03/prototype-context.json": "9b82cd6f782849adea20b54b2af24b5d9a3c325f1295a9f531c5963c9de6ab15",
+    "receipts/h03/prototype-manifest.json": "8db5ccb965f7ceae7310f49506d4c54b10572cd8c4dd5bf34d63c4911cf0a7c8",
+    "receipts/h03/assets/arrival_time.tif": "d7916d8775fd5734e669c67390d2b91206b63dde7088dcbd52e3b006776397ad",
+    "receipts/h03/assets/extent.geojson": "4ebaa3cc3dae044c44b73c4bb50f800331b49420521999c96bbe98c28f0293aa",
+    "receipts/h03/assets/max_depth.tif": "446b999cd61ad89665803f95c38e82ae961d58e18fc786183cd68fb48b6bf1cb",
+    "receipts/h03/assets/max_velocity.tif": "417da4a4aed23c073083cda12b86cbe7c2f7e43ff95b1962bb35d2d6adb4e850",
+    "receipts/h03/evidence/input_release.json": "6a6b3508d3ed749c36c22b8a1636b6496ba0c40481e7e4ed288073be3a11ca7b",
+    "receipts/h03/evidence/timing.json": "e29e035c46c67315ede52c44511e11446d0323299f65962a832fcf224cd82c5b",
+    "receipts/h03/inputs/forcing.u06": "ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01",
+    "receipts/h03/inputs/geometry.g01": "e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "receipts/h03/inputs/plan.p05": "ad04283bdfc82e1691d5159aa35b2655f5575c824abc01cd77326b5f3e0a6838",
+    "receipts/h03/inputs/terrain.tif": "c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+    "receipts/h03/original/proposed_additions.json": "ab556d509934155644ffbb214d8f75bb7e7473cf47a90deccf6e4ca3809ff5f6",
+    "receipts/h03/original/qa_report.md": "5739f66f2e729348aa58908574035c255a02d32b54df188a510fcd3fc84c2e39",
+    "receipts/h03/original/run_log.md": "39308f66a4c2d01b1b6abe04baf01373f79aa566fe5d0627d3e4a19fef485f28",
+    "receipts/h03/original/scenario_manifest.json": "f8385ee10f88c0b2528450b918fed9d5e15369e72c6727fbfaafd0b7c3dc1e20",
+    "receipts/h03/reports/pixel-edge-extent-evidence.json": "afac2462c30898d97a8a219ce665dbb57d59d94366ecb71dcb2e9c7fc418e42e",
+    "receipts/h03/reports/quality.json": "b9969413e5228f06a0ae7f077d6bfedd593a84e256a547e6bc248ebba761f249",
+    "receipts/h03/original/assets/arrival_time.tif": "884ae7c1a43ce2d0320080ab06619119cc935e6bd78f4128a5c7220ee7276e07",
+    "receipts/h03/original/assets/extent.geojson": "01e4f906bacbf08c1a6a862d103bb298938cd3720df58f159a95124cead1b68b",
+    "receipts/h03/original/assets/max_depth.tif": "646bc2c1292dd34cad5ca6f1777af460fb97425a7dd10baa5ae2a814f5e3aace",
+    "receipts/h03/original/assets/max_velocity.tif": "cf3994e8c5e8395fcc16c15b94d1afac37cdcebe046ead39ee68292d111380b1",
+    "receipts/h03/original/assets/max_wse.tif": "f90f8e710b1ae56ec25c3abedb3b3f5da766eb240535a08062e268d63d5b62d0",
+    "receipts/h03/original/provenance/raster_qa.json": "75727fc1b09aac627445c3aca7c083925c1ab594b30d5d47e25f702abb9cb01d",
+    "receipts/2006/CHECKSUMS.sha256": "ae2d8412afe9c8d4f05d077d73f7686841a3243c68043fa57d55ec6cfc671721",
+    "receipts/2006/FILE_INVENTORY.csv": "71766093885341700874f51cea8e4aff4873a6217a2df4a48c77f3ce18bb699a",
+    "receipts/2006/input-catalog.json": "5fa09dac40b8115612bd3961bccbdb550a7ef76a83a7207ecc919c4a54f4f69a",
+    "receipts/2006/prototype-context.json": "14c2a6e0d23ff1b64adc40adf537c37966436309c372e9cd86ba3f22bddb6158",
+    "receipts/2006/prototype-manifest.json": "f45cce9df31d4030da4e75879437533f0bfbd314103cbe5c790b9073078fc62f",
+    "receipts/2006/assets/arrival_time.tif": "348ae6b90d1acdf35cf6566eaa45af1db0a1b013b9b559ee8c67cbf2537fb65c",
+    "receipts/2006/assets/extent.geojson": "de11bf62cb825ede4b93393e42d76ed9f4dc50bd16fae69789457fd110c18a96",
+    "receipts/2006/assets/max_depth.tif": "1c7f46e9bc0f66a0a9662b691da1ba239b1998119a6136e298a76f92a0322812",
+    "receipts/2006/assets/max_velocity.tif": "725f5af9c2153bc349a1cf9c6f456b63c0f72c2aeda1aae0560e0c278456905e",
+    "receipts/2006/evidence/input_release.json": "654de5a7c8ebf9d24fd2b972d05493d62d31132e2b381fa12b7154eb8fb64073",
+    "receipts/2006/evidence/timing.json": "e26ddbd14cdadb839cd24b348dcf9eb2594419a04826499e1c819ff1e0d99944",
+    "receipts/2006/inputs/forcing.u07": "756c48deb37ccafbff972a66f45cf95bb52dddd543129eedcbfc405c2d9abd0e",
+    "receipts/2006/inputs/geometry.g01": "e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "receipts/2006/inputs/plan.p06": "663e35c62656708a427186f0405dd9ddb2c04cfd2058aaca365058bd0f6677c8",
+    "receipts/2006/inputs/terrain.tif": "c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+    "receipts/2006/original/proposed_additions.json": "9acd48fe6b122ce3093a173063386062f9082b40194ac598cc53ee4b8b006ce2",
+    "receipts/2006/original/qa_report.md": "70c602696f437527cb4797529ac3cd8e8d4fa8f4a3c752858fd36aead45ddcea",
+    "receipts/2006/original/run_log.md": "574bbbcd883c67fddb1a7fdc92ee6d7d19286d08f592049aab452c955b47c1c3",
+    "receipts/2006/original/scenario_manifest.json": "2bd3cfc0fa80bac958ad37536b38a8acdfe70ec98d449b67af324146cc9759bb",
+    "receipts/2006/reports/pixel-edge-extent-evidence.json": "e7d895200bbb1ef2511a1c3f8f07043bc1f1b9066277fb6e6d5538ea69ae97d4",
+    "receipts/2006/reports/quality.json": "b9969413e5228f06a0ae7f077d6bfedd593a84e256a547e6bc248ebba761f249",
+    "receipts/2006/original/assets/arrival_time.tif": "d2f2354e2b2c6d926730be951b686e39394d0a2d16d05a8de6845c9ba6adea77",
+    "receipts/2006/original/assets/extent.geojson": "8a31ca3f9014002b919312a89a516bc9a16e3edd1906edf953762ad30be6d314",
+    "receipts/2006/original/assets/max_depth.tif": "0925dd9eb79c6a2928896b26c3bc0c4014b0d3afafc96e9f271e2ec4a0f5a17e",
+    "receipts/2006/original/assets/max_velocity.tif": "da2ab7cf1c609174e467af461951d76b03af99d19a089bf49ce7f8bcaddfa150",
+    "receipts/2006/original/assets/max_wse.tif": "fb11b3751a98a2f07f6d0a03d3b90b2d8dda9bc0cfd110642e6674804f8b3d2a",
+    "receipts/2006/original/provenance/flow_forcing_2006_hourly_139.txt": "b286d2f7926d71bba6bd0f42734223a574ac5d172d580ad85cbb8f4e7f9dd39e",
+    "receipts/2006/original/provenance/FORCING_PROVENANCE.md": "fedd724e505559a3e4449875bb38527021d1907beb65624b800e4597ae6ddf36",
+    "receipts/2006/original/provenance/raster_qa.json": "3d0cfc4c9c1603075aa3b0e35fbdbb1b6612546a556b94220e8c8708eb7abe53"
+  },
+  "ml_prediction_enabled": false,
+  "new_physical_scenarios_generated": 0,
+  "genuine_browser_rendering": false,
+  "source_files_unchanged": true,
+  "finished_at": "2026-10-08T19:24:28.238029+05:30",
+  "supervisor_sha256": "dfe019c3a9d27ed1bba569d3a56e9bbce0bb7770edc412dbee806edcc2c6f812"
+}

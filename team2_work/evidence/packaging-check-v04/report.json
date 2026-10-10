@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-08T22:51:27.124427+05:30",
+  "source_hashes": {
+    "package_delivery.py": "9339170c5b1b14cfe1cf04dc40c5543eadb6b8cbfb971bbdce69d96a04e26ad6",
+    "verify_delivery.py": "fda8bdc728f5b5d45ed9f19e81f46c5a414e588b93dde08dd5cef5cb27d72045",
+    "test_delivery.py": "a68284dc29cc331b3d5de9a67ed3a79510f4d44380024720bc56013d0d6b0122",
+    "run_packaging_checks.py": "63b4244e65313a61b81c7e5e030b7e7bf7bdddc3714ece6bc7960ca2865b6a18"
+  },
+  "exit_code": 0,
+  "log_sha256": "d1123a4f5df8123685d50a69eb3c6337164afa03e22ae7968d729c49c2d3f960",
+  "source_unchanged": true,
+  "passed": true,
+  "finished_at": "2026-10-08T22:51:28.410114+05:30"
+}

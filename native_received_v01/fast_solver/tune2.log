@@ -1,0 +1,2 @@
+n 0.025 {'true_km2': 359.7, 'pred_km2': 378.8, 'area_err_pct': 5.3, 'IoU': 0.83, 'depth_bias_m': -0.1, 'depth_MAE_m': 0.96, 'depth_RMSE_m': 1.39, 'pct_within_1m': 65.9, 'pct_within_2m': 89.1, 'sec': 102.7}
+n 0.015 {'true_km2': 359.7, 'pred_km2': 330.5, 'area_err_pct': -8.1, 'IoU': 0.797, 'depth_bias_m': -0.67, 'depth_MAE_m': 1.12, 'depth_RMSE_m': 1.57, 'pct_within_1m': 58.7, 'pct_within_2m': 84.7, 'sec': 95.1}

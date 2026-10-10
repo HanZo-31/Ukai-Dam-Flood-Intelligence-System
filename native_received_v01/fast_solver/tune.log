@@ -1,0 +1,1 @@
+n 0.06 {'true_km2': 359.7, 'pred_km2': 506.6, 'area_err_pct': 40.8, 'IoU': 0.704, 'depth_bias_m': 1.62, 'depth_MAE_m': 1.82, 'depth_RMSE_m': 2.26, 'pct_within_1m': 30.8, 'pct_within_2m': 63.2, 'sec': 117.3}

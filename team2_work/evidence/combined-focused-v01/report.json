@@ -1,0 +1,35 @@
+{
+  "started_at": "2026-10-08T19:20:49.885113+05:30",
+  "source_hashes": {
+    "audit_four_scenarios.py": "f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1",
+    "candidate_service.py": "9f168f103263b5e26d0ab62144bde5d969f847e19c7948bcd3f2d5e0b0f884c4",
+    "combined_runtime.py": "dfe019c3a9d27ed1bba569d3a56e9bbce0bb7770edc412dbee806edcc2c6f812",
+    "export_contract.py": "888929a19a9dc0a21650d3c095e1ae8ad69114556be18a794e5699eff12facab",
+    "fit_diagnostic_model.py": "a2ee3f4f6ee10e270c8a5bd6d8f2d22df758ab9719f36aace5eb15f94daad74c",
+    "package_first_delivery.py": "6d4fc44bd145e3fb96e8abefaaf622ba7097ff9f7545b687fed32f2a0f47fad5",
+    "probe_assembly_proxy.py": "535daf30b4687fd04a14656e756191376e3e644a4b2c02968cfb34ca5d327518",
+    "probe_local_service.py": "5eea8ff940f1f28425fbb5b6d4a2485d44179fde5716f5f6fad45a0e840e9991",
+    "run_candidate_service.py": "af9109ffec56c2381dbe05a78b76b04c70bb167ead2724fba97bccf0bc94f395",
+    "run_focused_checks.py": "05e20a9b3736c93d15c29ce920a559c7675575e5f59032b985067bfcf8d18bff",
+    "test_candidate_service.py": "c214a21274ad47e5ddf39fd750dcfbe7c78726583f9ef3334f8548dca6170ce0",
+    "test_combined_runtime.py": "1b0ff95d54a07519fff91ecd325c2e92c0299b065d98aeeee19f4b7034b16e82"
+  },
+  "command": [
+    "bundled Python3.12.4",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\evidence\\combined-focused-v01\\test-temp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\test_candidate_service.py",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\test_combined_runtime.py"
+  ],
+  "exit_code": 0,
+  "source_unchanged": true,
+  "finished_at": "2026-10-08T19:20:52.611575+05:30",
+  "log_checksum": "a0fc0b2d19b7a72fe11a693a4c63b068a7a71761cdd88eb216f5d03c8837c800",
+  "passed": true
+}

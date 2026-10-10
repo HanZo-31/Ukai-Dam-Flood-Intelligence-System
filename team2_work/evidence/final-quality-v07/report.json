@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-10-08T22:51:29.220016+05:30",
+  "source_hashes": {
+    "assembly/ssd_web_server.cjs": "a70276fdbe7cdcda33ebc873229a9a359ab345e74ca391bff8956618adb43d60",
+    "audit_four_scenarios.py": "f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1",
+    "candidate_service.py": "4afc3c86666a540425aedbe165e710f1b6fcc3a12ba31625374c81fb91dfd535",
+    "check_quality.py": "0108ef58b6c7127415250ae28e9385c0506fbee6e5ce7d162ce2e103e9f8f837",
+    "combined_runtime.py": "5648d32b413251bb149fad718ad78798ed6cb632606ff57c78dcc27876ed3b3e",
+    "export_contract.py": "888929a19a9dc0a21650d3c095e1ae8ad69114556be18a794e5699eff12facab",
+    "fit_diagnostic_model.py": "a2ee3f4f6ee10e270c8a5bd6d8f2d22df758ab9719f36aace5eb15f94daad74c",
+    "package_delivery.py": "9339170c5b1b14cfe1cf04dc40c5543eadb6b8cbfb971bbdce69d96a04e26ad6",
+    "package_first_delivery.py": "6d4fc44bd145e3fb96e8abefaaf622ba7097ff9f7545b687fed32f2a0f47fad5",
+    "probe_assembly_proxy.py": "535daf30b4687fd04a14656e756191376e3e644a4b2c02968cfb34ca5d327518",
+    "probe_combined_runtime.py": "23eb7325e517f2aa0e293f99f4bf246c248f3a110d787807779bb7f4e40aa2dd",
+    "probe_local_service.py": "5eea8ff940f1f28425fbb5b6d4a2485d44179fde5716f5f6fad45a0e840e9991",
+    "quality-mypy.ini": "d3876f839a9145a48e16389e3f361c21e81ec37895940fe6ecec40b135e08c00",
+    "quality-ruff.toml": "194dad2d94158abad8fb607ea783cc8cf4100f5596b9fb2e70172172228db889",
+    "reconcile_contract.py": "c7d611ae840f6a3e023849e9ab19646c1bfee03cd8f49e9e3374615f7c127da9",
+    "run_candidate_service.py": "af9109ffec56c2381dbe05a78b76b04c70bb167ead2724fba97bccf0bc94f395",
+    "run_final_regression.py": "7d5f675069ae66f53a42d88fd962f6dd4dac5c8149ac0816c2a79c64fc5890f7",
+    "run_focused_checks.py": "05e20a9b3736c93d15c29ce920a559c7675575e5f59032b985067bfcf8d18bff",
+    "run_packaging_checks.py": "63b4244e65313a61b81c7e5e030b7e7bf7bdddc3714ece6bc7960ca2865b6a18",
+    "test_candidate_service.py": "b95850e31e50db41ea8079a86b1b4d1966005444a3e3e9ade5495b8edbe73a55",
+    "test_combined_runtime.py": "c4e0c0418181d150ba518d4a9f9f73a300011e8c4cb3ea9f3706f099291e12dc",
+    "test_delivery.py": "a68284dc29cc331b3d5de9a67ed3a79510f4d44380024720bc56013d0d6b0122",
+    "verify_delivery.py": "fda8bdc728f5b5d45ed9f19e81f46c5a414e588b93dde08dd5cef5cb27d72045"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "check": "dependency-consistency",
+      "exit_code": 0,
+      "passed": true,
+      "log_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "check": "correctness-lint",
+      "exit_code": 0,
+      "passed": true,
+      "log_sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
+    },
+    {
+      "check": "gradual-types",
+      "exit_code": 0,
+      "passed": true,
+      "log_sha256": "281a094c39385b4d7b53e5db635f52158036861433c2a4975b9039e77a627a24"
+    },
+    {
+      "check": "proxy-syntax",
+      "exit_code": 0,
+      "passed": true,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "openapi-conformance",
+      "exit_code": 0,
+      "passed": true,
+      "log_sha256": "2b4894e587a7c9602e8876387405bd872e5c2c78726705b4a31eb1bef4a834ea"
+    }
+  ],
+  "dependencies_installed": false,
+  "source_unchanged": true,
+  "finished_at": "2026-10-08T22:51:34.923760+05:30"
+}

@@ -1,0 +1,42 @@
+{
+  "configuration_id": "ukai-fast-fixedshape-n0025-v1",
+  "input_family": "ukai-hyp-fixed-shape-v1",
+  "bound_files": {
+    "base:part_a/inputs/geometry.g01": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "base:part_a/inputs/terrain.tif": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+    "base:receipts/h01/inputs/forcing.u04": "sha256:2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+    "base:part_a/inputs/forcing.u05": "sha256:b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+    "base:receipts/h03/inputs/forcing.u06": "sha256:ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01",
+    "base:part_a/assets/max_depth.tif": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+    "job:native_received_v01/fast_solver/driver.py": "sha256:2ed5cd14b2f58d8f591ef789972ccea7cd5b8361b33ab3a6387480b83b824438",
+    "job:native_received_v01/fast_solver/li2d.c": "sha256:9826476ff4bc5144531309c3914b1f76f6b6ce022736b6824122b4e879b67128",
+    "job:native_received_v01/fast_solver/li2d.dll": "sha256:b470a7373ced91cd3533cb6bae0ef571cdb2e5b23b3ee7632de8d56ef33a1394",
+    "job:solver_env/native/libgomp-1.dll": "sha256:37d23888447afabf47b0d5c6a1ea79852c3d522315040230c4ed3e1705e90b61",
+    "job:solver_env/native/libwinpthread-1.dll": "sha256:76cc52adfcdb8c800813b2ae8da42a908934eb1ee54ce8e9744fc8d703c76ee1",
+    "job:rapid_engine/solver_worker.py": "sha256:7f586cdb47ff571b48ae12efe036675c43e16dcdf610ef2060a3a23ebbdc14b5",
+    "job:solver_requirements.txt": "sha256:0b506bab8f4004031af811aad9a26f1ab1bab77dbccc068ae42668a63a9019a8",
+    "job:solver_env/installed_checksums.json": "sha256:2538508121aaa46595d886de08e1db94085802f506e4d83cac84700b833e7d74"
+  },
+  "original_dll_hash": "b470a7373ced91cd3533cb6bae0ef571cdb2e5b23b3ee7632de8d56ef33a1394",
+  "parameters": {
+    "dx_m": 100,
+    "manning_n": 0.025,
+    "alpha": 0.7,
+    "dtmax_seconds": 30,
+    "theta": 0.9,
+    "froude_cap": 1,
+    "normal_depth_slope": 0.0005,
+    "arrival_threshold_m": 0.1,
+    "omp_threads": 2,
+    "hydrograph_dt_seconds": 3600,
+    "model_duration_seconds": 410400,
+    "shape": "500+(peak-500)*hypothetical_shape",
+    "peak_range_m3s": [
+      15000,
+      30000
+    ]
+  },
+  "numerical_relative_volume_gate": 1e-06,
+  "scientifically_validated": false,
+  "calibration_status": "uncalibrated"
+}

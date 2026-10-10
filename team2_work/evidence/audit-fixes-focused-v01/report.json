@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-10-08T22:25:37.959499+05:30",
+  "source_hashes": {
+    "audit_four_scenarios.py": "f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1",
+    "candidate_service.py": "4afc3c86666a540425aedbe165e710f1b6fcc3a12ba31625374c81fb91dfd535",
+    "check_quality.py": "0108ef58b6c7127415250ae28e9385c0506fbee6e5ce7d162ce2e103e9f8f837",
+    "combined_runtime.py": "3f2bc53ed3467e0f2b940b9d66a2537b5bc3a9cc0e8928509015af062512af54",
+    "export_contract.py": "888929a19a9dc0a21650d3c095e1ae8ad69114556be18a794e5699eff12facab",
+    "fit_diagnostic_model.py": "a2ee3f4f6ee10e270c8a5bd6d8f2d22df758ab9719f36aace5eb15f94daad74c",
+    "package_delivery.py": "2e024c247aeeb0ec27ab3ae6178a89f474007412d0124324a825a883b493cd3d",
+    "package_first_delivery.py": "6d4fc44bd145e3fb96e8abefaaf622ba7097ff9f7545b687fed32f2a0f47fad5",
+    "probe_assembly_proxy.py": "535daf30b4687fd04a14656e756191376e3e644a4b2c02968cfb34ca5d327518",
+    "probe_combined_runtime.py": "23eb7325e517f2aa0e293f99f4bf246c248f3a110d787807779bb7f4e40aa2dd",
+    "probe_local_service.py": "5eea8ff940f1f28425fbb5b6d4a2485d44179fde5716f5f6fad45a0e840e9991",
+    "reconcile_contract.py": "c7d611ae840f6a3e023849e9ab19646c1bfee03cd8f49e9e3374615f7c127da9",
+    "run_candidate_service.py": "af9109ffec56c2381dbe05a78b76b04c70bb167ead2724fba97bccf0bc94f395",
+    "run_final_regression.py": "7d5f675069ae66f53a42d88fd962f6dd4dac5c8149ac0816c2a79c64fc5890f7",
+    "run_focused_checks.py": "05e20a9b3736c93d15c29ce920a559c7675575e5f59032b985067bfcf8d18bff",
+    "run_packaging_checks.py": "63b4244e65313a61b81c7e5e030b7e7bf7bdddc3714ece6bc7960ca2865b6a18",
+    "test_candidate_service.py": "b95850e31e50db41ea8079a86b1b4d1966005444a3e3e9ade5495b8edbe73a55",
+    "test_combined_runtime.py": "8158a9241c8d1749fa2dcc3c4b55cf24222bef99ce3d4787cc84ae62a46315a5",
+    "test_delivery.py": "23d63fbb5b9c1095b1af254069e9cc562b6a1dc6d1070374ab202420560b0076",
+    "verify_delivery.py": "cdf372bc1c765beba916463ed2bfa463568a95b22e8e8ab3d50f47c392833bf8"
+  },
+  "command": [
+    "bundled Python3.12.4",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\evidence\\audit-fixes-focused-v01\\test-temp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\test_candidate_service.py",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\test_combined_runtime.py"
+  ],
+  "exit_code": 0,
+  "source_unchanged": true,
+  "finished_at": "2026-10-08T22:25:43.472613+05:30",
+  "log_checksum": "5e1adfe16ab51d170b11de4a835696a0331508c2513f3c764b69f9fcd30df3c5",
+  "passed": true
+}

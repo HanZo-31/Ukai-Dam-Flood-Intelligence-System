@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "synthetic": true,
+        "purpose": "projection_fixture_not_hydraulic_extent"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.78248438794945,
+              21.32377136575358
+            ],
+            [
+              72.78639293451283,
+              21.32377136575358
+            ],
+            [
+              72.78639293451283,
+              21.327433582249395
+            ],
+            [
+              72.78248438794945,
+              21.327433582249395
+            ],
+            [
+              72.78248438794945,
+              21.32377136575358
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

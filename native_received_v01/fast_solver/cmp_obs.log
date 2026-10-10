@@ -1,0 +1,3 @@
+RUN sec 151.8 steps 113673.0 mass in/out/stored [8.09585443e+09 6.70779761e+09 1.38805681e+09]
+{'true_km2': 416.9, 'pred_km2': 491.3, 'area_err_pct': 17.9, 'IoU': 0.825, 'depth_bias_m': 0.71, 'depth_MAE_m': 1.15, 'depth_RMSE_m': 1.56, 'pct_within_1m': 54.6, 'pct_within_2m': 84.7}
+vmax solver 6.17 hec 11.58 mean on common wet 1.12 0.98
