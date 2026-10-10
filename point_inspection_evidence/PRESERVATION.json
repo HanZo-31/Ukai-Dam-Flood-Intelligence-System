@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-10T03:21:20.466005+05:30",
+  "passed": true,
+  "before_entries": 25505,
+  "protected_files_unchanged": 25482,
+  "protected_mismatches": [],
+  "approved_existing_changes": [
+    "FILE_INVENTORY.csv",
+    "frontend/dist/assets/index-DgFKV9-y.js",
+    "frontend/dist/assets/index-DRe2gDTK.css",
+    "frontend/dist/assets/lerc-D2Q2Cwb_.js",
+    "frontend/dist/index.html",
+    "frontend/package-lock.json",
+    "frontend/package.json",
+    "frontend/src/main.tsx",
+    "frontend/src/map/FloodMap.tsx",
+    "frontend/src/pages/Compare.tsx",
+    "frontend/src/pages/Explore.tsx",
+    "INTEGRATION_RELEASE_ID.txt",
+    "START_COMPUTED_HERE.md",
+    "START_HERE.md"
+  ],
+  "original_raster_layer_opacity_timeline_fit_logic_identical": true,
+  "original_explore_clock_and_mode_handlers_identical": true,
+  "new_marker_and_read_only_selection_events_isolated": true,
+  "installed_dependency_versions_unchanged": true,
+  "no_original_data_backend_solver_contract_or_launcher_changes": true
+}

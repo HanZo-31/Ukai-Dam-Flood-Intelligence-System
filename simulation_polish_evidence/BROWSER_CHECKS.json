@@ -1,0 +1,125 @@
+{
+  "checked_at": "2026-10-09T22:24:24.686Z",
+  "passed": true,
+  "checks": [
+    "Desktop navigation and all three raster layers",
+    "Original H02 cells: 11.34 m, 3.00 h, 2.14 m/s",
+    "Same-location H01/H02 comparison: +0.63 m",
+    "Model-time slider: 0 to declared 114 h; maxima caveat retained",
+    "Narrow navigation, four scenarios, Explore/Compare/What-if/Evidence without page overflow",
+    "Comparison table scrolls internally",
+    "Six H02 download links retained",
+    "Laptop drawer independently scrolls inside viewport",
+    "No captured browser warnings/errors"
+  ],
+  "desktop": {
+    "drawer": {
+      "bottom": 674.9896087646484,
+      "left": 620.8333740234375,
+      "right": 1070.8333740234375,
+      "top": 129.3229217529297
+    },
+    "heading": "Explore scenarios",
+    "maps": [
+      "ready"
+    ],
+    "scrollWidth": 1440,
+    "status": " Local API connected",
+    "width": 1440
+  },
+  "narrow": {
+    "controls": [
+      {
+        "rect": {
+          "left": 10,
+          "right": 145.7604217529297
+        },
+        "text": " Explore"
+      },
+      {
+        "rect": {
+          "left": 150.7604217529297,
+          "right": 294.00001525878906
+        },
+        "text": " Compare"
+      },
+      {
+        "rect": {
+          "left": 10,
+          "right": 145.48959350585938
+        },
+        "text": " What-if"
+      },
+      {
+        "rect": {
+          "left": 150.48959350585938,
+          "right": 294.00001525878906
+        },
+        "text": " Evidence"
+      }
+    ],
+    "scenarios": 4,
+    "scrollWidth": 305,
+    "width": 305
+  },
+  "mobile_compare": {
+    "mapStates": [
+      "ready",
+      "ready"
+    ],
+    "scrollWidth": 305,
+    "tableScroll": 721,
+    "tableWidth": 247,
+    "width": 305
+  },
+  "mobile_whatif": {
+    "lookupButton": 276.66668701171875,
+    "scrollWidth": 305,
+    "width": 305
+  },
+  "mobile_evidence": {
+    "downloads": 6,
+    "overflow": [],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  "laptop": {
+    "drawer": {
+      "bottom": 544.9270858764648,
+      "clientHeight": 421,
+      "left": 540.8333740234375,
+      "right": 990.8333740234376,
+      "scrollHeight": 544,
+      "top": 122.92708587646484
+    },
+    "height": 592,
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  "final_overview": {
+    "errors": [],
+    "mapStates": [
+      "ready"
+    ],
+    "scrollWidth": 1440,
+    "selected": "H02",
+    "selectedLayer": [
+      "Arrival time (h)"
+    ],
+    "width": 1440
+  },
+  "console": [],
+  "screenshots": [
+    "desktop-overview.png",
+    "desktop-inspector.png",
+    "laptop-inspector.png"
+  ],
+  "not_performed": [
+    "new integrations",
+    "model/lookup POST requests",
+    "simulations/imports/approval",
+    "full backend suite",
+    "scientific calibration",
+    "physical SSD/receiving-computer checks"
+  ]
+}

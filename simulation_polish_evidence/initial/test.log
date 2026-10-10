@@ -1,0 +1,61 @@
+
+> ukai-flood-explorer@0.1.0 test
+> vitest run --maxWorkers=2 --minWorkers=1
+
+
+ RUN  v3.2.7 C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/frontend
+
+ ↓ src/lib/pointInspection.http.test.ts (5 tests | 5 skipped)
+ ✓ src/lib/timeline.real.test.ts (25 tests) 3359ms
+   ✓ stored arrival grid 2006 > nothing is reached at 0 h and reveal never decreases  971ms
+   ✓ stored arrival grid h01 > nothing is reached at 0 h and reveal never decreases  554ms
+   ✓ stored arrival grid h02 > nothing is reached at 0 h and reveal never decreases  654ms
+   ✓ stored arrival grid h03 > nothing is reached at 0 h and reveal never decreases  858ms
+ ✓ src/lib/extent.real.test.ts (6 tests) 143ms
+ ✓ src/lib/compare.real.test.ts (11 tests) 3544ms
+   ✓ stored references vs independent counts > h02 -> h01: extent, depth, arrival and zones  787ms
+   ✓ stored references vs independent counts > h02 -> h03: extent, depth, arrival and zones  456ms
+   ✓ stored references vs independent counts > h02 -> 2006: extent, depth, arrival and zones  451ms
+   ✓ stored references vs independent counts > h01 -> h03: extent, depth, arrival and zones  440ms
+   ✓ stored references vs independent counts > h02 -> h02: extent, depth, arrival and zones  432ms
+   ✓ stored references vs independent counts > h01 -> h02: extent, depth, arrival and zones  457ms
+   ✓ stored references vs independent counts > same scenario: no change and no priority; swapped pair reverses signs  371ms
+ ✓ src/lib/pointInspection.real.test.ts (4 tests) 145ms
+ ✓ src/lib/compute/controller.test.ts (42 tests) 94ms
+ ✓ src/lib/candidate.test.ts (22 tests) 78ms
+ ✓ src/lib/compute/decode.test.ts (22 tests) 68ms
+ ✓ src/lib/compute/hygiene.v2.test.ts (5 tests) 46ms
+ ✓ src/lib/compute/view.test.ts (3 tests) 51ms
+ ✓ src/components/studio.test.tsx (12 tests) 45ms
+ ✓ src/lib/compute/present.test.ts (5 tests) 43ms
+ ✓ src/lib/compute/contract.test.ts (14 tests) 23ms
+ ✓ src/components/interface.test.tsx (9 tests) 20ms
+ ✓ src/lib/hygiene.test.ts (2 tests) 24ms
+ ✓ src/lib/pointInspection.test.ts (19 tests) 16ms
+ ✓ src/components/layout-cleanup.test.tsx (7 tests) 16ms
+ ✓ src/lib/format.test.ts (4 tests) 14ms
+ ✓ src/components/layer-navigation.test.tsx (6 tests) 16ms
+ ✓ src/lib/compute/candidateZones.test.ts (12 tests) 10ms
+ ✓ src/lib/polish.test.ts (10 tests) 14ms
+ ✓ src/lib/compute/reference.test.ts (3 tests) 12ms
+ ✓ src/components/PointInspector.test.tsx (4 tests) 11ms
+ ✓ src/lib/scenarios.test.ts (3 tests) 10ms
+ ✓ src/lib/compare.test.ts (17 tests) 7ms
+ ✓ src/lib/tiff.test.ts (4 tests) 7ms
+ ✓ src/lib/timeline.test.ts (9 tests) 6ms
+ ✓ src/lib/api.test.ts (6 tests) 6ms
+ ✓ src/lib/compute/candidateCompare.test.ts (14 tests) 4ms
+ ✓ src/lib/candidate.contract.test.ts (10 tests) 5ms
+ ↓ src/lib/candidate.live.test.ts (7 tests | 7 skipped)
+ ✓ src/lib/scales.test.ts (4 tests) 3ms
+ ✓ src/components/simulation-polish.test.tsx (5 tests) 9ms
+ ✓ src/lib/candidate.integration-guards.test.ts (3 tests) 2ms
+ ✓ src/lib/utm.test.ts (3 tests) 3ms
+ ✓ src/lib/latest.test.ts (1 test) 2ms
+ ↓ src/lib/compute/integration.live.test.ts (1 test | 1 skipped)
+
+ Test Files  34 passed | 3 skipped (37)
+      Tests  326 passed | 13 skipped (339)
+   Start at  03:44:56
+   Duration  10.34s (transform 507ms, setup 0ms, collect 4.19s, tests 7.86s, environment 7ms, prepare 3.69s)
+

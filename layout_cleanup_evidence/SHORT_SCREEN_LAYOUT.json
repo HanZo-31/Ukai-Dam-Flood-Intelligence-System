@@ -1,0 +1,83 @@
+{
+  "card": {
+    "bottom": 432.9479217529297,
+    "client": 352,
+    "height": 353.6875,
+    "scroll": 352,
+    "width": 254,
+    "x": 1018,
+    "y": 79.26042175292969
+  },
+  "checked_at": "2026-10-09T20:09:53.602Z",
+  "layerSettingsOpen": false,
+  "layers": {
+    "bottom": 263.59376525878906,
+    "client": 177,
+    "height": 178.33334350585938,
+    "scroll": 177,
+    "width": 184,
+    "x": 236,
+    "y": 85.26042175292969
+  },
+  "legend": {
+    "bottom": 452.00001525878906,
+    "client": 101,
+    "height": 102.66667175292967,
+    "scroll": 101,
+    "width": 300,
+    "x": 236,
+    "y": 349.3333435058594
+  },
+  "main": {
+    "bottom": 592.0000457763672,
+    "client": 523,
+    "height": 522.7396240234375,
+    "scroll": 523,
+    "width": 1060,
+    "x": 220,
+    "y": 69.26042175292969
+  },
+  "map": {
+    "bottom": 476.00001525878906,
+    "client": 407,
+    "height": 406.7395935058594,
+    "scroll": 407,
+    "width": 790,
+    "x": 220,
+    "y": 69.26042175292969
+  },
+  "mapState": "ready",
+  "modelTime": "Elapsed: 48 h of 114 h (2880 min since simulation start)",
+  "panel": {
+    "bottom": 476.00001525878906,
+    "client": 407,
+    "height": 406.7395935058594,
+    "scroll": 407,
+    "width": 270,
+    "x": 1010,
+    "y": 69.26042175292969
+  },
+  "sidebar": {
+    "bottom": 592,
+    "client": 592,
+    "height": 592,
+    "scroll": 592,
+    "width": 220,
+    "x": 0,
+    "y": 0
+  },
+  "timeline": {
+    "bottom": 592,
+    "client": 116,
+    "height": 116,
+    "scroll": 116,
+    "width": 1060,
+    "x": 220,
+    "y": 476
+  },
+  "timelineDetailsOpen": false,
+  "viewport": {
+    "height": 592,
+    "width": 1280
+  }
+}

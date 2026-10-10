@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-10T01:44:16.532616+05:30",
+  "passed": true,
+  "original_v05_entries": 25444,
+  "protected_files_unchanged": 25422,
+  "protected_mismatches": [],
+  "changed_existing_files": [
+    "frontend/dist/assets/index-_F3FCqIM.css",
+    "frontend/dist/assets/index-DRmuxkJi.js",
+    "frontend/dist/assets/lerc-DxalBDnj.js",
+    "frontend/dist/index.html",
+    "frontend/src/components/ExploreLayers.tsx",
+    "frontend/src/components/ExploreTimeline.tsx",
+    "frontend/src/components/TimelinePanel.tsx",
+    "frontend/src/studio.css"
+  ],
+  "timeline_timer_state_availability_and_handlers_identical": true,
+  "final_source_matches_passing_tests": true,
+  "scope": "Map renderer, palettes, original styles, scientific data, Explore state/map props, backend, solver, routes/integrations, dependency locks and startup scripts unchanged.",
+  "layout_geometry_not_pixel_identical": true
+}

@@ -1,0 +1,29 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "ukai-2006-plan",
+      "name": "ukai-2006-plan",
+      "description": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted.",
+      "data_mode": "production"
+    },
+    {
+      "dataset_id": "ukai-2006-forcing",
+      "name": "ukai-2006-forcing",
+      "description": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted.",
+      "data_mode": "production"
+    },
+    {
+      "dataset_id": "ukai-2006-geometry",
+      "name": "ukai-2006-geometry",
+      "description": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted.",
+      "data_mode": "production"
+    },
+    {
+      "dataset_id": "ukai-2006-terrain",
+      "name": "ukai-2006-terrain",
+      "description": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted.",
+      "data_mode": "production"
+    }
+  ],
+  "events": []
+}

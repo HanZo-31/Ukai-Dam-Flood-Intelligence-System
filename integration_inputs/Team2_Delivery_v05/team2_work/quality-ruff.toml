@@ -1,0 +1,12 @@
+target-version = "py312"
+[lint]
+select = ["E4", "E9", "F"]
+[lint.per-file-ignores]
+# Embedded Python requires explicit project/script path bootstrap before local imports.
+"run_candidate_service.py" = ["E402"]
+"export_contract.py" = ["E402"]
+"probe_combined_runtime.py" = ["E402"]
+"test_candidate_service.py" = ["E402"]
+"test_combined_runtime.py" = ["E402"]
+"reconcile_contract.py" = ["E402"]
+"run_final_regression.py" = ["E402"]

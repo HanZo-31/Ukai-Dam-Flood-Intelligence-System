@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-09T12:20:30.406705+05:30",
+  "passed": true,
+  "probe_only": false,
+  "genuine_full_scenario": true,
+  "peak_release_m3s": 25000.0,
+  "hydrograph_samples": 115,
+  "hydrograph_dt_seconds": 3600,
+  "model_duration_seconds": 410400,
+  "prepare_seconds": 0.6419970999995712,
+  "solver_seconds": 101.82465958595276,
+  "worker_total_seconds": 102.58502260000023,
+  "original_driver_unmodified": true,
+  "driver_sha256": "2ed5cd14b2f58d8f591ef789972ccea7cd5b8361b33ab3a6387480b83b824438",
+  "original_dll_sha256": "b470a7373ced91cd3533cb6bae0ef571cdb2e5b23b3ee7632de8d56ef33a1394",
+  "native_result_sha256": "a7ad39154f6e02dbb423ccff00da118b52c6e0599a7030f020dc00de26cbfe18",
+  "input_inventory": {
+    "base_model/Ukai_Lower_Tapi_A2.g01": {
+      "sha256": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+      "original_path": "part_a/inputs/geometry.g01"
+    },
+    "terrain/Ukai_Lower_Tapi_A2_Terrain.ukai_to_surat_dem_utm43_working.tif": {
+      "sha256": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+      "original_path": "part_a/inputs/terrain.tif"
+    },
+    "base_model/Ukai_Lower_Tapi_A2.u04": {
+      "sha256": "sha256:2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+      "original_path": "receipts/h01/inputs/forcing.u04"
+    },
+    "base_model/Ukai_Lower_Tapi_A2.u05": {
+      "sha256": "sha256:b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+      "original_path": "part_a/inputs/forcing.u05"
+    },
+    "base_model/Ukai_Lower_Tapi_A2.u06": {
+      "sha256": "sha256:ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01",
+      "original_path": "receipts/h03/inputs/forcing.u06"
+    }
+  },
+  "native_grid": {
+    "width": 849,
+    "height": 232,
+    "dx_m": 100
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.16.2",
+    "tifffile": "2025.10.4",
+    "opencv": "4.12.0"
+  },
+  "diagnostics": {
+    "steps": 90318,
+    "simulated_seconds": 410400.0,
+    "mass_in_m3": 5232584672.0494795,
+    "mass_out_m3": 4693663580.055504,
+    "mass_stored_m3": 538921091.993897,
+    "mass_residual_m3": 7.867813110351562e-05,
+    "mass_relative_residual": 1.5036188811962264e-14,
+    "numeric_conservation_gate": 1e-06,
+    "numerical_only_not_scientific_validation": true,
+    "inflow_cells": 82,
+    "outflow_cells": 111,
+    "valid_native_cells": 98503,
+    "wet_native_cells": 42415,
+    "max_depth_m": 29.631366377071892,
+    "max_face_normal_velocity_m_s": 7.2971869642952365,
+    "valid_arrival_cells": 42415
+  },
+  "scientifically_validated": false,
+  "calibration_status": "uncalibrated"
+}

@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-10T01:27:27.305572+05:30",
+  "passed": true,
+  "before_change_manifest_sha256": "2d41129336506cbf02261f537f423a247551bcf719fb38a370dbc3e18dc49726",
+  "entries": 25444,
+  "scope": "All writes contained in V05; private snapshot only, excluded from handoff."
+}

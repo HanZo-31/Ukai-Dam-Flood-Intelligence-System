@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T21:46:02.092Z",
+  "passed": true,
+  "source": "V05",
+  "checks": [
+    "known H02 original cell: depth 11.34m, arrival 180min/3h, velocity 2.14m/s",
+    "actual map click opens inspector; keyboard Enter selects map centre",
+    "no-data cell remains No data, not zero; outside coverage and invalid coordinate handled",
+    "rapid reselection clears old readouts; H03 scenario remount clears selected point",
+    "timeline at 0h is unreached and at 114h reached; full-run depth remains 11.34m",
+    "H01/H02 same-coordinate difference +0.63m; swap reverses sign to -0.63m",
+    "relative-arrival difference 0h; velocity values shown but delta not guessed",
+    "320px mobile no horizontal page overflow; comparison table scrolls internally",
+    "1280x592 laptop main fits; point panel is independently scrollable",
+    "read-only HTTP tests cover all four scenarios with bounded range transfers"
+  ],
+  "console_messages": [],
+  "not_claimed": [
+    "new simulations/imports/approvals or database content changes",
+    "contour background present (absent in this V05 copy)",
+    "eight existing model-job tests repeated",
+    "full backend suite or scientific validation",
+    "physical SSD/another-device verification"
+  ]
+}

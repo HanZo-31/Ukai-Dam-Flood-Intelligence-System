@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-10T02:21:54.364280+05:30",
+  "passed": true,
+  "before_entries": 25481,
+  "protected_files_unchanged": 25461,
+  "protected_mismatches": [],
+  "approved_changed_existing_files": [
+    "frontend/dist/assets/index-Doj5jyF3.css",
+    "frontend/dist/assets/index-NANGr4Ds.js",
+    "frontend/dist/assets/lerc-DdAYEFwX.js",
+    "frontend/dist/index.html",
+    "frontend/src/components/ExploreLayers.tsx",
+    "frontend/src/pages/Explore.tsx",
+    "frontend/src/studio.css"
+  ],
+  "source_matches_passing_tests": true,
+  "legend_outside_map": true,
+  "preserved": "Map renderer, flood/terrain inputs, colour scales, original Legend, TimelinePanel and its clock/handlers, backend, candidate/solver services, dependency locks and launcher scripts.",
+  "other_project_folders_written": false
+}

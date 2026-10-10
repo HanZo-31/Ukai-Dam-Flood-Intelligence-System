@@ -1,0 +1,195 @@
+{
+ "date": "2026-10-07",
+ "interpreter": "3.10.12",
+ "numpy": "2.2.6",
+ "method": "own TIFF parser + zlib; no tifffile",
+ "all_pass": true,
+ "n_checks": 25,
+ "checks": [
+  {
+   "check": "source files are BigTIFF, derivative files are classic TIFF (parser handled both)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every file has 5 IFDs, each of the 4 overview IFDs flagged reduced-image",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_depth.tif: decoded main image bit-identical to source (1024x3072)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_depth.tif: nodata count unchanged",
+   "ok": true,
+   "detail": "2709975"
+  },
+  {
+   "check": "max_velocity.tif: decoded main image bit-identical to source (1024x3072)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_velocity.tif: nodata count unchanged",
+   "ok": true,
+   "detail": "2709975"
+  },
+  {
+   "check": "window offset recomputed from raw transform tags is an exact integer lattice shift",
+   "ok": true,
+   "detail": "(256, 0)"
+  },
+  {
+   "check": "arrival: decoded derivative == window of source x60, all 3145728 pixels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no valid source arrival cell outside the window",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival valid cells 426586; min 60, max 6780 minutes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_depth.tif: CRS GeoKeyDirectory + ascii params identical (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_depth.tif: pixel size identical (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_depth.tif: nodata tag is -9999",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_velocity.tif: CRS GeoKeyDirectory + ascii params identical (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_velocity.tif: pixel size identical (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "max_velocity.tif: nodata tag is -9999",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival_time.tif: CRS GeoKeyDirectory + ascii params identical (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival_time.tif: pixel size identical (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival_time.tif: nodata tag is -9999",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "depth/velocity origin tags identical to source (raw)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival origin tag == depth origin tag (raw)",
+   "ok": true,
+   "detail": "(268076.8810281253, 2369001.58195343)"
+  },
+  {
+   "check": "arrival labels say minutes and not hours",
+   "ok": true,
+   "detail": "Arrival Time (0.1 m, minutes from simulation start)"
+  },
+  {
+   "check": "depth/velocity metadata names the unit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "file hashes still equal DERIVATION_RECORD",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "originals still equal recorded source hashes",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "layout_facts": {
+  "max_depth.tif": {
+   "file_bytes": 2217112,
+   "ifd_offsets": [
+    8,
+    266,
+    416,
+    566,
+    716
+   ],
+   "first_tile_offset_per_ifd": [
+    650279,
+    185512,
+    52196,
+    14180,
+    3182
+   ],
+   "all_ifd_starts_before_first_tile_data": true,
+   "ifd_order_ascending": true
+  },
+  "max_velocity.tif": {
+   "file_bytes": 2318266,
+   "ifd_offsets": [
+    8,
+    266,
+    416,
+    566,
+    716
+   ],
+   "first_tile_offset_per_ifd": [
+    659434,
+    186529,
+    52452,
+    14224,
+    3158
+   ],
+   "all_ifd_starts_before_first_tile_data": true,
+   "ifd_order_ascending": true
+  },
+  "arrival_time.tif": {
+   "file_bytes": 502353,
+   "ifd_offsets": [
+    8,
+    266,
+    416,
+    566,
+    716
+   ],
+   "first_tile_offset_per_ifd": [
+    161843,
+    49979,
+    16484,
+    5747,
+    2242
+   ],
+   "all_ifd_starts_before_first_tile_data": true,
+   "ifd_order_ascending": true
+  }
+ },
+ "limits": "Same author as the builder, so this is a separate pass, not independent human review. No strict-COG verdict."
+}

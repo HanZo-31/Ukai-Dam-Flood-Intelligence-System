@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-08T23:28:50.252836+05:30",
+  "baseline": "D:\\Window C2\\Projects Works\\Ukai_SSD_Ready",
+  "baseline_hashes_matched": 22382,
+  "team1": {
+    "checksums": 82,
+    "files": 85,
+    "baseline_originals_matched": [
+      "frontend/vite.config.ts",
+      "frontend/src/App.tsx",
+      "frontend/src/styles.css",
+      "frontend/src/components/Legend.tsx",
+      "frontend/src/components/MapControls.tsx",
+      "frontend/src/components/Sidebar.tsx",
+      "frontend/src/lib/scales.ts",
+      "frontend/src/map/FloodMap.tsx",
+      "frontend/src/pages/Compare.tsx",
+      "frontend/src/pages/Evidence.tsx",
+      "frontend/src/pages/Explore.tsx"
+    ],
+    "delivery_id": "c346de1f86fa1d4bc657128d02c6ed1dfab0338a072ab6307eb30e4ad7e121cd",
+    "contract_files_identical": true,
+    "inventory_sha256_at_receipt": "6156b816d8eaeccce1d01fc0f3ef2fdd4c70e5afc785b01fbeca29c8ac868cc3",
+    "metadata_note": "Team 1 excludes its inventory from checksums. All inventory rows were independently matched to the authenticated payload list; new assembly seal will cover the copied inventory."
+  },
+  "team2": {
+    "passed": true,
+    "checked_at": "2026-10-08T23:27:36.949393+05:30",
+    "delivery": "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\deliveries\\TEAM2_ENGINEERING_DELIVERY_V05",
+    "verified_checksums": 74,
+    "files_including_checksum": 75,
+    "markdown_links": 14,
+    "final_regression_source_matches": 23,
+    "metadata_commands": 5,
+    "services_started": false,
+    "database_changed": false,
+    "browser_rendering_tested": false,
+    "checksum_file_sha256": "cc656f9987a43a545d90f8c7dd0691a71d48d58da7bb1f414002c4bcaa097fa8"
+  },
+  "assembly": "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\integrated\\UKAI_COMBINED_V01",
+  "originals_modified": false,
+  "integration_accepted": false,
+  "remaining": [
+    "fresh frontend build/tests",
+    "combined runtime real-service checks",
+    "browser acceptance"
+  ]
+}

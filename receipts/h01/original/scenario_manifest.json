@@ -1,0 +1,33 @@
+{
+  "scenario_id": "ukai-hyp-h01-release15000-v1",
+  "scenario_type": "hypothetical_release",
+  "status": "draft",
+  "model_version": "hecras2d-0.1.0",
+  "input_dataset_version": "ukai-data-2026.1",
+  "crs": "EPSG:32643",
+  "time_step_minutes": null,
+  "parameters": {
+    "reservoir_level_m": null,
+    "peak_inflow_m3s": null,
+    "peak_release_m3s": 15000,
+    "breach_width_m": null,
+    "breach_formation_minutes": null
+  },
+  "assets": {
+    "max_depth_cog": "assets/max_depth.tif",
+    "max_velocity_cog": "assets/max_velocity.tif",
+    "arrival_time_cog": "assets/arrival_time.tif",
+    "extent_geojson": "assets/extent.geojson"
+  },
+  "summary": {
+    "max_depth_m": 36.82,
+    "flooded_area_km2": 281.8,
+    "population_exposed": null,
+    "buildings_exposed": null
+  },
+  "assumptions_url": "qa_report.md",
+  "quality": {
+    "approved_by": "",
+    "validation_status": "not_validated"
+  }
+}

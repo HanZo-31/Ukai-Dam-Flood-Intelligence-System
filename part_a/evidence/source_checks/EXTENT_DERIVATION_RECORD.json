@@ -1,0 +1,30 @@
+{
+ "date": "2026-10-07/08",
+ "purpose": "authoritative pixel-edge extent plus labelled display outline (work order section 1, current extent finding)",
+ "inputs": {
+  "max_depth_tif": "a42de297c2ce6553e10974e4d6f955a74e28251bb8a97776f4efa94185e3f202",
+  "original_v0_1_extent_geojson": "587b5f70343ef834a81762dc55b8b3ef140edd90ee9e417315cacc33a7a08e48",
+  "previous_candidate_extent_display": "c728a5218ae8458abbc5a8e5b13a0b52de46a3356df643a1483006ac46233f76"
+ },
+ "outputs": {
+  "authoritative": {
+   "path": "assets/extent.geojson",
+   "sha256": "13b40d9fa930d52b2f26711844bc7fbc85409a842b2156d98b00cf49b7f598cd",
+   "tool": "tools/make_extent_pixel_edge.py",
+   "tool_sha256": "75674d4b87cac10310a1f65320437c342ad9490bb659a4132cbc6808a4ec5389",
+   "report": "provenance/EXTENT_PIXEL_EDGE_REPORT.json"
+  },
+  "display": {
+   "path": "preserved_optional/extent_display_simplified.geojson",
+   "sha256": "d86ea6af7163d79260451ad01292ba7b064d7839df54c69eb9a516dedbf5d61a",
+   "note": "geometry identical to the previous candidate display outline; only properties/name labelling added"
+  }
+ },
+ "second_review": {
+  "tool": "tools/review_extent_pixel_edge.py",
+  "tool_sha256": "5fae3342b6627e64c3fe52b34365d8cf2b214536bd5b71da631a154443a27320",
+  "result": "provenance/EXTENT_PIXEL_EDGE_SECOND_REVIEW.json"
+ },
+ "not_verified": "OGC validity by a geometry engine (shapely/GEOS) and independent GDAL rasterisation: pending the local runner; receiver feature/byte/vertex limits: pending B-01",
+ "rasters": "byte-identical to work_2026-10-07_h02_candidate (hashes unchanged); WSE preserved"
+}

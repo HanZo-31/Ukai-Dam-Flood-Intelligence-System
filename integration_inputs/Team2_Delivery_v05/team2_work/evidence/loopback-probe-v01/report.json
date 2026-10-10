@@ -1,0 +1,148 @@
+{
+  "started_at": "2026-10-08T18:27:29.017568+05:30",
+  "passed": true,
+  "source_hashes": {
+    "audit_four_scenarios.py": "f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1",
+    "candidate_service.py": "dbfea533c61b6eb29a02ba546af5169eba7f130cf66dff9232d8b7ead7aab71c",
+    "export_contract.py": "888929a19a9dc0a21650d3c095e1ae8ad69114556be18a794e5699eff12facab",
+    "fit_diagnostic_model.py": "a2ee3f4f6ee10e270c8a5bd6d8f2d22df758ab9719f36aace5eb15f94daad74c",
+    "probe_local_service.py": "5eea8ff940f1f28425fbb5b6d4a2485d44179fde5716f5f6fad45a0e840e9991",
+    "run_candidate_service.py": "af9109ffec56c2381dbe05a78b76b04c70bb167ead2724fba97bccf0bc94f395",
+    "run_focused_checks.py": "7ee1966b6a11fd09471a9b6a9d22a112fa0b312172138daa7e3e9f6d8836f39e",
+    "test_candidate_service.py": "9c0a82c1ea61e10aa3e7cf9735cbb37d32b7f9b21643be6c62b752ef4c62babd"
+  },
+  "baseline_database_changed": false,
+  "ml_prediction_performed": false,
+  "base_url": "http://127.0.0.1:55212",
+  "capabilities": {
+    "schema_version": "1.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "supported_modes": [
+      "stored_reference"
+    ],
+    "stored_peaks_m3s": [
+      15000.0,
+      20000.0,
+      30000.0
+    ],
+    "selection_range_m3s": [
+      15000.0,
+      30000.0
+    ],
+    "experimental_ml_enabled": false,
+    "model_status": "diagnostic_only_gate_not_passed",
+    "model_unavailable_reason": "Only one intermediate scenario holdout; original plan requires at least two. Flood expansion domain also unavailable.",
+    "scientifically_validated": false,
+    "calibration_status": "uncalibrated",
+    "additional_scenario_runs": 0,
+    "historical_2006_is_separate_reference": true
+  },
+  "reference_results": [
+    {
+      "schema_version": "1.0.0",
+      "job_id": "tcp-check-0",
+      "request_id": "tcp-check-0",
+      "status": "completed",
+      "mode": "stored_reference",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "requested_peak_release_m3s": 15000.0,
+      "actual_peak_release_m3s": 15000.0,
+      "cache_hit": false,
+      "computed": false,
+      "engine": "HEC-RAS stored reference",
+      "scientifically_validated": false,
+      "calibration_status": "uncalibrated",
+      "warnings": [
+        "simulated",
+        "uncalibrated",
+        "stored_reference_not_new_prediction"
+      ],
+      "completed_at": "2026-10-08T12:57:30.645045Z",
+      "elapsed_wall_seconds": 0.009297400001742062,
+      "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+      "source_scenario_id": "ukai-hyp-h01-release15000-combined-v1",
+      "source_run_id": "ukai-hyp-h01-release15000-combined-v1-run",
+      "reference_resources": {
+        "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1",
+        "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/layers",
+        "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/impact",
+        "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/assumptions",
+        "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/quality-report"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "job_id": "tcp-check-1",
+      "request_id": "tcp-check-1",
+      "status": "completed",
+      "mode": "stored_reference",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "requested_peak_release_m3s": 20000.0,
+      "actual_peak_release_m3s": 20000.0,
+      "cache_hit": false,
+      "computed": false,
+      "engine": "HEC-RAS stored reference",
+      "scientifically_validated": false,
+      "calibration_status": "uncalibrated",
+      "warnings": [
+        "simulated",
+        "uncalibrated",
+        "stored_reference_not_new_prediction"
+      ],
+      "completed_at": "2026-10-08T12:57:30.726364Z",
+      "elapsed_wall_seconds": 0.010190299999521812,
+      "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+      "source_scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+      "source_run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+      "reference_resources": {
+        "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1",
+        "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/layers",
+        "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/impact",
+        "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/assumptions",
+        "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/quality-report"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "job_id": "tcp-check-2",
+      "request_id": "tcp-check-2",
+      "status": "completed",
+      "mode": "stored_reference",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "requested_peak_release_m3s": 30000.0,
+      "actual_peak_release_m3s": 30000.0,
+      "cache_hit": false,
+      "computed": false,
+      "engine": "HEC-RAS stored reference",
+      "scientifically_validated": false,
+      "calibration_status": "uncalibrated",
+      "warnings": [
+        "simulated",
+        "uncalibrated",
+        "stored_reference_not_new_prediction"
+      ],
+      "completed_at": "2026-10-08T12:57:30.800007Z",
+      "elapsed_wall_seconds": 0.010445299998536939,
+      "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+      "source_scenario_id": "ukai-hyp-h03-release30000-combined-v1",
+      "source_run_id": "ukai-hyp-h03-release30000-combined-v1-run",
+      "reference_resources": {
+        "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1",
+        "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/layers",
+        "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/impact",
+        "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/assumptions",
+        "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/quality-report"
+      }
+    }
+  ],
+  "request_complete_seconds": [
+    0.03276629999891156,
+    0.03368560000126308,
+    0.032702699998480966
+  ],
+  "timing_scope": "HTTP stored selection; no browser render or model run",
+  "cold_warm_claim": "three distinct reference lookups, no SLA/percentile inference",
+  "clean_stop": true,
+  "source_unchanged": true,
+  "finished_at": "2026-10-08T18:27:30.957936+05:30"
+}

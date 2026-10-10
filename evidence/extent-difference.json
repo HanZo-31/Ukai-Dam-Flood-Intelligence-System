@@ -1,0 +1,6 @@
+{
+  "expected_area": 359744042.5629496,
+  "actual_area": 359744040.3099676,
+  "symmetric_difference_m2": 837.24884348502,
+  "tolerance_m2": 3.597440425629496
+}

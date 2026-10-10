@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-10-08T18:29:21.057390+05:30",
+  "source_hashes": {
+    "audit_four_scenarios.py": "f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1",
+    "candidate_service.py": "dbfea533c61b6eb29a02ba546af5169eba7f130cf66dff9232d8b7ead7aab71c",
+    "export_contract.py": "888929a19a9dc0a21650d3c095e1ae8ad69114556be18a794e5699eff12facab",
+    "fit_diagnostic_model.py": "a2ee3f4f6ee10e270c8a5bd6d8f2d22df758ab9719f36aace5eb15f94daad74c",
+    "probe_local_service.py": "5eea8ff940f1f28425fbb5b6d4a2485d44179fde5716f5f6fad45a0e840e9991",
+    "run_candidate_service.py": "af9109ffec56c2381dbe05a78b76b04c70bb167ead2724fba97bccf0bc94f395",
+    "run_focused_checks.py": "7ee1966b6a11fd09471a9b6a9d22a112fa0b312172138daa7e3e9f6d8836f39e",
+    "test_candidate_service.py": "7e9c7f0772107a8acac78a0f83042b4fb94070fa92adaf93da1c0acc30d7fc55"
+  },
+  "command": [
+    "bundled Python3.12.4",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\evidence\\candidate-check-v05\\test-temp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\test_candidate_service.py"
+  ],
+  "exit_code": 0,
+  "source_unchanged": true,
+  "finished_at": "2026-10-08T18:29:23.111178+05:30",
+  "log_checksum": "7fbdcd2a82a06d616841953206d1f1b2082fad34ca8e6735ffe007ca46ec51ed",
+  "passed": true
+}

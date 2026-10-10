@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-10T01:32:58.822945+05:30",
+  "passed": true,
+  "frontend_source": "V05/frontend/dist",
+  "backend": "hash-verified pre-change V05 snapshot",
+  "profile": "new isolated test profile under V05/_layout_recheck; not the user profile",
+  "web": "http://127.0.0.1:5191/",
+  "writes_outside_v05": false,
+  "normal_startup_ports_unchanged": true
+}

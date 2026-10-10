@@ -1,0 +1,463 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Ukai local candidate service",
+    "description": "Stored-reference selection fallback. Experimental ML gate is not passed.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/candidates/capabilities": {
+      "get": {
+        "summary": "Capabilities",
+        "operationId": "capabilities_api_v1_candidates_capabilities_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Capabilities"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/candidates/jobs/{job_id}": {
+      "get": {
+        "summary": "Get Job",
+        "operationId": "get_job_api_v1_candidates_jobs__job_id__get",
+        "parameters": [
+          {
+            "name": "job_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Job Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CandidateResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/candidates/jobs": {
+      "post": {
+        "summary": "Select Reference",
+        "operationId": "select_reference_api_v1_candidates_jobs_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CandidateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CandidateResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CandidateRequest": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0.0",
+            "title": "Schema Version",
+            "default": "1.0.0"
+          },
+          "request_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$",
+            "title": "Request Id"
+          },
+          "mode": {
+            "type": "string",
+            "const": "stored_reference",
+            "title": "Mode",
+            "default": "stored_reference"
+          },
+          "input_family": {
+            "type": "string",
+            "const": "ukai-hyp-fixed-shape-v1",
+            "title": "Input Family",
+            "default": "ukai-hyp-fixed-shape-v1"
+          },
+          "peak_release_m3s": {
+            "type": "number",
+            "maximum": 30000.0,
+            "minimum": 15000.0,
+            "title": "Peak Release M3S"
+          },
+          "allow_nearest_stored": {
+            "type": "boolean",
+            "title": "Allow Nearest Stored",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_id",
+          "peak_release_m3s"
+        ],
+        "title": "CandidateRequest"
+      },
+      "CandidateResult": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0.0",
+            "title": "Schema Version"
+          },
+          "job_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$",
+            "title": "Job Id"
+          },
+          "request_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$",
+            "title": "Request Id"
+          },
+          "status": {
+            "type": "string",
+            "const": "completed",
+            "title": "Status"
+          },
+          "mode": {
+            "type": "string",
+            "const": "stored_reference",
+            "title": "Mode"
+          },
+          "input_family": {
+            "type": "string",
+            "const": "ukai-hyp-fixed-shape-v1",
+            "title": "Input Family"
+          },
+          "requested_peak_release_m3s": {
+            "type": "number",
+            "maximum": 30000.0,
+            "minimum": 15000.0,
+            "title": "Requested Peak Release M3S"
+          },
+          "actual_peak_release_m3s": {
+            "type": "number",
+            "enum": [
+              15000.0,
+              20000.0,
+              30000.0
+            ],
+            "title": "Actual Peak Release M3S"
+          },
+          "cache_hit": {
+            "type": "boolean",
+            "title": "Cache Hit"
+          },
+          "computed": {
+            "type": "boolean",
+            "const": false,
+            "title": "Computed"
+          },
+          "engine": {
+            "type": "string",
+            "const": "HEC-RAS stored reference",
+            "title": "Engine"
+          },
+          "scientifically_validated": {
+            "type": "boolean",
+            "const": false,
+            "title": "Scientifically Validated"
+          },
+          "calibration_status": {
+            "type": "string",
+            "const": "uncalibrated",
+            "title": "Calibration Status"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "completed_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Completed At"
+          },
+          "elapsed_wall_seconds": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Elapsed Wall Seconds"
+          },
+          "timing_scope": {
+            "type": "string",
+            "title": "Timing Scope"
+          },
+          "source_scenario_id": {
+            "type": "string",
+            "title": "Source Scenario Id"
+          },
+          "source_run_id": {
+            "type": "string",
+            "title": "Source Run Id"
+          },
+          "reference_resources": {
+            "$ref": "#/components/schemas/ReferenceResources"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "schema_version",
+          "job_id",
+          "request_id",
+          "status",
+          "mode",
+          "input_family",
+          "requested_peak_release_m3s",
+          "actual_peak_release_m3s",
+          "cache_hit",
+          "computed",
+          "engine",
+          "scientifically_validated",
+          "calibration_status",
+          "warnings",
+          "completed_at",
+          "elapsed_wall_seconds",
+          "timing_scope",
+          "source_scenario_id",
+          "source_run_id",
+          "reference_resources"
+        ],
+        "title": "CandidateResult"
+      },
+      "Capabilities": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0.0",
+            "title": "Schema Version"
+          },
+          "input_family": {
+            "type": "string",
+            "const": "ukai-hyp-fixed-shape-v1",
+            "title": "Input Family"
+          },
+          "supported_modes": {
+            "items": {
+              "type": "string",
+              "const": "stored_reference"
+            },
+            "type": "array",
+            "title": "Supported Modes"
+          },
+          "stored_peaks_m3s": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Stored Peaks M3S"
+          },
+          "selection_range_m3s": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Selection Range M3S"
+          },
+          "experimental_ml_enabled": {
+            "type": "boolean",
+            "const": false,
+            "title": "Experimental Ml Enabled"
+          },
+          "model_status": {
+            "type": "string",
+            "const": "diagnostic_only_gate_not_passed",
+            "title": "Model Status"
+          },
+          "model_unavailable_reason": {
+            "type": "string",
+            "title": "Model Unavailable Reason"
+          },
+          "scientifically_validated": {
+            "type": "boolean",
+            "const": false,
+            "title": "Scientifically Validated"
+          },
+          "calibration_status": {
+            "type": "string",
+            "const": "uncalibrated",
+            "title": "Calibration Status"
+          },
+          "additional_scenario_runs": {
+            "type": "integer",
+            "const": 0,
+            "title": "Additional Scenario Runs"
+          },
+          "historical_2006_is_separate_reference": {
+            "type": "boolean",
+            "const": true,
+            "title": "Historical 2006 Is Separate Reference"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "schema_version",
+          "input_family",
+          "supported_modes",
+          "stored_peaks_m3s",
+          "selection_range_m3s",
+          "experimental_ml_enabled",
+          "model_status",
+          "model_unavailable_reason",
+          "scientifically_validated",
+          "calibration_status",
+          "additional_scenario_runs",
+          "historical_2006_is_separate_reference"
+        ],
+        "title": "Capabilities"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ReferenceResources": {
+        "properties": {
+          "detail": {
+            "type": "string",
+            "pattern": "^/api/v1/prototypes/scenarios/",
+            "title": "Detail"
+          },
+          "layers": {
+            "type": "string",
+            "pattern": "^/api/v1/prototypes/scenarios/",
+            "title": "Layers"
+          },
+          "impact": {
+            "type": "string",
+            "pattern": "^/api/v1/prototypes/scenarios/",
+            "title": "Impact"
+          },
+          "assumptions": {
+            "type": "string",
+            "pattern": "^/api/v1/prototypes/scenarios/",
+            "title": "Assumptions"
+          },
+          "quality_report": {
+            "type": "string",
+            "pattern": "^/api/v1/prototypes/scenarios/",
+            "title": "Quality Report"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "detail",
+          "layers",
+          "impact",
+          "assumptions",
+          "quality_report"
+        ],
+        "title": "ReferenceResources"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

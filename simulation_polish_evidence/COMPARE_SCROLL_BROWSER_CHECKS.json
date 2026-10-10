@@ -1,0 +1,289 @@
+{
+  "checked_at": "2026-10-10T00:53:32.379Z",
+  "passed": true,
+  "cause": "Absolutely positioned screen-reader table captions escaped the unpositioned Compare container and contributed to outer-document scroll height.",
+  "before": {
+    "boxes": [
+      {
+        "bottom": 524,
+        "class": "",
+        "clientHeight": 524,
+        "height": 524,
+        "position": "static",
+        "scrollHeight": 524,
+        "tag": "BODY",
+        "top": 0
+      },
+      {
+        "bottom": 524,
+        "class": "shell",
+        "clientHeight": 524,
+        "height": 524,
+        "position": "static",
+        "scrollHeight": 524,
+        "tag": "DIV",
+        "top": 0
+      },
+      {
+        "bottom": 524,
+        "class": "",
+        "clientHeight": 477,
+        "height": 476.9375,
+        "position": "static",
+        "scrollHeight": 13229,
+        "tag": "MAIN",
+        "top": 47.0625
+      },
+      {
+        "bottom": 13275.75,
+        "class": "page-scroll compare-page",
+        "clientHeight": 13229,
+        "height": 13228.6875,
+        "position": "static",
+        "scrollHeight": 13229,
+        "tag": "DIV",
+        "top": 47.0625
+      },
+      {
+        "bottom": 2135,
+        "class": "sr-only",
+        "clientHeight": 1,
+        "height": 1,
+        "position": "absolute",
+        "scrollHeight": 19,
+        "tag": "CAPTION",
+        "top": 2134
+      },
+      {
+        "bottom": 13190.75048828125,
+        "class": "table-wrap zone-table",
+        "clientHeight": 10336,
+        "height": 10352.6669921875,
+        "position": "static",
+        "scrollHeight": 10336,
+        "tag": "DIV",
+        "top": 2838.08349609375
+      },
+      {
+        "bottom": 2931.08349609375,
+        "class": "sr-only",
+        "clientHeight": 1,
+        "height": 1,
+        "position": "absolute",
+        "scrollHeight": 19,
+        "tag": "CAPTION",
+        "top": 2930.08349609375
+      }
+    ],
+    "documentHeight": 2931,
+    "outside": [
+      {
+        "bottom": 666.5000305175781,
+        "class": "map-frame",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "map-host",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-unselectable ol-layers",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-layer",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.6666870117188,
+        "class": "",
+        "tag": "CANVAS"
+      },
+      {
+        "bottom": 666.8333435058594,
+        "class": "ol-layer",
+        "tag": "CANVAS"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-overlaycontainer",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-overlaycontainer-stopevent",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 636.5,
+        "class": "ol-scale-line ol-unselectable",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 660.5000228881836,
+        "class": "terrain-control",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "map-frame",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "map-host",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-unselectable ol-layers",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-layer",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.6666870117188,
+        "class": "",
+        "tag": "CANVAS"
+      },
+      {
+        "bottom": 666.8333435058594,
+        "class": "ol-layer",
+        "tag": "CANVAS"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-overlaycontainer",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 666.5000305175781,
+        "class": "ol-overlaycontainer-stopevent",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 636.5,
+        "class": "ol-scale-line ol-unselectable",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 660.5000228881836,
+        "class": "terrain-control",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 733.8333740234375,
+        "class": "",
+        "tag": "SPAN"
+      },
+      {
+        "bottom": 733.8333740234375,
+        "class": "",
+        "tag": "SPAN"
+      },
+      {
+        "bottom": 733.8333740234375,
+        "class": "",
+        "tag": "SPAN"
+      },
+      {
+        "bottom": 733.8333740234375,
+        "class": "",
+        "tag": "SPAN"
+      },
+      {
+        "bottom": 733.8333740234375,
+        "class": "",
+        "tag": "SPAN"
+      },
+      {
+        "bottom": 2017.3334350585935,
+        "class": "map-frame",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 2017.3334350585935,
+        "class": "map-host",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 2017.3334350585935,
+        "class": "ol-unselectable ol-layers",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 2017.3334350585935,
+        "class": "ol-layer",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 2017.500061035156,
+        "class": "",
+        "tag": "CANVAS"
+      },
+      {
+        "bottom": 2017.3334350585935,
+        "class": "ol-overlaycontainer",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 2017.3334350585935,
+        "class": "ol-overlaycontainer-stopevent",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 1727.166748046875,
+        "class": "ol-zoom ol-unselectable ol-control",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 1987.3333740234375,
+        "class": "ol-scale-line ol-unselectable",
+        "tag": "DIV"
+      },
+      {
+        "bottom": 2135,
+        "class": "sr-only",
+        "tag": "CAPTION"
+      },
+      {
+        "bottom": 2931.08349609375,
+        "class": "sr-only",
+        "tag": "CAPTION"
+      }
+    ],
+    "viewport": [
+      888,
+      524
+    ]
+  },
+  "desktop": {
+    "captionCount": 2,
+    "documentHeight": 900,
+    "lastNoteBottom": 872.4583549499512,
+    "mainHeight": 847,
+    "mainScrollHeight": 6707,
+    "mainScrollTop": 5860.66650390625,
+    "scrollWidth": 1920,
+    "viewportHeight": 900,
+    "width": 1920,
+    "zoneRows": 53
+  },
+  "mobile": {
+    "compareBottom": 15435.20867919922,
+    "contentBottom": 15409.708335876465,
+    "documentHeight": 15435,
+    "scrollWidth": 305,
+    "width": 305,
+    "zoneRows": 53
+  },
+  "console": [],
+  "screenshot": "compare-scroll-fixed.png",
+  "existing_runtime_preserved": true
+}

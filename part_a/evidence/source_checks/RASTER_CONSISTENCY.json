@@ -1,0 +1,146 @@
+{
+ "source": {
+  "depth_valid": 435753,
+  "negative_depth": 0,
+  "velocity_valid": 435753,
+  "velocity_negative": 0,
+  "wet_gt_0p1": 427786,
+  "arrival_valid": 426586,
+  "wet_and_arrival": 425692,
+  "wet_without_arrival": 2094,
+  "arrival_with_depth_le_0p1": 562,
+  "arrival_with_depth_nodata": 332,
+  "depth_without_velocity": 0,
+  "velocity_without_depth": 0,
+  "nonfinite": 0,
+  "max_depth_m": 38.06032943725586,
+  "max_velocity_m_s": 9.854141235351562,
+  "flooded_area_km2": 359.74404256295463
+ },
+ "derivative": {
+  "depth_valid": 435753,
+  "negative_depth": 0,
+  "velocity_valid": 435753,
+  "velocity_negative": 0,
+  "wet_gt_0p1": 427786,
+  "arrival_valid": 426586,
+  "wet_and_arrival": 425692,
+  "wet_without_arrival": 2094,
+  "arrival_with_depth_le_0p1": 562,
+  "arrival_with_depth_nodata": 332,
+  "depth_without_velocity": 0,
+  "velocity_without_depth": 0,
+  "nonfinite": 0,
+  "max_depth_m": 38.06032943725586,
+  "max_velocity_m_s": 9.854141235351562,
+  "flooded_area_km2": 359.74404256295463
+ },
+ "window": [
+  256,
+  0
+ ],
+ "manifest_summary": {
+  "max_depth_m": 38.06,
+  "flooded_area_km2": 359.7,
+  "population_exposed": null,
+  "buildings_exposed": null
+ },
+ "checks": [
+  {
+   "name": "equal: depth_valid",
+   "ok": true,
+   "detail": "435753 vs 435753"
+  },
+  {
+   "name": "equal: negative_depth",
+   "ok": true,
+   "detail": "0 vs 0"
+  },
+  {
+   "name": "equal: velocity_valid",
+   "ok": true,
+   "detail": "435753 vs 435753"
+  },
+  {
+   "name": "equal: velocity_negative",
+   "ok": true,
+   "detail": "0 vs 0"
+  },
+  {
+   "name": "equal: wet_gt_0p1",
+   "ok": true,
+   "detail": "427786 vs 427786"
+  },
+  {
+   "name": "equal: arrival_valid",
+   "ok": true,
+   "detail": "426586 vs 426586"
+  },
+  {
+   "name": "equal: wet_and_arrival",
+   "ok": true,
+   "detail": "425692 vs 425692"
+  },
+  {
+   "name": "equal: wet_without_arrival",
+   "ok": true,
+   "detail": "2094 vs 2094"
+  },
+  {
+   "name": "equal: arrival_with_depth_le_0p1",
+   "ok": true,
+   "detail": "562 vs 562"
+  },
+  {
+   "name": "equal: arrival_with_depth_nodata",
+   "ok": true,
+   "detail": "332 vs 332"
+  },
+  {
+   "name": "equal: depth_without_velocity",
+   "ok": true,
+   "detail": "0 vs 0"
+  },
+  {
+   "name": "equal: velocity_without_depth",
+   "ok": true,
+   "detail": "0 vs 0"
+  },
+  {
+   "name": "equal: nonfinite",
+   "ok": true,
+   "detail": "0 vs 0"
+  },
+  {
+   "name": "equal: max_depth_m",
+   "ok": true,
+   "detail": "38.06032943725586"
+  },
+  {
+   "name": "equal: max_velocity_m_s",
+   "ok": true,
+   "detail": "9.854141235351562"
+  },
+  {
+   "name": "equal: flooded_area_km2",
+   "ok": true,
+   "detail": "359.74404256295463"
+  },
+  {
+   "name": "manifest max_depth_m reproduced (2 dp)",
+   "ok": true,
+   "detail": "38.0603 vs 38.06"
+  },
+  {
+   "name": "manifest flooded_area_km2 reproduced (1 dp)",
+   "ok": true,
+   "detail": "359.7440 vs 359.7"
+  },
+  {
+   "name": "valid arrival cells outside depth window == 0",
+   "ok": true,
+   "detail": "(256, 0)"
+  }
+ ],
+ "all_pass": true
+}

@@ -1,0 +1,45 @@
+{
+  "header": "Explore scenarios\n\nVisualise the four stored flood reference simulations.\n\nAPI connected",
+  "parts": {
+    ".floating-layers": {
+      "height": 247,
+      "width": 220,
+      "x": 264,
+      "y": 110.85417175292967
+    },
+    ".scenario-panel": {
+      "height": 681.3125,
+      "width": 310,
+      "x": 1362,
+      "y": 92.85417175292967
+    },
+    ".sidebar": {
+      "height": 941.3333740234376,
+      "width": 244,
+      "x": 0,
+      "y": 0
+    },
+    ".studio-map": {
+      "height": 681.3125,
+      "width": 1118,
+      "x": 244,
+      "y": 92.85417175292967
+    },
+    ".studio-timeline-dock": {
+      "height": 167.1666717529297,
+      "width": 1428,
+      "x": 244,
+      "y": 774.1666870117188
+    },
+    ".topbar": {
+      "height": 92.85417175292967,
+      "width": 1428,
+      "x": 244,
+      "y": 0
+    }
+  },
+  "viewport": {
+    "height": 941,
+    "width": 1672
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-09T20:55:05.687Z",
+  "passed": true,
+  "url": "http://127.0.0.1:5176/",
+  "backend": "existing V05 localhost instance; no candidate/model/import/approval jobs submitted",
+  "checks": [
+    "three horizontal native layer choices outside map",
+    "1672x941 desktop map width 1452px versus previous 1182px",
+    "1280x592 wider map and no outer overflow; maximum-over-run warning preserved",
+    "375x812 mobile and 1024x720/900x720 widths checked",
+    "depth/arrival/velocity and legend labels update together",
+    "depth range moved outside canvas to bottom-right page corner",
+    "opacity .1..1, extent, fit, actual 48h=2880min, original 114h window",
+    "play reaches 114h and automatically stops; Reset returns 0",
+    "secondary and scenario popovers are mutually exclusive",
+    "scenario/evidence remain available; six real download links",
+    "both Compare maps ready; What-if/computed entry still available"
+  ],
+  "console_errors_and_warnings": [],
+  "not_repeated": [
+    "eight live candidate/model-job tests (avoid writing the active profile)",
+    "full backend suite",
+    "scientific calibration/approval",
+    "terrain contour generation",
+    "physical SSD or receiving-device startup"
+  ]
+}

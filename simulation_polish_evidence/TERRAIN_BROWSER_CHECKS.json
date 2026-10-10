@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-10T00:36:20.768Z",
+  "passed": true,
+  "checks": [
+    "All four stored scenario selections",
+    "H02 arrival map visibly overlays terrain",
+    "Depth/arrival/velocity switching",
+    "Original H01 slider to 114 h and reset",
+    "2006 model window and fit",
+    "Terrain off returns plain grid; on restores backdrop",
+    "Both Compare maps ready",
+    "320px Explore and terrain disclosure without horizontal document overflow",
+    "320px Compare both maps ready without horizontal document overflow"
+  ],
+  "desktop": {
+    "mapStates": [
+      "ready"
+    ],
+    "scrollWidth": 1280,
+    "selectedLayer": "Arrival time (h)",
+    "terrainEnabled": true,
+    "width": 1280
+  },
+  "narrow_compare": {
+    "backgrounds": 2,
+    "mapStates": [
+      "ready",
+      "ready"
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  "console": [],
+  "screenshot": "terrain-desktop.png",
+  "not_performed": [
+    "new integrations or model jobs",
+    "import/approval or database content changes",
+    "browser failed-image injection",
+    "external-network/offline-browser emulation",
+    "physical SSD/receiver check",
+    "scientific validation",
+    "full backend suite"
+  ]
+}

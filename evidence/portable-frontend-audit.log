@@ -1,0 +1,41 @@
+
+> ukai-flood-explorer@0.1.0 test
+> vitest run --reporter=verbose
+
+
+ RUN  v3.2.7 C:/Users/LENOVO/Documents/Codex/2026-10-07/files-mentioned-by-the-user-start/Ukai_Combined/frontend
+
+ ✓ src/lib/api.test.ts > API client > returns parsed JSON 4ms
+ ✓ src/lib/api.test.ts > API client > network failure -> network error with actionable text 1ms
+ ✓ src/lib/api.test.ts > API client > proxy 5xx with empty body is reported as backend not running 1ms
+ ✓ src/lib/api.test.ts > API client > HTTP 404 uses the API detail 1ms
+ ✓ src/lib/api.test.ts > API client > invalid JSON -> parse error 1ms
+ ✓ src/lib/api.test.ts > API client > lists every page 1ms
+ ✓ src/lib/latest.test.ts > stale request guard > only the newest token is current 2ms
+ ✓ src/lib/scales.test.ts > scales > arrival raw minutes show as hours; depth/velocity unchanged 2ms
+ ✓ src/lib/scales.test.ts > scales > same fixed domains for every scenario 0ms
+ ✓ src/lib/scales.test.ts > scales > nodata is transparent in the style expression and arrival divides by 60 once 2ms
+ ✓ src/lib/scales.test.ts > scales > hex parsing and ticks 1ms
+ ✓ src/lib/utm.test.ts > UTM zone 43 transform > central meridian maps to easting 500000, equator to northing 0 2ms
+ ✓ src/lib/utm.test.ts > UTM zone 43 transform > known value: lon 75, lat 21 -> N ~ 2322 km 0ms
+ ✓ src/lib/utm.test.ts > UTM zone 43 transform > round trip agrees to better than a centimetre 0ms
+ ✓ src/lib/scenarios.test.ts > scenario naming > labels and orders; 2006 is reconstructed historical and last 13ms
+ ✓ src/lib/scenarios.test.ts > scenario naming > peak release null stays null, not zero 0ms
+ ✓ src/lib/scenarios.test.ts > scenario naming > downloads stay same-origin 0ms
+ ✓ src/lib/format.test.ts > unavailable values > null/undefined/NaN are 'Not available', never zero 29ms
+ ✓ src/lib/format.test.ts > unavailable values > custom empty text 0ms
+ ✓ src/lib/format.test.ts > arrival units > minutes to hours divides once 0ms
+ ✓ src/lib/format.test.ts > nominal time > prints the stored clock without timezone shifting 0ms
+
+ Test Files  6 passed (6)
+      Tests  21 passed (21)
+   Start at  06:12:30
+   Duration  1.08s (transform 294ms, setup 0ms, collect 829ms, tests 70ms, environment 1ms, prepare 2.09s)
+
+Portable frontend audit summary
+Packed runtime: Node v24.13.0; npm 11.6.2.
+Frontend unit tests: 6 test files / 21 tests passed; exit code 0; offline npm mode.
+Packed frontend/dist: 13 files; path and SHA-256 comparison against source frontend/dist produced zero differences.
+Required packed npm and npx entry points, Windows esbuild.exe, and Windows Rollup native module are present.
+Source frontend/node_modules/.vite/vitest exists after tests. Prepared folder was not changed; no build or service launch occurred.
+Read-only server audit: same-origin /api/ request method and Range headers pass through; upstream status and headers (including partial-content metadata) pass through. Static HEAD suppresses the body and reports file length. Static paths reject backslashes, NULs and lexical root escapes. Static asset Range requests may be answered 200, while actual COG assets use the API proxy. No CDN fonts or external basemap calls were found in source frontend. No launch blocker identified.

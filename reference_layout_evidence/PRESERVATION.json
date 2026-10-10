@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-10T01:10:15.818374+05:30",
+  "passed": true,
+  "baseline_entries_verified": 25424,
+  "baseline_manifest_sha256": "aa1f27aa60b97439b45ba8623eaa5a078f78bf40270d50245b03403cc86e400b",
+  "protected_files_identical": 25402,
+  "protected_mismatches": [],
+  "expected_changed_or_rebuilt_baseline_files": [
+    "frontend/dist/assets/index-CsppUb6l.css",
+    "frontend/dist/assets/index-TsuxlWRS.js",
+    "frontend/dist/assets/lerc-DHfEOcjy.js",
+    "frontend/dist/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/TopBar.tsx",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/Explore.tsx",
+    "INTEGRATION_RELEASE_ID.txt",
+    "SSD_PACKAGE_ID.txt",
+    "START_COMPUTED_HERE.md",
+    "START_HERE.md"
+  ],
+  "original_explore_state_clock_clamping_and_map_props_identical": true,
+  "source_matches_final_frontend_test_report": true,
+  "protected_scope": "All baseline files except approved frontend entry-point/layout changes, rebuilt dist, startup notes and release/inventory IDs. Map code, palettes, timeline algorithms/component, Compare, metrics, scientific assets, backend and solver remain identical.",
+  "layout_change_authorized": true,
+  "no_pixel_identical_or_scientific_validation_claim": true
+}

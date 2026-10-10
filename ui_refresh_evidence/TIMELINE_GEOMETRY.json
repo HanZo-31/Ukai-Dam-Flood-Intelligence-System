@@ -1,0 +1,166 @@
+{
+  "old": {
+    "header": "Explore flood scenarios\nUncalibrated simulation\nAPI connected",
+    "items": {
+      ".legend": {
+        "background": "rgba(255, 255, 255, 0.95)",
+        "border": "0.666667px solid rgb(228, 234, 241)",
+        "borderRadius": "8px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 103.66667175292967,
+        "padding": "8px 12px",
+        "width": 280,
+        "x": 258.66668701171875,
+        "y": 745.6666870117188
+      },
+      ".map-controls": {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(23, 43, 66)",
+        "borderRadius": "0px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 34,
+        "padding": "0px",
+        "width": 822,
+        "x": 246,
+        "y": 154.6666717529297
+      },
+      ".map-host": {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(23, 43, 66)",
+        "borderRadius": "0px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 522,
+        "padding": "0px",
+        "width": 820.6666870117188,
+        "x": 246.6666717529297,
+        "y": 361.3333435058594
+      },
+      ".map-wrap": {
+        "background": "rgb(234, 240, 247)",
+        "border": "0.666667px solid rgb(228, 234, 241)",
+        "borderRadius": "10px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 523.3333740234375,
+        "padding": "0px",
+        "width": 822,
+        "x": 246,
+        "y": 360.6666870117187
+      },
+      ".timeline": {
+        "background": "rgb(255, 255, 255)",
+        "border": "0.666667px solid rgb(228, 234, 241)",
+        "borderRadius": "10px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 148,
+        "padding": "10px 14px",
+        "width": 822,
+        "x": 246,
+        "y": 200.6666717529297
+      },
+      ".topbar": {
+        "background": "rgb(255, 255, 255)",
+        "border": "",
+        "borderRadius": "0px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 44.66666793823242,
+        "padding": "10px 20px",
+        "width": 1210,
+        "x": 230,
+        "y": 0
+      }
+    },
+    "sidebar": "rgb(18, 37, 58)",
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  "new": {
+    "header": "Explore flood scenarios\nAPI connected",
+    "items": {
+      ".legend": {
+        "background": "rgba(255, 255, 255, 0.95)",
+        "border": "0.666667px solid rgb(228, 234, 241)",
+        "borderRadius": "8px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 103.66667175292967,
+        "padding": "8px 12px",
+        "width": 280,
+        "x": 258.66668701171875,
+        "y": 745.6666870117188
+      },
+      ".map-controls": {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(23, 43, 66)",
+        "borderRadius": "0px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 34,
+        "padding": "0px",
+        "width": 822,
+        "x": 246,
+        "y": 154.6666717529297
+      },
+      ".map-host": {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(23, 43, 66)",
+        "borderRadius": "0px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 522,
+        "padding": "0px",
+        "width": 820.6666870117188,
+        "x": 246.6666717529297,
+        "y": 361.3333435058594
+      },
+      ".map-wrap": {
+        "background": "rgb(234, 240, 247)",
+        "border": "0.666667px solid rgb(228, 234, 241)",
+        "borderRadius": "10px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 523.3333740234375,
+        "padding": "0px",
+        "width": 822,
+        "x": 246,
+        "y": 360.6666870117187
+      },
+      ".timeline": {
+        "background": "rgb(255, 255, 255)",
+        "border": "0.666667px solid rgb(228, 234, 241)",
+        "borderRadius": "10px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 148,
+        "padding": "10px 14px",
+        "width": 822,
+        "x": 246,
+        "y": 200.6666717529297
+      },
+      ".topbar": {
+        "background": "rgb(255, 255, 255)",
+        "border": "",
+        "borderRadius": "0px",
+        "color": "rgb(23, 43, 66)",
+        "font": "",
+        "height": 44.66666793823242,
+        "padding": "10px 20px",
+        "width": 1210,
+        "x": 230,
+        "y": 0
+      }
+    },
+    "sidebar": "rgb(255, 255, 255)",
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  }
+}

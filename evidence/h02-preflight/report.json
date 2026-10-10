@@ -1,0 +1,157 @@
+{
+  "arrival_conversion": {
+    "absolute_tolerance_minutes": 1e-06,
+    "column_offset": 256,
+    "conversion_factor": 60,
+    "height": 1024,
+    "original_unit_tag": null,
+    "outside_valid_cells": 0,
+    "relative_dtype_tolerance": 9.5367431640625e-07,
+    "row_offset": 0,
+    "scientific_acceptance": false,
+    "unit_evidence_basis": "A2 context/QA; original raster tag absent",
+    "valid_cells": 426586,
+    "width": 3072
+  },
+  "data_imported": false,
+  "database_connected": false,
+  "evidence_kind": "real_receipt",
+  "finished_at": "2026-10-08T03:08:48.030395+05:30",
+  "operation": "preflight",
+  "passed": false,
+  "requested_operation": "preflight",
+  "root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\part_a",
+  "schema_hashes": {
+    "prototype-context.schema.json": "0c268ab7d3b4db093cf3c8e4ba0a0eb9aff9d2c44b72fc960e28ac8165e4d5d8",
+    "published-scenario.schema.json": "b4cfeb3111e76202f8d16b9c5185e9bba7c234fe992b0e59de05970f6bcd3df1"
+  },
+  "scientific_acceptance": false,
+  "second_review_passed": false,
+  "source_hashes": {
+    "gis_validation.py": "291651c0b9d9d52810ac3f84cc8307609fbd74f8baa6f234d63bd9cd98e05b0b",
+    "prototype_context.py": "8eda0a416c7979e7c55a7e850cc7531047bc4726a31b56c84e492db49185a65d",
+    "published_contract.py": "3b1945288c26717af46f57806b67fe3bece6d39b3d0020965de02b92104f67e9",
+    "receiving.py": "a2d2d62ca01989a560abb879d2797e3331646b09eb073a2d11496b80de5647f8"
+  },
+  "started_at": "2026-10-08T03:08:29.847261+05:30",
+  "steps": [
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:08:29.950189+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A05",
+        "A08"
+      ],
+      "started_at": "2026-10-08T03:08:29.847261+05:30",
+      "step": "transport_inventory"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:08:29.952188+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M01",
+        "M02",
+        "M03",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:08:29.950189+05:30",
+      "step": "manifest_metadata"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:08:30.057002+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M09",
+        "M11",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:08:30.053021+05:30",
+      "step": "context_binding"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:08:30.111282+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M04",
+        "M06",
+        "M08",
+        "M09",
+        "M14"
+      ],
+      "started_at": "2026-10-08T03:08:30.057002+05:30",
+      "step": "provenance_and_evidence_bytes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:08:40.970486+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A06",
+        "R06",
+        "R07",
+        "R08",
+        "R10",
+        "R11",
+        "R14"
+      ],
+      "started_at": "2026-10-08T03:08:30.111282+05:30",
+      "step": "actual_gis_and_hashes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:08:41.116479+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "started_at": "2026-10-08T03:08:40.971485+05:30",
+      "step": "arrival_conversion_alignment"
+    },
+    {
+      "exit_status": 1,
+      "failed_reference": null,
+      "finished_at": "2026-10-08T03:08:48.016280+05:30",
+      "passed": false,
+      "performed": true,
+      "reason": "extent_not_authoritative_pixel_edge_geometry",
+      "required": true,
+      "requirements": [
+        "R12",
+        "R13",
+        "R15",
+        "RUN01"
+      ],
+      "started_at": "2026-10-08T03:08:41.116479+05:30",
+      "step": "pixel_edge_authoritative_extent"
+    },
+    {
+      "blocked": true,
+      "exit_status": null,
+      "passed": false,
+      "performed": false,
+      "reason": "prior_required_check_failed",
+      "required": true,
+      "step": "second_hash_pass"
+    }
+  ]
+}

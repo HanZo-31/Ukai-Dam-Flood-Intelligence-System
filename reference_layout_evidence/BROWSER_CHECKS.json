@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-09T19:32:29.712Z",
+  "source": "UKAI_COMBINED_V05",
+  "passed": true,
+  "backend": "unchanged V03 existing isolated verification profile",
+  "observed": [
+    "1280x720: floating layers, scenario evidence button and bottom timeline visible",
+    "real H02: peak 20000; model window 114 h; slider End=114; 48 h maps to 2880 minutes",
+    "Play advanced time, Pause stopped it; Reset=0",
+    "Depth/arrival/velocity radio controls; original maximum-over-run warning retained",
+    "full-run and arrival reveal remain distinct; static view has no falsely active elapsed clock",
+    "extent outline and fit retained",
+    "opacity Home=.1 End=1; stored metric disclosure includes original values and engine metadata",
+    "scenario H03 remount resets default depth/full-run view",
+    "Evidence route available with six original download links",
+    "Compare and What-if controls/computed entry still available",
+    "375px mobile: no horizontal document overflow",
+    "1672x941 reference-sized actual screenshot"
+  ],
+  "console_errors_and_warnings": [],
+  "not_claimed": [
+    "new hydraulic computation or scientific validation",
+    "fresh V05 private profile initialization",
+    "physical disconnected/SSD receiving-device test",
+    "pixel identical viewport after the user-approved layout change",
+    "every camera position or screen size"
+  ]
+}

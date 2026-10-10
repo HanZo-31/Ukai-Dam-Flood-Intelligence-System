@@ -1,0 +1,216 @@
+{
+  "admission_expected": false,
+  "api_verification_started_at": "2026-10-08T03:46:05.200499+05:30",
+  "arrival_conversion": {
+    "absolute_tolerance_minutes": 1e-06,
+    "column_offset": 256,
+    "conversion_factor": 60,
+    "height": 1024,
+    "original_unit_tag": null,
+    "outside_valid_cells": 0,
+    "relative_dtype_tolerance": 9.5367431640625e-07,
+    "row_offset": 0,
+    "scientific_acceptance": false,
+    "unit_evidence_basis": "A2 context/QA; original raster tag absent",
+    "valid_cells": 494437,
+    "width": 3072
+  },
+  "base_url": "http://127.0.0.1:8765",
+  "canonical_manifest_checksum": "sha256:aa303f1862b358cae6724597359d59082c60f84e03cb2b2f81b1b726cd29f718",
+  "data_imported": false,
+  "database_connected": false,
+  "evidence_kind": "real_receipt",
+  "finished_at": "2026-10-08T03:46:07.510529+05:30",
+  "footprint": {
+    "difference_tolerance_m2": 4.168575909135418,
+    "extent_area_m2": 416857590.91355515,
+    "native_area_m2": 416857590.9135418,
+    "scientific_acceptance": false,
+    "wet_pixels": 495702
+  },
+  "inventory_sha256": "ae2d8412afe9c8d4f05d077d73f7686841a3243c68043fa57d55ec6cfc671721",
+  "manifest_raw_sha256": "f45cce9df31d4030da4e75879437533f0bfbd314103cbe5c790b9073078fc62f",
+  "operation": "verify-preview",
+  "original_manifest_checksum": "sha256:2bd3cfc0fa80bac958ad37536b38a8acdfe70ec98d449b67af324146cc9759bb",
+  "passed": true,
+  "real_api_roundtrip_verified": false,
+  "requested_operation": "verify-preview",
+  "root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\receipts\\2006",
+  "run_id": "ukai-2006-historical-combined-v1-run",
+  "scenario_id": "ukai-2006-historical-combined-v1",
+  "schema_hashes": {
+    "prototype-context.schema.json": "0c268ab7d3b4db093cf3c8e4ba0a0eb9aff9d2c44b72fc960e28ac8165e4d5d8",
+    "published-scenario.schema.json": "65fdf2a39e16a88d07858828eec20eaf78f9beef570e6a98a129566f1a8c2add"
+  },
+  "scientific_acceptance": false,
+  "second_review_passed": true,
+  "source_hashes": {
+    "gis_validation.py": "291651c0b9d9d52810ac3f84cc8307609fbd74f8baa6f234d63bd9cd98e05b0b",
+    "prototype_context.py": "8eda0a416c7979e7c55a7e850cc7531047bc4726a31b56c84e492db49185a65d",
+    "published_contract.py": "c9772ed1532a72bbe93564869892f7e7722a3c03960c3c510086650781b7ad0f",
+    "receiving.py": "a2d2d62ca01989a560abb879d2797e3331646b09eb073a2d11496b80de5647f8",
+    "receiving_http.py": "c3190f4047d7954ab48ecd599e2f4bbb5c0b86cd40c08bd4992f6645dc5c3a5f"
+  },
+  "started_at": "2026-10-08T03:45:46.804821+05:30",
+  "steps": [
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:45:46.878049+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A05",
+        "A08"
+      ],
+      "started_at": "2026-10-08T03:45:46.804821+05:30",
+      "step": "transport_inventory"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:45:46.880048+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M01",
+        "M02",
+        "M03",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:45:46.878049+05:30",
+      "step": "manifest_metadata"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:45:46.910640+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M09",
+        "M11",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:45:46.906107+05:30",
+      "step": "context_binding"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:45:46.964734+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M04",
+        "M06",
+        "M08",
+        "M09",
+        "M14"
+      ],
+      "started_at": "2026-10-08T03:45:46.910640+05:30",
+      "step": "provenance_and_evidence_bytes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:45:52.988037+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A06",
+        "R06",
+        "R07",
+        "R08",
+        "R10",
+        "R11",
+        "R14"
+      ],
+      "started_at": "2026-10-08T03:45:46.964734+05:30",
+      "step": "actual_gis_and_hashes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:45:53.186115+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "started_at": "2026-10-08T03:45:52.990050+05:30",
+      "step": "arrival_conversion_alignment"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:46:04.882185+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R12",
+        "R13",
+        "R15",
+        "RUN01"
+      ],
+      "started_at": "2026-10-08T03:45:53.186115+05:30",
+      "step": "pixel_edge_authoritative_extent"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:46:05.094256+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A08",
+        "RUN07"
+      ],
+      "started_at": "2026-10-08T03:46:04.882185+05:30",
+      "step": "second_hash_pass"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:46:06.670616+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "I07",
+        "G05"
+      ],
+      "started_at": "2026-10-08T03:46:05.200499+05:30",
+      "step": "approved_namespace_isolation"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:46:07.424830+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "G06",
+        "T03"
+      ],
+      "started_at": "2026-10-08T03:46:06.670616+05:30",
+      "step": "admission_removal_http"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:46:07.510529+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "RUN07"
+      ],
+      "started_at": "2026-10-08T03:46:07.424830+05:30",
+      "step": "post_http_original_hashes"
+    }
+  ],
+  "transport_files": 28
+}

@@ -1,0 +1,14 @@
+{
+  "_note": "PROPOSAL ONLY. None of these fields is known to be accepted by Part B. Do not merge into the manifest unless B1/B2 confirm the contract.",
+  "data_mode": "simulated",
+  "forcing_data_mode": "reference (reconstructed from published release figures)",
+  "calibration_status": "uncalibrated",
+  "validation_status_detail": "no observed hydrograph, stage or extent comparison performed; see PART_A_SCIENTIFIC_ACCEPTANCE.md",
+  "technical_integration_candidate": true,
+  "scientific_acceptance": "blocked",
+  "peak_release_cited_m3s": 25780,
+  "arrival_time_definition": "hours since 2006-08-06 00:00, first time depth >= 0.1 m (hourly mapping output)",
+  "extent_definition": "max depth > 0.1 m",
+  "map_time_resolution_minutes": 60,
+  "known_issues": ["no channel bathymetry", "DEM vertical datum unverified", "depth distribution implausible for a floodplain (29% of wet area deeper than 5 m)", "exposure not computed"]
+}

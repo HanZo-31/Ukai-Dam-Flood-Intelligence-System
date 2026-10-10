@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-09T12:31:00.748600+00:00",
+  "passed": true,
+  "baseline_hashes_unchanged": 22701,
+  "frontend_executed_hashes_matched": 102,
+  "backend_executed_hashes_matched": 263,
+  "typing_marker_checked_separately": true,
+  "frozen_contract_unchanged": true,
+  "original_B1_and_reference_files_unchanged": true,
+  "native_configuration_unchanged": true,
+  "same_condition_native_outputs_reproduced": true,
+  "physical_offline_verified": false,
+  "SSD_V03_copy_verified": false,
+  "scientifically_validated": false
+}

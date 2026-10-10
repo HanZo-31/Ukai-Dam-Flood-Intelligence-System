@@ -1,0 +1,11 @@
+{
+  "plan": "p03",
+  "flow": "u04",
+  "source_simulation_date": "Simulation Date=06Aug2006,0600,11Aug2006,0000",
+  "coverage": {
+    "start": "2006-08-06T06:00:00Z",
+    "end": "2006-08-11T00:00:00Z"
+  },
+  "clock_kind": "nominal_model_clock",
+  "historical_timezone_verified": false
+}

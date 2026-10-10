@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-08T18:40:31.271107+05:30",
+  "passed": true,
+  "reference_upstream": "routing test double; no genuine reference API roundtrip claimed",
+  "candidate_upstream": "actual candidate service with real source-byte hashes",
+  "baseline_runtime_modified": false,
+  "candidate_post_verified": true,
+  "prefix_boundary_verified": true,
+  "actual_built_frontend_served": true,
+  "candidate_failure_isolated": true,
+  "proxy_sha256": "a70276fdbe7cdcda33ebc873229a9a359ab345e74ca391bff8956618adb43d60",
+  "candidate_sha256": "9f168f103263b5e26d0ab62144bde5d969f847e19c7948bcd3f2d5e0b0f884c4",
+  "owned_processes_stopped": true,
+  "finished_at": "2026-10-08T18:40:33.122399+05:30"
+}

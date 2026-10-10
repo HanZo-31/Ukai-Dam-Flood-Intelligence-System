@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "method": "raster_pixel_edges",
+  "threshold_m": 0.1,
+  "comparison": "greater_than",
+  "scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+  "run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+  "depth_checksum": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+  "extent_checksum": "sha256:cb2d04d533dd2699b60bc66f8a1bfe46d276850df8caee96e8e8f2676b1ea589"
+}

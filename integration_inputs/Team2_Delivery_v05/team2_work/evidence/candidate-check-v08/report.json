@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-10-08T18:40:28.474893+05:30",
+  "source_hashes": {
+    "audit_four_scenarios.py": "f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1",
+    "candidate_service.py": "9f168f103263b5e26d0ab62144bde5d969f847e19c7948bcd3f2d5e0b0f884c4",
+    "export_contract.py": "888929a19a9dc0a21650d3c095e1ae8ad69114556be18a794e5699eff12facab",
+    "fit_diagnostic_model.py": "a2ee3f4f6ee10e270c8a5bd6d8f2d22df758ab9719f36aace5eb15f94daad74c",
+    "package_first_delivery.py": "6d4fc44bd145e3fb96e8abefaaf622ba7097ff9f7545b687fed32f2a0f47fad5",
+    "probe_assembly_proxy.py": "535daf30b4687fd04a14656e756191376e3e644a4b2c02968cfb34ca5d327518",
+    "probe_local_service.py": "5eea8ff940f1f28425fbb5b6d4a2485d44179fde5716f5f6fad45a0e840e9991",
+    "run_candidate_service.py": "af9109ffec56c2381dbe05a78b76b04c70bb167ead2724fba97bccf0bc94f395",
+    "run_focused_checks.py": "7ee1966b6a11fd09471a9b6a9d22a112fa0b312172138daa7e3e9f6d8836f39e",
+    "test_candidate_service.py": "c214a21274ad47e5ddf39fd750dcfbe7c78726583f9ef3334f8548dca6170ce0"
+  },
+  "command": [
+    "bundled Python3.12.4",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\evidence\\candidate-check-v08\\test-temp",
+    "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\team2_work\\test_candidate_service.py"
+  ],
+  "exit_code": 0,
+  "source_unchanged": true,
+  "finished_at": "2026-10-08T18:40:30.948238+05:30",
+  "log_checksum": "664306d67076e589dc50bc02e3414f7cf714cc49b4e148bab08fe4a95a145537",
+  "passed": true
+}

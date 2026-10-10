@@ -1,0 +1,894 @@
+{
+  "started_at": "2026-10-08T18:15:59.387303+05:30",
+  "source": "D:\\Window C2\\Projects Works\\Ukai_SSD_Ready",
+  "scenario_count": 4,
+  "extra_scenarios_generated": 0,
+  "database_used": false,
+  "python": "3.12.4",
+  "numpy": "2.2.6",
+  "rasterio": "1.4.4",
+  "scenarios": {
+    "h01": {
+      "scenario_id": "ukai-hyp-h01-release15000-combined-v1",
+      "run_id": "ukai-hyp-h01-release15000-combined-v1-run",
+      "root": "D:\\Window C2\\Projects Works\\Ukai_SSD_Ready\\receipts\\h01",
+      "manifest_checksum": "sha256:12bd2a40793d4b8474e46b5c03cee07875947de76460b5262b18623fccf20606",
+      "schema_version": "1.1.0-local-draft",
+      "context_checksum": "sha256:cc04045422452216eed9f797cf259154dd088253f68ff12da2811858f4f049ad",
+      "peak_release_m3s": 15000.0,
+      "forcing_kind": "hypothetical_assumption",
+      "scenario_family": "ukai-hyp-h01-release15000",
+      "coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "assets": {
+        "max_depth_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:14e9beedb28933b1689a23c687b67821dc98784a5cf91df69479c6927dce838e",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m",
+          "valid_cells": 342771,
+          "min": 0.0010051727294921875,
+          "max": 36.81980895996094,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 255,
+              "column": 888,
+              "x": 293842.5221697981,
+              "y": 2361592.3289295724,
+              "value": 0.6981372833251953
+            },
+            {
+              "row": 581,
+              "column": 2350,
+              "x": 336239.1089442782,
+              "y": 2352138.644053731,
+              "value": 1.4513473510742188
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 1.6434869766235352
+            }
+          ],
+          "wet_area_km2_depth_gt_0_1": 281.7607885551318
+        },
+        "max_velocity_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:ac2c1696b19dbbf687e9bf8e668e9ea68781ca38b331389c0894dd34f703bf4f",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m/s",
+          "valid_cells": 342771,
+          "min": 3.06831716443412e-05,
+          "max": 9.615330696105957,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 255,
+              "column": 888,
+              "x": 293842.5221697981,
+              "y": 2361592.3289295724,
+              "value": 0.04295478016138077
+            },
+            {
+              "row": 581,
+              "column": 2350,
+              "x": 336239.1089442782,
+              "y": 2352138.644053731,
+              "value": 1.1489096879959106
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 0.27928122878074646
+            }
+          ]
+        },
+        "arrival_time_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:ef59040cefc278055eb8953976a13c3981a8c75ef7e73e7d723429fe5de6607f",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "min",
+          "valid_cells": 334244,
+          "min": 60.0,
+          "max": 6840.0,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 255,
+              "column": 888,
+              "x": 293842.5221697981,
+              "y": 2361592.3289295724,
+              "value": 2520.0
+            },
+            {
+              "row": 582,
+              "column": 62,
+              "x": 269889.32061321766,
+              "y": 2352109.6450203694,
+              "value": 2460.0
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 5460.0
+            }
+          ]
+        },
+        "extent_geojson": {
+          "checksum_verified": true,
+          "bytes": 7832035
+        }
+      },
+      "input_checksums": {
+        "plan": "sha256:2844a4e6df6c14c08a66778f2edc497048d29dc7f257250cd68c74de875ea302",
+        "forcing": "sha256:2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+        "geometry": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+        "terrain": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687"
+      },
+      "reported_summary": {
+        "max_depth_m": 36.81980895996094,
+        "flooded_area_km2": 281.7607885551318,
+        "population_exposed": null,
+        "buildings_exposed": null,
+        "roads_affected_km": null,
+        "critical_facilities_exposed": null
+      },
+      "unknowns": {
+        "calibration": "No downstream observation-based calibration or independent validation has been performed.",
+        "terrain_bathymetry": "SRTM-derived provisional terrain, 100 m hydraulic mesh, no channel bathymetry; exported pixels are approximately 29 m, not independent 29 m hydraulic resolution.",
+        "vertical_datum": "Vertical datum is not confirmed; WSE cannot be compared directly with gauge stages.",
+        "exposure": "Population, buildings, roads and facilities have not been assessed.",
+        "source_uncertainties": [
+          "Input licences unverified in supplied material.",
+          "Producing-run timezone unknown; no aware run timestamp assigned.",
+          "Depth/arrival wet masks differ in some inherited original cells."
+        ]
+      },
+      "forcing_samples": 115,
+      "forcing_min_m3s": 500.0,
+      "forcing_max_m3s": 15000.0
+    },
+    "h02": {
+      "scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+      "run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+      "root": "D:\\Window C2\\Projects Works\\Ukai_SSD_Ready\\part_a",
+      "manifest_checksum": "sha256:3c3b193dbd56504d4eddf00f30338ea96d99e2599950e94c2321b6063c2079dc",
+      "schema_version": "1.1.0-local-draft",
+      "context_checksum": "sha256:f3f6b837947518791c4166148baf5228bf896398b51b9b79b18ec4f04c0d7222",
+      "peak_release_m3s": 20000.0,
+      "forcing_kind": "hypothetical_assumption",
+      "scenario_family": "ukai-hyp-h02-release20000",
+      "coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "assets": {
+        "max_depth_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m",
+          "valid_cells": 435753,
+          "min": 0.00099945068359375,
+          "max": 38.06032943725586,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 248,
+              "column": 881,
+              "x": 293639.5289362677,
+              "y": 2361795.322163103,
+              "value": 0.27056884765625
+            },
+            {
+              "row": 581,
+              "column": 2084,
+              "x": 328525.3660701252,
+              "y": 2352138.644053731,
+              "value": 10.715438842773438
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 7.853121757507324
+            }
+          ],
+          "wet_area_km2_depth_gt_0_1": 359.7440425629545
+        },
+        "max_velocity_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:84c1341f45f1fd671cc4147be7a870da58bce4da1d7588d2078e55f66433663e",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m/s",
+          "valid_cells": 435753,
+          "min": 0.0010050524724647403,
+          "max": 9.854141235351562,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 248,
+              "column": 881,
+              "x": 293639.5289362677,
+              "y": 2361795.322163103,
+              "value": 0.052449993789196014
+            },
+            {
+              "row": 581,
+              "column": 2084,
+              "x": 328525.3660701252,
+              "y": 2352138.644053731,
+              "value": 0.7849506139755249
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 1.2773387432098389
+            }
+          ]
+        },
+        "arrival_time_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:b7db5fdc9e4a9829698f9bb64b49e78bf99b065b694e13299de5875ae3da550a",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "min",
+          "valid_cells": 426586,
+          "min": 60.0,
+          "max": 6780.0,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 248,
+              "column": 881,
+              "x": 293639.5289362677,
+              "y": 2361795.322163103,
+              "value": 2820.0
+            },
+            {
+              "row": 581,
+              "column": 2608,
+              "x": 343720.8595515394,
+              "y": 2352138.644053731,
+              "value": 600.0
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 3180.0
+            }
+          ]
+        },
+        "extent_geojson": {
+          "checksum_verified": true,
+          "bytes": 8360188
+        }
+      },
+      "input_checksums": {
+        "plan": "sha256:b58189476279a3a55595039fbc8287a683b6ead295e5e5d00b920d0d3fbd2273",
+        "geometry": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+        "forcing": "sha256:b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+        "terrain": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687"
+      },
+      "reported_summary": {
+        "max_depth_m": 38.06,
+        "flooded_area_km2": 359.7,
+        "population_exposed": null,
+        "buildings_exposed": null,
+        "roads_affected_km": null,
+        "critical_facilities_exposed": null
+      },
+      "unknowns": {
+        "calibration": "No downstream observation-based calibration or independent validation has been performed.",
+        "terrain_bathymetry": "SRTM-derived provisional terrain, 100 m hydraulic mesh, no channel bathymetry; exported pixels are approximately 29 m, not independent 29 m hydraulic resolution.",
+        "vertical_datum": "Vertical datum is not confirmed; WSE cannot be compared directly with gauge stages.",
+        "exposure": "Population, buildings, roads and facilities have not been assessed.",
+        "source_uncertainties": [
+          "Input licences unverified in supplied material.",
+          "Producing-run timezone unknown; no aware run timestamp assigned.",
+          "Depth/arrival wet masks differ in some inherited original cells."
+        ]
+      },
+      "forcing_samples": 115,
+      "forcing_min_m3s": 500.0,
+      "forcing_max_m3s": 20000.0
+    },
+    "h03": {
+      "scenario_id": "ukai-hyp-h03-release30000-combined-v1",
+      "run_id": "ukai-hyp-h03-release30000-combined-v1-run",
+      "root": "D:\\Window C2\\Projects Works\\Ukai_SSD_Ready\\receipts\\h03",
+      "manifest_checksum": "sha256:8db5ccb965f7ceae7310f49506d4c54b10572cd8c4dd5bf34d63c4911cf0a7c8",
+      "schema_version": "1.1.0-local-draft",
+      "context_checksum": "sha256:9b82cd6f782849adea20b54b2af24b5d9a3c325f1295a9f531c5963c9de6ab15",
+      "peak_release_m3s": 30000.0,
+      "forcing_kind": "hypothetical_assumption",
+      "scenario_family": "ukai-hyp-h03-release30000",
+      "coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "assets": {
+        "max_depth_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:446b999cd61ad89665803f95c38e82ae961d58e18fc786183cd68fb48b6bf1cb",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m",
+          "valid_cells": 542999,
+          "min": 0.0010013580322265625,
+          "max": 39.27752685546875,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 234,
+              "column": 857,
+              "x": 292943.55213559227,
+              "y": 2362201.308630164,
+              "value": 0.06865310668945312
+            },
+            {
+              "row": 580,
+              "column": 2364,
+              "x": 336645.0954113389,
+              "y": 2352167.6430870923,
+              "value": 3.886646270751953
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 9.38898754119873
+            }
+          ],
+          "wet_area_km2_depth_gt_0_1": 450.3540697683172
+        },
+        "max_velocity_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:417da4a4aed23c073083cda12b86cbe7c2f7e43ff95b1962bb35d2d6adb4e850",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m/s",
+          "valid_cells": 542999,
+          "min": 0.0003913187829311937,
+          "max": 10.246781349182129,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 234,
+              "column": 857,
+              "x": 292943.55213559227,
+              "y": 2362201.308630164,
+              "value": 0.04804830998182297
+            },
+            {
+              "row": 580,
+              "column": 2364,
+              "x": 336645.0954113389,
+              "y": 2352167.6430870923,
+              "value": 2.367098093032837
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 1.4976885318756104
+            }
+          ]
+        },
+        "arrival_time_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:d7916d8775fd5734e669c67390d2b91206b63dde7088dcbd52e3b006776397ad",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "min",
+          "valid_cells": 534249,
+          "min": 60.0,
+          "max": 6480.0,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 234,
+              "column": 858,
+              "x": 292972.55116895377,
+              "y": 2362201.308630164,
+              "value": 2460.0
+            },
+            {
+              "row": 580,
+              "column": 2534,
+              "x": 341574.93108279014,
+              "y": 2352167.6430870923,
+              "value": 660.0
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 2580.0
+            }
+          ]
+        },
+        "extent_geojson": {
+          "checksum_verified": true,
+          "bytes": 7784208
+        }
+      },
+      "input_checksums": {
+        "plan": "sha256:ad04283bdfc82e1691d5159aa35b2655f5575c824abc01cd77326b5f3e0a6838",
+        "forcing": "sha256:ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01",
+        "geometry": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+        "terrain": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687"
+      },
+      "reported_summary": {
+        "max_depth_m": 39.27752685546875,
+        "flooded_area_km2": 450.3540697683172,
+        "population_exposed": null,
+        "buildings_exposed": null,
+        "roads_affected_km": null,
+        "critical_facilities_exposed": null
+      },
+      "unknowns": {
+        "calibration": "No downstream observation-based calibration or independent validation has been performed.",
+        "terrain_bathymetry": "SRTM-derived provisional terrain, 100 m hydraulic mesh, no channel bathymetry; exported pixels are approximately 29 m, not independent 29 m hydraulic resolution.",
+        "vertical_datum": "Vertical datum is not confirmed; WSE cannot be compared directly with gauge stages.",
+        "exposure": "Population, buildings, roads and facilities have not been assessed.",
+        "source_uncertainties": [
+          "Input licences unverified in supplied material.",
+          "Producing-run timezone unknown; no aware run timestamp assigned.",
+          "Depth/arrival wet masks differ in some inherited original cells."
+        ]
+      },
+      "forcing_samples": 115,
+      "forcing_min_m3s": 500.0,
+      "forcing_max_m3s": 30000.0
+    },
+    "2006": {
+      "scenario_id": "ukai-2006-historical-combined-v1",
+      "run_id": "ukai-2006-historical-combined-v1-run",
+      "root": "D:\\Window C2\\Projects Works\\Ukai_SSD_Ready\\receipts\\2006",
+      "manifest_checksum": "sha256:f45cce9df31d4030da4e75879437533f0bfbd314103cbe5c790b9073078fc62f",
+      "schema_version": "1.1.0-local-draft",
+      "context_checksum": "sha256:14c2a6e0d23ff1b64adc40adf537c37966436309c372e9cd86ba3f22bddb6158",
+      "peak_release_m3s": 25648.0,
+      "forcing_kind": "reconstructed_historical",
+      "scenario_family": "ukai-2006-historical",
+      "coverage": {
+        "start": "2006-08-06T00:00:00Z",
+        "end": "2006-08-11T18:00:00Z"
+      },
+      "assets": {
+        "max_depth_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:1c7f46e9bc0f66a0a9662b691da1ba239b1998119a6136e298a76f92a0322812",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m",
+          "valid_cells": 503289,
+          "min": 0.001003265380859375,
+          "max": 38.858543395996094,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 238,
+              "column": 862,
+              "x": 293088.54730239965,
+              "y": 2362085.3124967176,
+              "value": 0.11163520812988281
+            },
+            {
+              "row": 580,
+              "column": 2759,
+              "x": 348099.7135891225,
+              "y": 2352167.6430870923,
+              "value": 4.9742431640625
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 8.97447681427002
+            }
+          ],
+          "wet_area_km2_depth_gt_0_1": 416.85759091354487
+        },
+        "max_velocity_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:725f5af9c2153bc349a1cf9c6f456b63c0f72c2aeda1aae0560e0c278456905e",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "m/s",
+          "valid_cells": 503289,
+          "min": 4.386048749438487e-05,
+          "max": 11.582319259643555,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 238,
+              "column": 862,
+              "x": 293088.54730239965,
+              "y": 2362085.3124967176,
+              "value": 0.01693076640367508
+            },
+            {
+              "row": 580,
+              "column": 2759,
+              "x": 348099.7135891225,
+              "y": 2352167.6430870923,
+              "value": 1.4661120176315308
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 1.3837716579437256
+            }
+          ]
+        },
+        "arrival_time_cog": {
+          "checksum_verified": true,
+          "checksum": "sha256:348ae6b90d1acdf35cf6566eaa45af1db0a1b013b9b559ee8c67cbf2537fb65c",
+          "crs": "EPSG:32643",
+          "transform": [
+            28.999033361477533,
+            0.0,
+            268076.8810281253,
+            0.0,
+            -28.999033361477533,
+            2369001.58195343,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 3072,
+          "height": 1024,
+          "nodata": -9999.0,
+          "unit": "min",
+          "valid_cells": 494437,
+          "min": 60.0,
+          "max": 8280.0,
+          "negative_valid_cells": 0,
+          "pixel_area_m2": 840.9439359000869,
+          "samples": [
+            {
+              "row": 238,
+              "column": 862,
+              "x": 293088.54730239965,
+              "y": 2362085.3124967176,
+              "value": 4800.0
+            },
+            {
+              "row": 581,
+              "column": 237,
+              "x": 274964.1514514762,
+              "y": 2352138.644053731,
+              "value": 2940.0
+            },
+            {
+              "row": 981,
+              "column": 189,
+              "x": 273572.19785012526,
+              "y": 2340539.03070914,
+              "value": 3540.0
+            }
+          ]
+        },
+        "extent_geojson": {
+          "checksum_verified": true,
+          "bytes": 8011056
+        }
+      },
+      "input_checksums": {
+        "plan": "sha256:663e35c62656708a427186f0405dd9ddb2c04cfd2058aaca365058bd0f6677c8",
+        "forcing": "sha256:756c48deb37ccafbff972a66f45cf95bb52dddd543129eedcbfc405c2d9abd0e",
+        "geometry": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+        "terrain": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687"
+      },
+      "reported_summary": {
+        "max_depth_m": 38.858543395996094,
+        "flooded_area_km2": 416.85759091354487,
+        "population_exposed": null,
+        "buildings_exposed": null,
+        "roads_affected_km": null,
+        "critical_facilities_exposed": null
+      },
+      "unknowns": {
+        "calibration": "No downstream observation-based calibration or independent validation has been performed.",
+        "terrain_bathymetry": "SRTM-derived provisional terrain, 100 m hydraulic mesh, no channel bathymetry; exported pixels are approximately 29 m, not independent 29 m hydraulic resolution.",
+        "vertical_datum": "Vertical datum is not confirmed; WSE cannot be compared directly with gauge stages.",
+        "exposure": "Population, buildings, roads and facilities have not been assessed.",
+        "source_uncertainties": [
+          "Input licences unverified in supplied material.",
+          "Producing-run timezone unknown; no aware run timestamp assigned.",
+          "Depth/arrival wet masks differ in some inherited original cells.",
+          "Historical forcing reconstructed from unverified twelve-hourly release volumes; no observed event catalog or calibration asserted."
+        ]
+      },
+      "forcing_samples": 139,
+      "forcing_min_m3s": 2627.0,
+      "forcing_max_m3s": 25648.0
+    }
+  },
+  "passed": true,
+  "plan_field_differences": {
+    "h02": {
+      "Flow File": {
+        "h01": "u04",
+        "h02": "u05"
+      },
+      "Plan Title": {
+        "h01": "HYP_H01",
+        "h02": "HYP_H02"
+      },
+      "Short Identifier": {
+        "h01": "HYPH01                                                          ",
+        "h02": "HYPH02                                                          "
+      }
+    },
+    "h03": {
+      "Flow File": {
+        "h01": "u04",
+        "h03": "u06"
+      },
+      "Plan Title": {
+        "h01": "HYP_H01",
+        "h03": "HYP_H03"
+      },
+      "Short Identifier": {
+        "h01": "HYPH01                                                          ",
+        "h03": "HYPH03                                                          "
+      }
+    },
+    "2006": {
+      "Flow File": {
+        "h01": "u04",
+        "2006": "u07"
+      },
+      "Plan Title": {
+        "h01": "HYP_H01",
+        "2006": "OBS_2006"
+      },
+      "Short Identifier": {
+        "h01": "HYPH01                                                          ",
+        "2006": "OBS2006                                                         "
+      },
+      "Simulation Date": {
+        "h01": "06Aug2006,0600,11Aug2006,0000",
+        "2006": "06Aug2006,0000,11Aug2006,1800"
+      }
+    }
+  },
+  "non_identity_hypothetical_plan_differences": {
+    "h02": {},
+    "h03": {}
+  },
+  "hypothetical_hydrograph_shape": {
+    "base_flow_m3s": {
+      "h01": 500.0,
+      "h02": 500.0,
+      "h03": 500.0
+    },
+    "same_sample_count": true,
+    "shape_max_absolute_differences": {
+      "h02": 5.128205128204777e-05,
+      "h03": 4.675628287553746e-05
+    },
+    "definition": "q(t)=500+(peak-500)*shape(t); input values have integer rounding"
+  },
+  "all_registered_raster_grids_equal": true,
+  "hypothetical_terrain_identical": true,
+  "hypothetical_geometry_identical": true,
+  "held_out_design": {
+    "fit_scenarios": [
+      "h01",
+      "h03"
+    ],
+    "holdout_scenario": "h02",
+    "historical_2006": "separate reconstructed hydrograph and coverage; not an extra peak-only training sample",
+    "independent_physical_runs": 3,
+    "holdout_count": 1,
+    "limitation": "One middle-scenario diagnostic; no two disjoint intermediate holdouts are available. Original surrogate acceptance gate cannot pass."
+  },
+  "hypothetical_masks": {
+    "max_depth_cog": {
+      "all_three_valid_cells": 342767,
+      "any_valid_cells": 543000,
+      "train_both_valid_cells": 342770,
+      "h02_valid_outside_train_common": 92986,
+      "rule": "Invalid raster cells remain unknown; absence of valid data is not an observed zero."
+    },
+    "arrival_time_cog": {
+      "all_three_valid_cells": 334243,
+      "any_valid_cells": 534250,
+      "train_both_valid_cells": 334244,
+      "h02_valid_outside_train_common": 92343,
+      "rule": "Invalid raster cells remain unknown; absence of valid data is not an observed zero."
+    },
+    "max_velocity_cog": {
+      "all_three_valid_cells": 342767,
+      "any_valid_cells": 543000,
+      "train_both_valid_cells": 342770,
+      "h02_valid_outside_train_common": 92986,
+      "rule": "Invalid raster cells remain unknown; absence of valid data is not an observed zero."
+    }
+  },
+  "finished_at": "2026-10-08T18:16:00.146342+05:30",
+  "source_script_checksum": "sha256:f909e4d04e472e24370a71869a9c3f87c7df954ba1eff3a6bbdb76a641988ab1"
+}

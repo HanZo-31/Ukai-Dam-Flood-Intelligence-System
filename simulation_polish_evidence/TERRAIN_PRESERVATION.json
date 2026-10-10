@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-10T06:06:58.789171+05:30",
+  "passed": true,
+  "protected_original_files_unchanged": 25568,
+  "unauthorized_changes": [],
+  "approved_changed_existing_files": [
+    "FILE_INVENTORY.csv",
+    "frontend/dist/assets/index-BnnlI4Oz.css",
+    "frontend/dist/assets/index-DVV4jWlR.js",
+    "frontend/dist/assets/lerc-Cu7Dg_Dp.js",
+    "frontend/dist/index.html",
+    "frontend/src/map/FloodMap.tsx",
+    "frontend/src/pages/Explore.tsx"
+  ],
+  "flood_swap_opacity_point_marker_timeline_and_fit_code_identical": true,
+  "original_terrain_flood_rasters_solver_api_database_code_and_config_unchanged": true
+}

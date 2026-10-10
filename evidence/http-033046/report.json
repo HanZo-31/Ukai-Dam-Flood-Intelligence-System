@@ -1,0 +1,268 @@
+{
+  "admission_expected": true,
+  "api_verification_started_at": "2026-10-08T03:31:31.629238+05:30",
+  "arrival_conversion": {
+    "absolute_tolerance_minutes": 1e-06,
+    "column_offset": 256,
+    "conversion_factor": 60,
+    "height": 1024,
+    "original_unit_tag": null,
+    "outside_valid_cells": 0,
+    "relative_dtype_tolerance": 9.5367431640625e-07,
+    "row_offset": 0,
+    "scientific_acceptance": false,
+    "unit_evidence_basis": "A2 context/QA; original raster tag absent",
+    "valid_cells": 426586,
+    "width": 3072
+  },
+  "base_url": "http://127.0.0.1:8765",
+  "canonical_manifest_checksum": "sha256:9dc92ab8e3def754155b54d307d64510000bafec744f842a26331ed4786e040e",
+  "data_imported": false,
+  "database_connected": false,
+  "download_results": [
+    {
+      "bytes": 2219235,
+      "checksum": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+      "passed": true,
+      "resource": "/assets/max_depth_cog"
+    },
+    {
+      "bytes": 2320379,
+      "checksum": "sha256:84c1341f45f1fd671cc4147be7a870da58bce4da1d7588d2078e55f66433663e",
+      "passed": true,
+      "resource": "/assets/max_velocity_cog"
+    },
+    {
+      "bytes": 504646,
+      "checksum": "sha256:b7db5fdc9e4a9829698f9bb64b49e78bf99b065b694e13299de5875ae3da550a",
+      "passed": true,
+      "resource": "/assets/arrival_time_cog"
+    },
+    {
+      "bytes": 8360188,
+      "checksum": "sha256:cb2d04d533dd2699b60bc66f8a1bfe46d276850df8caee96e8e8f2676b1ea589",
+      "passed": true,
+      "resource": "/assets/extent_geojson"
+    },
+    {
+      "bytes": 7507,
+      "checksum": "sha256:f3f6b837947518791c4166148baf5228bf896398b51b9b79b18ec4f04c0d7222",
+      "passed": true,
+      "resource": "/assumptions"
+    },
+    {
+      "bytes": 3645,
+      "checksum": "sha256:27f4f5fe1cc7c37f34a253f413f7a58e7ce0d6221316d7c22ad5a595ea5cc12f",
+      "passed": true,
+      "resource": "/quality-report"
+    }
+  ],
+  "evidence_kind": "real_receipt",
+  "finished_at": "2026-10-08T03:31:38.579560+05:30",
+  "footprint": {
+    "difference_tolerance_m2": 3.597440425629496,
+    "extent_area_m2": 359744042.5629477,
+    "native_area_m2": 359744042.5629496,
+    "scientific_acceptance": false,
+    "wet_pixels": 427786
+  },
+  "inventory_sha256": "0d0f2eb35f49f37b2531cd256148c6a8380df4fd36cf02450759d05b7f1dd166",
+  "manifest_raw_sha256": "3c3b193dbd56504d4eddf00f30338ea96d99e2599950e94c2321b6063c2079dc",
+  "operation": "verify-preview",
+  "original_manifest_checksum": "sha256:40a25e910dad9513e18d1956ed972aa6656f7d6b27402f00e9fddd003f7550a3",
+  "passed": true,
+  "real_api_roundtrip_verified": true,
+  "requested_operation": "verify-preview",
+  "root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\part_a",
+  "run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+  "scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+  "schema_hashes": {
+    "prototype-context.schema.json": "0c268ab7d3b4db093cf3c8e4ba0a0eb9aff9d2c44b72fc960e28ac8165e4d5d8",
+    "published-scenario.schema.json": "65fdf2a39e16a88d07858828eec20eaf78f9beef570e6a98a129566f1a8c2add"
+  },
+  "scientific_acceptance": false,
+  "second_review_passed": true,
+  "source_hashes": {
+    "gis_validation.py": "291651c0b9d9d52810ac3f84cc8307609fbd74f8baa6f234d63bd9cd98e05b0b",
+    "prototype_context.py": "8eda0a416c7979e7c55a7e850cc7531047bc4726a31b56c84e492db49185a65d",
+    "published_contract.py": "3b1945288c26717af46f57806b67fe3bece6d39b3d0020965de02b92104f67e9",
+    "receiving.py": "a2d2d62ca01989a560abb879d2797e3331646b09eb073a2d11496b80de5647f8",
+    "receiving_http.py": "c3190f4047d7954ab48ecd599e2f4bbb5c0b86cd40c08bd4992f6645dc5c3a5f"
+  },
+  "started_at": "2026-10-08T03:31:15.510381+05:30",
+  "steps": [
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:15.598214+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A05",
+        "A08"
+      ],
+      "started_at": "2026-10-08T03:31:15.510381+05:30",
+      "step": "transport_inventory"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:15.600213+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M01",
+        "M02",
+        "M03",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:31:15.598214+05:30",
+      "step": "manifest_metadata"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:15.629571+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M09",
+        "M11",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:31:15.624412+05:30",
+      "step": "context_binding"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:15.680466+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M04",
+        "M06",
+        "M08",
+        "M09",
+        "M14"
+      ],
+      "started_at": "2026-10-08T03:31:15.629571+05:30",
+      "step": "provenance_and_evidence_bytes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:21.281593+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A06",
+        "R06",
+        "R07",
+        "R08",
+        "R10",
+        "R11",
+        "R14"
+      ],
+      "started_at": "2026-10-08T03:31:15.680466+05:30",
+      "step": "actual_gis_and_hashes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:21.511262+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "started_at": "2026-10-08T03:31:21.282590+05:30",
+      "step": "arrival_conversion_alignment"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:31.410194+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R12",
+        "R13",
+        "R15",
+        "RUN01"
+      ],
+      "started_at": "2026-10-08T03:31:21.511262+05:30",
+      "step": "pixel_edge_authoritative_extent"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:31.523818+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A08",
+        "RUN07"
+      ],
+      "started_at": "2026-10-08T03:31:31.410194+05:30",
+      "step": "second_hash_pass"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:32.784040+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "I07",
+        "G05"
+      ],
+      "started_at": "2026-10-08T03:31:31.629238+05:30",
+      "step": "approved_namespace_isolation"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:33.128938+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "G02",
+        "G03",
+        "T10"
+      ],
+      "started_at": "2026-10-08T03:31:32.784040+05:30",
+      "step": "preview_metadata_http"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:38.478535+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "G04",
+        "T09"
+      ],
+      "started_at": "2026-10-08T03:31:33.128938+05:30",
+      "step": "preview_verified_downloads_http"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:31:38.579560+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "RUN07"
+      ],
+      "started_at": "2026-10-08T03:31:38.478535+05:30",
+      "step": "post_http_original_hashes"
+    }
+  ],
+  "transport_files": 45
+}

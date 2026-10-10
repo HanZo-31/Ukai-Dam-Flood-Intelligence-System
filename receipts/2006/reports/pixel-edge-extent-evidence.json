@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "method": "raster_pixel_edges",
+  "threshold_m": 0.1,
+  "comparison": "greater_than",
+  "scenario_id": "ukai-2006-historical-combined-v1",
+  "run_id": "ukai-2006-historical-combined-v1-run",
+  "depth_checksum": "sha256:1c7f46e9bc0f66a0a9662b691da1ba239b1998119a6136e298a76f92a0322812",
+  "extent_checksum": "sha256:de11bf62cb825ede4b93393e42d76ed9f4dc50bd16fae69789457fd110c18a96"
+}

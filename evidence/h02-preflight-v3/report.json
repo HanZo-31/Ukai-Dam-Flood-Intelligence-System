@@ -1,0 +1,114 @@
+{
+  "data_imported": false,
+  "database_connected": false,
+  "evidence_kind": "real_receipt",
+  "finished_at": "2026-10-08T03:15:46.501028+05:30",
+  "operation": "preflight",
+  "passed": false,
+  "requested_operation": "preflight",
+  "root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\part_a",
+  "schema_hashes": {
+    "prototype-context.schema.json": "0c268ab7d3b4db093cf3c8e4ba0a0eb9aff9d2c44b72fc960e28ac8165e4d5d8",
+    "published-scenario.schema.json": "65fdf2a39e16a88d07858828eec20eaf78f9beef570e6a98a129566f1a8c2add"
+  },
+  "scientific_acceptance": false,
+  "second_review_passed": false,
+  "source_hashes": {
+    "gis_validation.py": "291651c0b9d9d52810ac3f84cc8307609fbd74f8baa6f234d63bd9cd98e05b0b",
+    "prototype_context.py": "8eda0a416c7979e7c55a7e850cc7531047bc4726a31b56c84e492db49185a65d",
+    "published_contract.py": "3b1945288c26717af46f57806b67fe3bece6d39b3d0020965de02b92104f67e9",
+    "receiving.py": "a2d2d62ca01989a560abb879d2797e3331646b09eb073a2d11496b80de5647f8"
+  },
+  "started_at": "2026-10-08T03:15:46.262324+05:30",
+  "steps": [
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:15:46.432048+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A05",
+        "A08"
+      ],
+      "started_at": "2026-10-08T03:15:46.262324+05:30",
+      "step": "transport_inventory"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:15:46.436563+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M01",
+        "M02",
+        "M03",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:15:46.432048+05:30",
+      "step": "manifest_metadata"
+    },
+    {
+      "exit_status": 1,
+      "failed_reference": null,
+      "finished_at": "2026-10-08T03:15:46.501028+05:30",
+      "passed": false,
+      "performed": true,
+      "reason": "invalid_metadata:derivation.operations.3.parameters_and_method:value_error",
+      "required": true,
+      "requirements": [
+        "M09",
+        "M11",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:15:46.488333+05:30",
+      "step": "context_binding"
+    },
+    {
+      "blocked": true,
+      "exit_status": null,
+      "passed": false,
+      "performed": false,
+      "reason": "prior_required_check_failed",
+      "required": true,
+      "step": "provenance_and_evidence_bytes"
+    },
+    {
+      "blocked": true,
+      "exit_status": null,
+      "passed": false,
+      "performed": false,
+      "reason": "prior_required_check_failed",
+      "required": true,
+      "step": "actual_gis_and_hashes"
+    },
+    {
+      "blocked": true,
+      "exit_status": null,
+      "passed": false,
+      "performed": false,
+      "reason": "prior_required_check_failed",
+      "required": true,
+      "step": "arrival_conversion_alignment"
+    },
+    {
+      "blocked": true,
+      "exit_status": null,
+      "passed": false,
+      "performed": false,
+      "reason": "prior_required_check_failed",
+      "required": true,
+      "step": "pixel_edge_authoritative_extent"
+    },
+    {
+      "blocked": true,
+      "exit_status": null,
+      "passed": false,
+      "performed": false,
+      "reason": "prior_required_check_failed",
+      "required": true,
+      "step": "second_hash_pass"
+    }
+  ]
+}

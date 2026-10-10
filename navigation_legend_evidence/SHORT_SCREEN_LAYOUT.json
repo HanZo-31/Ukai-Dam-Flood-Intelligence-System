@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-09T20:48:15.299Z",
+  "clock": "Elapsed: 0 h of 114 h (0 min since simulation start)",
+  "footer": {
+    "bottom": 592.0000152587891,
+    "client": 165,
+    "height": 164.6666717529297,
+    "scroll": 165,
+    "width": 1060,
+    "x": 220,
+    "y": 427.3333435058594
+  },
+  "legend": {
+    "bottom": 555.6666793823242,
+    "client": 120,
+    "height": 120.33333587646484,
+    "scroll": 120,
+    "width": 300,
+    "x": 968,
+    "y": 435.3333435058594
+  },
+  "main": {
+    "bottom": 592.0000457763672,
+    "client": 523,
+    "height": 522.7396240234375,
+    "scroll": 523,
+    "width": 1060,
+    "x": 220,
+    "y": 69.26042175292969
+  },
+  "map": {
+    "bottom": 427.3333587646485,
+    "client": 302,
+    "height": 302.07293701171875,
+    "scroll": 302,
+    "width": 1060,
+    "x": 220,
+    "y": 125.26042175292967
+  },
+  "toolbar": {
+    "bottom": 125.26042175292967,
+    "client": 55,
+    "height": 56,
+    "scroll": 55,
+    "width": 1060,
+    "x": 220,
+    "y": 69.26042175292969
+  },
+  "viewport": {
+    "height": 592,
+    "width": 1280
+  },
+  "warning": true
+}

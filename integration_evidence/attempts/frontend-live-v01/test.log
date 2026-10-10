@@ -1,0 +1,67 @@
+
+> ukai-flood-explorer@0.1.0 test
+> vitest run --maxWorkers=2 --minWorkers=1
+
+
+ RUN  v3.2.7 C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V01/frontend
+
+ ✓ src/lib/compare.real.test.ts (11 tests) 3232ms
+   ✓ stored references vs independent counts > h02 -> h01: extent, depth, arrival and zones  694ms
+   ✓ stored references vs independent counts > h02 -> h03: extent, depth, arrival and zones  399ms
+   ✓ stored references vs independent counts > h02 -> 2006: extent, depth, arrival and zones  406ms
+   ✓ stored references vs independent counts > h01 -> h03: extent, depth, arrival and zones  407ms
+   ✓ stored references vs independent counts > h02 -> h02: extent, depth, arrival and zones  413ms
+   ✓ stored references vs independent counts > h01 -> h02: extent, depth, arrival and zones  419ms
+   ✓ stored references vs independent counts > same scenario: no change and no priority; swapped pair reverses signs  357ms
+ ✓ src/lib/timeline.real.test.ts (25 tests) 3284ms
+   ✓ stored arrival grid 2006 > nothing is reached at 0 h and reveal never decreases  948ms
+   ✓ stored arrival grid h01 > nothing is reached at 0 h and reveal never decreases  525ms
+   ✓ stored arrival grid h02 > nothing is reached at 0 h and reveal never decreases  681ms
+   ✓ stored arrival grid h03 > nothing is reached at 0 h and reveal never decreases  821ms
+ ✓ src/lib/format.test.ts (4 tests) 14ms
+ ✓ src/lib/candidate.test.ts (22 tests) 77ms
+ ✓ src/lib/hygiene.test.ts (2 tests) 13ms
+ ✓ src/lib/scenarios.test.ts (3 tests) 10ms
+ ✓ src/lib/tiff.test.ts (4 tests) 7ms
+ ✓ src/lib/compare.test.ts (17 tests) 6ms
+ ✓ src/lib/timeline.test.ts (9 tests) 7ms
+ ✓ src/lib/api.test.ts (6 tests) 6ms
+ ✓ src/lib/candidate.contract.test.ts (10 tests) 8ms
+ ✓ src/lib/scales.test.ts (4 tests) 3ms
+ ✓ src/lib/latest.test.ts (1 test) 2ms
+ ✓ src/lib/utm.test.ts (3 tests) 2ms
+ ✓ src/lib/candidate.integration-guards.test.ts (3 tests) 2ms
+ ❯ src/lib/candidate.live.test.ts (7 tests | 1 failed) 456ms
+   ✓ real integrated candidate service (not mocked) > advertises stored-only mode and the actual four-reference catalog 167ms
+   × real integrated candidate service (not mocked) > accepts an exact selection and resolves every returned resource through the reference proxy 176ms
+     → expected 'application/octet-stream' to contain 'application/json'
+   ✓ real integrated candidate service (not mocked) > rejects an intermediate peak without explicit nearest opt-in 4ms
+   ✓ real integrated candidate service (not mocked) > returns 30000 for opted-in 26000, without pretending to compute 26000 26ms
+   ✓ real integrated candidate service (not mocked) > keeps lower-peak ties, caches repeated IDs, and refuses changed content 76ms
+   ✓ real integrated candidate service (not mocked) > returns an honest missing-job error 3ms
+   ✓ real integrated candidate service (not mocked) > enforces the bounded input family on the actual service 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/candidate.live.test.ts > real integrated candidate service (not mocked) > accepts an exact selection and resolves every returned resource through the reference proxy
+AssertionError: expected 'application/octet-stream' to contain 'application/json'
+
+Expected: "application/json"
+Received: "application/octet-stream"
+
+ ❯ src/lib/candidate.live.test.ts:34:52
+     32|       const response = await fetch(`${base}${url}`);
+     33|       expect(response.status).toBe(200);
+     34|       expect(response.headers.get("content-type")).toContain("applicat…
+       |                                                    ^
+     35|     }
+     36|     const detail = await (await fetch(`${base}${result.reference_resou…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 15 passed (16)
+      Tests  1 failed | 130 passed (131)
+   Start at  23:39:14
+   Duration  5.87s (transform 184ms, setup 0ms, collect 941ms, tests 7.13s, environment 3ms, prepare 1.17s)
+

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-10T00:46:31.073575+05:30",
+  "passed": true,
+  "baseline": "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\integrated\\UKAI_COMBINED_V04",
+  "target": "C:\\Users\\piyus\\Documents\\Codex\\2026-10-05\\referenced-chatgpt-conversation-this-is-an\\integrated\\UKAI_COMBINED_V05",
+  "checked_entries": 25424,
+  "baseline_manifest_sha256": "aa1f27aa60b97439b45ba8623eaa5a078f78bf40270d50245b03403cc86e400b",
+  "baseline_changed": false,
+  "private_state_copied": false
+}

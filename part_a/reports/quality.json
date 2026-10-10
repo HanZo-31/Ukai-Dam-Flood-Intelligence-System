@@ -1,0 +1,161 @@
+{
+  "stage": "final-tag GIS preparation",
+  "scientific_validation_status": "not_validated",
+  "import_status": "blocked",
+  "checks": [
+    {
+      "name": "Plan evidence: Computation Interval=10SEC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Plan evidence: Output Interval=15MIN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Plan evidence: Mapping Interval=1HOUR",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Plan evidence: Simulation Date=06Aug2006,0600,11Aug2006,0000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_depth strict COG",
+      "passed": true,
+      "detail": {
+        "warnings": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "max_velocity strict COG",
+      "passed": true,
+      "detail": {
+        "warnings": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "arrival_time strict COG",
+      "passed": true,
+      "detail": {
+        "warnings": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "max_depth final values equal candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_depth final coverage tags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_depth finite nonnegative valid cells",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_velocity final values equal candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_velocity final coverage tags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_velocity finite nonnegative valid cells",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "arrival_time final values equal candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "arrival_time final coverage tags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "arrival_time finite nonnegative valid cells",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Common grid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_depth final values/masks equal originals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "max_velocity final values/masks equal originals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Arrival integer lattice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original arrival times 60 with mask preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No original valid arrivals discarded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "GeoJSON no CRS override",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Extent geometry valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Extent derivative ID",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Extent area agrees with wet raster",
+      "passed": true,
+      "detail": -6.2627462576178054e-09
+    },
+    {
+      "name": "Final GeoJSON rasterises to wet mask",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "gdal": "3.13.3",
+  "python": "3.12.14",
+  "extent_relative_area_error": -6.2627462576178054e-09,
+  "blocking_fields": [
+    "run_timestamp",
+    "datasets[0].license",
+    "datasets[1].license",
+    "datasets[2].license",
+    "datasets[3].license"
+  ]
+}

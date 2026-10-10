@@ -1,0 +1,28 @@
+{
+  "started_at": "2026-10-08T05:47:19Z",
+  "prepared_folder": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_SSD_Ready",
+  "state_folder": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\_ssd_receiver_test",
+  "checks": {
+    "startup_catalog": true,
+    "duplicate_start": true,
+    "active_check_refusal": true,
+    "full_backend_tests": {
+      "exit_code": 0,
+      "log": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\evidence\\ssd-full-backend-tests.log"
+    },
+    "rendered_browser_tests": {
+      "exit_code": 1,
+      "log": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\evidence\\ssd-browser-run.log"
+    },
+    "catalog_unchanged_after_tests": true,
+    "clean_stop": true,
+    "warm_restart_and_full_http_recheck": {
+      "exit_code": 0,
+      "log": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\evidence\\ssd-warm-recheck.log"
+    },
+    "warm_restart_without_reimport": true,
+    "database_stopped_after_recheck": true
+  },
+  "passed": false,
+  "finished_at": "2026-10-08T05:56:42Z"
+}

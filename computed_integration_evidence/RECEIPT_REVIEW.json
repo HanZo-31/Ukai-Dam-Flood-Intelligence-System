@@ -1,0 +1,164 @@
+{
+  "time": "2026-10-09T11:27:59.988493+00:00",
+  "received_path": "E:\\Disaster\\UKAI_COMBINED_V02_work",
+  "baseline": {
+    "entries": 22701,
+    "failures": [],
+    "manifest_sha256": "4841d39cf7a2c47bc4c58d702b40b34a0e76cd31f414125205ea7fe4a1fee281"
+  },
+  "backend_delivery": {
+    "entries": 2664,
+    "failures": [],
+    "manifest_sha256": "f9344fe471caba28b29b68a2035d3673641b8e4f0dc92b5feb2ecea343142e9d"
+  },
+  "received_changed_baseline_files": [
+    {
+      "path": "frontend/src/App.tsx",
+      "base_sha256": "1e7bdd5bf211c377048d519355c9d383a9b9bc2a7afd736fe572dab6bb6fe53f",
+      "received_sha256": "b8e3f88fc2c5f0b9b5d851d739e80ec37419b69fdf8fec002ae4ee5e43b9efc4"
+    },
+    {
+      "path": "frontend/src/pages/WhatIf.tsx",
+      "base_sha256": "7c6dccb01b99c5e0c5da83ac4843dca954528aac1a6bfee4fe6da7c11648168b",
+      "received_sha256": "eed666764d7f904b754c0967443c30794d739484fbd8183ed45c10cfc30c97a4"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "base_sha256": "5f31d5f64204d6a1aceffc673921f1c99066c85e61eec0a22bb2554efb6d3f2f",
+      "received_sha256": "dd997b6050ce83ce4781c6182580d92543f4d871f8a0723557d3028b18d1f6c6"
+    }
+  ],
+  "received_missing_baseline_files": [],
+  "received_new_frontend_source_files": [
+    {
+      "path": "frontend/src/hooks/useCompute.ts",
+      "sha256": "f6d78f1cdc18feff83f9e56a1ec43b637476dc0c90dfcf633e9f8264911add70"
+    },
+    {
+      "path": "frontend/src/map/CandidateRasterView.tsx",
+      "sha256": "5b2f95da911ba457ce7b1d00825f3d5386cc92ee18efca8c86104b8f3f7550f2"
+    },
+    {
+      "path": "frontend/src/pages/Experimental.tsx",
+      "sha256": "105350a93fe061e0e971c31d0de70bc750101c626c4c8189d7e7cf59a0adf480"
+    },
+    {
+      "path": "frontend/src/testing/computeFixtureTransport.ts",
+      "sha256": "aa1480a615d5574f5d224ef5e513fc22a6d654f9f5a532dbb1172d0966bcfe85"
+    },
+    {
+      "path": "frontend/src/testing/fixtureLoad.ts",
+      "sha256": "bc981b9927b7d10abf28ce81afa0c4bc4b30cb9ded81978f21ab43adae92f11b"
+    },
+    {
+      "path": "frontend/src/testing/nodeIo.ts",
+      "sha256": "098ac68a61bc9152dc77714a185c868acbb8b1f38e80bde347d35bb0062d3b4d"
+    },
+    {
+      "path": "frontend/src/testing/tiffWriter.ts",
+      "sha256": "1baa00b9707cb377aeebe15a4d083b22aaa420c1e2ad8475dd1ac9a2ba6ddb72"
+    },
+    {
+      "path": "frontend/src/lib/compute/candidateCompare.test.ts",
+      "sha256": "ce6088fec3e0b7fd1bba9de2d2b23a566cb93e39a01ceb6553d8588aab76f7d8"
+    },
+    {
+      "path": "frontend/src/lib/compute/candidateCompare.ts",
+      "sha256": "13bfa761d71a334c08655a5be71ecc29370ba16338329c7da47f024e34fc68c2"
+    },
+    {
+      "path": "frontend/src/lib/compute/candidateZones.test.ts",
+      "sha256": "0cf2d26670cb936a3a0e17c556f087095363c7f4ea6712a8ea655893b5e5bd01"
+    },
+    {
+      "path": "frontend/src/lib/compute/candidateZones.ts",
+      "sha256": "d18a3c8533df63f7e4d4373cef563af1bdd27ea8804a231e2b6ea2b77a39101d"
+    },
+    {
+      "path": "frontend/src/lib/compute/client.ts",
+      "sha256": "67ff488a1640dc8322bc5d9a87d528382f91c039b000828e9f7557e6c26bbc21"
+    },
+    {
+      "path": "frontend/src/lib/compute/contract.test.ts",
+      "sha256": "b90cfed8adfc6a5b4e524e7b2fd872bba5433da06681b4bd247c2f886e801c6a"
+    },
+    {
+      "path": "frontend/src/lib/compute/contract.ts",
+      "sha256": "c74889c53033ef4e7bde2f23e8f3d5484d7f99e800a24161e6597b4aefc22147"
+    },
+    {
+      "path": "frontend/src/lib/compute/controller.test.ts",
+      "sha256": "2117f63825b4c87800c8cf9cb8740df07fe07275fe48eaf523fe4486162fe5ce"
+    },
+    {
+      "path": "frontend/src/lib/compute/controller.ts",
+      "sha256": "72239b7718d2d68f89fd483240b611af263a05ce81385295055847289b788f16"
+    },
+    {
+      "path": "frontend/src/lib/compute/decode.test.ts",
+      "sha256": "07ee700b94f6ab3e281fefe930ec26614f1cb208a76cfd9f4384ed3d04a12fec"
+    },
+    {
+      "path": "frontend/src/lib/compute/decode.ts",
+      "sha256": "0200a29c850d5c208a2c0a906e02edf96e1e7c97b5e040d13826e33593e55931"
+    },
+    {
+      "path": "frontend/src/lib/compute/hygiene.v2.test.ts",
+      "sha256": "ea9f847cda82b53e2a03e663b1d793717fcb86e125ed263fd7e302902d14e337"
+    },
+    {
+      "path": "frontend/src/lib/compute/present.test.ts",
+      "sha256": "6f9e199d42f83cc6fc3f92a0afc0c527751534d8ae364cf51447133b027fe6f6"
+    },
+    {
+      "path": "frontend/src/lib/compute/present.ts",
+      "sha256": "1e5b282f8952d5f18c52832a37a16038342713c3a5f73b49c09484afc79eb2bd"
+    },
+    {
+      "path": "frontend/src/lib/compute/products.ts",
+      "sha256": "875f1d8633b59ac8c40008ca263f83d67063ee52eb0ef51e06ac683f12ee26db"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/arrays-and-oracle.json",
+      "sha256": "b4fb799d1d75b7a32520175583c3777050980adbb006dde8963baddca665d4e3"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/baseline-arrival.tif",
+      "sha256": "b09d0fe5255beaf387d7c7be37ba937f2704dfc584e27fcf4c3b1034ea7ea490"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/baseline-depth.tif",
+      "sha256": "21698fb91f9492b7ef9f27ab49760ce523b1e37c5bf6d41bb17a32dbb533027b"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/candidate-arrival.tif",
+      "sha256": "46723949312a7bdcd11a776112ef40a60b012a47e942e8183085e897a7738084"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/candidate-depth.tif",
+      "sha256": "c2967e31cecba7683c56be3dd621f41eeee84291f474c2f99d21873a95f14531"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/compute-v2.schema.json",
+      "sha256": "2e09fde93b0871416ea1f447e308cdc2e705f124213fe217e64b1a3bfa894967"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/examples.json",
+      "sha256": "355d2b421b77791f57fd07eab69df24854c908b057d43a5bc846aba5b1122e5d"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/extent.geojson",
+      "sha256": "37975c006d9eba9c7f221c06ca75265bb2a42d22a58535eba0d9b588874db621"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/README.md",
+      "sha256": "0fc98a8d084dc3051c195a70291f607283aa4c277085ce4ef914f0a3fd9f7b19"
+    },
+    {
+      "path": "frontend/src/testing/fixtures_v2/SOURCE_SHA256.txt",
+      "sha256": "5968ff150bc9828255efda970493bbf9620b49ee98d1317ba6ec9de766254474"
+    }
+  ],
+  "received_review_scope": "Frontend source/build metadata, backend source, original inputs/references and release identities. Received runtime/dependency cache not used or fully hashed; verified local baseline dependencies used.",
+  "received_baseline_files_checked": 391
+}

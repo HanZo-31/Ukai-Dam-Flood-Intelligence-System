@@ -1,0 +1,724 @@
+{
+  "four_scenarios": [
+    {
+      "scenario": "h02",
+      "passed": true,
+      "steps": [
+        {
+          "step": "transport_inventory",
+          "requirements": [
+            "A05",
+            "A08"
+          ],
+          "started_at": "2026-10-08T06:30:16.559932+05:30",
+          "finished_at": "2026-10-08T06:30:16.622343+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "manifest_metadata",
+          "requirements": [
+            "M01",
+            "M02",
+            "M03",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:30:16.622343+05:30",
+          "finished_at": "2026-10-08T06:30:16.623345+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "context_binding",
+          "requirements": [
+            "M09",
+            "M11",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:30:16.625343+05:30",
+          "finished_at": "2026-10-08T06:30:16.629346+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "provenance_and_evidence_bytes",
+          "requirements": [
+            "M04",
+            "M06",
+            "M08",
+            "M09",
+            "M14"
+          ],
+          "started_at": "2026-10-08T06:30:16.629346+05:30",
+          "finished_at": "2026-10-08T06:30:16.673677+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "actual_gis_and_hashes",
+          "requirements": [
+            "A06",
+            "R06",
+            "R07",
+            "R08",
+            "R10",
+            "R11",
+            "R14"
+          ],
+          "started_at": "2026-10-08T06:30:16.673677+05:30",
+          "finished_at": "2026-10-08T06:30:21.053298+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "arrival_conversion_alignment",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05"
+          ],
+          "started_at": "2026-10-08T06:30:21.054348+05:30",
+          "finished_at": "2026-10-08T06:30:21.192210+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "pixel_edge_authoritative_extent",
+          "requirements": [
+            "R12",
+            "R13",
+            "R15",
+            "RUN01"
+          ],
+          "started_at": "2026-10-08T06:30:21.192210+05:30",
+          "finished_at": "2026-10-08T06:30:27.134213+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "second_hash_pass",
+          "requirements": [
+            "A08",
+            "RUN07"
+          ],
+          "started_at": "2026-10-08T06:30:27.134213+05:30",
+          "finished_at": "2026-10-08T06:30:27.194729+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "approved_namespace_isolation",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:27.257736+05:30",
+          "finished_at": "2026-10-08T06:30:28.276088+05:30",
+          "requirements": [
+            "I07",
+            "G05"
+          ]
+        },
+        {
+          "step": "preview_metadata_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:28.276088+05:30",
+          "finished_at": "2026-10-08T06:30:28.748546+05:30",
+          "requirements": [
+            "G02",
+            "G03",
+            "T10"
+          ]
+        },
+        {
+          "step": "preview_verified_downloads_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:28.748546+05:30",
+          "finished_at": "2026-10-08T06:30:31.985417+05:30",
+          "requirements": [
+            "G04",
+            "T09"
+          ]
+        },
+        {
+          "step": "post_http_original_hashes",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:31.985417+05:30",
+          "finished_at": "2026-10-08T06:30:32.046537+05:30",
+          "requirements": [
+            "RUN07"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "h01",
+      "passed": true,
+      "steps": [
+        {
+          "step": "transport_inventory",
+          "requirements": [
+            "A05",
+            "A08"
+          ],
+          "started_at": "2026-10-08T06:30:32.047620+05:30",
+          "finished_at": "2026-10-08T06:30:32.091585+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "manifest_metadata",
+          "requirements": [
+            "M01",
+            "M02",
+            "M03",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:30:32.091585+05:30",
+          "finished_at": "2026-10-08T06:30:32.092585+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "context_binding",
+          "requirements": [
+            "M09",
+            "M11",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:30:32.092585+05:30",
+          "finished_at": "2026-10-08T06:30:32.096088+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "provenance_and_evidence_bytes",
+          "requirements": [
+            "M04",
+            "M06",
+            "M08",
+            "M09",
+            "M14"
+          ],
+          "started_at": "2026-10-08T06:30:32.096088+05:30",
+          "finished_at": "2026-10-08T06:30:32.138139+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "actual_gis_and_hashes",
+          "requirements": [
+            "A06",
+            "R06",
+            "R07",
+            "R08",
+            "R10",
+            "R11",
+            "R14"
+          ],
+          "started_at": "2026-10-08T06:30:32.138139+05:30",
+          "finished_at": "2026-10-08T06:30:35.162225+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "arrival_conversion_alignment",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05"
+          ],
+          "started_at": "2026-10-08T06:30:35.163221+05:30",
+          "finished_at": "2026-10-08T06:30:35.288567+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "pixel_edge_authoritative_extent",
+          "requirements": [
+            "R12",
+            "R13",
+            "R15",
+            "RUN01"
+          ],
+          "started_at": "2026-10-08T06:30:35.288567+05:30",
+          "finished_at": "2026-10-08T06:30:40.892391+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "second_hash_pass",
+          "requirements": [
+            "A08",
+            "RUN07"
+          ],
+          "started_at": "2026-10-08T06:30:40.892391+05:30",
+          "finished_at": "2026-10-08T06:30:40.938370+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "approved_namespace_isolation",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:40.986994+05:30",
+          "finished_at": "2026-10-08T06:30:42.378007+05:30",
+          "requirements": [
+            "I07",
+            "G05"
+          ]
+        },
+        {
+          "step": "preview_metadata_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:42.378007+05:30",
+          "finished_at": "2026-10-08T06:30:42.871409+05:30",
+          "requirements": [
+            "G02",
+            "G03",
+            "T10"
+          ]
+        },
+        {
+          "step": "preview_verified_downloads_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:42.871409+05:30",
+          "finished_at": "2026-10-08T06:30:46.840267+05:30",
+          "requirements": [
+            "G04",
+            "T09"
+          ]
+        },
+        {
+          "step": "post_http_original_hashes",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:46.840267+05:30",
+          "finished_at": "2026-10-08T06:30:46.910276+05:30",
+          "requirements": [
+            "RUN07"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "h03",
+      "passed": true,
+      "steps": [
+        {
+          "step": "transport_inventory",
+          "requirements": [
+            "A05",
+            "A08"
+          ],
+          "started_at": "2026-10-08T06:30:46.912201+05:30",
+          "finished_at": "2026-10-08T06:30:46.971956+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "manifest_metadata",
+          "requirements": [
+            "M01",
+            "M02",
+            "M03",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:30:46.971956+05:30",
+          "finished_at": "2026-10-08T06:30:46.973962+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "context_binding",
+          "requirements": [
+            "M09",
+            "M11",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:30:46.973962+05:30",
+          "finished_at": "2026-10-08T06:30:46.977960+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "provenance_and_evidence_bytes",
+          "requirements": [
+            "M04",
+            "M06",
+            "M08",
+            "M09",
+            "M14"
+          ],
+          "started_at": "2026-10-08T06:30:46.977960+05:30",
+          "finished_at": "2026-10-08T06:30:47.024962+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "actual_gis_and_hashes",
+          "requirements": [
+            "A06",
+            "R06",
+            "R07",
+            "R08",
+            "R10",
+            "R11",
+            "R14"
+          ],
+          "started_at": "2026-10-08T06:30:47.024962+05:30",
+          "finished_at": "2026-10-08T06:30:50.390345+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "arrival_conversion_alignment",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05"
+          ],
+          "started_at": "2026-10-08T06:30:50.391345+05:30",
+          "finished_at": "2026-10-08T06:30:50.528110+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "pixel_edge_authoritative_extent",
+          "requirements": [
+            "R12",
+            "R13",
+            "R15",
+            "RUN01"
+          ],
+          "started_at": "2026-10-08T06:30:50.528110+05:30",
+          "finished_at": "2026-10-08T06:30:56.496518+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "second_hash_pass",
+          "requirements": [
+            "A08",
+            "RUN07"
+          ],
+          "started_at": "2026-10-08T06:30:56.496518+05:30",
+          "finished_at": "2026-10-08T06:30:56.545014+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "approved_namespace_isolation",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:56.595483+05:30",
+          "finished_at": "2026-10-08T06:30:57.862436+05:30",
+          "requirements": [
+            "I07",
+            "G05"
+          ]
+        },
+        {
+          "step": "preview_metadata_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:57.862436+05:30",
+          "finished_at": "2026-10-08T06:30:58.400229+05:30",
+          "requirements": [
+            "G02",
+            "G03",
+            "T10"
+          ]
+        },
+        {
+          "step": "preview_verified_downloads_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:30:58.400229+05:30",
+          "finished_at": "2026-10-08T06:31:02.343136+05:30",
+          "requirements": [
+            "G04",
+            "T09"
+          ]
+        },
+        {
+          "step": "post_http_original_hashes",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:31:02.343136+05:30",
+          "finished_at": "2026-10-08T06:31:02.396672+05:30",
+          "requirements": [
+            "RUN07"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "2006",
+      "passed": true,
+      "steps": [
+        {
+          "step": "transport_inventory",
+          "requirements": [
+            "A05",
+            "A08"
+          ],
+          "started_at": "2026-10-08T06:31:02.398684+05:30",
+          "finished_at": "2026-10-08T06:31:02.484772+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "manifest_metadata",
+          "requirements": [
+            "M01",
+            "M02",
+            "M03",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:31:02.484772+05:30",
+          "finished_at": "2026-10-08T06:31:02.486688+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "context_binding",
+          "requirements": [
+            "M09",
+            "M11",
+            "M13"
+          ],
+          "started_at": "2026-10-08T06:31:02.487784+05:30",
+          "finished_at": "2026-10-08T06:31:02.495855+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "provenance_and_evidence_bytes",
+          "requirements": [
+            "M04",
+            "M06",
+            "M08",
+            "M09",
+            "M14"
+          ],
+          "started_at": "2026-10-08T06:31:02.495855+05:30",
+          "finished_at": "2026-10-08T06:31:02.574321+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "actual_gis_and_hashes",
+          "requirements": [
+            "A06",
+            "R06",
+            "R07",
+            "R08",
+            "R10",
+            "R11",
+            "R14"
+          ],
+          "started_at": "2026-10-08T06:31:02.575326+05:30",
+          "finished_at": "2026-10-08T06:31:06.009222+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "arrival_conversion_alignment",
+          "requirements": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05"
+          ],
+          "started_at": "2026-10-08T06:31:06.010223+05:30",
+          "finished_at": "2026-10-08T06:31:06.146294+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "pixel_edge_authoritative_extent",
+          "requirements": [
+            "R12",
+            "R13",
+            "R15",
+            "RUN01"
+          ],
+          "started_at": "2026-10-08T06:31:06.146294+05:30",
+          "finished_at": "2026-10-08T06:31:12.264096+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "second_hash_pass",
+          "requirements": [
+            "A08",
+            "RUN07"
+          ],
+          "started_at": "2026-10-08T06:31:12.264096+05:30",
+          "finished_at": "2026-10-08T06:31:12.315620+05:30",
+          "required": true,
+          "performed": true,
+          "exit_status": 0,
+          "passed": true
+        },
+        {
+          "step": "approved_namespace_isolation",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:31:12.368316+05:30",
+          "finished_at": "2026-10-08T06:31:13.720254+05:30",
+          "requirements": [
+            "I07",
+            "G05"
+          ]
+        },
+        {
+          "step": "preview_metadata_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:31:13.720254+05:30",
+          "finished_at": "2026-10-08T06:31:14.288366+05:30",
+          "requirements": [
+            "G02",
+            "G03",
+            "T10"
+          ]
+        },
+        {
+          "step": "preview_verified_downloads_http",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:31:14.288366+05:30",
+          "finished_at": "2026-10-08T06:31:18.693001+05:30",
+          "requirements": [
+            "G04",
+            "T09"
+          ]
+        },
+        {
+          "step": "post_http_original_hashes",
+          "required": true,
+          "performed": true,
+          "passed": true,
+          "exit_status": 0,
+          "started_at": "2026-10-08T06:31:18.693001+05:30",
+          "finished_at": "2026-10-08T06:31:18.753166+05:30",
+          "requirements": [
+            "RUN07"
+          ]
+        }
+      ]
+    }
+  ],
+  "built_frontend_served": true,
+  "frontend_resources": [
+    "/assets/index-Bdjlgxn_.js",
+    "/assets/index-CiScFBNW.css"
+  ],
+  "source_root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_SSD_Ready",
+  "local_state": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_SSD_Ready\\_ssd_receiver_test",
+  "visual_browser_checks_performed": false
+}

@@ -1,0 +1,5 @@
+
+> ukai-flood-explorer@0.1.0 build
+> tsc --noEmit && vite build
+
+src/map/localTerrain.test.ts(2,30): error TS2307: Cannot find module 'node:fs' or its corresponding type declarations.

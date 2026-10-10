@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T18:40:19.439Z",
+  "source": "UKAI_COMBINED_V04",
+  "same_backend": "V03 isolated verification profile",
+  "observed": [
+    "light sidebar and selected reference",
+    "header API status without uncalibrated badge",
+    "identical settled Explore map/control and timeline geometry and presentation properties",
+    "H02 selection and timeline End=114 h, Reset=0 h",
+    "comparison initial H01/H02, swap H02/H01; identical settled map size and styles",
+    "reference metrics disclosed on expand",
+    "What-if navigation and unchanged ML unavailable explanation",
+    "Evidence scientific limits and six download links retained",
+    "760px breakpoint: no horizontal document overflow, four navigation buttons",
+    "keyboard Tab focus to Compare, Enter navigation"
+  ],
+  "not_claimed": [
+    "fresh native computation",
+    "new V04 private profile startup",
+    "all screen sizes or every possible 2D camera position",
+    "external scientific validation",
+    "physical disconnected SSD test"
+  ],
+  "console_errors_and_warnings": []
+}

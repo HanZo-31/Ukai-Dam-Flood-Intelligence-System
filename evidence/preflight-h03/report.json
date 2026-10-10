@@ -1,0 +1,172 @@
+{
+  "arrival_conversion": {
+    "absolute_tolerance_minutes": 1e-06,
+    "column_offset": 256,
+    "conversion_factor": 60,
+    "height": 1024,
+    "original_unit_tag": null,
+    "outside_valid_cells": 0,
+    "relative_dtype_tolerance": 9.5367431640625e-07,
+    "row_offset": 0,
+    "scientific_acceptance": false,
+    "unit_evidence_basis": "A2 context/QA; original raster tag absent",
+    "valid_cells": 534249,
+    "width": 3072
+  },
+  "canonical_manifest_checksum": "sha256:a68144eb3d9da99546ed8a7ce7d51fa38dd16d39e53da21649a6dfe6917899ba",
+  "data_imported": false,
+  "database_connected": false,
+  "evidence_kind": "real_receipt",
+  "finished_at": "2026-10-08T03:35:45.037556+05:30",
+  "footprint": {
+    "difference_tolerance_m2": 4.503540697683113,
+    "extent_area_m2": 450354069.76832,
+    "native_area_m2": 450354069.76831126,
+    "scientific_acceptance": false,
+    "wet_pixels": 535534
+  },
+  "inventory_sha256": "50cccef749e39dbc36823708ec08bc05339e6db6b22556356ba5fc45f6276306",
+  "manifest_raw_sha256": "8db5ccb965f7ceae7310f49506d4c54b10572cd8c4dd5bf34d63c4911cf0a7c8",
+  "operation": "preflight",
+  "original_manifest_checksum": "sha256:f8385ee10f88c0b2528450b918fed9d5e15369e72c6727fbfaafd0b7c3dc1e20",
+  "passed": true,
+  "root": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\receipts\\h03",
+  "run_id": "ukai-hyp-h03-release30000-combined-v1-run",
+  "scenario_id": "ukai-hyp-h03-release30000-combined-v1",
+  "schema_hashes": {
+    "prototype-context.schema.json": "0c268ab7d3b4db093cf3c8e4ba0a0eb9aff9d2c44b72fc960e28ac8165e4d5d8",
+    "published-scenario.schema.json": "65fdf2a39e16a88d07858828eec20eaf78f9beef570e6a98a129566f1a8c2add"
+  },
+  "scientific_acceptance": false,
+  "second_review_passed": true,
+  "source_hashes": {
+    "gis_validation.py": "291651c0b9d9d52810ac3f84cc8307609fbd74f8baa6f234d63bd9cd98e05b0b",
+    "prototype_context.py": "8eda0a416c7979e7c55a7e850cc7531047bc4726a31b56c84e492db49185a65d",
+    "published_contract.py": "c9772ed1532a72bbe93564869892f7e7722a3c03960c3c510086650781b7ad0f",
+    "receiving.py": "a2d2d62ca01989a560abb879d2797e3331646b09eb073a2d11496b80de5647f8"
+  },
+  "started_at": "2026-10-08T03:35:30.447751+05:30",
+  "steps": [
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:30.538208+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A05",
+        "A08"
+      ],
+      "started_at": "2026-10-08T03:35:30.447751+05:30",
+      "step": "transport_inventory"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:30.540204+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M01",
+        "M02",
+        "M03",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:35:30.538208+05:30",
+      "step": "manifest_metadata"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:30.549734+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M09",
+        "M11",
+        "M13"
+      ],
+      "started_at": "2026-10-08T03:35:30.541207+05:30",
+      "step": "context_binding"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:30.621288+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "M04",
+        "M06",
+        "M08",
+        "M09",
+        "M14"
+      ],
+      "started_at": "2026-10-08T03:35:30.549734+05:30",
+      "step": "provenance_and_evidence_bytes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:35.804159+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A06",
+        "R06",
+        "R07",
+        "R08",
+        "R10",
+        "R11",
+        "R14"
+      ],
+      "started_at": "2026-10-08T03:35:30.621288+05:30",
+      "step": "actual_gis_and_hashes"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:36.011505+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "started_at": "2026-10-08T03:35:35.806156+05:30",
+      "step": "arrival_conversion_alignment"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:44.888771+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "R12",
+        "R13",
+        "R15",
+        "RUN01"
+      ],
+      "started_at": "2026-10-08T03:35:36.011505+05:30",
+      "step": "pixel_edge_authoritative_extent"
+    },
+    {
+      "exit_status": 0,
+      "finished_at": "2026-10-08T03:35:45.036536+05:30",
+      "passed": true,
+      "performed": true,
+      "required": true,
+      "requirements": [
+        "A08",
+        "RUN07"
+      ],
+      "started_at": "2026-10-08T03:35:44.888771+05:30",
+      "step": "second_hash_pass"
+    }
+  ],
+  "transport_files": 26
+}

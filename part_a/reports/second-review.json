@@ -1,0 +1,273 @@
+{
+  "review_pass": "separate code and final bytes",
+  "python": "3.12.14",
+  "gdal": "3.13.3",
+  "checks": [
+    {
+      "name": "Raw context byte hash binds",
+      "passed": true
+    },
+    {
+      "name": "Raw quality byte hash binds",
+      "passed": true
+    },
+    {
+      "name": "Identity binding: scenario_id",
+      "passed": true
+    },
+    {
+      "name": "Identity binding: run_id",
+      "passed": true
+    },
+    {
+      "name": "Identity binding: model_version",
+      "passed": true
+    },
+    {
+      "name": "Identity binding: input_dataset_version",
+      "passed": true
+    },
+    {
+      "name": "Identity binding: time_coverage",
+      "passed": true
+    },
+    {
+      "name": "Draft/pending with no approvals",
+      "passed": true
+    },
+    {
+      "name": "Unknown production timestamp stays null",
+      "passed": true
+    },
+    {
+      "name": "Unknown licences stay null",
+      "passed": true
+    },
+    {
+      "name": "Model-clock convention declared",
+      "passed": true
+    },
+    {
+      "name": "Output/mapping timing distinct",
+      "passed": true
+    },
+    {
+      "name": "Actual input hash: ukai-h02-plan",
+      "passed": true
+    },
+    {
+      "name": "Actual input hash: ukai-h02-geometry",
+      "passed": true
+    },
+    {
+      "name": "Actual input hash: ukai-h02-forcing",
+      "passed": true
+    },
+    {
+      "name": "Actual input hash: ukai-h02-terrain",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog actual asset hash",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog independently strict COG",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog exact shared grid",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog actual band units",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog actual nodata",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog final aware model coverage tags",
+      "passed": true
+    },
+    {
+      "name": "max_depth_cog source/full-array-mask preservation",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog actual asset hash",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog independently strict COG",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog exact shared grid",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog actual band units",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog actual nodata",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog final aware model coverage tags",
+      "passed": true
+    },
+    {
+      "name": "max_velocity_cog source/full-array-mask preservation",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog actual asset hash",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog independently strict COG",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog exact shared grid",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog actual band units",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog actual nodata",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog final aware model coverage tags",
+      "passed": true
+    },
+    {
+      "name": "Review arrival integer-aligned window",
+      "passed": true
+    },
+    {
+      "name": "arrival_time_cog source/full-array-mask preservation",
+      "passed": true
+    },
+    {
+      "name": "extent_geojson actual asset hash",
+      "passed": true
+    },
+    {
+      "name": "Final extent valid and no legacy CRS",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: Ukai_Lower_Tapi_A2.p04",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: Ukai_Lower_Tapi_A2.g01",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: Ukai_Lower_Tapi_A2.u05",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: Ukai_Lower_Tapi_A2_Terrain.ukai_to_surat_dem_utm43_working.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: arrival_time.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: extent.geojson",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: max_depth.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: max_velocity.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: max_wse.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: arrival_time.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: extent.geojson",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: max_depth.tif",
+      "passed": true
+    },
+    {
+      "name": "Source still unchanged: max_velocity.tif",
+      "passed": true
+    },
+    {
+      "name": "Actual context schema validates",
+      "passed": true
+    },
+    {
+      "name": "Actual manifest has exactly five honest missing fields",
+      "passed": true
+    }
+  ],
+  "technical_checks_passed": 55,
+  "manifest_metadata_passed": false,
+  "missing_manifest_fields": [
+    {
+      "field": [
+        "run_timestamp"
+      ],
+      "type": "value_error"
+    },
+    {
+      "field": [
+        "datasets",
+        0,
+        "license"
+      ],
+      "type": "string_type"
+    },
+    {
+      "field": [
+        "datasets",
+        1,
+        "license"
+      ],
+      "type": "string_type"
+    },
+    {
+      "field": [
+        "datasets",
+        2,
+        "license"
+      ],
+      "type": "string_type"
+    },
+    {
+      "field": [
+        "datasets",
+        3,
+        "license"
+      ],
+      "type": "string_type"
+    }
+  ],
+  "context_schema_passed": true,
+  "full_binding_checked": false,
+  "database_imported": false,
+  "scientifically_validated": false
+}

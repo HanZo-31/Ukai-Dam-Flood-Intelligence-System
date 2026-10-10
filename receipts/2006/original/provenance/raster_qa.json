@@ -1,0 +1,69 @@
+{
+ "max_depth": {
+  "shape": [
+   1024,
+   3072
+  ],
+  "valid_cells": 503289,
+  "min": 0.001003265380859375,
+  "max": 38.858543395996094,
+  "mean": 4.405966715829747,
+  "nan_count": 0,
+  "neg_nonnodata": 0
+ },
+ "max_velocity": {
+  "shape": [
+   1024,
+   3072
+  ],
+  "valid_cells": 503289,
+  "min": 4.386048749438487e-05,
+  "max": 11.582319259643555,
+  "mean": 0.9639176974912796,
+  "nan_count": 0,
+  "neg_nonnodata": 0
+ },
+ "max_wse": {
+  "shape": [
+   1024,
+   3072
+  ],
+  "valid_cells": 503289,
+  "min": 9.364874839782715,
+  "max": 71.11103820800781,
+  "mean": 30.939766738639445,
+  "nan_count": 0,
+  "neg_nonnodata": 0
+ },
+ "arrival_time": {
+  "shape": [
+   1189,
+   3565
+  ],
+  "valid_cells": 494437,
+  "min": 1.0,
+  "max": 138.0,
+  "mean": 38.00859361253304,
+  "nan_count": 0,
+  "neg_nonnodata": 0,
+  "integer_valued": true
+ },
+ "consistency": {
+  "depth_wet_gt0.1_cells": 495702,
+  "arrival_valid_cells_in_depth_window": 494437,
+  "depth_wet_without_arrival": 2122,
+  "arrival_without_depth_wet": 857,
+  "velocity_valid_vs_depth_valid_equal": true
+ },
+ "depth_exceedance_km2": {
+  "0.1": 416.9,
+  "0.5": 389.1,
+  "1": 350.7,
+  "2": 272.4,
+  "5": 123.0,
+  "10": 49.8,
+  "15": 19.3,
+  "20": 3.0
+ },
+ "flooded_area_km2_gt_0.1m": 416.9
+}

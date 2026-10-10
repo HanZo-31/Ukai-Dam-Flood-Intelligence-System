@@ -1,0 +1,34 @@
+{
+  "old": [
+    {
+      "background": "rgb(234, 240, 247)",
+      "border": "0.666667px solid rgb(228, 234, 241)",
+      "borderRadius": "10px",
+      "height": 340,
+      "width": 563.6666870117188
+    },
+    {
+      "background": "rgb(234, 240, 247)",
+      "border": "0.666667px solid rgb(228, 234, 241)",
+      "borderRadius": "10px",
+      "height": 340,
+      "width": 563.6666870117188
+    }
+  ],
+  "new": [
+    {
+      "background": "rgb(234, 240, 247)",
+      "border": "0.666667px solid rgb(228, 234, 241)",
+      "borderRadius": "10px",
+      "height": 340,
+      "width": 563.6666870117188
+    },
+    {
+      "background": "rgb(234, 240, 247)",
+      "border": "0.666667px solid rgb(228, 234, 241)",
+      "borderRadius": "10px",
+      "height": 340,
+      "width": 563.6666870117188
+    }
+  ]
+}

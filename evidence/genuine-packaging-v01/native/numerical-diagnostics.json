@@ -1,0 +1,18 @@
+{
+  "steps": 90318,
+  "simulated_seconds": 410400.0,
+  "mass_in_m3": 5232584672.0494795,
+  "mass_out_m3": 4693663580.055504,
+  "mass_stored_m3": 538921091.993897,
+  "mass_residual_m3": 7.867813110351562e-05,
+  "mass_relative_residual": 1.5036188811962264e-14,
+  "numeric_conservation_gate": 1e-06,
+  "numerical_only_not_scientific_validation": true,
+  "inflow_cells": 82,
+  "outflow_cells": 111,
+  "valid_native_cells": 98503,
+  "wet_native_cells": 42415,
+  "max_depth_m": 29.631366377071892,
+  "max_face_normal_velocity_m_s": 7.2971869642952365,
+  "valid_arrival_cells": 42415
+}

@@ -1,0 +1,677 @@
+........................................................................ [ 38%]
+.......................FFF.FFFFFFFFFFFFFFFFFFF....F..F.FFFFFEEEEEEEEEEEE [ 76%]
+EEEEEEEEEEEEEEE....EEEEEEE.......FFFFFF....F                             [100%]
+=================================== ERRORS ====================================
+_____ ERROR at setup of test_mock_preview_has_explicit_warning_and_nulls ______
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_mock_preview_has_explicit0\\objects\\results\\.pending-7_atbx6t' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_mock_preview_has_explicit0\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_disabled_and_removed_admission_hide_every_resource[] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi0\\objects\\results\\.pending-7bn60k4g' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi0\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_disabled_and_removed_admission_hide_every_resource[/layers] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi1\\objects\\results\\.pending-xt43et31' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi1\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_disabled_and_removed_admission_hide_every_resource[/impact] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi2\\objects\\results\\.pending-nsqy7hkk' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi2\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_disabled_and_removed_admission_hide_every_resource[/assumptions] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi3\\objects\\results\\.pending-9g03oj4o' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi3\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_disabled_and_removed_admission_hide_every_resource[/quality-report] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi4\\objects\\results\\.pending-bkrnf2sp' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi4\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_disabled_and_removed_admission_hide_every_resource[/assets/max_depth_cog] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi5\\objects\\results\\.pending-c7_kne2h' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_disabled_and_removed_admi5\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_nonloopback_and_forwarded_headers_cannot_bypass[10.0.0.1] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_nonloopback_and_forwarded0\\objects\\results\\.pending-xjh3aexl' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_nonloopback_and_forwarded0\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_nonloopback_and_forwarded_headers_cannot_bypass[192.168.1.5] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_nonloopback_and_forwarded1\\objects\\results\\.pending-o9bi6hgi' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_nonloopback_and_forwarded1\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_nonloopback_and_forwarded_headers_cannot_bypass[testclient] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_nonloopback_and_forwarded2\\objects\\results\\.pending-ffrzolyl' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_nonloopback_and_forwarded2\\objects\\results\\max_depth.tif'
+__ ERROR at setup of test_bounded_and_explicit_query_validation[?limit=101] ___
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer0\\objects\\results\\.pending-067043g1' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer0\\objects\\results\\max_depth.tif'
+__ ERROR at setup of test_bounded_and_explicit_query_validation[?offset=-1] ___
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer1\\objects\\results\\.pending-awvb1dvf' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer1\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_bounded_and_explicit_query_validation[?include_drafts=true] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer2\\objects\\results\\.pending-mk482r8v' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer2\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_bounded_and_explicit_query_validation[?data_mode=demo] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer3\\objects\\results\\.pending-chtkkm4n' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer3\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_bounded_and_explicit_query_validation[?limit=1&limit=2] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer4\\objects\\results\\.pending-ljyj5_q4' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bounded_and_explicit_quer4\\objects\\results\\max_depth.tif'
+___________ ERROR at setup of test_malformed_admission_fails_closed ___________
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_malformed_admission_fails0\\objects\\results\\.pending-5xvjp6f0' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_malformed_admission_fails0\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[manifest] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_0\\objects\\results\\.pending-xtzyiz49' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_0\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[context_bytes] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_1\\objects\\results\\.pending-v12svpqp' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_1\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[spatial_hash] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_2\\objects\\results\\.pending-9fksokh1' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_2\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[wrong_asset_run] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_3\\objects\\results\\.pending-2f6vz9hi' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_3\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[wrong_asset_uri] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_4\\objects\\results\\.pending-_k84ck1i' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_4\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[impact] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_5\\objects\\results\\.pending-srgay1be' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_5\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[dataset] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_6\\objects\\results\\.pending-dmalz8a9' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_6\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_corrupt_registered_state_fails_without_private_values[private_context] _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_7\\objects\\results\\.pending-bigkd3tf' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_corrupt_registered_state_7\\objects\\results\\max_depth.tif'
+_ ERROR at setup of test_downloads_preserve_full_head_range_and_warning_headers _
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_downloads_preserve_full_h0\\objects\\results\\.pending-2javcht2' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_downloads_preserve_full_h0\\objects\\results\\max_depth.tif'
+____ ERROR at setup of test_openapi_is_stable_and_advertises_no_kml_or_wse ____
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_openapi_is_stable_and_adv0\\objects\\results\\.pending-h57h4ltc' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_openapi_is_stable_and_adv0\\objects\\results\\max_depth.tif'
+__ ERROR at setup of test_config_requires_local_profile_and_launcher_marker ___
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_config_requires_local_pro0\\objects\\results\\.pending-n86ky39m' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_config_requires_local_pro0\\objects\\results\\max_depth.tif'
+_______ ERROR at setup of test_admission_changes_fail_closed[wrong_run] _______
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl0\\objects\\results\\.pending-kw5tjvog' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl0\\objects\\results\\max_depth.tif'
+______ ERROR at setup of test_admission_changes_fail_closed[wrong_hash] _______
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl1\\objects\\results\\.pending-xbhffpqw' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl1\\objects\\results\\max_depth.tif'
+_______ ERROR at setup of test_admission_changes_fail_closed[oversize] ________
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl2\\objects\\results\\.pending-goyx99tn' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl2\\objects\\results\\max_depth.tif'
+_____ ERROR at setup of test_admission_changes_fail_closed[missing_file] ______
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl3\\objects\\results\\.pending-ey1limi3' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_admission_changes_fail_cl3\\objects\\results\\max_depth.tif'
+___ ERROR at setup of test_preview_budget_and_admission_race_close_handles ____
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_preview_budget_and_admiss0\\objects\\results\\.pending-qofj4bkh' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_preview_budget_and_admiss0\\objects\\results\\max_depth.tif'
+___ ERROR at setup of test_preview_interrupted_asgi_send_releases_snapshot ____
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_preview_interrupted_asgi_0\\objects\\results\\.pending-2_976o2n' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_preview_interrupted_asgi_0\\objects\\results\\max_depth.tif'
+___ ERROR at setup of test_receiving_http_against_mock_preview_and_removal ____
+services\api\tests\test_prototype_preview.py:64: in mocked
+    _, checksum = store.put(reference, ("Synthetic transport bytes; not GIS: " + role).encode())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_receiving_http_against_mo0\\objects\\results\\.pending-ddbpc2v5' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_receiving_http_against_mo0\\objects\\results\\max_depth.tif'
+================================== FAILURES ===================================
+__________________ test_complete_snapshot_and_approved_reads __________________
+tests\test_published_registry.py:70: in test_complete_snapshot_and_approved_reads
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_complete_snapshot_and_app0\\objects\\results\\.pending-tqbv9dgt' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_complete_snapshot_and_app0\\objects\\results\\max_depth.tif'
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+________ test_unapproved_records_are_hidden_for_every_accessor[draft] _________
+tests\test_published_registry.py:101: in test_unapproved_records_are_hidden_for_every_accessor
+    item, store = bundle(session, tmp_path, status=status)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_unapproved_records_are_hi0\\objects\\results\\.pending-sujpvmrj' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_unapproved_records_are_hi0\\objects\\results\\max_depth.tif'
+_______ test_unapproved_records_are_hidden_for_every_accessor[rejected] _______
+tests\test_published_registry.py:101: in test_unapproved_records_are_hidden_for_every_accessor
+    item, store = bundle(session, tmp_path, status=status)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_unapproved_records_are_hi1\\objects\\results\\.pending-_q5n0qyl' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_unapproved_records_are_hi1\\objects\\results\\max_depth.tif'
+____________________ test_explicit_approval_trust_required ____________________
+tests\test_published_registry.py:120: in test_explicit_approval_trust_required
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_explicit_approval_trust_r0\\objects\\results\\.pending-11_0za9a' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_explicit_approval_trust_r0\\objects\\results\\max_depth.tif'
+_________________ test_production_requires_content_inspection _________________
+tests\test_published_registry.py:129: in test_production_requires_content_inspection
+    item, store = bundle(session, tmp_path, data_mode="production")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_production_requires_conte0\\objects\\results\\.pending-lky0lzwn' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_production_requires_conte0\\objects\\results\\max_depth.tif'
+_________________ test_bad_checksum_registers_nothing[asset] __________________
+tests\test_published_registry.py:142: in test_bad_checksum_registers_nothing
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no0\\objects\\results\\.pending-ygtjgf5n' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no0\\objects\\results\\max_depth.tif'
+________________ test_bad_checksum_registers_nothing[dataset] _________________
+tests\test_published_registry.py:142: in test_bad_checksum_registers_nothing
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no1\\objects\\results\\.pending-n75_l1j7' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no1\\objects\\results\\max_depth.tif'
+______________ test_bad_checksum_registers_nothing[assumptions] _______________
+tests\test_published_registry.py:142: in test_bad_checksum_registers_nothing
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no2\\objects\\results\\.pending-9w48nka7' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no2\\objects\\results\\max_depth.tif'
+_________________ test_bad_checksum_registers_nothing[report] _________________
+tests\test_published_registry.py:142: in test_bad_checksum_registers_nothing
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no3\\objects\\results\\.pending-c6hh8p3g' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_bad_checksum_registers_no3\\objects\\results\\max_depth.tif'
+____________________ test_registered_provenance_must_match ____________________
+tests\test_published_registry.py:159: in test_registered_provenance_must_match
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_registered_provenance_mus0\\objects\\results\\.pending-e_9n_3q9' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_registered_provenance_mus0\\objects\\results\\max_depth.tif'
+_________________________ test_missing_file_rejected __________________________
+tests\test_published_registry.py:166: in test_missing_file_rejected
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_missing_file_rejected0\\objects\\results\\.pending-iss8xp1l' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_missing_file_rejected0\\objects\\results\\max_depth.tif'
+________________ test_storage_root_and_resolved_asset_aliases _________________
+tests\test_published_registry.py:173: in test_storage_root_and_resolved_asset_aliases
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_storage_root_and_resolved0\\objects\\results\\.pending-5ksp2j0u' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_storage_root_and_resolved0\\objects\\results\\max_depth.tif'
+______________________ test_duplicate_import_is_rejected ______________________
+tests\test_published_registry.py:183: in test_duplicate_import_is_rejected
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_duplicate_import_is_rejec0\\objects\\results\\.pending-p1qurifk' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_duplicate_import_is_rejec0\\objects\\results\\max_depth.tif'
+__________________ test_inspection_failure_registers_nothing __________________
+tests\test_published_registry.py:194: in test_inspection_failure_registers_nothing
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_inspection_failure_regist0\\objects\\results\\.pending-5jzfog2s' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_inspection_failure_regist0\\objects\\results\\max_depth.tif'
+_______________ test_late_database_failure_rolls_back_savepoint _______________
+tests\test_published_registry.py:204: in test_late_database_failure_rolls_back_savepoint
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_late_database_failure_rol0\\objects\\results\\.pending-cxyhmg1k' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_late_database_failure_rol0\\objects\\results\\max_depth.tif'
+_______________ test_caller_rollback_removes_successful_import ________________
+tests\test_published_registry.py:219: in test_caller_rollback_removes_successful_import
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_caller_rollback_removes_s0\\objects\\results\\.pending-dcp06zaj' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_caller_rollback_removes_s0\\objects\\results\\max_depth.tif'
+______________ test_historical_replay_requires_catalog_and_links ______________
+tests\test_published_registry.py:227: in test_historical_replay_requires_catalog_and_links
+    item, store = bundle(session, tmp_path, event=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_historical_replay_require0\\objects\\results\\.pending-37__dgo6' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_historical_replay_require0\\objects\\results\\max_depth.tif'
+__________________ test_missing_event_and_event_version_link __________________
+tests\test_published_registry.py:234: in test_missing_event_and_event_version_link
+    item, store = bundle(session, tmp_path, event=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_missing_event_and_event_v0\\objects\\results\\.pending-aoodwvve' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_missing_event_and_event_v0\\objects\\results\\max_depth.tif'
+___________ test_revoke_hides_all_accessors_and_preserves_snapshot ____________
+tests\test_published_registry.py:244: in test_revoke_hides_all_accessors_and_preserves_snapshot
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_revoke_hides_all_accessor0\\objects\\results\\.pending-ksowhbpf' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_revoke_hides_all_accessor0\\objects\\results\\max_depth.tif'
+_ test_read_gate_defends_against_incomplete_run_metadata[validation_status-fail] _
+tests\test_published_registry.py:260: in test_read_gate_defends_against_incomplete_run_metadata
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_read_gate_defends_against0\\objects\\results\\.pending-04glvg1v' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_read_gate_defends_against0\\objects\\results\\max_depth.tif'
+____ test_read_gate_defends_against_incomplete_run_metadata[status-failed] ____
+tests\test_published_registry.py:260: in test_read_gate_defends_against_incomplete_run_metadata
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_read_gate_defends_against1\\objects\\results\\.pending-64bhu00t' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_read_gate_defends_against1\\objects\\results\\max_depth.tif'
+__ test_read_gate_defends_against_incomplete_run_metadata[approved_by-None] ___
+tests\test_published_registry.py:260: in test_read_gate_defends_against_incomplete_run_metadata
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_read_gate_defends_against2\\objects\\results\\.pending-xgmh7dqh' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_read_gate_defends_against2\\objects\\results\\max_depth.tif'
+_________________ test_manifest_run_id_full_supported_length __________________
+tests\test_published_registry.py:279: in test_manifest_run_id_full_supported_length
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_manifest_run_id_full_supp0\\objects\\results\\.pending-x99b4ipg' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_manifest_run_id_full_supp0\\objects\\results\\max_depth.tif'
+_________________ test_cli_registration_and_duplicate_failure _________________
+tests\test_published_registry.py:315: in test_cli_registration_and_duplicate_failure
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_cli_registration_and_dupl0\\objects\\results\\.pending-gqq0rxhx' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_cli_registration_and_dupl0\\objects\\results\\max_depth.tif'
+__________________ test_populated_bundle_backup_and_restore ___________________
+tests\test_published_registry.py:375: in test_populated_bundle_backup_and_restore
+    item, store, bundle_root = gis_prepared(writer, tmp_path)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_gis_catalog.py:24: in prepared
+    item, root, _ = build_fixture(store)
+                    ^^^^^^^^^^^^^^^^^^^^
+scripts\gis_fixture.py:49: in build_fixture
+    _, checksum = store.put(prefix + reference, cog_bytes(value, ROLE_UNITS[role], payload["time_coverage"]))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_populated_bundle_backup_a0\\objects\\scenarios\\synthetic-gis-local-003\\results\\.pending-j7nrpwnt' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_populated_bundle_backup_a0\\objects\\scenarios\\synthetic-gis-local-003\\results\\max_depth.tif'
+---------------------------- Captured stderr call -----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+______ test_database_rejects_incomplete_approval[validation_status-None] ______
+tests\test_published_registry.py:400: in test_database_rejects_incomplete_approval
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple0\\objects\\results\\.pending-_vu23nzf' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple0\\objects\\results\\max_depth.tif'
+___________ test_database_rejects_incomplete_approval[approved_by-] ___________
+tests\test_published_registry.py:400: in test_database_rejects_incomplete_approval
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple1\\objects\\results\\.pending-3phwqi4z' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple1\\objects\\results\\max_depth.tif'
+_________ test_database_rejects_incomplete_approval[approved_by-None] _________
+tests\test_published_registry.py:400: in test_database_rejects_incomplete_approval
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple2\\objects\\results\\.pending-xmmkpc2q' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple2\\objects\\results\\max_depth.tif'
+_________ test_database_rejects_incomplete_approval[approved_at-None] _________
+tests\test_published_registry.py:400: in test_database_rejects_incomplete_approval
+    item, store = bundle(session, tmp_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_published_registry.py:44: in bundle
+    _, checksum = store.put(reference, content)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple3\\objects\\results\\.pending-8q6c2nt3' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_database_rejects_incomple3\\objects\\results\\max_depth.tif'
+_____ test_unsafe_workloads_are_refused_before_database_access[settings0] _____
+services\api\tests\test_receiving_rehearsal.py:44: in test_unsafe_workloads_are_refused_before_database_access
+    with pytest.raises(ValueError, match="safe local bounds"):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'safe local bounds'
+E     Actual message: 'receiving setup requires Python 3.13'
+_____ test_unsafe_workloads_are_refused_before_database_access[settings1] _____
+services\api\tests\test_receiving_rehearsal.py:44: in test_unsafe_workloads_are_refused_before_database_access
+    with pytest.raises(ValueError, match="safe local bounds"):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'safe local bounds'
+E     Actual message: 'receiving setup requires Python 3.13'
+_____ test_unsafe_workloads_are_refused_before_database_access[settings2] _____
+services\api\tests\test_receiving_rehearsal.py:44: in test_unsafe_workloads_are_refused_before_database_access
+    with pytest.raises(ValueError, match="safe local bounds"):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'safe local bounds'
+E     Actual message: 'receiving setup requires Python 3.13'
+_____ test_unsafe_workloads_are_refused_before_database_access[settings3] _____
+services\api\tests\test_receiving_rehearsal.py:44: in test_unsafe_workloads_are_refused_before_database_access
+    with pytest.raises(ValueError, match="safe local bounds"):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'safe local bounds'
+E     Actual message: 'receiving setup requires Python 3.13'
+_____ test_unsafe_workloads_are_refused_before_database_access[settings4] _____
+services\api\tests\test_receiving_rehearsal.py:44: in test_unsafe_workloads_are_refused_before_database_access
+    with pytest.raises(ValueError, match="safe local bounds"):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'safe local bounds'
+E     Actual message: 'receiving setup requires Python 3.13'
+_____ test_unsafe_workloads_are_refused_before_database_access[settings5] _____
+services\api\tests\test_receiving_rehearsal.py:44: in test_unsafe_workloads_are_refused_before_database_access
+    with pytest.raises(ValueError, match="safe local bounds"):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'safe local bounds'
+E     Actual message: 'receiving setup requires Python 3.13'
+_________ test_io_baseline_is_explicitly_not_a_gis_or_capacity_claim __________
+services\api\tests\test_receiving_rehearsal.py:92: in test_io_baseline_is_explicitly_not_a_gis_or_capacity_claim
+    uri, checksum = store.put("performance/opaque.bin", data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:47: in put
+    os.link(temporary_path, path)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_io_baseline_is_explicitly0\\objects\\performance\\.pending-a0r9fdf4' -> 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-032626\\test_io_baseline_is_explicitly0\\objects\\performance\\opaque.bin'
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\LENOVO\Documents\Codex\2026-10-07\files-mentioned-by-the-user-start\Ukai_Combined\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_published_registry.py::test_complete_snapshot_and_approved_reads
+FAILED tests/test_published_registry.py::test_unapproved_records_are_hidden_for_every_accessor[draft]
+FAILED tests/test_published_registry.py::test_unapproved_records_are_hidden_for_every_accessor[rejected]
+FAILED tests/test_published_registry.py::test_explicit_approval_trust_required
+FAILED tests/test_published_registry.py::test_production_requires_content_inspection
+FAILED tests/test_published_registry.py::test_bad_checksum_registers_nothing[asset]
+FAILED tests/test_published_registry.py::test_bad_checksum_registers_nothing[dataset]
+FAILED tests/test_published_registry.py::test_bad_checksum_registers_nothing[assumptions]
+FAILED tests/test_published_registry.py::test_bad_checksum_registers_nothing[report]
+FAILED tests/test_published_registry.py::test_registered_provenance_must_match
+FAILED tests/test_published_registry.py::test_missing_file_rejected - Permiss...
+FAILED tests/test_published_registry.py::test_storage_root_and_resolved_asset_aliases
+FAILED tests/test_published_registry.py::test_duplicate_import_is_rejected - ...
+FAILED tests/test_published_registry.py::test_inspection_failure_registers_nothing
+FAILED tests/test_published_registry.py::test_late_database_failure_rolls_back_savepoint
+FAILED tests/test_published_registry.py::test_caller_rollback_removes_successful_import
+FAILED tests/test_published_registry.py::test_historical_replay_requires_catalog_and_links
+FAILED tests/test_published_registry.py::test_missing_event_and_event_version_link
+FAILED tests/test_published_registry.py::test_revoke_hides_all_accessors_and_preserves_snapshot
+FAILED tests/test_published_registry.py::test_read_gate_defends_against_incomplete_run_metadata[validation_status-fail]
+FAILED tests/test_published_registry.py::test_read_gate_defends_against_incomplete_run_metadata[status-failed]
+FAILED tests/test_published_registry.py::test_read_gate_defends_against_incomplete_run_metadata[approved_by-None]
+FAILED tests/test_published_registry.py::test_manifest_run_id_full_supported_length
+FAILED tests/test_published_registry.py::test_cli_registration_and_duplicate_failure
+FAILED tests/test_published_registry.py::test_populated_bundle_backup_and_restore
+FAILED tests/test_published_registry.py::test_database_rejects_incomplete_approval[validation_status-None]
+FAILED tests/test_published_registry.py::test_database_rejects_incomplete_approval[approved_by-]
+FAILED tests/test_published_registry.py::test_database_rejects_incomplete_approval[approved_by-None]
+FAILED tests/test_published_registry.py::test_database_rejects_incomplete_approval[approved_at-None]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_unsafe_workloads_are_refused_before_database_access[settings0]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_unsafe_workloads_are_refused_before_database_access[settings1]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_unsafe_workloads_are_refused_before_database_access[settings2]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_unsafe_workloads_are_refused_before_database_access[settings3]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_unsafe_workloads_are_refused_before_database_access[settings4]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_unsafe_workloads_are_refused_before_database_access[settings5]
+FAILED services/api/tests/test_receiving_rehearsal.py::test_io_baseline_is_explicitly_not_a_gis_or_capacity_claim
+ERROR services/api/tests/test_prototype_preview.py::test_mock_preview_has_explicit_warning_and_nulls
+ERROR services/api/tests/test_prototype_preview.py::test_disabled_and_removed_admission_hide_every_resource[]
+ERROR services/api/tests/test_prototype_preview.py::test_disabled_and_removed_admission_hide_every_resource[/layers]
+ERROR services/api/tests/test_prototype_preview.py::test_disabled_and_removed_admission_hide_every_resource[/impact]
+ERROR services/api/tests/test_prototype_preview.py::test_disabled_and_removed_admission_hide_every_resource[/assumptions]
+ERROR services/api/tests/test_prototype_preview.py::test_disabled_and_removed_admission_hide_every_resource[/quality-report]
+ERROR services/api/tests/test_prototype_preview.py::test_disabled_and_removed_admission_hide_every_resource[/assets/max_depth_cog]
+ERROR services/api/tests/test_prototype_preview.py::test_nonloopback_and_forwarded_headers_cannot_bypass[10.0.0.1]
+ERROR services/api/tests/test_prototype_preview.py::test_nonloopback_and_forwarded_headers_cannot_bypass[192.168.1.5]
+ERROR services/api/tests/test_prototype_preview.py::test_nonloopback_and_forwarded_headers_cannot_bypass[testclient]
+ERROR services/api/tests/test_prototype_preview.py::test_bounded_and_explicit_query_validation[?limit=101]
+ERROR services/api/tests/test_prototype_preview.py::test_bounded_and_explicit_query_validation[?offset=-1]
+ERROR services/api/tests/test_prototype_preview.py::test_bounded_and_explicit_query_validation[?include_drafts=true]
+ERROR services/api/tests/test_prototype_preview.py::test_bounded_and_explicit_query_validation[?data_mode=demo]
+ERROR services/api/tests/test_prototype_preview.py::test_bounded_and_explicit_query_validation[?limit=1&limit=2]
+ERROR services/api/tests/test_prototype_preview.py::test_malformed_admission_fails_closed
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[manifest]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[context_bytes]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[spatial_hash]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[wrong_asset_run]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[wrong_asset_uri]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[impact]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[dataset]
+ERROR services/api/tests/test_prototype_preview.py::test_corrupt_registered_state_fails_without_private_values[private_context]
+ERROR services/api/tests/test_prototype_preview.py::test_downloads_preserve_full_head_range_and_warning_headers
+ERROR services/api/tests/test_prototype_preview.py::test_openapi_is_stable_and_advertises_no_kml_or_wse
+ERROR services/api/tests/test_prototype_preview.py::test_config_requires_local_profile_and_launcher_marker
+ERROR services/api/tests/test_prototype_preview.py::test_admission_changes_fail_closed[wrong_run]
+ERROR services/api/tests/test_prototype_preview.py::test_admission_changes_fail_closed[wrong_hash]
+ERROR services/api/tests/test_prototype_preview.py::test_admission_changes_fail_closed[oversize]
+ERROR services/api/tests/test_prototype_preview.py::test_admission_changes_fail_closed[missing_file]
+ERROR services/api/tests/test_prototype_preview.py::test_preview_budget_and_admission_race_close_handles
+ERROR services/api/tests/test_prototype_preview.py::test_preview_interrupted_asgi_send_releases_snapshot
+ERROR services/api/tests/test_prototype_preview.py::test_receiving_http_against_mock_preview_and_removal
+36 failed, 118 passed, 1 warning, 34 errors in 23.41s

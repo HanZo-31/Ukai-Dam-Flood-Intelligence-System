@@ -1,0 +1,67 @@
+{
+  "import": {
+    "reports": [
+      "evidence/import-h02-034138/report.json",
+      "evidence/import-h01-034138/report.json",
+      "evidence/import-h03-034138/report.json",
+      "evidence/import-2006-034138/report.json"
+    ],
+    "count": 4,
+    "passed": true
+  },
+  "http": {
+    "reports": [
+      "evidence/http-h02-034138/report.json",
+      "evidence/http-h01-034138/report.json",
+      "evidence/http-h03-034138/report.json",
+      "evidence/http-2006-034138/report.json"
+    ],
+    "count": 4,
+    "passed": true
+  },
+  "hidden": {
+    "reports": [
+      "evidence/hidden-h02-034138/report.json",
+      "evidence/hidden-h01-034138/report.json",
+      "evidence/hidden-h03-034138/report.json",
+      "evidence/hidden-2006-034138/report.json"
+    ],
+    "count": 4,
+    "passed": true
+  },
+  "tests": {
+    "passed": true,
+    "summary": "887 passed, 4 skipped, 1 warning in 224.67s (0:03:44)",
+    "log": "evidence/integrated-tests-034138.log"
+  },
+  "quality": {
+    "passed": true,
+    "report": "evidence/quality-final-v1.json"
+  },
+  "original_source_checks": [
+    {
+      "scenario_id": "ukai-hyp-h02-release20000-v1",
+      "files_checked": 10,
+      "unchanged": true
+    },
+    {
+      "scenario_id": "ukai-hyp-h01-release15000-v1",
+      "files_checked": 10,
+      "unchanged": true
+    },
+    {
+      "scenario_id": "ukai-hyp-h03-release30000-v1",
+      "files_checked": 10,
+      "unchanged": true
+    },
+    {
+      "scenario_id": "ukai-2006-historical-v2",
+      "files_checked": 12,
+      "unchanged": true
+    }
+  ],
+  "receipt_hashes_rechecked": true,
+  "backend_integration_complete": true,
+  "frontend_complete": false,
+  "scientific_validation": false
+}

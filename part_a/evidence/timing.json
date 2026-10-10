@@ -1,0 +1,19 @@
+{
+  "raw_producing_completion": "2026-10-07 08:34:11",
+  "producing_timezone": null,
+  "current_windows_timezone": "India Standard Time",
+  "historical_timezone_confirmed": false,
+  "user_reply": "I cannot confirm the timezone",
+  "run_timestamp": null,
+  "coverage": {
+    "start": "2006-08-06T06:00:00Z",
+    "end": "2006-08-11T00:00:00Z"
+  },
+  "coverage_convention": "Nominal UTC index newly assigned to the hypothetical model clock; absolute historical timezone is not asserted. Relative duration and arrival offsets are preserved.",
+  "result_output_interval_minutes": 15,
+  "mapping_interval_minutes": 60,
+  "arrival_resolution_minutes": 60,
+  "computation_step_seconds": 10,
+  "forcing_interval_minutes": 60,
+  "evidence": "Preserved p04 explicitly records Output Interval=15MIN and Mapping Interval=1HOUR."
+}

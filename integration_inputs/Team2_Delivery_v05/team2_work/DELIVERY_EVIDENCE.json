@@ -1,0 +1,6 @@
+{
+  "regression": "evidence/final-regression-v03/report.json",
+  "quality": "evidence/final-quality-v07/report.json",
+  "packaging": "evidence/packaging-check-v04/report.json",
+  "contract": "evidence/contract-reconciliation-v03/report.json"
+}

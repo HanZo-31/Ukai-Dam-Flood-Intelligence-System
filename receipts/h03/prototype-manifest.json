@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.1.0-local-draft",
+  "scenario_id": "ukai-hyp-h03-release30000-combined-v1",
+  "scenario_type": "hypothetical",
+  "status": "draft",
+  "model_version": "ukai-h03-model-snapshot-eb211466be4f3179",
+  "input_dataset_version": "ukai-h03-input-snapshot-eb211466be4f3179",
+  "crs": "EPSG:32643",
+  "time_step_minutes": 15,
+  "data_mode": "production",
+  "data_kind": "simulated",
+  "run_id": "ukai-hyp-h03-release30000-combined-v1-run",
+  "run_timestamp": null,
+  "time_coverage": {
+    "start": "2006-08-06T06:00:00Z",
+    "end": "2006-08-11T00:00:00Z"
+  },
+  "historical_event_id": null,
+  "parameters": {
+    "reservoir_level_m": null,
+    "peak_inflow_m3s": null,
+    "peak_release_m3s": 30000.0,
+    "breach_width_m": null,
+    "breach_formation_minutes": null
+  },
+  "parameter_units": {
+    "reservoir_level_m": "m",
+    "peak_inflow_m3s": "m3/s",
+    "peak_release_m3s": "m3/s",
+    "breach_width_m": "m",
+    "breach_formation_minutes": "min"
+  },
+  "datasets": [
+    {
+      "dataset_id": "ukai-h03-plan",
+      "version": "sha256-ad04283bdfc82e16",
+      "source_reference": "inputs/plan.p05",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:ad04283bdfc82e1691d5159aa35b2655f5575c824abc01cd77326b5f3e0a6838",
+      "crs": null,
+      "time_coverage": null,
+      "quality_notes": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted."
+    },
+    {
+      "dataset_id": "ukai-h03-forcing",
+      "version": "sha256-ee972e2a6a60fa6e",
+      "source_reference": "inputs/forcing.u06",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01",
+      "crs": null,
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "quality_notes": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted."
+    },
+    {
+      "dataset_id": "ukai-h03-geometry",
+      "version": "sha256-e6072375c5bd7a61",
+      "source_reference": "inputs/geometry.g01",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+      "crs": "EPSG:32643",
+      "time_coverage": null,
+      "quality_notes": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted."
+    },
+    {
+      "dataset_id": "ukai-h03-terrain",
+      "version": "sha256-c439396123c0414c",
+      "source_reference": "inputs/terrain.tif",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+      "crs": "EPSG:32643",
+      "time_coverage": null,
+      "quality_notes": "Existing Part A input, preserved by checksum. Content-addressed snapshot assigned locally. Forcing is assumed or reconstructed; no verified observation or licence is asserted."
+    }
+  ],
+  "assets": {
+    "max_depth_cog": "assets/max_depth.tif",
+    "max_velocity_cog": "assets/max_velocity.tif",
+    "arrival_time_cog": "assets/arrival_time.tif",
+    "extent_geojson": "assets/extent.geojson"
+  },
+  "asset_metadata": {
+    "max_depth_cog": {
+      "checksum": "sha256:446b999cd61ad89665803f95c38e82ae961d58e18fc786183cd68fb48b6bf1cb",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "m",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": -9999.0
+    },
+    "max_velocity_cog": {
+      "checksum": "sha256:417da4a4aed23c073083cda12b86cbe7c2f7e43ff95b1962bb35d2d6adb4e850",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "m/s",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": -9999.0
+    },
+    "arrival_time_cog": {
+      "checksum": "sha256:d7916d8775fd5734e669c67390d2b91206b63dde7088dcbd52e3b006776397ad",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "min",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": -9999.0
+    },
+    "extent_geojson": {
+      "checksum": "sha256:4ebaa3cc3dae044c44b73c4bb50f800331b49420521999c96bbe98c28f0293aa",
+      "format": "geojson",
+      "crs": "EPSG:4326",
+      "unit": "1",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": null
+    }
+  },
+  "summary": {
+    "max_depth_m": 39.27752685546875,
+    "flooded_area_km2": 450.3540697683172,
+    "population_exposed": null,
+    "buildings_exposed": null,
+    "roads_affected_km": null,
+    "critical_facilities_exposed": null
+  },
+  "assumptions_url": "prototype-context.json",
+  "assumptions_checksum": "sha256:9b82cd6f782849adea20b54b2af24b5d9a3c325f1295a9f531c5963c9de6ab15",
+  "quality": {
+    "validation_status": "pending",
+    "approved_by": null,
+    "approved_at": null,
+    "report_reference": "reports/quality.json",
+    "report_checksum": "sha256:b9969413e5228f06a0ae7f077d6bfedd593a84e256a547e6bc248ebba761f249"
+  },
+  "run_timestamp_unknown_reason": "Producing HEC-RAS timezone is not attested in supplied files. No UTC producing-run instant is asserted."
+}

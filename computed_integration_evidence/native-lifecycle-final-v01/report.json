@@ -1,0 +1,145 @@
+{
+  "checked_at": "2026-10-09T11:53:20.012122+00:00",
+  "passed": true,
+  "real_full_runs": 1,
+  "interrupted_partial_job_not_additional_scenario": true,
+  "baseline_database_used": false,
+  "synthetic_provider_used": false,
+  "result": {
+    "actual_peak_release_m3s": 25000,
+    "arrival_definition": {
+      "comparison_transform": "ceil(native_seconds/3600)*60",
+      "definition_compatible": true,
+      "native_unit": "s",
+      "origin": "elapsed_simulation_start",
+      "threshold_m": 0.1,
+      "unavailable_reason": null
+    },
+    "assets": {
+      "arrival_time_cog": {
+        "bytes": 87864,
+        "sha256": "sha256:c33d7653ea19adb197653a23b4d89ae9b9b5597b06e1213120f9e809a29e6a4b",
+        "unit": "min",
+        "url": "/api/v1/candidates/compute-v2/jobs/guard-real-25000-v03/assets/arrival_time_cog"
+      },
+      "extent_geojson": {
+        "bytes": 490528,
+        "sha256": "sha256:d8bff740e6a0a68f679c2e20f6dd8370640ae711ae374fea11f1a5f65df2b395",
+        "unit": "geographic_coordinates",
+        "url": "/api/v1/candidates/compute-v2/jobs/guard-real-25000-v03/assets/extent_geojson"
+      },
+      "max_depth_cog": {
+        "bytes": 241211,
+        "sha256": "sha256:bf53b37e4f30e633732db58a6fce9dfa1fdf49c307adb88f8b8ba3feb3e7d830",
+        "unit": "m",
+        "url": "/api/v1/candidates/compute-v2/jobs/guard-real-25000-v03/assets/max_depth_cog"
+      },
+      "max_velocity_cog": {
+        "bytes": 206453,
+        "sha256": "sha256:346bbc3c51e79ca6b8ff3a612b8ffc74a4f597650f8e1767a80b69317f965c42",
+        "unit": "m/s",
+        "url": "/api/v1/candidates/compute-v2/jobs/guard-real-25000-v03/assets/max_velocity_cog"
+      }
+    },
+    "cache_hit": false,
+    "calibration_status": "uncalibrated",
+    "computed": true,
+    "configuration_checksum": "sha256:9359b0409b314fde3141541df8c8e6d0f2431d62b47516eabc41bdf9f29bfa27",
+    "configuration_id": "ukai-fast-fixedshape-n0025-v1",
+    "derived_grid": {
+      "crs": "EPSG:32643",
+      "height": 1024,
+      "mapping": "nearest_neighbour_with_validity_mask",
+      "nodata": -9999,
+      "target_reference_scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+      "transform": [
+        28.999033361477533,
+        0.0,
+        268076.8810281253,
+        0.0,
+        -28.999033361477533,
+        2369001.58195343
+      ],
+      "width": 3072
+    },
+    "engine": "experimental_fast_solver",
+    "engine_version": "li2d-original-dll-d56ef33a1394",
+    "input_checksums": {
+      "base:part_a/assets/max_depth.tif": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+      "base:part_a/inputs/forcing.u05": "sha256:b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+      "base:part_a/inputs/geometry.g01": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+      "base:part_a/inputs/terrain.tif": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+      "base:receipts/h01/inputs/forcing.u04": "sha256:2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+      "base:receipts/h03/inputs/forcing.u06": "sha256:ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01"
+    },
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "job_id": "guard-real-25000-v03",
+    "limitations": [
+      "No channel bathymetry; vertical datum unresolved.",
+      "No exposure data or evacuation/optimal release recommendation.",
+      "Agreement with stored HEC-RAS is not observational validation.",
+      "Velocity is maximum face-normal component, not HEC-RAS speed magnitude.",
+      "Comparing this new release with a different HEC-RAS release changes both forcing and engine; differences do not isolate release effect.",
+      "Input licensing and producing-run historical timezone remain unverified."
+    ],
+    "native_results_checksum": "sha256:a7ad39154f6e02dbb423ccff00da118b52c6e0599a7030f020dc00de26cbfe18",
+    "numerical_diagnostics_checksum": "sha256:6f29f503f336b1bc692f90cea9bd798b048bf9e9252ca89ecae847ace082092e",
+    "request_id": "guard-real-25000-v03",
+    "requested_peak_release_m3s": 25000,
+    "run_id": "ukai-fast-run-c19bc2f9322e3643",
+    "scenario_id": "ukai-fast-q25000-c19bc2f9322e3643",
+    "schema_version": "2.0.0",
+    "scientifically_validated": false,
+    "timings": {
+      "availability_seconds": 6.287674393191992,
+      "package_check_seconds": 0.5741795000030834,
+      "prepare_seconds": 1.0230206000014732,
+      "request_to_assets_seconds": 130.49587669999892,
+      "scope": "request_to_checked_asset_availability_not_browser_ready",
+      "solver_seconds": 122.61100220680237
+    },
+    "unavailable_reasons": {
+      "arrival_time_cog": null,
+      "extent_geojson": null,
+      "max_depth_cog": null,
+      "max_velocity_cog": null
+    },
+    "velocity_definition": "Maximum absolute face-normal flux divided by face depth over the run; not velocity-vector magnitude.",
+    "warnings": [
+      "experimental_simulation",
+      "uncalibrated",
+      "not_observed_flood_truth",
+      "native_100m_grid_resampled_not_29m_hydraulics",
+      "manning_n_fitted_to_unvalidated_hecras_h02",
+      "assumed_hydrograph_not_reservoir_routing"
+    ]
+  },
+  "observed_states": [
+    "completed",
+    "running"
+  ],
+  "request_to_checked_result_seconds": 168.44706829999996,
+  "abrupt_service_exit_killed_owned_native_worker": true,
+  "interrupted_job": {
+    "cache_hit": false,
+    "configuration_checksum": "sha256:9359b0409b314fde3141541df8c8e6d0f2431d62b47516eabc41bdf9f29bfa27",
+    "configuration_id": "ukai-fast-fixedshape-n0025-v1",
+    "created_at": "2026-10-09T11:56:13.256834+00:00",
+    "elapsed_wall_seconds": 0,
+    "error": {
+      "code": "interrupted",
+      "message": "The previous computation was interrupted."
+    },
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "job_id": "guard-interrupted-v03",
+    "request_id": "guard-interrupted-v03",
+    "requested_peak_release_m3s": 26000,
+    "result_url": null,
+    "schema_version": "2.0.0",
+    "status": "failed",
+    "updated_at": "2026-10-09T11:56:18.622672+00:00"
+  },
+  "prior_completed_result_survives_restart": true,
+  "checked_cache_survives_restart": true,
+  "owned_service_stopped": true
+}

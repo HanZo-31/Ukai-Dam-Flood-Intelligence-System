@@ -1,0 +1,709 @@
+..........FFFF.FF.F.FFFFFFFFFFFFFFFFFFFF                                 [100%]
+================================== FAILURES ===================================
+_____________ test_owner_is_specific_and_different_from_baseline ______________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_owner_is_specific_and_dif0')
+
+    def test_owner_is_specific_and_different_from_baseline(tmp_path):
+>       owner = config(tmp_path).owner()
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_owner_is_specific_and_dif0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+________ test_invalid_port_profile_rejected_before_resources[changes0] ________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_invalid_port_profile_reje0')
+changes = {'api_port': 55434}
+
+    @pytest.mark.parametrize('changes', [{'api_port': 55434}, {'web_port': 0}, {'candidate_port': 65536}])
+    def test_invalid_port_profile_rejected_before_resources(tmp_path, changes):
+>       with pytest.raises(ValueError, match='distinct valid ports'):
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'distinct valid ports'
+E         Actual message: 'Separate specific local state directory required'
+
+team2_work\test_combined_runtime.py:32: AssertionError
+________ test_invalid_port_profile_rejected_before_resources[changes1] ________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_invalid_port_profile_reje1')
+changes = {'web_port': 0}
+
+    @pytest.mark.parametrize('changes', [{'api_port': 55434}, {'web_port': 0}, {'candidate_port': 65536}])
+    def test_invalid_port_profile_rejected_before_resources(tmp_path, changes):
+>       with pytest.raises(ValueError, match='distinct valid ports'):
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'distinct valid ports'
+E         Actual message: 'Separate specific local state directory required'
+
+team2_work\test_combined_runtime.py:32: AssertionError
+________ test_invalid_port_profile_rejected_before_resources[changes2] ________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_invalid_port_profile_reje2')
+changes = {'candidate_port': 65536}
+
+    @pytest.mark.parametrize('changes', [{'api_port': 55434}, {'web_port': 0}, {'candidate_port': 65536}])
+    def test_invalid_port_profile_rejected_before_resources(tmp_path, changes):
+>       with pytest.raises(ValueError, match='distinct valid ports'):
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'distinct valid ports'
+E         Actual message: 'Separate specific local state directory required'
+
+team2_work\test_combined_runtime.py:32: AssertionError
+_________________ test_existing_unowned_state_is_not_adopted __________________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_existing_unowned_state_is0')
+
+    def test_existing_unowned_state_is_not_adopted(tmp_path):
+        cfg = config(tmp_path)
+        cfg.state.mkdir()
+        (cfg.state / 'do-not-touch.txt').write_text('User data')
+>       with pytest.raises(ValueError, match='without matching owner'):
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'without matching owner'
+E         Actual message: 'Separate specific local state directory required'
+
+team2_work\test_combined_runtime.py:46: AssertionError
+________________ test_changed_owner_or_ports_cannot_be_reused _________________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_changed_owner_or_ports_ca0')
+
+    def test_changed_owner_or_ports_cannot_be_reused(tmp_path):
+        cfg = config(tmp_path)
+        cfg.state.mkdir()
+>       runtime.json_atomic(cfg.state / 'combined-owner.json', cfg.owner())
+                                                               ^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_changed_owner_or_ports_ca0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+________________ test_occupied_port_is_not_stopped_or_adopted _________________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_occupied_port_is_not_stop0')
+
+    def test_occupied_port_is_not_stopped_or_adopted(tmp_path):
+        with socket.socket() as listener:
+            listener.bind(('127.0.0.1', 0))
+            listener.listen()
+            port = listener.getsockname()[1]
+            with pytest.raises(RuntimeError, match='in use'):
+>               runtime.check_ports(config(tmp_path, web_port=port))
+
+team2_work\test_combined_runtime.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\combined_runtime.py:128: in check_ports
+    for name, port in config.owner()['ports'].items():
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...ytest/test_occupied_port_is_not_stop0/owned-state'), db_port=55434, api_port=8767, web_port=53678, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_______________ test_shutdown_error_is_not_reported_as_stopped ________________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_shutdown_error_is_not_rep1')
+
+    def test_shutdown_error_is_not_reported_as_stopped(tmp_path):
+        cfg = config(tmp_path)
+        cfg.state.mkdir()
+>       supervisor = runtime.Supervisor(cfg)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\combined_runtime.py:187: in __init__
+    self.owner = config.owner()
+                 ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_shutdown_error_is_not_rep1/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_____________ test_candidate_failure_preserves_reference_monitor ______________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_candidate_failure_preserv0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAF260>
+
+    def test_candidate_failure_preserves_reference_monitor(tmp_path, monkeypatch):
+        cfg = config(tmp_path)
+        cfg.state.mkdir()
+>       supervisor = runtime.Supervisor(cfg)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\combined_runtime.py:187: in __init__
+    self.owner = config.owner()
+                 ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_candidate_failure_preserv0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+________________ test_reference_failure_requires_owned_cleanup ________________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_reference_failure_require0')
+
+    def test_reference_failure_requires_owned_cleanup(tmp_path):
+        cfg = config(tmp_path)
+        cfg.state.mkdir()
+>       supervisor = runtime.Supervisor(cfg)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\combined_runtime.py:187: in __init__
+    self.owner = config.owner()
+                 ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_reference_failure_require0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_____________ test_stale_duplicate_cannot_report_success[stopped] _____________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_stale_duplicate_cannot_re0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAD550>
+status = 'stopped'
+
+    @pytest.mark.parametrize('status', ['stopped', 'shutdown_failed', 'initializing'])
+    def test_stale_duplicate_cannot_report_success(tmp_path, monkeypatch, status):
+>       cfg, owner, _ = ready_existing(tmp_path, status)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_stale_duplicate_cannot_re0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_________ test_stale_duplicate_cannot_report_success[shutdown_failed] _________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_stale_duplicate_cannot_re1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B6FC20>
+status = 'shutdown_failed'
+
+    @pytest.mark.parametrize('status', ['stopped', 'shutdown_failed', 'initializing'])
+    def test_stale_duplicate_cannot_report_success(tmp_path, monkeypatch, status):
+>       cfg, owner, _ = ready_existing(tmp_path, status)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_stale_duplicate_cannot_re1/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+__________ test_stale_duplicate_cannot_report_success[initializing] ___________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_stale_duplicate_cannot_re2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4F27260>
+status = 'initializing'
+
+    @pytest.mark.parametrize('status', ['stopped', 'shutdown_failed', 'initializing'])
+    def test_stale_duplicate_cannot_report_success(tmp_path, monkeypatch, status):
+>       cfg, owner, _ = ready_existing(tmp_path, status)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_stale_duplicate_cannot_re2/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+___________ test_duplicate_rechecks_real_readiness[unavailable-api] ___________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_rechecks_real_r0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B127B0>
+fault = 'unavailable-api'
+
+    @pytest.mark.parametrize('fault', ['unavailable-api', 'wrong-run', 'unavailable-candidate', 'wrong-mode', 'ml-enabled'])
+    def test_duplicate_rechecks_real_readiness(tmp_path, monkeypatch, fault):
+>       cfg, owner, items = ready_existing(tmp_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_rechecks_real_r0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+______________ test_duplicate_rechecks_real_readiness[wrong-run] ______________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_rechecks_real_r1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B21550>
+fault = 'wrong-run'
+
+    @pytest.mark.parametrize('fault', ['unavailable-api', 'wrong-run', 'unavailable-candidate', 'wrong-mode', 'ml-enabled'])
+    def test_duplicate_rechecks_real_readiness(tmp_path, monkeypatch, fault):
+>       cfg, owner, items = ready_existing(tmp_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_rechecks_real_r1/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+________ test_duplicate_rechecks_real_readiness[unavailable-candidate] ________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_rechecks_real_r2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B6F4A0>
+fault = 'unavailable-candidate'
+
+    @pytest.mark.parametrize('fault', ['unavailable-api', 'wrong-run', 'unavailable-candidate', 'wrong-mode', 'ml-enabled'])
+    def test_duplicate_rechecks_real_readiness(tmp_path, monkeypatch, fault):
+>       cfg, owner, items = ready_existing(tmp_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_rechecks_real_r2/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_____________ test_duplicate_rechecks_real_readiness[wrong-mode] ______________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_rechecks_real_r3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAFA70>
+fault = 'wrong-mode'
+
+    @pytest.mark.parametrize('fault', ['unavailable-api', 'wrong-run', 'unavailable-candidate', 'wrong-mode', 'ml-enabled'])
+    def test_duplicate_rechecks_real_readiness(tmp_path, monkeypatch, fault):
+>       cfg, owner, items = ready_existing(tmp_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_rechecks_real_r3/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_____________ test_duplicate_rechecks_real_readiness[ml-enabled] ______________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_rechecks_real_r4')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BADCA0>
+fault = 'ml-enabled'
+
+    @pytest.mark.parametrize('fault', ['unavailable-api', 'wrong-run', 'unavailable-candidate', 'wrong-mode', 'ml-enabled'])
+    def test_duplicate_rechecks_real_readiness(tmp_path, monkeypatch, fault):
+>       cfg, owner, items = ready_existing(tmp_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_rechecks_real_r4/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_______ test_duplicate_healthy_or_explicitly_degraded_reference[ready] ________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_healthy_or_expl0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B6D940>
+status = 'ready'
+
+    @pytest.mark.parametrize('status', ['ready', 'ready_candidate_unavailable'])
+    def test_duplicate_healthy_or_explicitly_degraded_reference(tmp_path, monkeypatch, status):
+>       cfg, owner, items = ready_existing(tmp_path, status)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_healthy_or_expl0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_ test_duplicate_healthy_or_explicitly_degraded_reference[ready_candidate_unavailable] _
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_healthy_or_expl1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B13A40>
+status = 'ready_candidate_unavailable'
+
+    @pytest.mark.parametrize('status', ['ready', 'ready_candidate_unavailable'])
+    def test_duplicate_healthy_or_explicitly_degraded_reference(tmp_path, monkeypatch, status):
+>       cfg, owner, items = ready_existing(tmp_path, status)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_healthy_or_expl1/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+________ test_duplicate_main_rejects_matching_proxy_with_failed_status ________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_duplicate_main_rejects_ma0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAD310>
+
+    def test_duplicate_main_rejects_matching_proxy_with_failed_status(tmp_path, monkeypatch):
+>       cfg, owner, _ = ready_existing(tmp_path, 'shutdown_failed')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:183: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:135: in ready_existing
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...pytest/test_duplicate_main_rejects_ma0/owned-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+______ test_verified_alias_transition_preserves_database_without_writing ______
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_verified_alias_transition0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAFD70>
+
+    def test_verified_alias_transition_preserves_database_without_writing(tmp_path, monkeypatch):
+>       cfg, owner, recorded = alias_fixture(tmp_path, monkeypatch)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:218: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:203: in alias_fixture
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...est/test_verified_alias_transition0/physical-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+_____ test_alias_transition_cannot_adopt_unrelated_state[wrong-database] ______
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_alias_transition_cannot_a0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAE090>
+fault = 'wrong-database'
+
+    @pytest.mark.parametrize('fault', ['wrong-database', 'wrong-status-instance', 'wrong-object-root', 'altered-old-owner'])
+    def test_alias_transition_cannot_adopt_unrelated_state(tmp_path, monkeypatch, fault):
+>       cfg, owner, recorded = alias_fixture(tmp_path, monkeypatch)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:225: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:203: in alias_fixture
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...est/test_alias_transition_cannot_a0/physical-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+__ test_alias_transition_cannot_adopt_unrelated_state[wrong-status-instance] __
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_alias_transition_cannot_a1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BB0590>
+fault = 'wrong-status-instance'
+
+    @pytest.mark.parametrize('fault', ['wrong-database', 'wrong-status-instance', 'wrong-object-root', 'altered-old-owner'])
+    def test_alias_transition_cannot_adopt_unrelated_state(tmp_path, monkeypatch, fault):
+>       cfg, owner, recorded = alias_fixture(tmp_path, monkeypatch)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:225: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:203: in alias_fixture
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...est/test_alias_transition_cannot_a1/physical-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+____ test_alias_transition_cannot_adopt_unrelated_state[wrong-object-root] ____
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_alias_transition_cannot_a2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4BAD460>
+fault = 'wrong-object-root'
+
+    @pytest.mark.parametrize('fault', ['wrong-database', 'wrong-status-instance', 'wrong-object-root', 'altered-old-owner'])
+    def test_alias_transition_cannot_adopt_unrelated_state(tmp_path, monkeypatch, fault):
+>       cfg, owner, recorded = alias_fixture(tmp_path, monkeypatch)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:225: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:203: in alias_fixture
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...est/test_alias_transition_cannot_a2/physical-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+____ test_alias_transition_cannot_adopt_unrelated_state[altered-old-owner] ____
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_alias_transition_cannot_a3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4F24230>
+fault = 'altered-old-owner'
+
+    @pytest.mark.parametrize('fault', ['wrong-database', 'wrong-status-instance', 'wrong-object-root', 'altered-old-owner'])
+    def test_alias_transition_cannot_adopt_unrelated_state(tmp_path, monkeypatch, fault):
+>       cfg, owner, recorded = alias_fixture(tmp_path, monkeypatch)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:225: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:203: in alias_fixture
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...est/test_alias_transition_cannot_a3/physical-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+___________ test_live_alias_transition_requires_matching_live_proxy ___________
+
+tmp_path = WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V05/simulation_polish_evidence/_temporary/pytest/test_live_alias_transition_req0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000251D4B6F410>
+
+    def test_live_alias_transition_requires_matching_live_proxy(tmp_path, monkeypatch):
+>       cfg, owner, _ = alias_fixture(tmp_path, monkeypatch, 'ready')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+team2_work\test_combined_runtime.py:240: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+team2_work\test_combined_runtime.py:203: in alias_fixture
+    owner = cfg.owner()
+            ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Config(source=WindowsPath('C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integr...est/test_live_alias_transition_req0/physical-state'), db_port=55434, api_port=8767, web_port=5176, candidate_port=8770)
+
+    def owner(self):
+        source, state = self.source.resolve(), self.state.resolve()
+        if (state.is_relative_to(source) or source.is_relative_to(state)
+                or len(state.parts) < 3 or source == state):
+>           raise ValueError('Separate specific local state directory required')
+E           ValueError: Separate specific local state directory required
+
+team2_work\combined_runtime.py:35: ValueError
+=========================== short test summary info ===========================
+FAILED team2_work/test_combined_runtime.py::test_owner_is_specific_and_different_from_baseline
+FAILED team2_work/test_combined_runtime.py::test_invalid_port_profile_rejected_before_resources[changes0]
+FAILED team2_work/test_combined_runtime.py::test_invalid_port_profile_rejected_before_resources[changes1]
+FAILED team2_work/test_combined_runtime.py::test_invalid_port_profile_rejected_before_resources[changes2]
+FAILED team2_work/test_combined_runtime.py::test_existing_unowned_state_is_not_adopted
+FAILED team2_work/test_combined_runtime.py::test_changed_owner_or_ports_cannot_be_reused
+FAILED team2_work/test_combined_runtime.py::test_occupied_port_is_not_stopped_or_adopted
+FAILED team2_work/test_combined_runtime.py::test_shutdown_error_is_not_reported_as_stopped
+FAILED team2_work/test_combined_runtime.py::test_candidate_failure_preserves_reference_monitor
+FAILED team2_work/test_combined_runtime.py::test_reference_failure_requires_owned_cleanup
+FAILED team2_work/test_combined_runtime.py::test_stale_duplicate_cannot_report_success[stopped]
+FAILED team2_work/test_combined_runtime.py::test_stale_duplicate_cannot_report_success[shutdown_failed]
+FAILED team2_work/test_combined_runtime.py::test_stale_duplicate_cannot_report_success[initializing]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_rechecks_real_readiness[unavailable-api]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_rechecks_real_readiness[wrong-run]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_rechecks_real_readiness[unavailable-candidate]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_rechecks_real_readiness[wrong-mode]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_rechecks_real_readiness[ml-enabled]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_healthy_or_explicitly_degraded_reference[ready]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_healthy_or_explicitly_degraded_reference[ready_candidate_unavailable]
+FAILED team2_work/test_combined_runtime.py::test_duplicate_main_rejects_matching_proxy_with_failed_status
+FAILED team2_work/test_combined_runtime.py::test_verified_alias_transition_preserves_database_without_writing
+FAILED team2_work/test_combined_runtime.py::test_alias_transition_cannot_adopt_unrelated_state[wrong-database]
+FAILED team2_work/test_combined_runtime.py::test_alias_transition_cannot_adopt_unrelated_state[wrong-status-instance]
+FAILED team2_work/test_combined_runtime.py::test_alias_transition_cannot_adopt_unrelated_state[wrong-object-root]
+FAILED team2_work/test_combined_runtime.py::test_alias_transition_cannot_adopt_unrelated_state[altered-old-owner]
+FAILED team2_work/test_combined_runtime.py::test_live_alias_transition_requires_matching_live_proxy
+27 failed, 13 passed in 0.97s

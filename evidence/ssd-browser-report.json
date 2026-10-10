@@ -1,0 +1,16 @@
+{
+  "started": "2026-10-08T05:48:19.348Z",
+  "url": "http://127.0.0.1:5174",
+  "checks": [],
+  "screenshots": [],
+  "browserErrors": [],
+  "consoleWarnings": [],
+  "networkErrors": [],
+  "expectedOfflineErrors": [],
+  "externalRequests": [],
+  "rangeResponses": [],
+  "profile": "C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\_ssd_browser_evidence\\chrome-profile-3coYrE",
+  "fatal": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:16416:13\n    at async main (C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\scripts\\check_ssd_browser.cjs:179:26)",
+  "finished": "2026-10-08T05:48:22.418Z",
+  "passed": false
+}

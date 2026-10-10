@@ -1,0 +1,5 @@
+services\api\app\published_contract.py:171: error: List item 0 has incompatible type "dict[str, object]"; expected "int | float | str | list[JsonValue] | JsonDict | None"  [list-item]
+services\api\app\published_contract.py:235: error: Unsupported operand types for < ("datetime" and "None")  [operator]
+services\api\app\published_contract.py:235: note: Right operand is of type "datetime | None"
+scripts\backup_db.py:49: error: Dict entry 0 has incompatible type "str": "tuple[str, ...] | str"; expected "str": "str | list[str]"  [dict-item]
+Found 3 errors in 2 files (checked 3 source files)

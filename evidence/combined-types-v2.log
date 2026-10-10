@@ -1,0 +1,2 @@
+services\api\app\published_contract.py:164: error: Dict entry 0 has incompatible type "str": "list[str]"; expected "str": "list[JsonValue] | dict[str, JsonValue] | str | int | float | None"  [dict-item]
+Found 1 error in 1 file (checked 3 source files)

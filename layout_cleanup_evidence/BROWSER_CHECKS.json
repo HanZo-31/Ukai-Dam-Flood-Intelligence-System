@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-09T20:17:09.461Z",
+  "passed": true,
+  "source": "V05 updated in place",
+  "real_backend": "isolated hash-verified pre-change V05 backend in a new private test profile entirely inside V05",
+  "checked": [
+    "1280x592: main/sidebar/card fit; layer/legend do not overlap",
+    "depth/velocity maximum-over-run caveats remain visible",
+    "375x812 mobile: no horizontal overflow; expanded settings do not overlap legend",
+    "1024x720 tablet and 1672x941 desktop geometry checked",
+    "actual H02 20000 m3/s, 48h=2880min, original 114h model window",
+    "play advanced clock; pause and reset; scenario remount restores depth/full-run",
+    "native opacity .1..1; extent/fit; colour-by stays synchronized with radios",
+    "expanded metadata and timeline details preserve original information",
+    "Evidence has six actual download links",
+    "Compare: both real raster maps ready; original page scroll retained",
+    "What-if: real 20000 stored-reference lookup returned H02 without computing"
+  ],
+  "console_errors_and_warnings": [],
+  "not_claimed": [
+    "illustrative terrain basemap or modified flood colours",
+    "scientific validation or calibration",
+    "every screen size/browser/camera position",
+    "physical SSD or another-device acceptance"
+  ]
+}

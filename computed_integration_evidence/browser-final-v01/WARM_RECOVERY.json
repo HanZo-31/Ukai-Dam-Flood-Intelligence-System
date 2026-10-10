@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-09T12:21:15.808304+00:00",
+  "passed": true,
+  "warm_startup_seconds": 18.04699999999866,
+  "same_owned_profile": true,
+  "four_reference_scenarios": 4,
+  "compute_enabled": true,
+  "prior_checked_result_survived": true,
+  "result_run_id": "ukai-fast-run-3e85f9b780850718",
+  "no_new_native_run_for_warm_check": true,
+  "clean_shutdown_before_restart": true,
+  "physical_network_disconnection_tested": false,
+  "current_import_marker_sha256": "a8388b8401cef7a3f9e51f8b75c278ccfac6f32db9de7a055e2a01e6059a3d20"
+}

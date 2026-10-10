@@ -1,0 +1,7 @@
+
+> ukai-flood-explorer@0.1.0 build
+> tsc --noEmit && vite build
+
+src/lib/api.test.ts(21,12): error TS18046: 'e' is of type 'unknown'.
+src/lib/api.test.ts(21,41): error TS18046: 'e' is of type 'unknown'.
+src/lib/api.test.ts(21,69): error TS18046: 'e' is of type 'unknown'.

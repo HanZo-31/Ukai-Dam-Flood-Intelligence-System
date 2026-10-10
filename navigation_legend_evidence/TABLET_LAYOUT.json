@@ -1,0 +1,16 @@
+{
+  "document": {
+    "client": 1024,
+    "scroll": 1024
+  },
+  "legendOutsideMap": true,
+  "main": {
+    "client": 834,
+    "scroll": 834
+  },
+  "mapWidth": 834,
+  "viewport": {
+    "height": 720,
+    "width": 1024
+  }
+}

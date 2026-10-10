@@ -1,0 +1,10 @@
+requirement_id,step,performed,passed,evidence_kind,scope
+A05,transport_inventory,True,True,real_receipt,individual check coverage; not whole work-order acceptance
+A08,transport_inventory,True,True,real_receipt,individual check coverage; not whole work-order acceptance
+M01,manifest_metadata,True,True,real_receipt,individual check coverage; not whole work-order acceptance
+M02,manifest_metadata,True,True,real_receipt,individual check coverage; not whole work-order acceptance
+M03,manifest_metadata,True,True,real_receipt,individual check coverage; not whole work-order acceptance
+M13,manifest_metadata,True,True,real_receipt,individual check coverage; not whole work-order acceptance
+M09,context_binding,True,False,real_receipt,individual check coverage; not whole work-order acceptance
+M11,context_binding,True,False,real_receipt,individual check coverage; not whole work-order acceptance
+M13,context_binding,True,False,real_receipt,individual check coverage; not whole work-order acceptance

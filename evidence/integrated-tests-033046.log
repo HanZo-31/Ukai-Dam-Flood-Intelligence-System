@@ -1,0 +1,289 @@
+..............................F......................................... [  8%]
+........................................................................ [ 16%]
+........................................................................ [ 24%]
+........................................................................ [ 32%]
+.............F.......................................................... [ 40%]
+...................................FF......................FF........... [ 48%]
+........................................................s...sss......... [ 56%]
+....................................F................................... [ 64%]
+...............................................F........................ [ 72%]
+F....F.................................................................. [ 80%]
+..........................................................F.FFFFFF...... [ 88%]
+....................F................................................... [ 97%]
+..........................                                               [100%]
+================================== FAILURES ===================================
+__________ test_concurrent_object_publication_never_overwrites[True] __________
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: in mkdir
+    os.mkdir(self, mode)
+E   FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-033046\\test_concurrent_object_publica1\\objects\\versions\\v1'
+
+During handling of the above exception, another exception occurred:
+tests\test_b1_acceptance.py:79: in test_concurrent_object_publication_never_overwrites
+    outcomes = list(pool.map(publish, contents))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py:58: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_b1_acceptance.py:73: in publish
+    return store.put("versions/v1/input.csv", content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\app\storage.py:34: in put
+    path.parent.mkdir(parents=True, exist_ok=True)
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1315: in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: in mkdir
+    os.mkdir(self, mode)
+E   PermissionError: [WinError 5] Access is denied: 'C:\\Users\\LENOVO\\Documents\\Codex\\2026-10-07\\files-mentioned-by-the-user-start\\Ukai_Combined\\temp\\integrated-tests-033046\\test_concurrent_object_publica1\\objects\\versions'
+__________________ test_populated_bundle_backup_and_restore ___________________
+scripts\backup_db.py:89: in backup
+    docker("exec", container, "pg_dump", "-U", url.username, "-d", url.database, "--format=custom", "--file=" + temporary_dump)
+scripts\backup_db.py:28: in docker
+    subprocess.run(["docker", *args], check=True, capture_output=True)
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+tests\test_published_registry.py:378: in test_populated_bundle_backup_and_restore
+    destination = backup(tmp_path / "populated-backup")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts\backup_db.py:112: in backup
+    docker("exec", container, "rm", "-f", temporary_dump)
+scripts\backup_db.py:28: in docker
+    subprocess.run(["docker", *args], check=True, capture_output=True)
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+..\..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+---------------------------- Captured stderr call -----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+_______ test_status_matches_candidate_example_and_keeps_persisted_time ________
+services\api\tests\test_current_status.py:18: in test_status_matches_candidate_example_and_keeps_persisted_time
+    assert response.json() == json.loads((Path(__file__).parent / "fixtures/current-status.json").read_text())
+E   AssertionError: assert {'reservoir_l...0+05:30', ...} == {'reservoir_l...:00:00Z', ...}
+E     
+E     Omitting 6 identical items, use -vv to show
+E     Differing items:
+E     {'timestamp': '2026-01-01T05:30:00+05:30'} != {'timestamp': '2026-01-01T00:00:00Z'}
+E     Use -v to get more diff
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+_______ test_newest_demo_wins_and_newer_production_reading_is_excluded ________
+services\api\tests\test_current_status.py:34: in test_newest_demo_wins_and_newer_production_reading_is_excluded
+    assert response.json()["timestamp"] == "2026-01-02T00:00:00Z"
+E   AssertionError: assert '2026-01-02T05:30:00+05:30' == '2026-01-02T00:00:00Z'
+E     
+E     - 2026-01-02T00:00:00Z
+E     ?                   --
+E     + 2026-01-02T05:30:00+05:30
+E     ?             +++    +++ +
+______ test_detail_preserves_parameters_units_summary_and_run_provenance ______
+services\api\tests\test_details_and_layers.py:30: in test_detail_preserves_parameters_units_summary_and_run_provenance
+    assert body["run_timestamp"] == "2026-10-05T10:00:00Z"
+E   AssertionError: assert '2026-10-05T15:30:00+05:30' == '2026-10-05T10:00:00Z'
+E     
+E     - 2026-10-05T10:00:00Z
+E     ?                   --
+E     + 2026-10-05T15:30:00+05:30
+E     ?             +++    +++ +
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+________ test_layer_metadata_and_every_download_match_registered_bytes ________
+services\api\tests\test_details_and_layers.py:61: in test_layer_metadata_and_every_download_match_registered_bytes
+    assert layer["coverage_start"].endswith("Z")
+E   AssertionError: assert False
+E    +  where False = <built-in method endswith of str object at 0x000001D15BD08CB0>('Z')
+E    +    where <built-in method endswith of str object at 0x000001D15BD08CB0> = '2026-01-01T05:30:00+05:30'.endswith
+_________ test_registered_geojson_export_has_a_working_verified_link __________
+services\api\tests\test_exports.py:30: in test_registered_geojson_export_has_a_working_verified_link
+    assert body["coverage_start"].endswith("Z") and body["coverage_end"].endswith("Z")
+E   AssertionError: assert (False)
+E    +  where False = <built-in method endswith of str object at 0x000001D15BE407B0>('Z')
+E    +    where <built-in method endswith of str object at 0x000001D15BE407B0> = '2026-01-01T05:30:00+05:30'.endswith
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+___ test_approved_replays_include_real_coverage_and_all_replays_are_linked ____
+services\api\tests\test_historical_events.py:59: in test_approved_replays_include_real_coverage_and_all_replays_are_linked
+    assert replay["example"]["coverage_end"] == "2026-01-01T06:00:00Z"
+E   AssertionError: assert '2026-01-01T11:30:00+05:30' == '2026-01-01T06:00:00Z'
+E     
+E     - 2026-01-01T06:00:00Z
+E     + 2026-01-01T11:30:00+05:30
+_________ test_one_replay_and_three_hypotheticals_roundtrip_across_b2 _________
+services\api\tests\test_local_acceptance.py:40: in test_one_replay_and_three_hypotheticals_roundtrip_across_b2
+    assert status["timestamp"] == items[0].time_coverage.start.isoformat().replace("+00:00", "Z")
+E   AssertionError: assert '2026-01-01T05:30:00+05:30' == '2026-01-01T00:00:00Z'
+E     
+E     - 2026-01-01T00:00:00Z
+E     ?                   --
+E     + 2026-01-01T05:30:00+05:30
+E     ?             +++    +++ +
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+_________ test_documented_examples_match_real_isolated_http_responses _________
+services\api\tests\test_openapi_contract.py:239: in test_documented_examples_match_real_isolated_http_responses
+    assert actual == expected, "HTTP example drift paths: " + ", ".join(drift(actual, expected))
+E   AssertionError: HTTP example drift paths: /responses/scenario_detail/coverage_start, /responses/scenario_detail/coverage_end, /responses/scenario_detail/datasets/0/coverage_start, /responses/scenario_detail/datasets/0/coverage_end, /responses/scenario_detail/run_timestamp, /responses/scenario_detail/quality/approved_at, /responses/layers/layers/0/coverage_end, /responses/layers/layers/0/coverage_start, /responses/layers/layers/1/coverage_end, /responses/layers/layers/1/coverage_start, /responses/layers/layers/2/coverage_end, /responses/layers/layers/2/coverage_start, /responses/layers/layers/3/coverage_end, /responses/layers/layers/3/coverage_start, /responses/export/coverage_end, /responses/export/coverage_start, /responses/scenario_list/items/0/coverage_end, /responses/scenario_list/items/0/coverage_start, /responses/current_status/timestamp, /responses/historical_events/items/0/coverage_start, /responses/historical_events/items/0/coverage_end
+E   assert {'notice': 'S...ed.\n', ...}}} == {'downloads':...t': 0}}, ...}}
+E     
+E     Omitting 3 identical items, use -vv to show
+E     Differing items:
+E     {'responses': {'health': {'status': 'ok', 'service': 'ukai-flood-api', 'api_version': 'v1'}, 'scenario_list': {'items'...etic-gis-fixture-1.0.0', 'input_dataset_version': 'synthetic-gis-input-release-1.0.0', 'data_mode': 'demo', ...}, ...}} != {'responses': {'current_status': {'data_kind': 'demo', 'data_mode': 'demo', 'inflow_m3s': 20.0, 'is_live': False, ...}...00Z', 'data_mode': 'demo', 'datasets': [], ...}], 'pagination': {'limit': 20, 'next_offset': None, 'offset': 0}}, ...}}
+E     Use -v to get more diff
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+_______________ test_quality_report_pinned_local_and_read_only ________________
+services\api\tests\test_quality_gate.py:24: in test_quality_report_pinned_local_and_read_only
+    result = quality.check(sys.executable, sys.executable, tmp_path / 'result.json')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts\check_b2_quality.py:40: in check
+    raise ValueError('Choose a new report path and Python 3.13.')
+E   ValueError: Choose a new report path and Python 3.13.
+______________ test_failed_quality_command_retains_failed_report ______________
+services\api\tests\test_quality_gate.py:46: in test_failed_quality_command_retains_failed_report
+    with pytest.raises(ValueError, match='gate failed'):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'gate failed'
+E     Actual message: 'Choose a new report path and Python 3.13.'
+___________________ test_source_mutation_fails_quality_gate ___________________
+services\api\tests\test_quality_gate.py:55: in test_source_mutation_fails_quality_gate
+    with pytest.raises(ValueError, match='source changed'):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'source changed'
+E     Actual message: 'Choose a new report path and Python 3.13.'
+__________________ test_quality_scope_preserves_b1_ownership __________________
+services\api\tests\test_quality_gate.py:62: in test_quality_scope_preserves_b1_ownership
+    assert not any('repositories' in name or 'app/db' in name for name in quality.APPLICATION)
+E   assert not True
+E    +  where True = any(<generator object test_quality_scope_preserves_b1_ownership.<locals>.<genexpr> at 0x000001D15EDEC040>)
+__________________ test_unpinned_tool_version_refused[ruff] ___________________
+services\api\tests\test_quality_gate.py:74: in test_unpinned_tool_version_refused
+    with pytest.raises(ValueError, match='Pinned quality'):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'Pinned quality'
+E     Actual message: 'Choose a new report path and Python 3.13.'
+__________________ test_unpinned_tool_version_refused[mypy] ___________________
+services\api\tests\test_quality_gate.py:74: in test_unpinned_tool_version_refused
+    with pytest.raises(ValueError, match='Pinned quality'):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'Pinned quality'
+E     Actual message: 'Choose a new report path and Python 3.13.'
+_____________________ test_wrong_runtime_version_refused ______________________
+services\api\tests\test_quality_gate.py:85: in test_wrong_runtime_version_refused
+    with pytest.raises(ValueError, match='runtime must use Python 3.13'):
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'runtime must use Python 3.13'
+E     Actual message: 'Choose a new report path and Python 3.13.'
+______________ test_approved_gis_bundle_matches_public_contract _______________
+services\api\tests\test_scenario_integration.py:21: in test_approved_gis_bundle_matches_public_contract
+    assert response.json() == expected
+E   AssertionError: assert {'items': [{'...ffset': None}} == {'items': [{'...ffset': None}}
+E     
+E     Omitting 1 identical items, use -vv to show
+E     Differing items:
+E     {'items': [{'scenario_id': 'b2-approved-001', 'scenario_type': 'hypothetical', 'status': 'approved', 'model_version': 'synthetic-gis-fixture-1.0.0', ...}]} != {'items': [{'scenario_id': 'b2-approved-001', 'scenario_type': 'hypothetical', 'status': 'approved', 'model_version': 'synthetic-gis-fixture-1.0.0', ...}]}
+E     Use -v to get more diff
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 08e497d20176, create scenarios table
+INFO  [alembic.runtime.migration] Running upgrade 08e497d20176 -> b52235f9108d, add result assets impact summaries and status readings
+INFO  [alembic.runtime.migration] Running upgrade b52235f9108d -> c01b8f01b101, add immutable scenario inputs and processing-run audit records
+INFO  [alembic.runtime.migration] Running upgrade c01b8f01b101 -> d02c3e4b1001, add dataset provenance historical events and validation metrics
+INFO  [alembic.runtime.migration] Running upgrade d02c3e4b1001 -> e03b5e7b1001, add publication registry and result metadata
+INFO  [alembic.runtime.migration] Running upgrade e03b5e7b1001 -> f04b5e7b1001, Close nullable approval-state gap without changing an applied migration.
+INFO  [alembic.runtime.migration] Running upgrade f04b5e7b1001 -> g05b8eab1001, Add indexed verified asset bounds and scenario extents.
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\LENOVO\Documents\Codex\2026-10-07\files-mentioned-by-the-user-start\Ukai_Combined\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_b1_acceptance.py::test_concurrent_object_publication_never_overwrites[True]
+FAILED tests/test_published_registry.py::test_populated_bundle_backup_and_restore
+FAILED services/api/tests/test_current_status.py::test_status_matches_candidate_example_and_keeps_persisted_time
+FAILED services/api/tests/test_current_status.py::test_newest_demo_wins_and_newer_production_reading_is_excluded
+FAILED services/api/tests/test_details_and_layers.py::test_detail_preserves_parameters_units_summary_and_run_provenance
+FAILED services/api/tests/test_details_and_layers.py::test_layer_metadata_and_every_download_match_registered_bytes
+FAILED services/api/tests/test_exports.py::test_registered_geojson_export_has_a_working_verified_link
+FAILED services/api/tests/test_historical_events.py::test_approved_replays_include_real_coverage_and_all_replays_are_linked
+FAILED services/api/tests/test_local_acceptance.py::test_one_replay_and_three_hypotheticals_roundtrip_across_b2
+FAILED services/api/tests/test_openapi_contract.py::test_documented_examples_match_real_isolated_http_responses
+FAILED services/api/tests/test_quality_gate.py::test_quality_report_pinned_local_and_read_only
+FAILED services/api/tests/test_quality_gate.py::test_failed_quality_command_retains_failed_report
+FAILED services/api/tests/test_quality_gate.py::test_source_mutation_fails_quality_gate
+FAILED services/api/tests/test_quality_gate.py::test_quality_scope_preserves_b1_ownership
+FAILED services/api/tests/test_quality_gate.py::test_unpinned_tool_version_refused[ruff]
+FAILED services/api/tests/test_quality_gate.py::test_unpinned_tool_version_refused[mypy]
+FAILED services/api/tests/test_quality_gate.py::test_wrong_runtime_version_refused
+FAILED services/api/tests/test_scenario_integration.py::test_approved_gis_bundle_matches_public_contract
+18 failed, 868 passed, 4 skipped, 1 warning in 378.25s (0:06:18)

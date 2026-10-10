@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-09T22:19:08.980Z",
+  "passed": true,
+  "scenario": "ukai-hyp-h01-release15000-combined-v1",
+  "points": 3,
+  "range_requests": 18,
+  "bytes_transferred": 1642726,
+  "original_resolution": true,
+  "writes_or_jobs": false
+}

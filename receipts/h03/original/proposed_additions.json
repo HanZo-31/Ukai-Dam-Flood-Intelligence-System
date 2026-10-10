@@ -1,0 +1,12 @@
+{
+  "note": "PROPOSAL ONLY. Not part of the agreed Part B schema.",
+  "data_mode": "assumed",
+  "forcing": "hypothetical release hydrograph (not an observed event)",
+  "calibration": "uncalibrated",
+  "model_basis": "HEC-RAS 2D, Manning n 0.04 uniform, SRTM-derived terrain without bathymetry",
+  "known_issues": [
+    "max_wse.tif is present in assets but has no key in the template",
+    "breach not modelled: release hydrograph only",
+    "arrival_time is in hours from simulation start (06 Aug 2006 06:00) at threshold 0.1 m; raster lattice is offset 256 columns from the depth raster"
+  ]
+}

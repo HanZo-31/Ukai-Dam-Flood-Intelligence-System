@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-10T00:51:55.474Z",
+  "passed": true,
+  "scenario": "ukai-hyp-h02-release20000-hr-int-v1",
+  "points": 3,
+  "range_requests": 18,
+  "bytes_transferred": 1597104,
+  "original_resolution": true,
+  "writes_or_jobs": false
+}

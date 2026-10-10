@@ -1,0 +1,56 @@
+{
+ "tool": "make_h02_derivative.py v0.2",
+ "python": "3.10.12",
+ "numpy": "2.2.6",
+ "tiff_io": "tiffmin.py (own reader/writer)",
+ "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+ "source_scenario": "ukai-hyp-h02-release20000-v1",
+ "derivative_id": "ukai-hyp-h02-release20000-hr-int-v1",
+ "derivative_id_status": "PROVISIONAL (AB04 not yet agreed with Team B)",
+ "files": {
+  "max_depth.tif": {
+   "sha256": "a42de297c2ce6553e10974e4d6f955a74e28251bb8a97776f4efa94185e3f202",
+   "bytes": 2217112
+  },
+  "max_velocity.tif": {
+   "sha256": "6909157ce07d8b1b99a380f3b310dc71557822f81fef31272707dba2ea75a1cd",
+   "bytes": 2318266
+  },
+  "arrival_time.tif": {
+   "sha256": "4ea6e7501a88aebe537c8b80c273467bc3fc13fd23ce84ba609e188e3d8a8406",
+   "bytes": 502353
+  }
+ },
+ "window": {
+  "col_offset": 256,
+  "row_offset": 0,
+  "col_offset_exact": 256.0000000000015,
+  "row_offset_exact": 0.0,
+  "valid_arrival_cells_total": 426586,
+  "valid_arrival_cells_outside_window": 0
+ },
+ "arrival": {
+  "integer_hours": true,
+  "max_float32_rounding_error": 0.0,
+  "valid_cells": 426586,
+  "min_minutes": 60.0,
+  "max_minutes": 6780.0
+ },
+ "source_hashes": {
+  "max_depth.tif": "c3ce09c11f23d6153883d0ae59d3c48255b520350d581c5072bd5b1f4fd31e70",
+  "max_velocity.tif": "a956bf18a70b42d22784e24241a6ea40c3aa1bc4007124638c8e6575d0bcc354",
+  "arrival_time.tif": "4ba960ed3b21c2ffa7fd6ab54979d78965c036ad75c3f08c186dc80901d370b1",
+  "max_wse.tif": "1ecf619987a4c541580a16a2a7e95faad788a16b85de60923082a1c7dbf28630"
+ },
+ "preserved_optional": {
+  "max_wse.tif": "1ecf619987a4c541580a16a2a7e95faad788a16b85de60923082a1c7dbf28630"
+ },
+ "operations": [
+  "depth, velocity: values and masks unchanged; UNITTYPE added to GDAL metadata; source Artist tag (HEC-RAS) carried over; Software tag (305) names this tool",
+  "arrival: windowed to depth grid by coordinates (no resampling); valid values x60 (hours->minutes); nodata -9999 kept; statistics recomputed; overviews = nearest (top-left)",
+  "depth/velocity overviews = 2x2 masked mean (same method as source)",
+  "max_wse.tif copied byte for byte",
+  "file layout: all IFDs first, then tag arrays, then tiles (smallest overview first); NOT validated as strict COG",
+  "NOT done: strict COG validation, coverage_start/coverage_end tags, extent GeoJSON"
+ ]
+}

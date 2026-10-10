@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-09T20:47:36.445Z",
+  "clock": "Elapsed: 48 h of 114 h (2880 min since simulation start)",
+  "footer": {
+    "bottom": 941.3333587646484,
+    "client": 121,
+    "height": 120.66667175292967,
+    "scroll": 121,
+    "width": 1452,
+    "x": 220,
+    "y": 820.6666870117188
+  },
+  "legend": {
+    "bottom": 931.3333587646484,
+    "client": 103,
+    "height": 102.66667175292967,
+    "scroll": 103,
+    "width": 300,
+    "x": 1360,
+    "y": 828.6666870117188
+  },
+  "main": {
+    "bottom": 941.3333740234376,
+    "client": 866,
+    "height": 865.6771240234375,
+    "scroll": 866,
+    "width": 1452,
+    "x": 220,
+    "y": 75.65625
+  },
+  "map": {
+    "bottom": 820.6666870117188,
+    "client": 689,
+    "height": 689.0104370117188,
+    "scroll": 689,
+    "width": 1452,
+    "x": 220,
+    "y": 131.65625
+  },
+  "mapHasLayerBar": false,
+  "mapHasLegend": false,
+  "mapState": "ready",
+  "navbarChoices": [
+    {
+      "bottom": 122.32292175292967,
+      "client": 38,
+      "height": 38,
+      "scroll": 38,
+      "text": "Depth (m)",
+      "width": 89.92708587646484,
+      "x": 232.6666717529297,
+      "y": 84.32292175292969
+    },
+    {
+      "bottom": 122.32292175292967,
+      "client": 38,
+      "height": 38,
+      "scroll": 38,
+      "text": "Arrival time (h)",
+      "width": 125.73958587646484,
+      "x": 322.59375,
+      "y": 84.32292175292969
+    },
+    {
+      "bottom": 122.32292175292967,
+      "client": 38,
+      "height": 38,
+      "scroll": 38,
+      "text": "Velocity (m/s)",
+      "width": 110.52083587646484,
+      "x": 448.3333435058594,
+      "y": 84.32292175292969
+    }
+  ],
+  "toolbar": {
+    "bottom": 131.65625,
+    "client": 55,
+    "height": 56,
+    "scroll": 55,
+    "width": 1452,
+    "x": 220,
+    "y": 75.65625
+  },
+  "viewport": {
+    "height": 941,
+    "width": 1672
+  }
+}

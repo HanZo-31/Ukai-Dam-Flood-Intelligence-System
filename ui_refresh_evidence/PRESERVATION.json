@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-10T00:17:02.163294+05:30",
+  "passed": true,
+  "baseline_entries_verified": 25403,
+  "protected_files_identical": 25380,
+  "comparison_map_controls_and_state_identical": true,
+  "protected_mismatches": [],
+  "expected_changed_or_rebuilt_baseline_files": [
+    "frontend/dist/assets/index-5o6ZXtjy.js",
+    "frontend/dist/assets/index-b8OKuT7K.css",
+    "frontend/dist/assets/lerc-Cd5T2q1_.js",
+    "frontend/dist/index.html",
+    "frontend/src/components/Inspector.tsx",
+    "frontend/src/components/TopBar.tsx",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/Compare.tsx",
+    "frontend/vite.config.ts",
+    "INTEGRATION_RELEASE_ID.txt",
+    "SSD_PACKAGE_ID.txt",
+    "START_COMPUTED_HERE.md",
+    "START_HERE.md"
+  ],
+  "scope": "All baseline delivery bytes except explicit UI entry points, release documentation and rebuilt frontend dist.",
+  "explore_geometry_unchanged": true,
+  "timeline_geometry_unchanged": true,
+  "compare_geometry_unchanged": true,
+  "fitted_h01_depth_screenshot": {
+    "dimensions": [
+      822,
+      682
+    ],
+    "different_pixels": 0,
+    "decoded_before_sha256": "e03b95c33714ea520b13ca0d746766da239ad6e3dc14b63e72bb584b4137e486",
+    "decoded_after_sha256": "e03b95c33714ea520b13ca0d746766da239ad6e3dc14b63e72bb584b4137e486",
+    "note": "One actual browser fitted H01 depth view; source/data preservation applies to all modes. Screenshots are not scientific validation."
+  }
+}

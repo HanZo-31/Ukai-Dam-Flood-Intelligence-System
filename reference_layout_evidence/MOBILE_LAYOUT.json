@@ -1,0 +1,12 @@
+{
+  "clientWidth": 360,
+  "layerChoices": [
+    "Depth (m)",
+    "Arrival time (h)",
+    "Velocity (m/s)"
+  ],
+  "mapWidth": 360,
+  "scrollWidth": 360,
+  "sidebarBackground": "rgb(255, 255, 255)",
+  "viewport": 375
+}

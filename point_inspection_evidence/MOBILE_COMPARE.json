@@ -1,0 +1,14 @@
+{
+  "document": {
+    "client": 305,
+    "scroll": 305
+  },
+  "table": {
+    "client": 235,
+    "scroll": 721
+  },
+  "viewport": {
+    "height": 740,
+    "width": 320
+  }
+}

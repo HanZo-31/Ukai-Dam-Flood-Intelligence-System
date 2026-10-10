@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.1.0-local-draft",
+  "scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+  "scenario_type": "hypothetical",
+  "status": "draft",
+  "model_version": "ukai-h02-model-snapshot-3bc682cd62441d8f",
+  "input_dataset_version": "ukai-h02-input-snapshot-3bc682cd62441d8f",
+  "crs": "EPSG:32643",
+  "time_step_minutes": 15,
+  "data_mode": "production",
+  "data_kind": "simulated",
+  "run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+  "run_timestamp": null,
+  "time_coverage": {
+    "start": "2006-08-06T06:00:00Z",
+    "end": "2006-08-11T00:00:00Z"
+  },
+  "historical_event_id": null,
+  "parameters": {
+    "reservoir_level_m": null,
+    "peak_inflow_m3s": null,
+    "peak_release_m3s": 20000.0,
+    "breach_width_m": null,
+    "breach_formation_minutes": null
+  },
+  "parameter_units": {
+    "reservoir_level_m": "m",
+    "peak_inflow_m3s": "m3/s",
+    "peak_release_m3s": "m3/s",
+    "breach_width_m": "m",
+    "breach_formation_minutes": "min"
+  },
+  "datasets": [
+    {
+      "dataset_id": "ukai-h02-plan",
+      "version": "sha256-b58189476279a3a5",
+      "source_reference": "inputs/plan.p04",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:b58189476279a3a55595039fbc8287a683b6ead295e5e5d00b920d0d3fbd2273",
+      "crs": null,
+      "time_coverage": null,
+      "quality_notes": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Assumed/provisional model setup, not a verified observation."
+    },
+    {
+      "dataset_id": "ukai-h02-geometry",
+      "version": "sha256-e6072375c5bd7a61",
+      "source_reference": "inputs/geometry.g01",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+      "crs": "EPSG:32643",
+      "time_coverage": null,
+      "quality_notes": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Assumed/provisional model setup, not a verified observation."
+    },
+    {
+      "dataset_id": "ukai-h02-forcing",
+      "version": "sha256-b08b11972d91516d",
+      "source_reference": "inputs/forcing.u05",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+      "crs": null,
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "quality_notes": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Assumed/provisional model setup, not a verified observation."
+    },
+    {
+      "dataset_id": "ukai-h02-terrain",
+      "version": "sha256-c439396123c0414c",
+      "source_reference": "inputs/terrain.tif",
+      "source_label": "assumed",
+      "license": "UNKNOWN: no licence evidence supplied; no permission or redistribution licence asserted.",
+      "checksum": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+      "crs": "EPSG:32643",
+      "time_coverage": null,
+      "quality_notes": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Terrain described by A1 as SRTM-derived; vertical datum and bathymetry unverified."
+    }
+  ],
+  "assets": {
+    "max_depth_cog": "assets/max_depth.tif",
+    "max_velocity_cog": "assets/max_velocity.tif",
+    "arrival_time_cog": "assets/arrival_time.tif",
+    "extent_geojson": "assets/extent.geojson"
+  },
+  "asset_metadata": {
+    "max_depth_cog": {
+      "checksum": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "m",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": -9999.0
+    },
+    "max_velocity_cog": {
+      "checksum": "sha256:84c1341f45f1fd671cc4147be7a870da58bce4da1d7588d2078e55f66433663e",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "m/s",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": -9999.0
+    },
+    "arrival_time_cog": {
+      "checksum": "sha256:b7db5fdc9e4a9829698f9bb64b49e78bf99b065b694e13299de5875ae3da550a",
+      "format": "cog",
+      "crs": "EPSG:32643",
+      "unit": "min",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": -9999.0
+    },
+    "extent_geojson": {
+      "checksum": "sha256:cb2d04d533dd2699b60bc66f8a1bfe46d276850df8caee96e8e8f2676b1ea589",
+      "format": "geojson",
+      "crs": "EPSG:4326",
+      "unit": "1",
+      "time_coverage": {
+        "start": "2006-08-06T06:00:00Z",
+        "end": "2006-08-11T00:00:00Z"
+      },
+      "nodata": null
+    }
+  },
+  "summary": {
+    "max_depth_m": 38.06,
+    "flooded_area_km2": 359.7,
+    "population_exposed": null,
+    "buildings_exposed": null,
+    "roads_affected_km": null,
+    "critical_facilities_exposed": null
+  },
+  "assumptions_url": "prototype-context.json",
+  "assumptions_checksum": "sha256:f3f6b837947518791c4166148baf5228bf896398b51b9b79b18ec4f04c0d7222",
+  "quality": {
+    "validation_status": "pending",
+    "approved_by": null,
+    "approved_at": null,
+    "report_reference": "reports/quality.json",
+    "report_checksum": "sha256:27f4f5fe1cc7c37f34a253f413f7a58e7ce0d6221316d7c22ad5a595ea5cc12f"
+  },
+  "run_timestamp_unknown_reason": "Producing HEC-RAS file records 2026-10-07 08:34:11 without timezone. Historical Windows timezone cannot be confirmed. No UTC instant is asserted."
+}

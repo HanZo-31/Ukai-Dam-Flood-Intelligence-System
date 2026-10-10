@@ -1,0 +1,156 @@
+{
+  "checked_at": "2026-10-08T18:15:56.804Z",
+  "base": "http://127.0.0.1:5176/",
+  "maps": [
+    {
+      "scenario": "h01",
+      "mode": "Extent",
+      "ready": true,
+      "screenshot": "h01-extent.png"
+    },
+    {
+      "scenario": "h01",
+      "mode": "Depth",
+      "ready": true,
+      "screenshot": "h01-depth.png"
+    },
+    {
+      "scenario": "h01",
+      "mode": "Velocity",
+      "ready": true,
+      "screenshot": "h01-velocity.png"
+    },
+    {
+      "scenario": "h01",
+      "mode": "Arrival",
+      "ready": true,
+      "screenshot": "h01-arrival.png"
+    },
+    {
+      "scenario": "h02",
+      "mode": "Extent",
+      "ready": true,
+      "screenshot": "h02-extent.png"
+    },
+    {
+      "scenario": "h02",
+      "mode": "Depth",
+      "ready": true,
+      "screenshot": "h02-depth.png"
+    },
+    {
+      "scenario": "h02",
+      "mode": "Velocity",
+      "ready": true,
+      "screenshot": "h02-velocity.png"
+    },
+    {
+      "scenario": "h02",
+      "mode": "Arrival",
+      "ready": true,
+      "screenshot": "h02-arrival.png"
+    },
+    {
+      "scenario": "h03",
+      "mode": "Extent",
+      "ready": true,
+      "screenshot": "h03-extent.png"
+    },
+    {
+      "scenario": "h03",
+      "mode": "Depth",
+      "ready": true,
+      "screenshot": "h03-depth.png"
+    },
+    {
+      "scenario": "h03",
+      "mode": "Velocity",
+      "ready": true,
+      "screenshot": "h03-velocity.png"
+    },
+    {
+      "scenario": "h03",
+      "mode": "Arrival",
+      "ready": true,
+      "screenshot": "h03-arrival.png"
+    },
+    {
+      "scenario": "2006",
+      "mode": "Extent",
+      "ready": true,
+      "screenshot": "2006-extent.png"
+    },
+    {
+      "scenario": "2006",
+      "mode": "Depth",
+      "ready": true,
+      "screenshot": "2006-depth.png"
+    },
+    {
+      "scenario": "2006",
+      "mode": "Velocity",
+      "ready": true,
+      "screenshot": "2006-velocity.png"
+    },
+    {
+      "scenario": "2006",
+      "mode": "Arrival",
+      "ready": true,
+      "screenshot": "2006-arrival.png"
+    }
+  ],
+  "timeline": {
+    "keyboard_3h": true,
+    "final_114h": true,
+    "play_pause": true,
+    "scenario_switch_reset": true,
+    "maxima_not_time_varying_label": true
+  },
+  "comparison": {
+    "h01_h02_new_footprint_cells": 92736,
+    "h01_h02_paired_arrival_mean_h": -4.452981812633324,
+    "zones_flagged": 53,
+    "zones_total": 133,
+    "swap_reverses": true,
+    "same_pair_zero": true,
+    "coverage_and_unavailable_reason_shown": true
+  },
+  "what_if": {
+    "exact_20000": true,
+    "reject_26000_without_opt_in": true,
+    "nearest_26000_returns_30000": true,
+    "tie_25000_returns_20000": true,
+    "out_of_bounds_submit_disabled": true,
+    "open_returned_scenario": true,
+    "last_result_survives_candidate_outage": true,
+    "unavailable_caps_disables_form": true,
+    "experimental_ml_enabled": false
+  },
+  "approximate_automation_interactions": [
+    {
+      "request": 20000,
+      "actual": 20000,
+      "automation_wall_ms": 286,
+      "service_s": 0.021
+    },
+    {
+      "request": 26000,
+      "actual": 30000,
+      "automation_wall_ms": 285,
+      "service_s": 0.023
+    },
+    {
+      "request": 25000,
+      "actual": 20000,
+      "automation_wall_ms": 276,
+      "service_s": 0.02
+    }
+  ],
+  "timing_note": "Automation click-to-observed result includes tool overhead; not browser-ready map time, hydraulic runtime, benchmark, percentile or SLA.",
+  "backend_request_failure_visible": true,
+  "network_disconnected": false,
+  "second_device": false,
+  "full_keyboard_audit": false,
+  "no_webgl_forced": false,
+  "rehearsal_video": false
+}

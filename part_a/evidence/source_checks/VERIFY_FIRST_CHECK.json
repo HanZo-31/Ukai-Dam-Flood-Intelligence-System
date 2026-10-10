@@ -1,0 +1,340 @@
+{
+ "date": "2026-10-07",
+ "interpreter": "3.13.16",
+ "numpy": "2.5.3",
+ "tifffile": "2026.9.15",
+ "ran_on": "cloud workspace on copies whose sha256 equal the laptop originals; re-run on laptop/device file after commit",
+ "all_pass": true,
+ "n_checks": 46,
+ "checks": [
+  {
+   "check": "original max_depth.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "original max_velocity.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "original arrival_time.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "original max_wse.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "derivative max_depth.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "derivative max_velocity.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "derivative arrival_time.tif hash equals hash recorded at build",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "WSE preserved byte-identical",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "depth dtype/shape",
+   "ok": true,
+   "detail": "(1024, 3072)"
+  },
+  {
+   "check": "depth values bit-identical to source",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "depth valid mask identical",
+   "ok": true,
+   "detail": "435753"
+  },
+  {
+   "check": "depth no NaN/inf",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "depth transform identical to source",
+   "ok": true,
+   "detail": "(0.0, 0.0, 0.0, 268076.8810281253, 2369001.58195343, 0.0)"
+  },
+  {
+   "check": "depth CRS keys identical",
+   "ok": true,
+   "detail": "WGS 84 / UTM zone 43N|WGS 84|"
+  },
+  {
+   "check": "depth nodata tag -9999",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "depth units tag present",
+   "ok": true,
+   "detail": "UNITTYPE"
+  },
+  {
+   "check": "velocity dtype/shape",
+   "ok": true,
+   "detail": "(1024, 3072)"
+  },
+  {
+   "check": "velocity values bit-identical to source",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "velocity valid mask identical",
+   "ok": true,
+   "detail": "435753"
+  },
+  {
+   "check": "velocity no NaN/inf",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "velocity transform identical to source",
+   "ok": true,
+   "detail": "(0.0, 0.0, 0.0, 268076.8810281253, 2369001.58195343, 0.0)"
+  },
+  {
+   "check": "velocity CRS keys identical",
+   "ok": true,
+   "detail": "WGS 84 / UTM zone 43N|WGS 84|"
+  },
+  {
+   "check": "velocity nodata tag -9999",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "velocity units tag present",
+   "ok": true,
+   "detail": "UNITTYPE"
+  },
+  {
+   "check": "arrival derivative has depth grid (shape, transform, CRS)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every derivative pixel centre falls inside the source arrival grid",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival values == source x60 (bit-identical, all 3145728 pixels)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival valid mask identical to source window",
+   "ok": true,
+   "detail": "426586"
+  },
+  {
+   "check": "no nodata multiplied (no value -599940, nodata still exactly -9999)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival minutes are whole multiples of 60",
+   "ok": true,
+   "detail": "(60.0, 6780.0)"
+  },
+  {
+   "check": "hour histogram equals minutes/60 histogram",
+   "ok": true,
+   "detail": "82"
+  },
+  {
+   "check": "no valid source arrival cell lost",
+   "ok": true,
+   "detail": "(426586, 426586)"
+  },
+  {
+   "check": "nodata tag -9999 and finite",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival units tag min",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival statistics tags match data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "wet/arrival relationship equals source-window numbers (427786 / 2094 / 894 / 332)",
+   "ok": true,
+   "detail": "{'depth_gt_0_1': 427786, 'wet_without_arrival': 2094, 'arrival_without_wet': 894, 'arrival_where_depth_nodata': 332}"
+  },
+  {
+   "check": "depth structure: deflate(8), tiled 256x256, 5 IFDs, reduced-image overviews",
+   "ok": true,
+   "detail": "[(1024, 3072), (512, 1536), (256, 768), (128, 384), (64, 192)]"
+  },
+  {
+   "check": "depth Software tag (305) names the Part A derivative tool; Artist tag (315) keeps source engine name HEC-RAS",
+   "ok": true,
+   "detail": "('PartA h02 derivative tool v0.2 (numpy 2.2.6, own TIFF writer)', 'HEC-RAS')"
+  },
+  {
+   "check": "velocity structure: deflate(8), tiled 256x256, 5 IFDs, reduced-image overviews",
+   "ok": true,
+   "detail": "[(1024, 3072), (512, 1536), (256, 768), (128, 384), (64, 192)]"
+  },
+  {
+   "check": "velocity Software tag (305) names the Part A derivative tool; Artist tag (315) keeps source engine name HEC-RAS",
+   "ok": true,
+   "detail": "('PartA h02 derivative tool v0.2 (numpy 2.2.6, own TIFF writer)', 'HEC-RAS')"
+  },
+  {
+   "check": "arrival structure: deflate(8), tiled 256x256, 5 IFDs, reduced-image overviews",
+   "ok": true,
+   "detail": "[(1024, 3072), (512, 1536), (256, 768), (128, 384), (64, 192)]"
+  },
+  {
+   "check": "arrival Software tag (305) names the Part A derivative tool; Artist tag (315) keeps source engine name HEC-RAS",
+   "ok": true,
+   "detail": "('PartA h02 derivative tool v0.2 (numpy 2.2.6, own TIFF writer)', 'HEC-RAS')"
+  },
+  {
+   "check": "depth overviews reproduce from main image (mean)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "velocity overviews reproduce from main image (mean)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "arrival overviews reproduce from main image (nearest)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "12 random coordinates: derived minutes == source hours x 60",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "samples": [
+  {
+   "x": 292044.582,
+   "y": 2358315.438,
+   "src_hours": 35.0,
+   "derived_minutes": 2100.0,
+   "depth_m": 2.232624053955078
+  },
+  {
+   "x": 329540.332,
+   "y": 2353936.584,
+   "src_hours": 23.0,
+   "derived_minutes": 1380.0,
+   "depth_m": 4.294548034667969
+  },
+  {
+   "x": 325016.483,
+   "y": 2348542.764,
+   "src_hours": 29.0,
+   "derived_minutes": 1740.0,
+   "depth_m": 2.122577667236328
+  },
+  {
+   "x": 280966.951,
+   "y": 2346860.82,
+   "src_hours": 51.0,
+   "derived_minutes": 3060.0,
+   "depth_m": 0.16812705993652344
+  },
+  {
+   "x": 329453.335,
+   "y": 2350543.697,
+   "src_hours": 14.0,
+   "derived_minutes": 840.0,
+   "depth_m": 5.296684265136719
+  },
+  {
+   "x": 273282.208,
+   "y": 2347643.794,
+   "src_hours": 30.0,
+   "derived_minutes": 1800.0,
+   "depth_m": 6.293326377868652
+  },
+  {
+   "x": 281111.947,
+   "y": 2349470.733,
+   "src_hours": 25.0,
+   "derived_minutes": 1500.0,
+   "depth_m": 15.244489669799805
+  },
+  {
+   "x": 349520.666,
+   "y": 2351094.679,
+   "src_hours": 14.0,
+   "derived_minutes": 840.0,
+   "depth_m": 7.5622406005859375
+  },
+  {
+   "x": 290333.639,
+   "y": 2354864.553,
+   "src_hours": 45.0,
+   "derived_minutes": 2700.0,
+   "depth_m": 0.30136871337890625
+  },
+  {
+   "x": 268555.365,
+   "y": 2351471.666,
+   "src_hours": 39.0,
+   "derived_minutes": 2340.0,
+   "depth_m": 0.9452142715454102
+  },
+  {
+   "x": 270904.287,
+   "y": 2344656.893,
+   "src_hours": 30.0,
+   "derived_minutes": 1800.0,
+   "depth_m": 2.4456424713134766
+  },
+  {
+   "x": 300048.315,
+   "y": 2354110.578,
+   "src_hours": 42.0,
+   "derived_minutes": 2520.0,
+   "depth_m": 0.4783344268798828
+  }
+ ],
+ "relationship": {
+  "depth_gt_0_1": 427786,
+  "wet_without_arrival": 2094,
+  "arrival_without_wet": 894,
+  "arrival_where_depth_nodata": 332
+ },
+ "not_tested": [
+  "strict COG layout (no validator in this environment)",
+  "coverage_start/coverage_end tags (waiting for B-01)",
+  "vertical datum",
+  "scientific plausibility"
+ ],
+ "bytes_verified": "files staged FROM the laptop folder after being built on the laptop side; sha256 in DERIVATION_RECORD.json"
+}

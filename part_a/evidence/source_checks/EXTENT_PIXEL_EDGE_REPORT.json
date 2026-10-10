@@ -1,0 +1,54 @@
+{
+ "depth_file": "scenarios/ukai-hyp-h02-release20000-hr-int-v1/assets/max_depth.tif",
+ "depth_sha256": "a42de297c2ce6553e10974e4d6f955a74e28251bb8a97776f4efa94185e3f202",
+ "threshold_m": 0.1,
+ "wet_pixels": 427786,
+ "shape": [
+  1024,
+  3072
+ ],
+ "pixel_m": 28.999033361477533,
+ "top_left_E_N": [
+  268076.8810281253,
+  2369001.58195343
+ ],
+ "nodata_pixels": 2709975,
+ "method": "exact pixel-edge trace; 4-connected foreground; no simplification; no component/hole dropping; lossless collinear-vertex compaction",
+ "trace_seconds": 0.3,
+ "pinch_vertex_decisions": 791,
+ "components_4conn": 1035,
+ "components_8conn_for_reference": 725,
+ "rings_split_at_repeated_vertices": 451,
+ "rings": 4016,
+ "holes": 2981.0,
+ "outer_rings": 1035,
+ "vertices_before_compaction": 115952,
+ "pixel_area_total_from_rings_px": 427786.0,
+ "pixel_area_equals_wet_pixels": true,
+ "polygons_without_exactly_one_outer_ring": 0,
+ "polygons": 1035,
+ "vertices_in_file": 77154,
+ "file_bytes": 1999529,
+ "out_sha256": "13b40d9fa930d52b2f26711844bc7fbc85409a842b2156d98b00cf49b7f598cd",
+ "decimals": 8,
+ "readback_max_deviation_from_pixel_corner_px": 2.7645276531984564e-05,
+ "readback_max_deviation_m": 0.0008016862964382923,
+ "inverse_forward_roundtrip_max_m_unrounded": 0.00024624262005090714,
+ "rebuilt_mask_equals_wet_mask": true,
+ "rebuilt_vs_wet_differing_pixels": 0,
+ "native_crs_area_from_readback_m2": 359744040.30810547,
+ "wet_pixels_x_pixel_area_m2": 359744042.5629546,
+ "area_relative_difference": -6.267926289105219e-09,
+ "rings_with_repeated_vertex": 0,
+ "rings_closed_min4": true,
+ "finite_2d": true,
+ "lon_range": [
+  72.76885135,
+  73.58625679
+ ],
+ "lat_range": [
+  21.15198776,
+  21.34657842
+ ],
+ "all_internal_checks_pass": true
+}

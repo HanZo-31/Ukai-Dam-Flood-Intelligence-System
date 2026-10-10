@@ -1,0 +1,9 @@
+{
+  "source_hashes": {
+    "inputs/plan.p03": "sha256:2844a4e6df6c14c08a66778f2edc497048d29dc7f257250cd68c74de875ea302",
+    "inputs/forcing.u04": "sha256:2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+    "inputs/geometry.g01": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "inputs/terrain.tif": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687"
+  },
+  "source_status": "existing assumed/reconstructed model inputs"
+}

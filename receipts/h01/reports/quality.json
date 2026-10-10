@@ -1,0 +1,17 @@
+{
+  "stage": "combined local draft preparation",
+  "scientific_validation_status": "not_validated",
+  "import_status": "pending_receiver_verification",
+  "source_unchanged": true,
+  "base_raster_values_and_masks_preserved": true,
+  "arrival_conversion": "valid cells times 60; nodata retained",
+  "extent": "full-precision pixel edges, depth greater than 0.1 m",
+  "unknowns": [
+    "producing-run timezone",
+    "input licences",
+    "vertical datum",
+    "observation-based calibration",
+    "exposure"
+  ],
+  "no_simulations_run": true
+}

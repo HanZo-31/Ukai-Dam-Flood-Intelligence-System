@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "ukai-2006-historical-combined-v1",
+  "run_id": "ukai-2006-historical-combined-v1-run",
+  "model_version": "ukai-2006-model-snapshot-ecd486afe4ec83ce",
+  "input_dataset_version": "ukai-2006-input-snapshot-ecd486afe4ec83ce",
+  "time_coverage": {
+    "start": "2006-08-06T00:00:00Z",
+    "end": "2006-08-11T18:00:00Z"
+  },
+  "engine": {
+    "name": "HEC-RAS 2D diffusion wave",
+    "software_version": "7.0.1",
+    "build": "Input plan Program Version 7.01; producing executable build was not byte-attested.",
+    "build_unavailable_reason": null,
+    "source_checksum": null,
+    "source_checksum_unavailable_reason": "Producing executable bytes were not attested; proprietary engine source is unavailable."
+  },
+  "scenario_family": "ukai-2006-historical",
+  "calibration_status": "uncalibrated",
+  "scientific_validation_status": "not_validated",
+  "prototype": true,
+  "original": {
+    "scenario_id": "ukai-2006-historical-v2",
+    "status": "draft",
+    "scenario_type": "historical_replay",
+    "validation_status": "not_validated",
+    "manifest_reference": "original/scenario_manifest.json",
+    "manifest_checksum": "sha256:2bd3cfc0fa80bac958ad37536b38a8acdfe70ec98d449b67af324146cc9759bb",
+    "asset_checksums": {
+      "original/assets/arrival_time.tif": "sha256:d2f2354e2b2c6d926730be951b686e39394d0a2d16d05a8de6845c9ba6adea77",
+      "original/assets/extent.geojson": "sha256:8a31ca3f9014002b919312a89a516bc9a16e3edd1906edf953762ad30be6d314",
+      "original/assets/max_depth.tif": "sha256:0925dd9eb79c6a2928896b26c3bc0c4014b0d3afafc96e9f271e2ec4a0f5a17e",
+      "original/assets/max_velocity.tif": "sha256:da2ab7cf1c609174e467af461951d76b03af99d19a089bf49ce7f8bcaddfa150",
+      "original/assets/max_wse.tif": "sha256:fb11b3751a98a2f07f6d0a03d3b90b2d8dda9bc0cfd110642e6674804f8b3d2a"
+    }
+  },
+  "forcing": {
+    "kind": "reconstructed_historical",
+    "source_label": "assumed",
+    "description": "Existing reconstructed 2006 release hydrograph; primary release-volume source and timezone unverified; hourly interpolation is assumed.",
+    "datasets": [
+      {
+        "dataset_id": "ukai-2006-forcing",
+        "version": "sha256-756c48deb37ccafb"
+      }
+    ],
+    "provenance_references": [
+      "inputs/forcing.u07",
+      "evidence/timing.json"
+    ],
+    "uncertainties": [
+      "Hydrograph and boundary parameters are assumed, not calibrated to downstream observations."
+    ]
+  },
+  "arrival": {
+    "unit": "min",
+    "origin": "simulation_start",
+    "reference_timestamp": "2006-08-06T00:00:00Z",
+    "threshold_m": 0.1,
+    "temporal_resolution_minutes": 60.0,
+    "original_unit": "h",
+    "conversion_factor": 60,
+    "conversion": "valid_cells_times_60_nodata_preserved",
+    "original_reference": "original/assets/arrival_time.tif",
+    "original_checksum": "sha256:d2f2354e2b2c6d926730be951b686e39394d0a2d16d05a8de6845c9ba6adea77",
+    "evidence_references": [
+      "reports/quality.json",
+      "evidence/timing.json"
+    ]
+  },
+  "timing": {
+    "time_step_meaning": "result_output_interval",
+    "result_output_interval_minutes": 15,
+    "computation_step_seconds": 10.0,
+    "forcing_interval_minutes": 60.0,
+    "mapping_interval_minutes": 60.0,
+    "unavailable_reasons": {},
+    "coverage_clock_kind": "model_clock",
+    "timezone_convention": "Nominal UTC index assigned to model-clock dates for relative-time interoperability. Actual historical and producing-run timezones remain unverified.",
+    "evidence_references": [
+      "inputs/plan.p06",
+      "evidence/timing.json"
+    ]
+  },
+  "limitations": {
+    "calibration": "No downstream observation-based calibration or independent validation has been performed.",
+    "terrain_bathymetry": "SRTM-derived provisional terrain, 100 m hydraulic mesh, no channel bathymetry; exported pixels are approximately 29 m, not independent 29 m hydraulic resolution.",
+    "vertical_datum": "Vertical datum is not confirmed; WSE cannot be compared directly with gauge stages.",
+    "exposure": "Population, buildings, roads and facilities have not been assessed.",
+    "source_uncertainties": [
+      "Input licences unverified in supplied material.",
+      "Producing-run timezone unknown; no aware run timestamp assigned.",
+      "Depth/arrival wet masks differ in some inherited original cells.",
+      "Historical forcing reconstructed from unverified twelve-hourly release volumes; no observed event catalog or calibration asserted."
+    ]
+  },
+  "assumptions": [
+    "Uniform Manning roughness 0.04 and assumed release boundaries from existing model.",
+    "No dam breach modelled.",
+    "Nominal UTC model-clock dates are indices for relative timing; no verified historical UTC event time is asserted."
+  ],
+  "unavailable_products": {
+    "population_exposed": "Exposure inputs and calculations are not available.",
+    "buildings_exposed": "Exposure inputs and calculations are not available.",
+    "roads_affected_km": "Exposure inputs and calculations are not available.",
+    "critical_facilities_exposed": "Exposure inputs and calculations are not available.",
+    "duration_cog": "No duration output supplied.",
+    "hazard_cog": "No reviewed hazard classes.",
+    "exposure_geojson": "No exposure layer supplied.",
+    "breach_width_m": "Release scenario; no breach modelled.",
+    "breach_formation_minutes": "Release scenario; no breach modelled.",
+    "max_wse_cog": "Preserved separately; role unsupported and vertical datum unknown."
+  },
+  "preserved_wse": {
+    "reference": "original/assets/max_wse.tif",
+    "checksum": "sha256:fb11b3751a98a2f07f6d0a03d3b90b2d8dda9bc0cfd110642e6674804f8b3d2a",
+    "vertical_datum": "unknown",
+    "reason_not_registered": "Unsupported current asset role; vertical datum unknown."
+  },
+  "derivation": {
+    "processor": "Combined local raster packager",
+    "processor_version": "2026.10.08-v1",
+    "source_scenario_id": "ukai-2006-historical-v2",
+    "derivative_scenario_id": "ukai-2006-historical-combined-v1",
+    "derivative_run_id": "ukai-2006-historical-combined-v1-run",
+    "operations": [
+      {
+        "name": "arrival_hours_to_minutes",
+        "parameters_and_method": "Source valid cells multiplied by 60; nodata preserved.",
+        "evidence_references": [
+          "reports/quality.json"
+        ]
+      },
+      {
+        "name": "coordinate_window_alignment",
+        "parameters_and_method": "Coordinate-derived integer window, no resampling; original valid arrival cells retained. Exact offsets and values are rechecked by receiver.",
+        "evidence_references": [
+          "reports/quality.json"
+        ]
+      },
+      {
+        "name": "strict_cog_packaging",
+        "parameters_and_method": "GDAL COG driver; DEFLATE; 256 blocks; new coverage tags; base arrays preserved.",
+        "evidence_references": [
+          "reports/quality.json"
+        ]
+      },
+      {
+        "name": "extent_geojson_normalization",
+        "parameters_and_method": "Pixel-edge extent from unchanged depth raster, depth greater than 0.1 m, 4-connected components, all holes preserved, full-precision WGS84 transform.",
+        "evidence_references": [
+          "reports/quality.json",
+          "reports/pixel-edge-extent-evidence.json"
+        ]
+      }
+    ],
+    "evidence_references": [
+      "reports/quality.json",
+      "evidence/input_release.json"
+    ]
+  }
+}

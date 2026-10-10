@@ -1,0 +1,6068 @@
+{
+  "checked_at": "2026-10-09T18:36:11.808Z",
+  "passed": true,
+  "phases": [
+    "submitting",
+    "submitting",
+    "submitting",
+    "submitting",
+    "loading_result",
+    "loading_products",
+    "completed",
+    "submitting",
+    "submitting",
+    "submitting",
+    "submitting",
+    "loading_result",
+    "loading_products",
+    "completed"
+  ],
+  "request": {
+    "schema_version": "2.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "configuration_id": "ukai-fast-fixedshape-n0025-v1",
+    "configuration_checksum": "sha256:9359b0409b314fde3141541df8c8e6d0f2431d62b47516eabc41bdf9f29bfa27",
+    "request_id": "merge-25000-v03-1",
+    "peak_release_m3s": 25000
+  },
+  "result": {
+    "actual_peak_release_m3s": 25000,
+    "arrival_definition": {
+      "comparison_transform": "ceil(native_seconds/3600)*60",
+      "definition_compatible": true,
+      "native_unit": "s",
+      "origin": "elapsed_simulation_start",
+      "threshold_m": 0.1,
+      "unavailable_reason": null
+    },
+    "assets": {
+      "arrival_time_cog": {
+        "bytes": 87864,
+        "sha256": "sha256:c33d7653ea19adb197653a23b4d89ae9b9b5597b06e1213120f9e809a29e6a4b",
+        "unit": "min",
+        "url": "/api/v1/candidates/compute-v2/jobs/merge-25000-v03-1/assets/arrival_time_cog"
+      },
+      "extent_geojson": {
+        "bytes": 490528,
+        "sha256": "sha256:d8bff740e6a0a68f679c2e20f6dd8370640ae711ae374fea11f1a5f65df2b395",
+        "unit": "geographic_coordinates",
+        "url": "/api/v1/candidates/compute-v2/jobs/merge-25000-v03-1/assets/extent_geojson"
+      },
+      "max_depth_cog": {
+        "bytes": 241211,
+        "sha256": "sha256:bf53b37e4f30e633732db58a6fce9dfa1fdf49c307adb88f8b8ba3feb3e7d830",
+        "unit": "m",
+        "url": "/api/v1/candidates/compute-v2/jobs/merge-25000-v03-1/assets/max_depth_cog"
+      },
+      "max_velocity_cog": {
+        "bytes": 206453,
+        "sha256": "sha256:346bbc3c51e79ca6b8ff3a612b8ffc74a4f597650f8e1767a80b69317f965c42",
+        "unit": "m/s",
+        "url": "/api/v1/candidates/compute-v2/jobs/merge-25000-v03-1/assets/max_velocity_cog"
+      }
+    },
+    "cache_hit": false,
+    "calibration_status": "uncalibrated",
+    "computed": true,
+    "configuration_checksum": "sha256:9359b0409b314fde3141541df8c8e6d0f2431d62b47516eabc41bdf9f29bfa27",
+    "configuration_id": "ukai-fast-fixedshape-n0025-v1",
+    "derived_grid": {
+      "crs": "EPSG:32643",
+      "height": 1024,
+      "mapping": "nearest_neighbour_with_validity_mask",
+      "nodata": -9999,
+      "target_reference_scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+      "transform": [
+        28.999033361477533,
+        0,
+        268076.8810281253,
+        0,
+        -28.999033361477533,
+        2369001.58195343
+      ],
+      "width": 3072
+    },
+    "engine": "experimental_fast_solver",
+    "engine_version": "li2d-original-dll-d56ef33a1394",
+    "input_checksums": {
+      "base:part_a/assets/max_depth.tif": "sha256:7069e8d34e75de6eb285e1671d7dfae09ba6d29d3b17b063554fe1aa4f5c6e9a",
+      "base:part_a/inputs/forcing.u05": "sha256:b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+      "base:part_a/inputs/geometry.g01": "sha256:e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+      "base:part_a/inputs/terrain.tif": "sha256:c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+      "base:receipts/h01/inputs/forcing.u04": "sha256:2098bddd7d9837b54423371cdcf632520389a9c87b22363c58c9523052c887f4",
+      "base:receipts/h03/inputs/forcing.u06": "sha256:ee972e2a6a60fa6e1b2c4523e138ca065a4bf553bbf873494251bf7abe221e01"
+    },
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "job_id": "merge-25000-v03-1",
+    "limitations": [
+      "No channel bathymetry; vertical datum unresolved.",
+      "No exposure data or evacuation/optimal release recommendation.",
+      "Agreement with stored HEC-RAS is not observational validation.",
+      "Velocity is maximum face-normal component, not HEC-RAS speed magnitude.",
+      "Comparing this new release with a different HEC-RAS release changes both forcing and engine; differences do not isolate release effect.",
+      "Input licensing and producing-run historical timezone remain unverified."
+    ],
+    "native_results_checksum": "sha256:a7ad39154f6e02dbb423ccff00da118b52c6e0599a7030f020dc00de26cbfe18",
+    "numerical_diagnostics_checksum": "sha256:6f29f503f336b1bc692f90cea9bd798b048bf9e9252ca89ecae847ace082092e",
+    "request_id": "merge-25000-v03-1",
+    "requested_peak_release_m3s": 25000,
+    "run_id": "ukai-fast-run-3e85f9b780850718",
+    "scenario_id": "ukai-fast-q25000-3e85f9b780850718",
+    "schema_version": "2.0.0",
+    "scientifically_validated": false,
+    "timings": {
+      "availability_seconds": 6.676100734981446,
+      "package_check_seconds": 0.5585267999995267,
+      "prepare_seconds": 1.0062796999991406,
+      "request_to_assets_seconds": 118.06905560000087,
+      "scope": "request_to_checked_asset_availability_not_browser_ready",
+      "solver_seconds": 109.82814836502075
+    },
+    "unavailable_reasons": {
+      "arrival_time_cog": null,
+      "extent_geojson": null,
+      "max_depth_cog": null,
+      "max_velocity_cog": null
+    },
+    "velocity_definition": "Maximum absolute face-normal flux divided by face depth over the run; not velocity-vector magnitude.",
+    "warnings": [
+      "experimental_simulation",
+      "uncalibrated",
+      "not_observed_flood_truth",
+      "native_100m_grid_resampled_not_29m_hydraulics",
+      "manning_n_fitted_to_unvalidated_hecras_h02",
+      "assumed_hydrograph_not_reservoir_routing"
+    ]
+  },
+  "first_request_cache_hit": false,
+  "products": {
+    "max_depth_cog": {
+      "status": "ok"
+    },
+    "arrival_time_cog": {
+      "status": "ok"
+    },
+    "max_velocity_cog": {
+      "status": "ok"
+    },
+    "extent_geojson": {
+      "status": "ok"
+    }
+  },
+  "comparison": {
+    "version": "candidate-compare-v2",
+    "width": 3072,
+    "height": 1024,
+    "pixelAreaM2": 840.9439359000869,
+    "cells": {
+      "total": 3145728,
+      "baselineValid": 435753,
+      "candidateValid": 1171213,
+      "bothValid": 435685,
+      "baselineOnlyValid": 68,
+      "candidateOnlyValid": 735528,
+      "neitherValid": 1974447,
+      "baselineInvalid": 0,
+      "candidateInvalid": 0
+    },
+    "wet": {
+      "bothWet": 415510,
+      "confirmedGained": 6633,
+      "confirmedLost": 12209,
+      "confirmedDryBoth": 1333,
+      "baselineRecordedWet": 427786,
+      "candidateRecordedWet": 504290,
+      "candidateOnlyRecordedWet": 88780,
+      "baselineOnlyRecordedWet": 12276,
+      "candidateWetUnknownBaseline": 82147,
+      "baselineWetUnknownCandidate": 67
+    },
+    "km2": {
+      "bothWet": 349.4206148058451,
+      "confirmedGained": 5.577981126825277,
+      "confirmedLost": 10.26708451340416,
+      "confirmedDryBoth": 1.120978266554816,
+      "baselineRecordedWet": 359.7440425629545,
+      "candidateRecordedWet": 424.07961743505484,
+      "candidateOnlyRecordedWet": 74.65900262920971,
+      "baselineOnlyRecordedWet": 10.323427757109467,
+      "candidateWetUnknownBaseline": 69.08102150238444,
+      "baselineWetUnknownCandidate": 0.05634324370530582,
+      "netRecordedChange": 64.33557487210032
+    },
+    "depth": {
+      "pairedCells": 415510,
+      "meanDiffM": 0.5158819649854369,
+      "meanAbsDiffM": 1.094452010497728,
+      "maxIncreaseM": 18.74247932434082,
+      "maxDecreaseM": -17.09620475769043
+    },
+    "arrival": {
+      "available": true,
+      "reason": null,
+      "pairedCells": 414288,
+      "baselineOnlyValid": 12298,
+      "candidateOnlyValid": 90002,
+      "meanDiffMin": -186.5764395782644,
+      "medianDiffMin": -120,
+      "meanDiffH": -3.1096073263044066,
+      "medianDiffH": -2,
+      "earlier": 325372,
+      "later": 57566,
+      "same": 31350
+    },
+    "velocity": {
+      "available": false,
+      "reason": "Maximum velocity is not compared: the new run's velocity may be a face-normal component while the reference value is defined differently, and a cross-engine difference would be misleading."
+    },
+    "classes": "omitted byte array"
+  },
+  "zones": {
+    "version": "candidate-zone-v2",
+    "zoneSizeM": 5000,
+    "pixelAreaM2": 840.9439359000869,
+    "minPairedCells": 50,
+    "minPairedFraction": 0.5,
+    "arrivalAvailable": true,
+    "arrivalReason": null,
+    "zones": [
+      {
+        "id": "Z-E0265-N2335",
+        "bounds": [
+          265000,
+          2335000,
+          270000,
+          2340000
+        ],
+        "cells": 1584,
+        "rasterCoverage": 0.053282207778629506,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0265-N2340",
+        "bounds": [
+          265000,
+          2340000,
+          270000,
+          2345000
+        ],
+        "cells": 11352,
+        "rasterCoverage": 0.38185582241351146,
+        "counts": {
+          "gained": 1,
+          "lost": 0,
+          "bothWet": 2717,
+          "candidateWetUnknownBaseline": 230,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.000840943935900087,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 2.2848446738405364,
+        "unmatchedCandidateWetKm2": 0.19341710525702,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 2717,
+        "eitherArrivalCells": 2948,
+        "pairedArrivalFraction": 0.9216417910447762,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 51,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2345",
+        "bounds": [
+          265000,
+          2345000,
+          270000,
+          2350000
+        ],
+        "cells": 11418,
+        "rasterCoverage": 0.3840759144042877,
+        "counts": {
+          "gained": 133,
+          "lost": 326,
+          "bothWet": 6421,
+          "candidateWetUnknownBaseline": 941,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.11184554347471155,
+        "confirmedLostKm2": 0.27414772310342833,
+        "bothWetKm2": 5.399701012414458,
+        "unmatchedCandidateWetKm2": 0.7913282436819818,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 6370,
+        "eitherArrivalCells": 7823,
+        "pairedArrivalFraction": 0.8142656269973156,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 20,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2350",
+        "bounds": [
+          265000,
+          2350000,
+          270000,
+          2355000
+        ],
+        "cells": 11352,
+        "rasterCoverage": 0.38185582241351146,
+        "counts": {
+          "gained": 190,
+          "lost": 119,
+          "bothWet": 6769,
+          "candidateWetUnknownBaseline": 1119,
+          "baselineWetUnknownCandidate": 1
+        },
+        "confirmedGainedKm2": 0.1597793478210165,
+        "confirmedLostKm2": 0.10007232837211033,
+        "bothWetKm2": 5.692349502107688,
+        "unmatchedCandidateWetKm2": 0.9410162642721973,
+        "unmatchedBaselineWetKm2": 0.000840943935900087,
+        "pairedArrivalCells": 6702,
+        "eitherArrivalCells": 8204,
+        "pairedArrivalFraction": 0.8169185763042418,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 15,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2355",
+        "bounds": [
+          265000,
+          2355000,
+          270000,
+          2360000
+        ],
+        "cells": 11418,
+        "rasterCoverage": 0.3840759144042877,
+        "counts": {
+          "gained": 1,
+          "lost": 0,
+          "bothWet": 311,
+          "candidateWetUnknownBaseline": 77,
+          "baselineWetUnknownCandidate": 1
+        },
+        "confirmedGainedKm2": 0.000840943935900087,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0.261533564064927,
+        "unmatchedCandidateWetKm2": 0.06475268306430669,
+        "unmatchedBaselineWetKm2": 0.000840943935900087,
+        "pairedArrivalCells": 310,
+        "eitherArrivalCells": 390,
+        "pairedArrivalFraction": 0.7948717948717948,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 50,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2360",
+        "bounds": [
+          265000,
+          2360000,
+          270000,
+          2365000
+        ],
+        "cells": 11352,
+        "rasterCoverage": 0.38185582241351146,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0265-N2365",
+        "bounds": [
+          265000,
+          2365000,
+          270000,
+          2370000
+        ],
+        "cells": 9108,
+        "rasterCoverage": 0.30637269472711964,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0270-N2335",
+        "bounds": [
+          270000,
+          2335000,
+          275000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0270-N2340",
+        "bounds": [
+          270000,
+          2340000,
+          275000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 158,
+          "lost": 532,
+          "bothWet": 13625,
+          "candidateWetUnknownBaseline": 2883,
+          "baselineWetUnknownCandidate": 8
+        },
+        "confirmedGainedKm2": 0.13286914187221371,
+        "confirmedLostKm2": 0.4473821738988462,
+        "bothWetKm2": 11.457861126638685,
+        "unmatchedCandidateWetKm2": 2.4244413671999503,
+        "unmatchedBaselineWetKm2": 0.006727551487200696,
+        "pairedArrivalCells": 13604,
+        "eitherArrivalCells": 17207,
+        "pairedArrivalFraction": 0.7906084732957517,
+        "medianAdvanceMin": 420,
+        "medianAdvanceH": 7,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 16,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2345",
+        "bounds": [
+          270000,
+          2345000,
+          275000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 242,
+          "lost": 878,
+          "bothWet": 20788,
+          "candidateWetUnknownBaseline": 1848,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.20350843248782102,
+        "confirmedLostKm2": 0.7383487757202762,
+        "bothWetKm2": 17.481542539491006,
+        "unmatchedCandidateWetKm2": 1.5540643935433605,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 20725,
+        "eitherArrivalCells": 23756,
+        "pairedArrivalFraction": 0.8724111803333895,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 11,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2350",
+        "bounds": [
+          270000,
+          2350000,
+          275000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 444,
+          "lost": 584,
+          "bothWet": 22466,
+          "candidateWetUnknownBaseline": 3197,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3733791075396386,
+        "confirmedLostKm2": 0.49111125856565074,
+        "bothWetKm2": 18.892646463931353,
+        "unmatchedCandidateWetKm2": 2.688497763072578,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 22284,
+        "eitherArrivalCells": 26677,
+        "pairedArrivalFraction": 0.8353263110544664,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 1,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2355",
+        "bounds": [
+          270000,
+          2355000,
+          275000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 133,
+          "lost": 76,
+          "bothWet": 6945,
+          "candidateWetUnknownBaseline": 1344,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.11184554347471155,
+        "confirmedLostKm2": 0.0639117391284066,
+        "bothWetKm2": 5.840355634826103,
+        "unmatchedCandidateWetKm2": 1.1302286498497167,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 6921,
+        "eitherArrivalCells": 8501,
+        "pairedArrivalFraction": 0.8141395129984708,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 19,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2360",
+        "bounds": [
+          270000,
+          2360000,
+          275000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0270-N2365",
+        "bounds": [
+          270000,
+          2365000,
+          275000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0275-N2335",
+        "bounds": [
+          275000,
+          2335000,
+          280000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0275-N2340",
+        "bounds": [
+          275000,
+          2340000,
+          280000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 115,
+          "lost": 49,
+          "bothWet": 8351,
+          "candidateWetUnknownBaseline": 1850,
+          "baselineWetUnknownCandidate": 49
+        },
+        "confirmedGainedKm2": 0.09670855262851,
+        "confirmedLostKm2": 0.04120625285910426,
+        "bothWetKm2": 7.0227228087016265,
+        "unmatchedCandidateWetKm2": 1.5557462814151608,
+        "unmatchedBaselineWetKm2": 0.04120625285910426,
+        "pairedArrivalCells": 8351,
+        "eitherArrivalCells": 10414,
+        "pairedArrivalFraction": 0.8019012867294028,
+        "medianAdvanceMin": 420,
+        "medianAdvanceH": 7,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 21,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2345",
+        "bounds": [
+          275000,
+          2345000,
+          280000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 299,
+          "lost": 766,
+          "bothWet": 13503,
+          "candidateWetUnknownBaseline": 3337,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.251442236834126,
+        "confirmedLostKm2": 0.6441630548994666,
+        "bothWetKm2": 11.355265966458873,
+        "unmatchedCandidateWetKm2": 2.8062299140985902,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 13449,
+        "eitherArrivalCells": 17909,
+        "pairedArrivalFraction": 0.7509632028588977,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 8,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2350",
+        "bounds": [
+          275000,
+          2350000,
+          280000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 359,
+          "lost": 268,
+          "bothWet": 22669,
+          "candidateWetUnknownBaseline": 3628,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3018988729881312,
+        "confirmedLostKm2": 0.2253729748212233,
+        "bothWetKm2": 19.06335808291907,
+        "unmatchedCandidateWetKm2": 3.0509445994455153,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 22605,
+        "eitherArrivalCells": 26931,
+        "pairedArrivalFraction": 0.8393672719171216,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 5,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2355",
+        "bounds": [
+          275000,
+          2355000,
+          280000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 40,
+          "lost": 38,
+          "bothWet": 1579,
+          "candidateWetUnknownBaseline": 941,
+          "baselineWetUnknownCandidate": 4
+        },
+        "confirmedGainedKm2": 0.03363775743600348,
+        "confirmedLostKm2": 0.0319558695642033,
+        "bothWetKm2": 1.3278504747862372,
+        "unmatchedCandidateWetKm2": 0.7913282436819818,
+        "unmatchedBaselineWetKm2": 0.003363775743600348,
+        "pairedArrivalCells": 1576,
+        "eitherArrivalCells": 2602,
+        "pairedArrivalFraction": 0.6056879323597233,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 34,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2360",
+        "bounds": [
+          275000,
+          2360000,
+          280000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0275-N2365",
+        "bounds": [
+          275000,
+          2365000,
+          280000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0280-N2335",
+        "bounds": [
+          280000,
+          2335000,
+          285000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0280-N2340",
+        "bounds": [
+          280000,
+          2340000,
+          285000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 51,
+          "lost": 3,
+          "bothWet": 1556,
+          "candidateWetUnknownBaseline": 1069,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04288814073090443,
+        "confirmedLostKm2": 0.0025228318077002605,
+        "bothWetKm2": 1.308508764260535,
+        "unmatchedCandidateWetKm2": 0.8989690674771929,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1555,
+        "eitherArrivalCells": 2679,
+        "pairedArrivalFraction": 0.5804404628592759,
+        "medianAdvanceMin": 660,
+        "medianAdvanceH": 11,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 32,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2345",
+        "bounds": [
+          280000,
+          2345000,
+          285000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 398,
+          "lost": 262,
+          "bothWet": 12023,
+          "candidateWetUnknownBaseline": 4554,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3346956864882346,
+        "confirmedLostKm2": 0.22032731120582277,
+        "bothWetKm2": 10.110668941326745,
+        "unmatchedCandidateWetKm2": 3.829658684088996,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 11963,
+        "eitherArrivalCells": 17236,
+        "pairedArrivalFraction": 0.6940705500116037,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 2,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2350",
+        "bounds": [
+          280000,
+          2350000,
+          285000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 332,
+          "lost": 201,
+          "bothWet": 23645,
+          "candidateWetUnknownBaseline": 3546,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.2791933867188289,
+        "confirmedLostKm2": 0.16902973111591746,
+        "bothWetKm2": 19.884119364357552,
+        "unmatchedCandidateWetKm2": 2.9819871967017084,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 23571,
+        "eitherArrivalCells": 27732,
+        "pairedArrivalFraction": 0.8499567286888793,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 6,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2355",
+        "bounds": [
+          280000,
+          2355000,
+          285000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 244,
+          "lost": 198,
+          "bothWet": 13091,
+          "candidateWetUnknownBaseline": 2619,
+          "baselineWetUnknownCandidate": 3
+        },
+        "confirmedGainedKm2": 0.2051903203596212,
+        "confirmedLostKm2": 0.1665068993082172,
+        "bothWetKm2": 11.00879706486804,
+        "unmatchedCandidateWetKm2": 2.2024321681223276,
+        "unmatchedBaselineWetKm2": 0.0025228318077002605,
+        "pairedArrivalCells": 13068,
+        "eitherArrivalCells": 16154,
+        "pairedArrivalFraction": 0.8089637241550081,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 10,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2360",
+        "bounds": [
+          280000,
+          2360000,
+          285000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0280-N2365",
+        "bounds": [
+          280000,
+          2365000,
+          285000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0285-N2335",
+        "bounds": [
+          285000,
+          2335000,
+          290000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0285-N2340",
+        "bounds": [
+          285000,
+          2340000,
+          290000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0285-N2345",
+        "bounds": [
+          285000,
+          2345000,
+          290000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 21,
+          "lost": 80,
+          "bothWet": 206,
+          "candidateWetUnknownBaseline": 264,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.017659822653901824,
+        "confirmedLostKm2": 0.06727551487200696,
+        "bothWetKm2": 0.1732344507954179,
+        "unmatchedCandidateWetKm2": 0.22200919907762293,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 206,
+        "eitherArrivalCells": 571,
+        "pairedArrivalFraction": 0.3607705779334501,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "Paired cells cover 36% of cells with an arrival time in either raster (minimum 50%).",
+        "priority": {
+          "rank": 42,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2350",
+        "bounds": [
+          285000,
+          2350000,
+          290000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 390,
+          "lost": 232,
+          "bothWet": 10483,
+          "candidateWetUnknownBaseline": 4041,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3279681350010339,
+        "confirmedLostKm2": 0.19509899312882015,
+        "bothWetKm2": 8.81561528004061,
+        "unmatchedCandidateWetKm2": 3.398254444972251,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 10449,
+        "eitherArrivalCells": 15146,
+        "pairedArrivalFraction": 0.6898851181830186,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 3,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2355",
+        "bounds": [
+          285000,
+          2355000,
+          290000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 373,
+          "lost": 286,
+          "bothWet": 18628,
+          "candidateWetUnknownBaseline": 4002,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3136720880907324,
+        "confirmedLostKm2": 0.24050996566742483,
+        "bothWetKm2": 15.665103637946817,
+        "unmatchedCandidateWetKm2": 3.365457631472148,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 18541,
+        "eitherArrivalCells": 23295,
+        "pairedArrivalFraction": 0.795921871646276,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 4,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2360",
+        "bounds": [
+          285000,
+          2360000,
+          290000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 18,
+          "lost": 23,
+          "bothWet": 130,
+          "candidateWetUnknownBaseline": 134,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.015136990846201565,
+        "confirmedLostKm2": 0.019341710525701997,
+        "bothWetKm2": 0.1093227116670113,
+        "unmatchedCandidateWetKm2": 0.11268648741061164,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 130,
+        "eitherArrivalCells": 305,
+        "pairedArrivalFraction": 0.4262295081967213,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "Paired cells cover 43% of cells with an arrival time in either raster (minimum 50%).",
+        "priority": {
+          "rank": 43,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2365",
+        "bounds": [
+          285000,
+          2365000,
+          290000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0290-N2335",
+        "bounds": [
+          290000,
+          2335000,
+          295000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0290-N2340",
+        "bounds": [
+          290000,
+          2340000,
+          295000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0290-N2345",
+        "bounds": [
+          290000,
+          2345000,
+          295000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0290-N2350",
+        "bounds": [
+          290000,
+          2350000,
+          295000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 91,
+          "lost": 43,
+          "bothWet": 1957,
+          "candidateWetUnknownBaseline": 1004,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.07652589816690791,
+        "confirmedLostKm2": 0.03616058924370374,
+        "bothWetKm2": 1.64572728255647,
+        "unmatchedCandidateWetKm2": 0.8443077116436872,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1956,
+        "eitherArrivalCells": 3095,
+        "pairedArrivalFraction": 0.6319870759289176,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 26,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0290-N2355",
+        "bounds": [
+          290000,
+          2355000,
+          295000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 307,
+          "lost": 150,
+          "bothWet": 21139,
+          "candidateWetUnknownBaseline": 3095,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.2581697883213267,
+        "confirmedLostKm2": 0.12614159038501305,
+        "bothWetKm2": 17.776713860991936,
+        "unmatchedCandidateWetKm2": 2.602721481610769,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 21096,
+        "eitherArrivalCells": 24690,
+        "pairedArrivalFraction": 0.8544349939246658,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 7,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0290-N2360",
+        "bounds": [
+          290000,
+          2360000,
+          295000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 58,
+          "lost": 61,
+          "bothWet": 3953,
+          "candidateWetUnknownBaseline": 1343,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04877474828220504,
+        "confirmedLostKm2": 0.0512975800899053,
+        "bothWetKm2": 3.3242513786130434,
+        "unmatchedCandidateWetKm2": 1.1293877059138169,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 3953,
+        "eitherArrivalCells": 5415,
+        "pairedArrivalFraction": 0.7300092336103416,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 30,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0290-N2365",
+        "bounds": [
+          290000,
+          2365000,
+          295000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0295-N2335",
+        "bounds": [
+          295000,
+          2335000,
+          300000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0295-N2340",
+        "bounds": [
+          295000,
+          2340000,
+          300000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0295-N2345",
+        "bounds": [
+          295000,
+          2345000,
+          300000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0295-N2350",
+        "bounds": [
+          295000,
+          2350000,
+          300000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 39,
+          "lost": 31,
+          "bothWet": 1662,
+          "candidateWetUnknownBaseline": 1054,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.03279681350010339,
+        "confirmedLostKm2": 0.026069262012902696,
+        "bothWetKm2": 1.3976488214659444,
+        "unmatchedCandidateWetKm2": 0.8863549084386917,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1659,
+        "eitherArrivalCells": 2786,
+        "pairedArrivalFraction": 0.5954773869346733,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 36,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0295-N2355",
+        "bounds": [
+          295000,
+          2355000,
+          300000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 272,
+          "lost": 125,
+          "bothWet": 12788,
+          "candidateWetUnknownBaseline": 2617,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.22873675056482362,
+        "confirmedLostKm2": 0.10511799198751086,
+        "bothWetKm2": 10.753991052290312,
+        "unmatchedCandidateWetKm2": 2.2007502802505274,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 12781,
+        "eitherArrivalCells": 15802,
+        "pairedArrivalFraction": 0.808821668143273,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 9,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0295-N2360",
+        "bounds": [
+          295000,
+          2360000,
+          300000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 26,
+          "lost": 23,
+          "bothWet": 1143,
+          "candidateWetUnknownBaseline": 415,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.02186454233340226,
+        "confirmedLostKm2": 0.019341710525701997,
+        "bothWetKm2": 0.9611989187337994,
+        "unmatchedCandidateWetKm2": 0.34899173339853606,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1141,
+        "eitherArrivalCells": 1607,
+        "pairedArrivalFraction": 0.7100186683260734,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 41,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0295-N2365",
+        "bounds": [
+          295000,
+          2365000,
+          300000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0300-N2335",
+        "bounds": [
+          300000,
+          2335000,
+          305000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0300-N2340",
+        "bounds": [
+          300000,
+          2340000,
+          305000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0300-N2345",
+        "bounds": [
+          300000,
+          2345000,
+          305000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 2,
+          "lost": 0,
+          "bothWet": 5,
+          "candidateWetUnknownBaseline": 18,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.001681887871800174,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0.004204719679500435,
+        "unmatchedCandidateWetKm2": 0.015136990846201565,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 3,
+        "eitherArrivalCells": 25,
+        "pairedArrivalFraction": 0.12,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "Only 3 paired cells (minimum 50).",
+        "priority": {
+          "rank": 49,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0300-N2350",
+        "bounds": [
+          300000,
+          2350000,
+          305000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 112,
+          "lost": 72,
+          "bothWet": 8990,
+          "candidateWetUnknownBaseline": 2953,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.09418572082080973,
+        "confirmedLostKm2": 0.06054796338480626,
+        "bothWetKm2": 7.560085983741781,
+        "unmatchedCandidateWetKm2": 2.4833074427129564,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 8985,
+        "eitherArrivalCells": 12127,
+        "pairedArrivalFraction": 0.740908716088068,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 22,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0300-N2355",
+        "bounds": [
+          300000,
+          2355000,
+          305000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 148,
+          "lost": 51,
+          "bothWet": 7861,
+          "candidateWetUnknownBaseline": 3054,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.12445970251321287,
+        "confirmedLostKm2": 0.04288814073090443,
+        "bothWetKm2": 6.610660280110583,
+        "unmatchedCandidateWetKm2": 2.568242780238865,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 7861,
+        "eitherArrivalCells": 11114,
+        "pairedArrivalFraction": 0.7073061004138924,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 17,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0300-N2360",
+        "bounds": [
+          300000,
+          2360000,
+          305000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 14,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0.011773215102601216,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 14,
+        "pairedArrivalFraction": 0,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0300-N2365",
+        "bounds": [
+          300000,
+          2365000,
+          305000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0305-N2335",
+        "bounds": [
+          305000,
+          2335000,
+          310000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0305-N2340",
+        "bounds": [
+          305000,
+          2340000,
+          310000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0305-N2345",
+        "bounds": [
+          305000,
+          2345000,
+          310000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 70,
+          "lost": 16,
+          "bothWet": 5873,
+          "candidateWetUnknownBaseline": 1514,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.058866075513006086,
+        "confirmedLostKm2": 0.013455102974401391,
+        "bothWetKm2": 4.938863735541211,
+        "unmatchedCandidateWetKm2": 1.2731891189527316,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 5871,
+        "eitherArrivalCells": 7472,
+        "pairedArrivalFraction": 0.7857334047109208,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 28,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0305-N2350",
+        "bounds": [
+          305000,
+          2350000,
+          310000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 237,
+          "lost": 85,
+          "bothWet": 15320,
+          "candidateWetUnknownBaseline": 4177,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.1993037128083206,
+        "confirmedLostKm2": 0.07148023455150739,
+        "bothWetKm2": 12.883261097989331,
+        "unmatchedCandidateWetKm2": 3.512622820254663,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 15317,
+        "eitherArrivalCells": 19819,
+        "pairedArrivalFraction": 0.7728442403753973,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 12,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0305-N2355",
+        "bounds": [
+          305000,
+          2355000,
+          310000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 7,
+          "lost": 5,
+          "bothWet": 239,
+          "candidateWetUnknownBaseline": 211,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.005886607551300608,
+        "confirmedLostKm2": 0.004204719679500435,
+        "bothWetKm2": 0.20098560068012075,
+        "unmatchedCandidateWetKm2": 0.17743917047491833,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 239,
+        "eitherArrivalCells": 462,
+        "pairedArrivalFraction": 0.5173160173160173,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 46,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0305-N2360",
+        "bounds": [
+          305000,
+          2360000,
+          310000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0305-N2365",
+        "bounds": [
+          305000,
+          2365000,
+          310000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0310-N2335",
+        "bounds": [
+          310000,
+          2335000,
+          315000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0310-N2340",
+        "bounds": [
+          310000,
+          2340000,
+          315000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0310-N2345",
+        "bounds": [
+          310000,
+          2345000,
+          315000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 17,
+          "lost": 213,
+          "bothWet": 4245,
+          "candidateWetUnknownBaseline": 334,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.014296046910301476,
+        "confirmedLostKm2": 0.17912105834671851,
+        "bothWetKm2": 3.569807007895869,
+        "unmatchedCandidateWetKm2": 0.28087527459062905,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 4245,
+        "eitherArrivalCells": 4805,
+        "pairedArrivalFraction": 0.8834547346514048,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 44,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0310-N2350",
+        "bounds": [
+          310000,
+          2350000,
+          315000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 32,
+          "lost": 183,
+          "bothWet": 1042,
+          "candidateWetUnknownBaseline": 800,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.026910205948802782,
+        "confirmedLostKm2": 0.1538927402697159,
+        "bothWetKm2": 0.8762635812078905,
+        "unmatchedCandidateWetKm2": 0.6727551487200696,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1042,
+        "eitherArrivalCells": 2057,
+        "pairedArrivalFraction": 0.5065629557608167,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 39,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0310-N2355",
+        "bounds": [
+          310000,
+          2355000,
+          315000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0310-N2360",
+        "bounds": [
+          310000,
+          2360000,
+          315000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0310-N2365",
+        "bounds": [
+          310000,
+          2365000,
+          315000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0315-N2335",
+        "bounds": [
+          315000,
+          2335000,
+          320000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0315-N2340",
+        "bounds": [
+          315000,
+          2340000,
+          320000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0315-N2345",
+        "bounds": [
+          315000,
+          2345000,
+          320000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 51,
+          "lost": 75,
+          "bothWet": 5520,
+          "candidateWetUnknownBaseline": 1688,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04288814073090443,
+        "confirmedLostKm2": 0.06307079519250652,
+        "bothWetKm2": 4.642010526168479,
+        "unmatchedCandidateWetKm2": 1.4195133637993467,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 5512,
+        "eitherArrivalCells": 7334,
+        "pairedArrivalFraction": 0.7515680392691574,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 33,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0315-N2350",
+        "bounds": [
+          315000,
+          2350000,
+          320000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 2,
+          "lost": 8,
+          "bothWet": 626,
+          "candidateWetUnknownBaseline": 98,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.001681887871800174,
+        "confirmedLostKm2": 0.006727551487200696,
+        "bothWetKm2": 0.5264309038734545,
+        "unmatchedCandidateWetKm2": 0.08241250571820852,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 626,
+        "eitherArrivalCells": 734,
+        "pairedArrivalFraction": 0.8528610354223434,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 48,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0315-N2355",
+        "bounds": [
+          315000,
+          2355000,
+          320000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0315-N2360",
+        "bounds": [
+          315000,
+          2360000,
+          320000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0315-N2365",
+        "bounds": [
+          315000,
+          2365000,
+          320000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0320-N2335",
+        "bounds": [
+          320000,
+          2335000,
+          325000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0320-N2340",
+        "bounds": [
+          320000,
+          2340000,
+          325000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0320-N2345",
+        "bounds": [
+          320000,
+          2345000,
+          325000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 78,
+          "lost": 181,
+          "bothWet": 2467,
+          "candidateWetUnknownBaseline": 1619,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.06559362700020678,
+        "confirmedLostKm2": 0.15221085239791574,
+        "bothWetKm2": 2.0746086898655145,
+        "unmatchedCandidateWetKm2": 1.3614882322222406,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 2453,
+        "eitherArrivalCells": 4351,
+        "pairedArrivalFraction": 0.5637784417375316,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 27,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0320-N2350",
+        "bounds": [
+          320000,
+          2350000,
+          325000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 68,
+          "lost": 231,
+          "bothWet": 6872,
+          "candidateWetUnknownBaseline": 1838,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.057184187641205905,
+        "confirmedLostKm2": 0.19425804919292006,
+        "bothWetKm2": 5.778966727505397,
+        "unmatchedCandidateWetKm2": 1.5456549541843596,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 6868,
+        "eitherArrivalCells": 9011,
+        "pairedArrivalFraction": 0.7621795583176119,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 29,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0320-N2355",
+        "bounds": [
+          320000,
+          2355000,
+          325000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0320-N2360",
+        "bounds": [
+          320000,
+          2360000,
+          325000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0320-N2365",
+        "bounds": [
+          320000,
+          2365000,
+          325000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0325-N2335",
+        "bounds": [
+          325000,
+          2335000,
+          330000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0325-N2340",
+        "bounds": [
+          325000,
+          2340000,
+          330000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0325-N2345",
+        "bounds": [
+          325000,
+          2345000,
+          330000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 109,
+          "lost": 312,
+          "bothWet": 5955,
+          "candidateWetUnknownBaseline": 1062,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.09166288901310947,
+        "confirmedLostKm2": 0.2623745080008271,
+        "bothWetKm2": 5.007821138285018,
+        "unmatchedCandidateWetKm2": 0.8930824599258923,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 5924,
+        "eitherArrivalCells": 7441,
+        "pairedArrivalFraction": 0.7961295524795055,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 23,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0325-N2350",
+        "bounds": [
+          325000,
+          2350000,
+          330000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 194,
+          "lost": 564,
+          "bothWet": 13022,
+          "candidateWetUnknownBaseline": 2693,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.16314312356461685,
+        "confirmedLostKm2": 0.474292379847649,
+        "bothWetKm2": 10.950771933290932,
+        "unmatchedCandidateWetKm2": 2.264662019378934,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 12934,
+        "eitherArrivalCells": 16509,
+        "pairedArrivalFraction": 0.7834514507238476,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 14,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0325-N2355",
+        "bounds": [
+          325000,
+          2355000,
+          330000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 6,
+          "lost": 232,
+          "bothWet": 345,
+          "candidateWetUnknownBaseline": 70,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.005045663615400521,
+        "confirmedLostKm2": 0.19509899312882015,
+        "bothWetKm2": 0.29012565788552996,
+        "unmatchedCandidateWetKm2": 0.058866075513006086,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 343,
+        "eitherArrivalCells": 656,
+        "pairedArrivalFraction": 0.5228658536585366,
+        "medianAdvanceMin": -180,
+        "medianAdvanceH": -3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 47,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0325-N2360",
+        "bounds": [
+          325000,
+          2360000,
+          330000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0325-N2365",
+        "bounds": [
+          325000,
+          2365000,
+          330000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0330-N2335",
+        "bounds": [
+          330000,
+          2335000,
+          335000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0330-N2340",
+        "bounds": [
+          330000,
+          2340000,
+          335000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0330-N2345",
+        "bounds": [
+          330000,
+          2345000,
+          335000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 17,
+          "lost": 77,
+          "bothWet": 970,
+          "candidateWetUnknownBaseline": 150,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.014296046910301476,
+        "confirmedLostKm2": 0.06475268306430669,
+        "bothWetKm2": 0.8157156178230842,
+        "unmatchedCandidateWetKm2": 0.12614159038501305,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 967,
+        "eitherArrivalCells": 1214,
+        "pairedArrivalFraction": 0.7965403624382208,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 45,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0330-N2350",
+        "bounds": [
+          330000,
+          2350000,
+          335000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 204,
+          "lost": 1122,
+          "bothWet": 18960,
+          "candidateWetUnknownBaseline": 1761,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.17155256292361773,
+        "confirmedLostKm2": 0.9435390960798975,
+        "bothWetKm2": 15.944297024665648,
+        "unmatchedCandidateWetKm2": 1.480902271120053,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 18872,
+        "eitherArrivalCells": 22032,
+        "pairedArrivalFraction": 0.8565722585330429,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 13,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0330-N2355",
+        "bounds": [
+          330000,
+          2355000,
+          335000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 33,
+          "lost": 457,
+          "bothWet": 1943,
+          "candidateWetUnknownBaseline": 307,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.027751149884702866,
+        "confirmedLostKm2": 0.3843113787063397,
+        "bothWetKm2": 1.6339540674538688,
+        "unmatchedCandidateWetKm2": 0.2581697883213267,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1935,
+        "eitherArrivalCells": 2734,
+        "pairedArrivalFraction": 0.7077542062911485,
+        "medianAdvanceMin": -120,
+        "medianAdvanceH": -2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 38,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0330-N2360",
+        "bounds": [
+          330000,
+          2360000,
+          335000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0330-N2365",
+        "bounds": [
+          330000,
+          2365000,
+          335000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0335-N2335",
+        "bounds": [
+          335000,
+          2335000,
+          340000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0335-N2340",
+        "bounds": [
+          335000,
+          2340000,
+          340000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0335-N2345",
+        "bounds": [
+          335000,
+          2345000,
+          340000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 126,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0.10595893592341095,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 126,
+        "pairedArrivalFraction": 0,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0335-N2350",
+        "bounds": [
+          335000,
+          2350000,
+          340000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 105,
+          "lost": 916,
+          "bothWet": 16121,
+          "candidateWetUnknownBaseline": 1121,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.08829911326950912,
+        "confirmedLostKm2": 0.7703046452844796,
+        "bothWetKm2": 13.556857190645301,
+        "unmatchedCandidateWetKm2": 0.9426981521439973,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 16073,
+        "eitherArrivalCells": 18250,
+        "pairedArrivalFraction": 0.8807123287671232,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 25,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0335-N2355",
+        "bounds": [
+          335000,
+          2355000,
+          340000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0335-N2360",
+        "bounds": [
+          335000,
+          2360000,
+          340000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0335-N2365",
+        "bounds": [
+          335000,
+          2365000,
+          340000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0340-N2335",
+        "bounds": [
+          340000,
+          2335000,
+          345000,
+          2340000
+        ],
+        "cells": 4152,
+        "rasterCoverage": 0.13966396887428642,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0340-N2340",
+        "bounds": [
+          340000,
+          2340000,
+          345000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0340-N2345",
+        "bounds": [
+          340000,
+          2345000,
+          345000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 40,
+          "lost": 226,
+          "bothWet": 2007,
+          "candidateWetUnknownBaseline": 321,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.03363775743600348,
+        "confirmedLostKm2": 0.19005332951341966,
+        "bothWetKm2": 1.6877744793514744,
+        "unmatchedCandidateWetKm2": 0.26994300342392785,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 2007,
+        "eitherArrivalCells": 2594,
+        "pairedArrivalFraction": 0.7737085582112567,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 35,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0340-N2350",
+        "bounds": [
+          340000,
+          2350000,
+          345000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 107,
+          "lost": 511,
+          "bothWet": 19751,
+          "candidateWetUnknownBaseline": 1157,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.0899810011413093,
+        "confirmedLostKm2": 0.4297223512449444,
+        "bothWetKm2": 16.609483677962615,
+        "unmatchedCandidateWetKm2": 0.9729721338364006,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 19734,
+        "eitherArrivalCells": 21520,
+        "pairedArrivalFraction": 0.9170074349442379,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 24,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0340-N2355",
+        "bounds": [
+          340000,
+          2355000,
+          345000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 20,
+          "bothWet": 71,
+          "candidateWetUnknownBaseline": 11,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0.01681887871800174,
+        "bothWetKm2": 0.05970701944890617,
+        "unmatchedCandidateWetKm2": 0.009250383294900955,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 71,
+        "eitherArrivalCells": 102,
+        "pairedArrivalFraction": 0.696078431372549,
+        "medianAdvanceMin": -120,
+        "medianAdvanceH": -2,
+        "timingUnavailableReason": null,
+        "priority": null
+      },
+      {
+        "id": "Z-E0340-N2360",
+        "bounds": [
+          340000,
+          2360000,
+          345000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0340-N2365",
+        "bounds": [
+          340000,
+          2365000,
+          345000,
+          2370000
+        ],
+        "cells": 23874,
+        "rasterCoverage": 0.803067821027147,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0345-N2335",
+        "bounds": [
+          345000,
+          2335000,
+          350000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0345-N2340",
+        "bounds": [
+          345000,
+          2340000,
+          350000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0345-N2345",
+        "bounds": [
+          345000,
+          2345000,
+          350000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 29,
+          "lost": 190,
+          "bothWet": 761,
+          "candidateWetUnknownBaseline": 282,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.02438737414110252,
+        "confirmedLostKm2": 0.1597793478210165,
+        "bothWetKm2": 0.6399583352199661,
+        "unmatchedCandidateWetKm2": 0.2371461899238245,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 760,
+        "eitherArrivalCells": 1262,
+        "pairedArrivalFraction": 0.6022187004754358,
+        "medianAdvanceMin": -120,
+        "medianAdvanceH": -2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 40,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0345-N2350",
+        "bounds": [
+          345000,
+          2350000,
+          350000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 138,
+          "lost": 666,
+          "bothWet": 16252,
+          "candidateWetUnknownBaseline": 1555,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.11605026315421199,
+        "confirmedLostKm2": 0.5600686613094579,
+        "bothWetKm2": 13.667020846248214,
+        "unmatchedCandidateWetKm2": 1.3076678203246352,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 16224,
+        "eitherArrivalCells": 18606,
+        "pairedArrivalFraction": 0.8719767816833279,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 18,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0345-N2355",
+        "bounds": [
+          345000,
+          2355000,
+          350000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0345-N2360",
+        "bounds": [
+          345000,
+          2360000,
+          350000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0345-N2365",
+        "bounds": [
+          345000,
+          2365000,
+          350000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0350-N2335",
+        "bounds": [
+          350000,
+          2335000,
+          355000,
+          2340000
+        ],
+        "cells": 4128,
+        "rasterCoverage": 0.13885666269582234,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0350-N2340",
+        "bounds": [
+          350000,
+          2340000,
+          355000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0350-N2345",
+        "bounds": [
+          350000,
+          2345000,
+          355000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 35,
+          "lost": 82,
+          "bothWet": 2280,
+          "candidateWetUnknownBaseline": 831,
+          "baselineWetUnknownCandidate": 1
+        },
+        "confirmedGainedKm2": 0.029433037756503043,
+        "confirmedLostKm2": 0.06895740274380711,
+        "bothWetKm2": 1.9173521738521981,
+        "unmatchedCandidateWetKm2": 0.6988244107329722,
+        "unmatchedBaselineWetKm2": 0.000840943935900087,
+        "pairedArrivalCells": 2280,
+        "eitherArrivalCells": 3229,
+        "pairedArrivalFraction": 0.7061009600495509,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 37,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0350-N2350",
+        "bounds": [
+          350000,
+          2350000,
+          355000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 57,
+          "lost": 234,
+          "bothWet": 9464,
+          "candidateWetUnknownBaseline": 1356,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04793380434630495,
+        "confirmedLostKm2": 0.19678088100062036,
+        "bothWetKm2": 7.958693409358422,
+        "unmatchedCandidateWetKm2": 1.140319977080518,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 9459,
+        "eitherArrivalCells": 11113,
+        "pairedArrivalFraction": 0.8511653018986772,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 31,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0350-N2355",
+        "bounds": [
+          350000,
+          2355000,
+          355000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0350-N2360",
+        "bounds": [
+          350000,
+          2360000,
+          355000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0350-N2365",
+        "bounds": [
+          350000,
+          2365000,
+          355000,
+          2370000
+        ],
+        "cells": 23736,
+        "rasterCoverage": 0.7984258105009785,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2335",
+        "bounds": [
+          355000,
+          2335000,
+          360000,
+          2340000
+        ],
+        "cells": 1800,
+        "rasterCoverage": 0.06054796338480625,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2340",
+        "bounds": [
+          355000,
+          2340000,
+          360000,
+          2345000
+        ],
+        "cells": 12900,
+        "rasterCoverage": 0.4339270709244448,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2345",
+        "bounds": [
+          355000,
+          2345000,
+          360000,
+          2350000
+        ],
+        "cells": 12975,
+        "rasterCoverage": 0.43644990273214507,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2350",
+        "bounds": [
+          355000,
+          2350000,
+          360000,
+          2355000
+        ],
+        "cells": 12900,
+        "rasterCoverage": 0.4339270709244448,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2355",
+        "bounds": [
+          355000,
+          2355000,
+          360000,
+          2360000
+        ],
+        "cells": 12975,
+        "rasterCoverage": 0.43644990273214507,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2360",
+        "bounds": [
+          355000,
+          2360000,
+          360000,
+          2365000
+        ],
+        "cells": 12900,
+        "rasterCoverage": 0.4339270709244448,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      },
+      {
+        "id": "Z-E0355-N2365",
+        "bounds": [
+          355000,
+          2365000,
+          360000,
+          2370000
+        ],
+        "cells": 10350,
+        "rasterCoverage": 0.34815078946263595,
+        "counts": {
+          "gained": 0,
+          "lost": 0,
+          "bothWet": 0,
+          "candidateWetUnknownBaseline": 0,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0,
+        "unmatchedCandidateWetKm2": 0,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 0,
+        "eitherArrivalCells": 0,
+        "pairedArrivalFraction": null,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "No cell has a valid arrival time in both rasters.",
+        "priority": null
+      }
+    ],
+    "ranked": [
+      {
+        "id": "Z-E0270-N2350",
+        "bounds": [
+          270000,
+          2350000,
+          275000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 444,
+          "lost": 584,
+          "bothWet": 22466,
+          "candidateWetUnknownBaseline": 3197,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3733791075396386,
+        "confirmedLostKm2": 0.49111125856565074,
+        "bothWetKm2": 18.892646463931353,
+        "unmatchedCandidateWetKm2": 2.688497763072578,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 22284,
+        "eitherArrivalCells": 26677,
+        "pairedArrivalFraction": 0.8353263110544664,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 1,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2345",
+        "bounds": [
+          280000,
+          2345000,
+          285000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 398,
+          "lost": 262,
+          "bothWet": 12023,
+          "candidateWetUnknownBaseline": 4554,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3346956864882346,
+        "confirmedLostKm2": 0.22032731120582277,
+        "bothWetKm2": 10.110668941326745,
+        "unmatchedCandidateWetKm2": 3.829658684088996,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 11963,
+        "eitherArrivalCells": 17236,
+        "pairedArrivalFraction": 0.6940705500116037,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 2,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2350",
+        "bounds": [
+          285000,
+          2350000,
+          290000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 390,
+          "lost": 232,
+          "bothWet": 10483,
+          "candidateWetUnknownBaseline": 4041,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3279681350010339,
+        "confirmedLostKm2": 0.19509899312882015,
+        "bothWetKm2": 8.81561528004061,
+        "unmatchedCandidateWetKm2": 3.398254444972251,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 10449,
+        "eitherArrivalCells": 15146,
+        "pairedArrivalFraction": 0.6898851181830186,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 3,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2355",
+        "bounds": [
+          285000,
+          2355000,
+          290000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 373,
+          "lost": 286,
+          "bothWet": 18628,
+          "candidateWetUnknownBaseline": 4002,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3136720880907324,
+        "confirmedLostKm2": 0.24050996566742483,
+        "bothWetKm2": 15.665103637946817,
+        "unmatchedCandidateWetKm2": 3.365457631472148,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 18541,
+        "eitherArrivalCells": 23295,
+        "pairedArrivalFraction": 0.795921871646276,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 4,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2350",
+        "bounds": [
+          275000,
+          2350000,
+          280000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 359,
+          "lost": 268,
+          "bothWet": 22669,
+          "candidateWetUnknownBaseline": 3628,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.3018988729881312,
+        "confirmedLostKm2": 0.2253729748212233,
+        "bothWetKm2": 19.06335808291907,
+        "unmatchedCandidateWetKm2": 3.0509445994455153,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 22605,
+        "eitherArrivalCells": 26931,
+        "pairedArrivalFraction": 0.8393672719171216,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 5,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2350",
+        "bounds": [
+          280000,
+          2350000,
+          285000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 332,
+          "lost": 201,
+          "bothWet": 23645,
+          "candidateWetUnknownBaseline": 3546,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.2791933867188289,
+        "confirmedLostKm2": 0.16902973111591746,
+        "bothWetKm2": 19.884119364357552,
+        "unmatchedCandidateWetKm2": 2.9819871967017084,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 23571,
+        "eitherArrivalCells": 27732,
+        "pairedArrivalFraction": 0.8499567286888793,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 6,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0290-N2355",
+        "bounds": [
+          290000,
+          2355000,
+          295000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 307,
+          "lost": 150,
+          "bothWet": 21139,
+          "candidateWetUnknownBaseline": 3095,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.2581697883213267,
+        "confirmedLostKm2": 0.12614159038501305,
+        "bothWetKm2": 17.776713860991936,
+        "unmatchedCandidateWetKm2": 2.602721481610769,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 21096,
+        "eitherArrivalCells": 24690,
+        "pairedArrivalFraction": 0.8544349939246658,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 7,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2345",
+        "bounds": [
+          275000,
+          2345000,
+          280000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 299,
+          "lost": 766,
+          "bothWet": 13503,
+          "candidateWetUnknownBaseline": 3337,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.251442236834126,
+        "confirmedLostKm2": 0.6441630548994666,
+        "bothWetKm2": 11.355265966458873,
+        "unmatchedCandidateWetKm2": 2.8062299140985902,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 13449,
+        "eitherArrivalCells": 17909,
+        "pairedArrivalFraction": 0.7509632028588977,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 8,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0295-N2355",
+        "bounds": [
+          295000,
+          2355000,
+          300000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 272,
+          "lost": 125,
+          "bothWet": 12788,
+          "candidateWetUnknownBaseline": 2617,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.22873675056482362,
+        "confirmedLostKm2": 0.10511799198751086,
+        "bothWetKm2": 10.753991052290312,
+        "unmatchedCandidateWetKm2": 2.2007502802505274,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 12781,
+        "eitherArrivalCells": 15802,
+        "pairedArrivalFraction": 0.808821668143273,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 9,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2355",
+        "bounds": [
+          280000,
+          2355000,
+          285000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 244,
+          "lost": 198,
+          "bothWet": 13091,
+          "candidateWetUnknownBaseline": 2619,
+          "baselineWetUnknownCandidate": 3
+        },
+        "confirmedGainedKm2": 0.2051903203596212,
+        "confirmedLostKm2": 0.1665068993082172,
+        "bothWetKm2": 11.00879706486804,
+        "unmatchedCandidateWetKm2": 2.2024321681223276,
+        "unmatchedBaselineWetKm2": 0.0025228318077002605,
+        "pairedArrivalCells": 13068,
+        "eitherArrivalCells": 16154,
+        "pairedArrivalFraction": 0.8089637241550081,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 10,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2345",
+        "bounds": [
+          270000,
+          2345000,
+          275000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 242,
+          "lost": 878,
+          "bothWet": 20788,
+          "candidateWetUnknownBaseline": 1848,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.20350843248782102,
+        "confirmedLostKm2": 0.7383487757202762,
+        "bothWetKm2": 17.481542539491006,
+        "unmatchedCandidateWetKm2": 1.5540643935433605,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 20725,
+        "eitherArrivalCells": 23756,
+        "pairedArrivalFraction": 0.8724111803333895,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 11,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0305-N2350",
+        "bounds": [
+          305000,
+          2350000,
+          310000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 237,
+          "lost": 85,
+          "bothWet": 15320,
+          "candidateWetUnknownBaseline": 4177,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.1993037128083206,
+        "confirmedLostKm2": 0.07148023455150739,
+        "bothWetKm2": 12.883261097989331,
+        "unmatchedCandidateWetKm2": 3.512622820254663,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 15317,
+        "eitherArrivalCells": 19819,
+        "pairedArrivalFraction": 0.7728442403753973,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 12,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0330-N2350",
+        "bounds": [
+          330000,
+          2350000,
+          335000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 204,
+          "lost": 1122,
+          "bothWet": 18960,
+          "candidateWetUnknownBaseline": 1761,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.17155256292361773,
+        "confirmedLostKm2": 0.9435390960798975,
+        "bothWetKm2": 15.944297024665648,
+        "unmatchedCandidateWetKm2": 1.480902271120053,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 18872,
+        "eitherArrivalCells": 22032,
+        "pairedArrivalFraction": 0.8565722585330429,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 13,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0325-N2350",
+        "bounds": [
+          325000,
+          2350000,
+          330000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 194,
+          "lost": 564,
+          "bothWet": 13022,
+          "candidateWetUnknownBaseline": 2693,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.16314312356461685,
+        "confirmedLostKm2": 0.474292379847649,
+        "bothWetKm2": 10.950771933290932,
+        "unmatchedCandidateWetKm2": 2.264662019378934,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 12934,
+        "eitherArrivalCells": 16509,
+        "pairedArrivalFraction": 0.7834514507238476,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 14,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2350",
+        "bounds": [
+          265000,
+          2350000,
+          270000,
+          2355000
+        ],
+        "cells": 11352,
+        "rasterCoverage": 0.38185582241351146,
+        "counts": {
+          "gained": 190,
+          "lost": 119,
+          "bothWet": 6769,
+          "candidateWetUnknownBaseline": 1119,
+          "baselineWetUnknownCandidate": 1
+        },
+        "confirmedGainedKm2": 0.1597793478210165,
+        "confirmedLostKm2": 0.10007232837211033,
+        "bothWetKm2": 5.692349502107688,
+        "unmatchedCandidateWetKm2": 0.9410162642721973,
+        "unmatchedBaselineWetKm2": 0.000840943935900087,
+        "pairedArrivalCells": 6702,
+        "eitherArrivalCells": 8204,
+        "pairedArrivalFraction": 0.8169185763042418,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 15,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2340",
+        "bounds": [
+          270000,
+          2340000,
+          275000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 158,
+          "lost": 532,
+          "bothWet": 13625,
+          "candidateWetUnknownBaseline": 2883,
+          "baselineWetUnknownCandidate": 8
+        },
+        "confirmedGainedKm2": 0.13286914187221371,
+        "confirmedLostKm2": 0.4473821738988462,
+        "bothWetKm2": 11.457861126638685,
+        "unmatchedCandidateWetKm2": 2.4244413671999503,
+        "unmatchedBaselineWetKm2": 0.006727551487200696,
+        "pairedArrivalCells": 13604,
+        "eitherArrivalCells": 17207,
+        "pairedArrivalFraction": 0.7906084732957517,
+        "medianAdvanceMin": 420,
+        "medianAdvanceH": 7,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 16,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0300-N2355",
+        "bounds": [
+          300000,
+          2355000,
+          305000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 148,
+          "lost": 51,
+          "bothWet": 7861,
+          "candidateWetUnknownBaseline": 3054,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.12445970251321287,
+        "confirmedLostKm2": 0.04288814073090443,
+        "bothWetKm2": 6.610660280110583,
+        "unmatchedCandidateWetKm2": 2.568242780238865,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 7861,
+        "eitherArrivalCells": 11114,
+        "pairedArrivalFraction": 0.7073061004138924,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 17,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0345-N2350",
+        "bounds": [
+          345000,
+          2350000,
+          350000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 138,
+          "lost": 666,
+          "bothWet": 16252,
+          "candidateWetUnknownBaseline": 1555,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.11605026315421199,
+        "confirmedLostKm2": 0.5600686613094579,
+        "bothWetKm2": 13.667020846248214,
+        "unmatchedCandidateWetKm2": 1.3076678203246352,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 16224,
+        "eitherArrivalCells": 18606,
+        "pairedArrivalFraction": 0.8719767816833279,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 18,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0270-N2355",
+        "bounds": [
+          270000,
+          2355000,
+          275000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 133,
+          "lost": 76,
+          "bothWet": 6945,
+          "candidateWetUnknownBaseline": 1344,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.11184554347471155,
+        "confirmedLostKm2": 0.0639117391284066,
+        "bothWetKm2": 5.840355634826103,
+        "unmatchedCandidateWetKm2": 1.1302286498497167,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 6921,
+        "eitherArrivalCells": 8501,
+        "pairedArrivalFraction": 0.8141395129984708,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 19,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2345",
+        "bounds": [
+          265000,
+          2345000,
+          270000,
+          2350000
+        ],
+        "cells": 11418,
+        "rasterCoverage": 0.3840759144042877,
+        "counts": {
+          "gained": 133,
+          "lost": 326,
+          "bothWet": 6421,
+          "candidateWetUnknownBaseline": 941,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.11184554347471155,
+        "confirmedLostKm2": 0.27414772310342833,
+        "bothWetKm2": 5.399701012414458,
+        "unmatchedCandidateWetKm2": 0.7913282436819818,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 6370,
+        "eitherArrivalCells": 7823,
+        "pairedArrivalFraction": 0.8142656269973156,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 20,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2340",
+        "bounds": [
+          275000,
+          2340000,
+          280000,
+          2345000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 115,
+          "lost": 49,
+          "bothWet": 8351,
+          "candidateWetUnknownBaseline": 1850,
+          "baselineWetUnknownCandidate": 49
+        },
+        "confirmedGainedKm2": 0.09670855262851,
+        "confirmedLostKm2": 0.04120625285910426,
+        "bothWetKm2": 7.0227228087016265,
+        "unmatchedCandidateWetKm2": 1.5557462814151608,
+        "unmatchedBaselineWetKm2": 0.04120625285910426,
+        "pairedArrivalCells": 8351,
+        "eitherArrivalCells": 10414,
+        "pairedArrivalFraction": 0.8019012867294028,
+        "medianAdvanceMin": 420,
+        "medianAdvanceH": 7,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 21,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0300-N2350",
+        "bounds": [
+          300000,
+          2350000,
+          305000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 112,
+          "lost": 72,
+          "bothWet": 8990,
+          "candidateWetUnknownBaseline": 2953,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.09418572082080973,
+        "confirmedLostKm2": 0.06054796338480626,
+        "bothWetKm2": 7.560085983741781,
+        "unmatchedCandidateWetKm2": 2.4833074427129564,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 8985,
+        "eitherArrivalCells": 12127,
+        "pairedArrivalFraction": 0.740908716088068,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 22,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0325-N2345",
+        "bounds": [
+          325000,
+          2345000,
+          330000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 109,
+          "lost": 312,
+          "bothWet": 5955,
+          "candidateWetUnknownBaseline": 1062,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.09166288901310947,
+        "confirmedLostKm2": 0.2623745080008271,
+        "bothWetKm2": 5.007821138285018,
+        "unmatchedCandidateWetKm2": 0.8930824599258923,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 5924,
+        "eitherArrivalCells": 7441,
+        "pairedArrivalFraction": 0.7961295524795055,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 23,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0340-N2350",
+        "bounds": [
+          340000,
+          2350000,
+          345000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 107,
+          "lost": 511,
+          "bothWet": 19751,
+          "candidateWetUnknownBaseline": 1157,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.0899810011413093,
+        "confirmedLostKm2": 0.4297223512449444,
+        "bothWetKm2": 16.609483677962615,
+        "unmatchedCandidateWetKm2": 0.9729721338364006,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 19734,
+        "eitherArrivalCells": 21520,
+        "pairedArrivalFraction": 0.9170074349442379,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 24,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0335-N2350",
+        "bounds": [
+          335000,
+          2350000,
+          340000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 105,
+          "lost": 916,
+          "bothWet": 16121,
+          "candidateWetUnknownBaseline": 1121,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.08829911326950912,
+        "confirmedLostKm2": 0.7703046452844796,
+        "bothWetKm2": 13.556857190645301,
+        "unmatchedCandidateWetKm2": 0.9426981521439973,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 16073,
+        "eitherArrivalCells": 18250,
+        "pairedArrivalFraction": 0.8807123287671232,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 25,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0290-N2350",
+        "bounds": [
+          290000,
+          2350000,
+          295000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 91,
+          "lost": 43,
+          "bothWet": 1957,
+          "candidateWetUnknownBaseline": 1004,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.07652589816690791,
+        "confirmedLostKm2": 0.03616058924370374,
+        "bothWetKm2": 1.64572728255647,
+        "unmatchedCandidateWetKm2": 0.8443077116436872,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1956,
+        "eitherArrivalCells": 3095,
+        "pairedArrivalFraction": 0.6319870759289176,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 26,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0320-N2345",
+        "bounds": [
+          320000,
+          2345000,
+          325000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 78,
+          "lost": 181,
+          "bothWet": 2467,
+          "candidateWetUnknownBaseline": 1619,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.06559362700020678,
+        "confirmedLostKm2": 0.15221085239791574,
+        "bothWetKm2": 2.0746086898655145,
+        "unmatchedCandidateWetKm2": 1.3614882322222406,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 2453,
+        "eitherArrivalCells": 4351,
+        "pairedArrivalFraction": 0.5637784417375316,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 27,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0305-N2345",
+        "bounds": [
+          305000,
+          2345000,
+          310000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 70,
+          "lost": 16,
+          "bothWet": 5873,
+          "candidateWetUnknownBaseline": 1514,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.058866075513006086,
+        "confirmedLostKm2": 0.013455102974401391,
+        "bothWetKm2": 4.938863735541211,
+        "unmatchedCandidateWetKm2": 1.2731891189527316,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 5871,
+        "eitherArrivalCells": 7472,
+        "pairedArrivalFraction": 0.7857334047109208,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 28,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0320-N2350",
+        "bounds": [
+          320000,
+          2350000,
+          325000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 68,
+          "lost": 231,
+          "bothWet": 6872,
+          "candidateWetUnknownBaseline": 1838,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.057184187641205905,
+        "confirmedLostKm2": 0.19425804919292006,
+        "bothWetKm2": 5.778966727505397,
+        "unmatchedCandidateWetKm2": 1.5456549541843596,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 6868,
+        "eitherArrivalCells": 9011,
+        "pairedArrivalFraction": 0.7621795583176119,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 29,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0290-N2360",
+        "bounds": [
+          290000,
+          2360000,
+          295000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 58,
+          "lost": 61,
+          "bothWet": 3953,
+          "candidateWetUnknownBaseline": 1343,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04877474828220504,
+        "confirmedLostKm2": 0.0512975800899053,
+        "bothWetKm2": 3.3242513786130434,
+        "unmatchedCandidateWetKm2": 1.1293877059138169,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 3953,
+        "eitherArrivalCells": 5415,
+        "pairedArrivalFraction": 0.7300092336103416,
+        "medianAdvanceMin": 180,
+        "medianAdvanceH": 3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 30,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0350-N2350",
+        "bounds": [
+          350000,
+          2350000,
+          355000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 57,
+          "lost": 234,
+          "bothWet": 9464,
+          "candidateWetUnknownBaseline": 1356,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04793380434630495,
+        "confirmedLostKm2": 0.19678088100062036,
+        "bothWetKm2": 7.958693409358422,
+        "unmatchedCandidateWetKm2": 1.140319977080518,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 9459,
+        "eitherArrivalCells": 11113,
+        "pairedArrivalFraction": 0.8511653018986772,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 31,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0280-N2340",
+        "bounds": [
+          280000,
+          2340000,
+          285000,
+          2345000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 51,
+          "lost": 3,
+          "bothWet": 1556,
+          "candidateWetUnknownBaseline": 1069,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04288814073090443,
+        "confirmedLostKm2": 0.0025228318077002605,
+        "bothWetKm2": 1.308508764260535,
+        "unmatchedCandidateWetKm2": 0.8989690674771929,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1555,
+        "eitherArrivalCells": 2679,
+        "pairedArrivalFraction": 0.5804404628592759,
+        "medianAdvanceMin": 660,
+        "medianAdvanceH": 11,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 32,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0315-N2345",
+        "bounds": [
+          315000,
+          2345000,
+          320000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 51,
+          "lost": 75,
+          "bothWet": 5520,
+          "candidateWetUnknownBaseline": 1688,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.04288814073090443,
+        "confirmedLostKm2": 0.06307079519250652,
+        "bothWetKm2": 4.642010526168479,
+        "unmatchedCandidateWetKm2": 1.4195133637993467,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 5512,
+        "eitherArrivalCells": 7334,
+        "pairedArrivalFraction": 0.7515680392691574,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 33,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0275-N2355",
+        "bounds": [
+          275000,
+          2355000,
+          280000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 40,
+          "lost": 38,
+          "bothWet": 1579,
+          "candidateWetUnknownBaseline": 941,
+          "baselineWetUnknownCandidate": 4
+        },
+        "confirmedGainedKm2": 0.03363775743600348,
+        "confirmedLostKm2": 0.0319558695642033,
+        "bothWetKm2": 1.3278504747862372,
+        "unmatchedCandidateWetKm2": 0.7913282436819818,
+        "unmatchedBaselineWetKm2": 0.003363775743600348,
+        "pairedArrivalCells": 1576,
+        "eitherArrivalCells": 2602,
+        "pairedArrivalFraction": 0.6056879323597233,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 34,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0340-N2345",
+        "bounds": [
+          340000,
+          2345000,
+          345000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 40,
+          "lost": 226,
+          "bothWet": 2007,
+          "candidateWetUnknownBaseline": 321,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.03363775743600348,
+        "confirmedLostKm2": 0.19005332951341966,
+        "bothWetKm2": 1.6877744793514744,
+        "unmatchedCandidateWetKm2": 0.26994300342392785,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 2007,
+        "eitherArrivalCells": 2594,
+        "pairedArrivalFraction": 0.7737085582112567,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 35,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0295-N2350",
+        "bounds": [
+          295000,
+          2350000,
+          300000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 39,
+          "lost": 31,
+          "bothWet": 1662,
+          "candidateWetUnknownBaseline": 1054,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.03279681350010339,
+        "confirmedLostKm2": 0.026069262012902696,
+        "bothWetKm2": 1.3976488214659444,
+        "unmatchedCandidateWetKm2": 0.8863549084386917,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1659,
+        "eitherArrivalCells": 2786,
+        "pairedArrivalFraction": 0.5954773869346733,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 36,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0350-N2345",
+        "bounds": [
+          350000,
+          2345000,
+          355000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 35,
+          "lost": 82,
+          "bothWet": 2280,
+          "candidateWetUnknownBaseline": 831,
+          "baselineWetUnknownCandidate": 1
+        },
+        "confirmedGainedKm2": 0.029433037756503043,
+        "confirmedLostKm2": 0.06895740274380711,
+        "bothWetKm2": 1.9173521738521981,
+        "unmatchedCandidateWetKm2": 0.6988244107329722,
+        "unmatchedBaselineWetKm2": 0.000840943935900087,
+        "pairedArrivalCells": 2280,
+        "eitherArrivalCells": 3229,
+        "pairedArrivalFraction": 0.7061009600495509,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 37,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0330-N2355",
+        "bounds": [
+          330000,
+          2355000,
+          335000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 33,
+          "lost": 457,
+          "bothWet": 1943,
+          "candidateWetUnknownBaseline": 307,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.027751149884702866,
+        "confirmedLostKm2": 0.3843113787063397,
+        "bothWetKm2": 1.6339540674538688,
+        "unmatchedCandidateWetKm2": 0.2581697883213267,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1935,
+        "eitherArrivalCells": 2734,
+        "pairedArrivalFraction": 0.7077542062911485,
+        "medianAdvanceMin": -120,
+        "medianAdvanceH": -2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 38,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0310-N2350",
+        "bounds": [
+          310000,
+          2350000,
+          315000,
+          2355000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 32,
+          "lost": 183,
+          "bothWet": 1042,
+          "candidateWetUnknownBaseline": 800,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.026910205948802782,
+        "confirmedLostKm2": 0.1538927402697159,
+        "bothWetKm2": 0.8762635812078905,
+        "unmatchedCandidateWetKm2": 0.6727551487200696,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1042,
+        "eitherArrivalCells": 2057,
+        "pairedArrivalFraction": 0.5065629557608167,
+        "medianAdvanceMin": 240,
+        "medianAdvanceH": 4,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 39,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0345-N2345",
+        "bounds": [
+          345000,
+          2345000,
+          350000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 29,
+          "lost": 190,
+          "bothWet": 761,
+          "candidateWetUnknownBaseline": 282,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.02438737414110252,
+        "confirmedLostKm2": 0.1597793478210165,
+        "bothWetKm2": 0.6399583352199661,
+        "unmatchedCandidateWetKm2": 0.2371461899238245,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 760,
+        "eitherArrivalCells": 1262,
+        "pairedArrivalFraction": 0.6022187004754358,
+        "medianAdvanceMin": -120,
+        "medianAdvanceH": -2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 40,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0295-N2360",
+        "bounds": [
+          295000,
+          2360000,
+          300000,
+          2365000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 26,
+          "lost": 23,
+          "bothWet": 1143,
+          "candidateWetUnknownBaseline": 415,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.02186454233340226,
+        "confirmedLostKm2": 0.019341710525701997,
+        "bothWetKm2": 0.9611989187337994,
+        "unmatchedCandidateWetKm2": 0.34899173339853606,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 1141,
+        "eitherArrivalCells": 1607,
+        "pairedArrivalFraction": 0.7100186683260734,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 41,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2345",
+        "bounds": [
+          285000,
+          2345000,
+          290000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 21,
+          "lost": 80,
+          "bothWet": 206,
+          "candidateWetUnknownBaseline": 264,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.017659822653901824,
+        "confirmedLostKm2": 0.06727551487200696,
+        "bothWetKm2": 0.1732344507954179,
+        "unmatchedCandidateWetKm2": 0.22200919907762293,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 206,
+        "eitherArrivalCells": 571,
+        "pairedArrivalFraction": 0.3607705779334501,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "Paired cells cover 36% of cells with an arrival time in either raster (minimum 50%).",
+        "priority": {
+          "rank": 42,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0285-N2360",
+        "bounds": [
+          285000,
+          2360000,
+          290000,
+          2365000
+        ],
+        "cells": 29584,
+        "rasterCoverage": 0.9951394159867268,
+        "counts": {
+          "gained": 18,
+          "lost": 23,
+          "bothWet": 130,
+          "candidateWetUnknownBaseline": 134,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.015136990846201565,
+        "confirmedLostKm2": 0.019341710525701997,
+        "bothWetKm2": 0.1093227116670113,
+        "unmatchedCandidateWetKm2": 0.11268648741061164,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 130,
+        "eitherArrivalCells": 305,
+        "pairedArrivalFraction": 0.4262295081967213,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "Paired cells cover 43% of cells with an arrival time in either raster (minimum 50%).",
+        "priority": {
+          "rank": 43,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0310-N2345",
+        "bounds": [
+          310000,
+          2345000,
+          315000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 17,
+          "lost": 213,
+          "bothWet": 4245,
+          "candidateWetUnknownBaseline": 334,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.014296046910301476,
+        "confirmedLostKm2": 0.17912105834671851,
+        "bothWetKm2": 3.569807007895869,
+        "unmatchedCandidateWetKm2": 0.28087527459062905,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 4245,
+        "eitherArrivalCells": 4805,
+        "pairedArrivalFraction": 0.8834547346514048,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 44,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0330-N2345",
+        "bounds": [
+          330000,
+          2345000,
+          335000,
+          2350000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 17,
+          "lost": 77,
+          "bothWet": 970,
+          "candidateWetUnknownBaseline": 150,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.014296046910301476,
+        "confirmedLostKm2": 0.06475268306430669,
+        "bothWetKm2": 0.8157156178230842,
+        "unmatchedCandidateWetKm2": 0.12614159038501305,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 967,
+        "eitherArrivalCells": 1214,
+        "pairedArrivalFraction": 0.7965403624382208,
+        "medianAdvanceMin": 0,
+        "medianAdvanceH": 0,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 45,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0305-N2355",
+        "bounds": [
+          305000,
+          2355000,
+          310000,
+          2360000
+        ],
+        "cells": 29929,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 7,
+          "lost": 5,
+          "bothWet": 239,
+          "candidateWetUnknownBaseline": 211,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.005886607551300608,
+        "confirmedLostKm2": 0.004204719679500435,
+        "bothWetKm2": 0.20098560068012075,
+        "unmatchedCandidateWetKm2": 0.17743917047491833,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 239,
+        "eitherArrivalCells": 462,
+        "pairedArrivalFraction": 0.5173160173160173,
+        "medianAdvanceMin": 300,
+        "medianAdvanceH": 5,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 46,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0325-N2355",
+        "bounds": [
+          325000,
+          2355000,
+          330000,
+          2360000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 6,
+          "lost": 232,
+          "bothWet": 345,
+          "candidateWetUnknownBaseline": 70,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.005045663615400521,
+        "confirmedLostKm2": 0.19509899312882015,
+        "bothWetKm2": 0.29012565788552996,
+        "unmatchedCandidateWetKm2": 0.058866075513006086,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 343,
+        "eitherArrivalCells": 656,
+        "pairedArrivalFraction": 0.5228658536585366,
+        "medianAdvanceMin": -180,
+        "medianAdvanceH": -3,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 47,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0315-N2350",
+        "bounds": [
+          315000,
+          2350000,
+          320000,
+          2355000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 2,
+          "lost": 8,
+          "bothWet": 626,
+          "candidateWetUnknownBaseline": 98,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.001681887871800174,
+        "confirmedLostKm2": 0.006727551487200696,
+        "bothWetKm2": 0.5264309038734545,
+        "unmatchedCandidateWetKm2": 0.08241250571820852,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 626,
+        "eitherArrivalCells": 734,
+        "pairedArrivalFraction": 0.8528610354223434,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 48,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0300-N2345",
+        "bounds": [
+          300000,
+          2345000,
+          305000,
+          2350000
+        ],
+        "cells": 29756,
+        "rasterCoverage": 1,
+        "counts": {
+          "gained": 2,
+          "lost": 0,
+          "bothWet": 5,
+          "candidateWetUnknownBaseline": 18,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.001681887871800174,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0.004204719679500435,
+        "unmatchedCandidateWetKm2": 0.015136990846201565,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 3,
+        "eitherArrivalCells": 25,
+        "pairedArrivalFraction": 0.12,
+        "medianAdvanceMin": null,
+        "medianAdvanceH": null,
+        "timingUnavailableReason": "Only 3 paired cells (minimum 50).",
+        "priority": {
+          "rank": 49,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2355",
+        "bounds": [
+          265000,
+          2355000,
+          270000,
+          2360000
+        ],
+        "cells": 11418,
+        "rasterCoverage": 0.3840759144042877,
+        "counts": {
+          "gained": 1,
+          "lost": 0,
+          "bothWet": 311,
+          "candidateWetUnknownBaseline": 77,
+          "baselineWetUnknownCandidate": 1
+        },
+        "confirmedGainedKm2": 0.000840943935900087,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 0.261533564064927,
+        "unmatchedCandidateWetKm2": 0.06475268306430669,
+        "unmatchedBaselineWetKm2": 0.000840943935900087,
+        "pairedArrivalCells": 310,
+        "eitherArrivalCells": 390,
+        "pairedArrivalFraction": 0.7948717948717948,
+        "medianAdvanceMin": 120,
+        "medianAdvanceH": 2,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 50,
+          "reason": "confirmed_gained_wet_area"
+        }
+      },
+      {
+        "id": "Z-E0265-N2340",
+        "bounds": [
+          265000,
+          2340000,
+          270000,
+          2345000
+        ],
+        "cells": 11352,
+        "rasterCoverage": 0.38185582241351146,
+        "counts": {
+          "gained": 1,
+          "lost": 0,
+          "bothWet": 2717,
+          "candidateWetUnknownBaseline": 230,
+          "baselineWetUnknownCandidate": 0
+        },
+        "confirmedGainedKm2": 0.000840943935900087,
+        "confirmedLostKm2": 0,
+        "bothWetKm2": 2.2848446738405364,
+        "unmatchedCandidateWetKm2": 0.19341710525702,
+        "unmatchedBaselineWetKm2": 0,
+        "pairedArrivalCells": 2717,
+        "eitherArrivalCells": 2948,
+        "pairedArrivalFraction": 0.9216417910447762,
+        "medianAdvanceMin": 60,
+        "medianAdvanceH": 1,
+        "timingUnavailableReason": null,
+        "priority": {
+          "rank": 51,
+          "reason": "confirmed_gained_wet_area"
+        }
+      }
+    ],
+    "totals": {
+      "cells": 3145728,
+      "gained": 6633,
+      "lost": 12209,
+      "bothWet": 415510,
+      "candidateWetUnknownBaseline": 82147,
+      "baselineWetUnknownCandidate": 67
+    }
+  },
+  "cached_run_id": "ukai-fast-run-3e85f9b780850718"
+}

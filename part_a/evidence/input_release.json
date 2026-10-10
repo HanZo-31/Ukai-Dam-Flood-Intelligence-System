@@ -1,0 +1,13 @@
+{
+  "model_version": "ukai-h02-model-snapshot-3bc682cd62441d8f",
+  "input_dataset_version": "ukai-h02-input-snapshot-3bc682cd62441d8f",
+  "assigned_at": "2026-10-07T21:11:42.072558+00:00",
+  "files": {
+    "plan": "b58189476279a3a55595039fbc8287a683b6ead295e5e5d00b920d0d3fbd2273",
+    "geometry": "e6072375c5bd7a61e785dbbe980b02cdcadfbd89a783d9e0f1f44ed655defbbc",
+    "forcing": "b08b11972d91516d2c13a6582f70721541b88c80dfb5aaaa75016b4b0cc24689",
+    "terrain": "c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687"
+  },
+  "meaning": "New names for this exact existing file snapshot, not historical dataset releases or validation claims.",
+  "license_status": "Unverified; no licence or redistribution rights fabricated."
+}

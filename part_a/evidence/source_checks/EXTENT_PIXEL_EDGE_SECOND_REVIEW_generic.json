@@ -1,0 +1,68 @@
+{
+ "checks": [
+  {
+   "name": "GeoJSON parses; FeatureCollection with 1 MultiPolygon feature",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no top-level crs member",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "embedded scenario_id equals the derivative folder name; source ID kept separately",
+   "ok": true,
+   "detail": "('ukai-hyp-h02-release20000-hr-int-v1', 'ukai-hyp-h02-release20000-v1')"
+  },
+  {
+   "name": "finite 2D lon/lat in range",
+   "ok": true,
+   "detail": "77154 vertices"
+  },
+  {
+   "name": "rings closed, >=4 points, no repeated vertex inside a ring",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "vertices sit on pixel corners (independent forward transform), max deviation < 2 mm",
+   "ok": true,
+   "detail": "8.05e-04 m"
+  },
+  {
+   "name": "supersampled fill reproduces wet mask exactly (depth>0.1, nodata excluded)",
+   "ok": true,
+   "detail": "differing pixels 0, max coverage in dry pixels 0.438, min in wet 0.562"
+  },
+  {
+   "name": "native-CRS polygon area equals wet pixels x pixel area (1e-6)",
+   "ok": true,
+   "detail": "359744040.089 m2 vs 359744042.563 m2, rel -6.88e-09"
+  },
+  {
+   "name": "area in km2 matches the ORIGINAL manifest summary at 1 dp (359.7)",
+   "ok": true,
+   "detail": "359.744"
+  },
+  {
+   "name": "polygon count equals 4-connected components of the wet mask",
+   "ok": true,
+   "detail": "1035 vs 1035"
+  },
+  {
+   "name": "hole count recorded",
+   "ok": true,
+   "detail": "2981"
+  },
+  {
+   "name": "maker report hash matches the file on disk",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "all_pass": true,
+ "interpreter": "3.10.12",
+ "numpy": "2.2.6",
+ "cv2": "5.0.0"
+}

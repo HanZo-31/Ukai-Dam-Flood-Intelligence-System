@@ -1,0 +1,67 @@
+{
+ "max_depth": {
+  "shape": [
+   1024,
+   3072
+  ],
+  "valid_cells": 542999,
+  "min": 0.0010013580322265625,
+  "max": 39.27752685546875,
+  "mean": 4.5482424322445425,
+  "nan_count": 0,
+  "neg_nonnodata": 0
+ },
+ "max_velocity": {
+  "shape": [
+   1024,
+   3072
+  ],
+  "valid_cells": 542999,
+  "min": 0.0003913187829311937,
+  "max": 10.246781349182129,
+  "mean": 1.0446309620623981,
+  "nan_count": 0,
+  "neg_nonnodata": 0
+ },
+ "max_wse": {
+  "shape": [
+   1024,
+   3072
+  ],
+  "valid_cells": 542999,
+  "min": 9.573460578918457,
+  "max": 71.590576171875,
+  "mean": 31.45613047049272,
+  "nan_count": 0,
+  "neg_nonnodata": 0
+ },
+ "consistency": {
+  "velocity_valid_equals_depth_valid": true,
+  "depth_wet_gt0.1_cells": 535534,
+  "depth_wet_without_arrival": 2079,
+  "arrival_without_depth_wet": 794
+ },
+ "depth_exceedance_km2": {
+  "0.1": 450.4,
+  "0.5": 424.0,
+  "1": 386.0,
+  "2": 305.8,
+  "5": 138.6,
+  "10": 53.4,
+  "15": 22.3,
+  "20": 4.2
+ },
+ "flooded_area_km2_gt_0.1m": 450.4,
+ "polygons": 188,
+ "arrival_time": {
+  "shape": [
+   1189,
+   3565
+  ],
+  "valid_cells": 534249,
+  "min": 1.0,
+  "max": 108.0,
+  "integer_valued": true,
+  "definition": "hours from start of simulation (06 Aug 2006 06:00) until depth first exceeds 0.1 m; not hours since release start"
+ }
+}

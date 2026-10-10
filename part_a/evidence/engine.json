@@ -1,0 +1,8 @@
+{
+  "HDF_reported_program": "HEC-RAS 7.0.1 June 2026",
+  "plan_program_version": "7.01",
+  "installed_binary_resource_version": "7.00.0001",
+  "installed_binary_checksum": "sha256:ce2ca395c68c4ee17387376ea3a7152c24db483488dced4eb96a59e85fd72985",
+  "binary_at_producing_run_attested": false,
+  "meaning": "Installed binary inspected at takeover, not proof that these exact bytes produced the earlier run."
+}

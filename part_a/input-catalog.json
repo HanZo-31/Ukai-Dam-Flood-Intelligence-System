@@ -1,0 +1,29 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "ukai-h02-plan",
+      "name": "ukai-h02-plan",
+      "description": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Assumed/provisional model setup, not a verified observation.",
+      "data_mode": "production"
+    },
+    {
+      "dataset_id": "ukai-h02-geometry",
+      "name": "ukai-h02-geometry",
+      "description": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Assumed/provisional model setup, not a verified observation.",
+      "data_mode": "production"
+    },
+    {
+      "dataset_id": "ukai-h02-forcing",
+      "name": "ukai-h02-forcing",
+      "description": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Assumed/provisional model setup, not a verified observation.",
+      "data_mode": "production"
+    },
+    {
+      "dataset_id": "ukai-h02-terrain",
+      "name": "ukai-h02-terrain",
+      "description": "Existing Part A model input. New content-addressed snapshot identity. Licence absent from delivered A1 metadata; no licence asserted. Terrain described by A1 as SRTM-derived; vertical datum and bathymetry unverified.",
+      "data_mode": "production"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,40 @@
+
+> ukai-flood-explorer@0.1.0 test
+> vitest run --maxWorkers=2 --minWorkers=1
+
+
+ RUN  v3.2.7 C:/Users/piyus/Documents/Codex/2026-10-05/referenced-chatgpt-conversation-this-is-an/integrated/UKAI_COMBINED_V01/frontend
+
+ ✓ src/lib/compare.real.test.ts (11 tests) 3387ms
+   ✓ stored references vs independent counts > h02 -> h01: extent, depth, arrival and zones  727ms
+   ✓ stored references vs independent counts > h02 -> h03: extent, depth, arrival and zones  420ms
+   ✓ stored references vs independent counts > h02 -> 2006: extent, depth, arrival and zones  409ms
+   ✓ stored references vs independent counts > h01 -> h03: extent, depth, arrival and zones  409ms
+   ✓ stored references vs independent counts > h02 -> h02: extent, depth, arrival and zones  414ms
+   ✓ stored references vs independent counts > h01 -> h02: extent, depth, arrival and zones  455ms
+   ✓ stored references vs independent counts > same scenario: no change and no priority; swapped pair reverses signs  401ms
+ ✓ src/lib/timeline.real.test.ts (25 tests) 3472ms
+   ✓ stored arrival grid 2006 > nothing is reached at 0 h and reveal never decreases  975ms
+   ✓ stored arrival grid h01 > nothing is reached at 0 h and reveal never decreases  539ms
+   ✓ stored arrival grid h02 > nothing is reached at 0 h and reveal never decreases  726ms
+   ✓ stored arrival grid h03 > nothing is reached at 0 h and reveal never decreases  903ms
+ ✓ src/lib/format.test.ts (4 tests) 17ms
+ ✓ src/lib/candidate.test.ts (22 tests) 83ms
+ ✓ src/lib/hygiene.test.ts (2 tests) 13ms
+ ✓ src/lib/scenarios.test.ts (3 tests) 10ms
+ ✓ src/lib/tiff.test.ts (4 tests) 8ms
+ ✓ src/lib/compare.test.ts (17 tests) 6ms
+ ✓ src/lib/timeline.test.ts (9 tests) 6ms
+ ✓ src/lib/api.test.ts (6 tests) 6ms
+ ✓ src/lib/candidate.contract.test.ts (10 tests) 5ms
+ ✓ src/lib/scales.test.ts (4 tests) 4ms
+ ✓ src/lib/utm.test.ts (3 tests) 3ms
+ ✓ src/lib/latest.test.ts (1 test) 3ms
+ ↓ src/lib/candidate.live.test.ts (7 tests | 7 skipped)
+ ✓ src/lib/candidate.integration-guards.test.ts (3 tests) 2ms
+
+ Test Files  15 passed | 1 skipped (16)
+      Tests  124 passed | 7 skipped (131)
+   Start at  23:35:35
+   Duration  5.81s (transform 192ms, setup 0ms, collect 1.15s, tests 7.03s, environment 2ms, prepare 1.29s)
+
