@@ -12,16 +12,7 @@ A locally runnable flood-scenario explorer for Ukai Dam. Explore four stored ref
 - **Compare:** paired views and eligible differences, with explicit unknown-coverage handling.
 - **What-if:** separate experimental computed runs, not automatic replacement or approval of references.
 - **Evidence:** provenance, limitations and available downloads.
-- **Light terrain:** optional local display background; unknown units, datum and licensing remain explicit.
-
-## Which copy do you have?
-
-| Copy | How to run |
-|---|---|
-| Complete V05 plain-folder/SSD package | Follow the quick start below. Includes runtimes, installed dependencies, data and built frontend. |
-| GitHub source clone | Not independently portable. Read the GitHub section before trying the launchers. |
-
-Keep your original verified package as a baseline. Use a separate working copy for edits.
+- **Light terrain:** optional local display background; unknown units, datum and licensing remain explicit. 
 
 ## Quick start — complete Windows package
 
@@ -38,14 +29,14 @@ Ordinary portable startup does **not** require Docker, a separately installed da
 
 Open your complete `UKAI_COMBINED_V05` in File Explorer. You should see:
 
-```text
+text
 VERIFY_COPY.cmd
 START_SIMULATION.cmd
 STOP_SIMULATION.cmd
 runtime/
 frontend/
 receipts/
-```
+
 
 The parent folder and drive letter can differ between computers. Launchers find their own location.
 
