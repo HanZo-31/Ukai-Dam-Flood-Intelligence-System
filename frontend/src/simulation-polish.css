@@ -1,0 +1,70 @@
+/* V05 presentation only. No map/canvas, palette, legend, timeline, solver or
+   API logic rules. No external fonts, images, tiles or network dependencies. */
+.sidebar .nav, .sidebar .scen {
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+.sidebar .nav:active, .sidebar .scen:active { background: #e4effc; }
+.sidebar .scen:not(.on) strong { color: #183653; }
+.sidebar .side-foot { text-wrap: pretty; }
+.topbar .top-heading { min-width: 0; }
+.topbar .top-title { letter-spacing: -.025em; }
+.topbar .api {
+  padding: 3px 9px;
+  border-color: #dde7f0;
+  background: #f8fafc;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.topbar .api-connected { border-color: #cbe9d8; background: #f0faf4; color: #286345; }
+.topbar .api-unreachable { border-color: #edc9c4; background: #fff4f2; }
+
+.page-scroll > h2 { font-size: 23px; line-height: 1.35; letter-spacing: -.025em; }
+.page-scroll > p { line-height: 1.65; }
+.page-scroll .evidence, .page-scroll .whatif-card, .page-scroll .bars,
+.page-scroll .briefing, .point-inspector {
+  box-shadow: 0 2px 10px rgba(18,37,58,.035);
+}
+.page-scroll .evidence > h3, .page-scroll .whatif-card > h3,
+.page-scroll .methods h3 { letter-spacing: -.015em; line-height: 1.4; }
+.page-scroll .evidence p, .page-scroll .whatif-card p,
+.page-scroll .methods li { line-height: 1.6; }
+.page-scroll .downloads li { flex-wrap: wrap; align-items: start; gap: 8px 16px; }
+.page-scroll .downloads li > :first-child { min-width: 0; overflow-wrap: anywhere; }
+.page-scroll .downloads .btn { min-height: 36px; flex-shrink: 0; }
+.page-scroll summary { line-height: 1.5; }
+.page-scroll .json { line-height: 1.6; tab-size: 2; }
+.page-scroll .whatif-form input:focus-visible,
+.point-coordinate-form input:focus-visible { outline-color: #1357b5; }
+.page-scroll .btn:not(:disabled):hover, .point-inspector .btn:not(:disabled):hover {
+  background: #f5f9ff;
+}
+.page-scroll .btn.primary:not(:disabled):hover { background: #104b9d; color: #fff; }
+.page-scroll button:disabled, .point-inspector button:disabled { cursor: not-allowed; }
+
+.point-drawer > summary:hover { background: #f5f9ff; }
+.point-drawer[open] > summary { color: #1357b5; border-color: #b9d4f3; background: #eef6ff; }
+.point-inspector h3 { letter-spacing: -.015em; }
+.point-inspector .point-caveat { border-radius: 0 7px 7px 0; }
+.point-inspector .point-coordinate-form { padding-bottom: 6px; }
+.point-inspector .point-location { padding: 8px 0; border-bottom: 1px solid #e4eaf1; }
+.point-table-wrap table caption { line-height: 1.5; }
+.point-table-wrap tbody tr:last-child > * { border-bottom: 0; }
+.point-table-wrap tbody td { font-weight: 550; }
+.point-inspector .point-read-status { line-height: 1.55; }
+.point-inspector .point-actions { padding-top: 8px; border-top: 1px solid #e4eaf1; }
+
+@media (max-width:760px) {
+  .sidebar nav { width: 100%; gap: 5px; }
+  .sidebar .nav { flex: 1 0 auto; justify-content: center; gap: 7px; }
+  .sidebar .scen-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .sidebar .scen { height: 100%; }
+  .page-scroll { padding: 14px; }
+  .page-scroll > h2 { font-size: 21px; overflow-wrap: anywhere; }
+  .page-scroll .whatif-card { padding: 12px; }
+  .page-scroll .whatif-form { max-width: 100%; }
+  .page-scroll .whatif-form .btn { white-space: normal; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .sidebar .nav, .sidebar .scen { transition: none; }
+}

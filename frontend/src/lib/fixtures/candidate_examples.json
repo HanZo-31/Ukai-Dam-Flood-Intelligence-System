@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "examples_kind": "actual stored-reference service calls; no new simulation or ML prediction",
+  "capabilities": {
+    "schema_version": "1.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "supported_modes": [
+      "stored_reference"
+    ],
+    "stored_peaks_m3s": [
+      15000.0,
+      20000.0,
+      30000.0
+    ],
+    "selection_range_m3s": [
+      15000,
+      30000
+    ],
+    "experimental_ml_enabled": false,
+    "model_status": "diagnostic_only_gate_not_passed",
+    "model_unavailable_reason": "Only one intermediate scenario holdout; original plan requires at least two. Flood expansion domain also unavailable.",
+    "scientifically_validated": false,
+    "calibration_status": "uncalibrated",
+    "additional_scenario_runs": 0,
+    "historical_2006_is_separate_reference": true
+  },
+  "examples": [
+    {
+      "request": {
+        "schema_version": "1.0.0",
+        "request_id": "example-reference-1",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "peak_release_m3s": 15000.0,
+        "allow_nearest_stored": false
+      },
+      "response": {
+        "schema_version": "1.0.0",
+        "job_id": "example-reference-1",
+        "request_id": "example-reference-1",
+        "status": "completed",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "requested_peak_release_m3s": 15000.0,
+        "actual_peak_release_m3s": 15000.0,
+        "cache_hit": false,
+        "computed": false,
+        "engine": "HEC-RAS stored reference",
+        "scientifically_validated": false,
+        "calibration_status": "uncalibrated",
+        "warnings": [
+          "simulated",
+          "uncalibrated",
+          "stored_reference_not_new_prediction"
+        ],
+        "completed_at": "2026-10-08T12:56:12.372979Z",
+        "elapsed_wall_seconds": 0.009535700000924408,
+        "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+        "source_scenario_id": "ukai-hyp-h01-release15000-combined-v1",
+        "source_run_id": "ukai-hyp-h01-release15000-combined-v1-run",
+        "reference_resources": {
+          "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1",
+          "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/layers",
+          "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/impact",
+          "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/assumptions",
+          "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h01-release15000-combined-v1/quality-report"
+        }
+      }
+    },
+    {
+      "request": {
+        "schema_version": "1.0.0",
+        "request_id": "example-reference-2",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "peak_release_m3s": 20000.0,
+        "allow_nearest_stored": false
+      },
+      "response": {
+        "schema_version": "1.0.0",
+        "job_id": "example-reference-2",
+        "request_id": "example-reference-2",
+        "status": "completed",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "requested_peak_release_m3s": 20000.0,
+        "actual_peak_release_m3s": 20000.0,
+        "cache_hit": false,
+        "computed": false,
+        "engine": "HEC-RAS stored reference",
+        "scientifically_validated": false,
+        "calibration_status": "uncalibrated",
+        "warnings": [
+          "simulated",
+          "uncalibrated",
+          "stored_reference_not_new_prediction"
+        ],
+        "completed_at": "2026-10-08T12:56:12.395070Z",
+        "elapsed_wall_seconds": 0.010903799999141484,
+        "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+        "source_scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+        "source_run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+        "reference_resources": {
+          "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1",
+          "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/layers",
+          "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/impact",
+          "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/assumptions",
+          "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/quality-report"
+        }
+      }
+    },
+    {
+      "request": {
+        "schema_version": "1.0.0",
+        "request_id": "example-reference-3",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "peak_release_m3s": 30000.0,
+        "allow_nearest_stored": false
+      },
+      "response": {
+        "schema_version": "1.0.0",
+        "job_id": "example-reference-3",
+        "request_id": "example-reference-3",
+        "status": "completed",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "requested_peak_release_m3s": 30000.0,
+        "actual_peak_release_m3s": 30000.0,
+        "cache_hit": false,
+        "computed": false,
+        "engine": "HEC-RAS stored reference",
+        "scientifically_validated": false,
+        "calibration_status": "uncalibrated",
+        "warnings": [
+          "simulated",
+          "uncalibrated",
+          "stored_reference_not_new_prediction"
+        ],
+        "completed_at": "2026-10-08T12:56:12.407384Z",
+        "elapsed_wall_seconds": 0.010704099999202299,
+        "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+        "source_scenario_id": "ukai-hyp-h03-release30000-combined-v1",
+        "source_run_id": "ukai-hyp-h03-release30000-combined-v1-run",
+        "reference_resources": {
+          "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1",
+          "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/layers",
+          "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/impact",
+          "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/assumptions",
+          "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h03-release30000-combined-v1/quality-report"
+        }
+      }
+    },
+    {
+      "request": {
+        "schema_version": "1.0.0",
+        "request_id": "example-reference-4",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "peak_release_m3s": 25000.0,
+        "allow_nearest_stored": true
+      },
+      "response": {
+        "schema_version": "1.0.0",
+        "job_id": "example-reference-4",
+        "request_id": "example-reference-4",
+        "status": "completed",
+        "mode": "stored_reference",
+        "input_family": "ukai-hyp-fixed-shape-v1",
+        "requested_peak_release_m3s": 25000.0,
+        "actual_peak_release_m3s": 20000.0,
+        "cache_hit": false,
+        "computed": false,
+        "engine": "HEC-RAS stored reference",
+        "scientifically_validated": false,
+        "calibration_status": "uncalibrated",
+        "warnings": [
+          "simulated",
+          "uncalibrated",
+          "stored_reference_not_new_prediction"
+        ],
+        "completed_at": "2026-10-08T12:56:12.417757Z",
+        "elapsed_wall_seconds": 0.01016679999884218,
+        "timing_scope": "reference_selection_and_hash_validation; not hydraulic run or browser-ready latency",
+        "source_scenario_id": "ukai-hyp-h02-release20000-hr-int-v1",
+        "source_run_id": "ukai-hyp-h02-release20000-hr-int-run-v1",
+        "reference_resources": {
+          "detail": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1",
+          "layers": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/layers",
+          "impact": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/impact",
+          "assumptions": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/assumptions",
+          "quality_report": "/api/v1/prototypes/scenarios/ukai-hyp-h02-release20000-hr-int-v1/quality-report"
+        }
+      }
+    }
+  ]
+}

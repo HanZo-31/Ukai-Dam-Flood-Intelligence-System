@@ -1,0 +1,802 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ukai computed candidate 2.0.0",
+  "$defs": {
+    "Request": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.0.0"
+        },
+        "input_family": {
+          "const": "ukai-hyp-fixed-shape-v1"
+        },
+        "configuration_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "configuration_checksum": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "request_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "peak_release_m3s": {
+          "type": "number",
+          "minimum": 15000,
+          "maximum": 30000
+        }
+      },
+      "required": [
+        "schema_version",
+        "input_family",
+        "configuration_id",
+        "configuration_checksum",
+        "request_id",
+        "peak_release_m3s"
+      ]
+    },
+    "Job": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.0.0"
+        },
+        "input_family": {
+          "const": "ukai-hyp-fixed-shape-v1"
+        },
+        "configuration_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "configuration_checksum": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "request_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "job_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "requested_peak_release_m3s": {
+          "type": "number",
+          "minimum": 15000,
+          "maximum": 30000
+        },
+        "status": {
+          "enum": [
+            "queued",
+            "running",
+            "completed",
+            "failed"
+          ]
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "elapsed_wall_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cache_hit": {
+          "type": "boolean"
+        },
+        "result_url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^/api/v1/candidates/compute-v2/jobs/[a-z0-9][a-z0-9_-]{2,99}/result$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Error"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "input_family",
+        "configuration_id",
+        "configuration_checksum",
+        "request_id",
+        "job_id",
+        "requested_peak_release_m3s",
+        "status",
+        "created_at",
+        "updated_at",
+        "elapsed_wall_seconds",
+        "cache_hit",
+        "result_url",
+        "error"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "completed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "result_url": {
+                "type": "string"
+              },
+              "error": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "result_url": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "failed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "error": {
+                "$ref": "#/$defs/Error"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "error": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Result": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.0.0"
+        },
+        "input_family": {
+          "const": "ukai-hyp-fixed-shape-v1"
+        },
+        "configuration_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "configuration_checksum": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "job_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "request_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "scenario_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "run_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "requested_peak_release_m3s": {
+          "type": "number",
+          "minimum": 15000,
+          "maximum": 30000
+        },
+        "actual_peak_release_m3s": {
+          "type": "number",
+          "minimum": 15000,
+          "maximum": 30000
+        },
+        "engine": {
+          "const": "experimental_fast_solver"
+        },
+        "engine_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "computed": {
+          "const": true
+        },
+        "cache_hit": {
+          "type": "boolean"
+        },
+        "scientifically_validated": {
+          "const": false
+        },
+        "calibration_status": {
+          "const": "uncalibrated"
+        },
+        "input_checksums": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$"
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "timings": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "prepare_seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "solver_seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "package_check_seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "availability_seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "request_to_assets_seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "scope": {
+              "const": "request_to_checked_asset_availability_not_browser_ready"
+            }
+          },
+          "required": [
+            "prepare_seconds",
+            "solver_seconds",
+            "package_check_seconds",
+            "availability_seconds",
+            "request_to_assets_seconds",
+            "scope"
+          ]
+        },
+        "numerical_diagnostics_checksum": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "native_results_checksum": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "arrival_definition": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "threshold_m": {
+                  "const": 0.1
+                },
+                "origin": {
+                  "const": "elapsed_simulation_start"
+                },
+                "native_unit": {
+                  "const": "s"
+                },
+                "comparison_transform": {
+                  "const": "ceil(native_seconds/3600)*60"
+                },
+                "definition_compatible": {
+                  "type": "boolean"
+                },
+                "unavailable_reason": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "threshold_m",
+                "origin",
+                "native_unit",
+                "comparison_transform",
+                "definition_compatible",
+                "unavailable_reason"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "velocity_definition": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "derived_grid": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "crs": {
+              "const": "EPSG:32643"
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "transform": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 6,
+              "maxItems": 6
+            },
+            "nodata": {
+              "const": -9999
+            },
+            "mapping": {
+              "const": "nearest_neighbour_with_validity_mask"
+            },
+            "target_reference_scenario_id": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+            }
+          },
+          "required": [
+            "crs",
+            "width",
+            "height",
+            "transform",
+            "nodata",
+            "mapping",
+            "target_reference_scenario_id"
+          ]
+        },
+        "assets": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "max_depth_cog": {
+              "$ref": "#/$defs/max_depth_cog"
+            },
+            "arrival_time_cog": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/arrival_time_cog"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "max_velocity_cog": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/max_velocity_cog"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "extent_geojson": {
+              "$ref": "#/$defs/extent_geojson"
+            }
+          },
+          "required": [
+            "max_depth_cog",
+            "arrival_time_cog",
+            "max_velocity_cog",
+            "extent_geojson"
+          ]
+        },
+        "unavailable_reasons": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "max_depth_cog": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "arrival_time_cog": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "max_velocity_cog": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "extent_geojson": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "max_depth_cog",
+            "arrival_time_cog",
+            "max_velocity_cog",
+            "extent_geojson"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "input_family",
+        "configuration_id",
+        "configuration_checksum",
+        "job_id",
+        "request_id",
+        "scenario_id",
+        "run_id",
+        "requested_peak_release_m3s",
+        "actual_peak_release_m3s",
+        "engine",
+        "engine_version",
+        "computed",
+        "cache_hit",
+        "scientifically_validated",
+        "calibration_status",
+        "input_checksums",
+        "warnings",
+        "limitations",
+        "timings",
+        "numerical_diagnostics_checksum",
+        "native_results_checksum",
+        "arrival_definition",
+        "velocity_definition",
+        "derived_grid",
+        "assets",
+        "unavailable_reasons"
+      ]
+    },
+    "Capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.0.0"
+        },
+        "input_family": {
+          "const": "ukai-hyp-fixed-shape-v1"
+        },
+        "configuration_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "configuration_checksum": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "peak_range_m3s": {
+          "const": [
+            15000,
+            30000
+          ]
+        },
+        "available_roles": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "max_depth_cog",
+              "arrival_time_cog",
+              "max_velocity_cog",
+              "extent_geojson"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "scientifically_validated": {
+          "const": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "input_family",
+        "configuration_id",
+        "configuration_checksum",
+        "enabled",
+        "reason",
+        "peak_range_m3s",
+        "available_roles",
+        "scientifically_validated"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "enabled": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "configuration_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+              },
+              "configuration_checksum": {
+                "type": "string",
+                "pattern": "^sha256:[a-f0-9]{64}$"
+              },
+              "reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Error": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ]
+    },
+    "max_depth_cog": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^/api/v1/candidates/compute-v2/jobs/[a-z0-9][a-z0-9_-]{2,99}/assets/max_depth_cog$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "const": "m"
+        }
+      },
+      "required": [
+        "url",
+        "sha256",
+        "bytes",
+        "unit"
+      ]
+    },
+    "arrival_time_cog": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^/api/v1/candidates/compute-v2/jobs/[a-z0-9][a-z0-9_-]{2,99}/assets/arrival_time_cog$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "const": "min"
+        }
+      },
+      "required": [
+        "url",
+        "sha256",
+        "bytes",
+        "unit"
+      ]
+    },
+    "max_velocity_cog": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^/api/v1/candidates/compute-v2/jobs/[a-z0-9][a-z0-9_-]{2,99}/assets/max_velocity_cog$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "const": "m/s"
+        }
+      },
+      "required": [
+        "url",
+        "sha256",
+        "bytes",
+        "unit"
+      ]
+    },
+    "extent_geojson": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^/api/v1/candidates/compute-v2/jobs/[a-z0-9][a-z0-9_-]{2,99}/assets/extent_geojson$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "const": "geographic_coordinates"
+        }
+      },
+      "required": [
+        "url",
+        "sha256",
+        "bytes",
+        "unit"
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/Request"
+    },
+    {
+      "$ref": "#/$defs/Job"
+    },
+    {
+      "$ref": "#/$defs/Result"
+    },
+    {
+      "$ref": "#/$defs/Capabilities"
+    },
+    {
+      "$ref": "#/$defs/Error"
+    }
+  ]
+}

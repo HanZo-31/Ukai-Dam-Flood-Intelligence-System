@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-10-10T05:57:05.057720+05:30",
+  "source": "part_a/inputs/terrain.tif",
+  "source_sha256": "c439396123c0414c41be4f4abb73fbb630cb24dfaf5b0a37d9471f8694fb7687",
+  "crs": "EPSG:32643",
+  "extent": [
+    260653.128487587,
+    2334521.7312866333,
+    364034.6824212541,
+    2369001.58195343
+  ],
+  "source_size": [
+    3565,
+    1189
+  ],
+  "display_size": [
+    1783,
+    595
+  ],
+  "valid_display_pixels": 676629,
+  "transparent_nodata_pixels": 384256,
+  "elevation_units": null,
+  "vertical_datum": null,
+  "source_licence_verified": false,
+  "contour_interval_source_values": 10,
+  "contours_labelled": false,
+  "purpose": "Relative terrain context only; no elevation measurement or scientific approval.",
+  "processing": "Half-resolution bilinear display raster; three masked 3x3 smoothing passes; normalized directional gradients; unlabelled source-value isolines.",
+  "coverage": "Only supplied terrain footprint; nodata/outside remains plain grid.",
+  "network": "None. Bundled local derivative only.",
+  "display_png_sha256": "59fedaf975a333a894c9fe610d09a39bffcb597a7d3886ca00f85090f374c973"
+}

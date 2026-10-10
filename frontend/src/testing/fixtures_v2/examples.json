@@ -1,0 +1,201 @@
+{
+  "synthetic": true,
+  "request": {
+    "schema_version": "2.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "configuration_id": "synthetic-config-v01",
+    "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+    "request_id": "synthetic-request-001",
+    "peak_release_m3s": 25000
+  },
+  "jobs": [
+    {
+      "schema_version": "2.0.0",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "configuration_id": "synthetic-config-v01",
+      "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+      "request_id": "synthetic-request-001",
+      "job_id": "synthetic-job-001",
+      "requested_peak_release_m3s": 25000,
+      "created_at": "2026-10-09T06:00:00+05:30",
+      "updated_at": "2026-10-09T06:00:01+05:30",
+      "elapsed_wall_seconds": 1,
+      "cache_hit": false,
+      "result_url": null,
+      "error": null,
+      "status": "queued"
+    },
+    {
+      "schema_version": "2.0.0",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "configuration_id": "synthetic-config-v01",
+      "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+      "request_id": "synthetic-request-001",
+      "job_id": "synthetic-job-001",
+      "requested_peak_release_m3s": 25000,
+      "created_at": "2026-10-09T06:00:00+05:30",
+      "updated_at": "2026-10-09T06:00:01+05:30",
+      "elapsed_wall_seconds": 1,
+      "cache_hit": false,
+      "result_url": null,
+      "error": null,
+      "status": "running"
+    },
+    {
+      "schema_version": "2.0.0",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "configuration_id": "synthetic-config-v01",
+      "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+      "request_id": "synthetic-request-001",
+      "job_id": "synthetic-job-001",
+      "requested_peak_release_m3s": 25000,
+      "created_at": "2026-10-09T06:00:00+05:30",
+      "updated_at": "2026-10-09T06:00:01+05:30",
+      "elapsed_wall_seconds": 1,
+      "cache_hit": false,
+      "result_url": "/api/v1/candidates/compute-v2/jobs/synthetic-job-001/result",
+      "error": null,
+      "status": "completed"
+    },
+    {
+      "schema_version": "2.0.0",
+      "input_family": "ukai-hyp-fixed-shape-v1",
+      "configuration_id": "synthetic-config-v01",
+      "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+      "request_id": "synthetic-request-001",
+      "job_id": "synthetic-job-001",
+      "requested_peak_release_m3s": 25000,
+      "created_at": "2026-10-09T06:00:00+05:30",
+      "updated_at": "2026-10-09T06:00:01+05:30",
+      "elapsed_wall_seconds": 1,
+      "cache_hit": false,
+      "result_url": null,
+      "error": {
+        "code": "interrupted",
+        "message": "Synthetic interruption fixture."
+      },
+      "status": "failed"
+    }
+  ],
+  "result": {
+    "schema_version": "2.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "configuration_id": "synthetic-config-v01",
+    "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+    "job_id": "synthetic-job-001",
+    "request_id": "synthetic-request-001",
+    "scenario_id": "synthetic-scenario-001",
+    "run_id": "synthetic-run-001",
+    "requested_peak_release_m3s": 25000,
+    "actual_peak_release_m3s": 25000,
+    "engine": "experimental_fast_solver",
+    "engine_version": "SYNTHETIC_TEST_ONLY",
+    "computed": true,
+    "cache_hit": false,
+    "scientifically_validated": false,
+    "calibration_status": "uncalibrated",
+    "input_checksums": {
+      "fixture_only": "sha256:fa0358fa51e35c0fa70ba9098ab0babb4b7dfa6ce066b1b308fdb5222902f45e"
+    },
+    "warnings": [
+      "SYNTHETIC fixture: no solver was run."
+    ],
+    "limitations": [
+      "All values and timing are test fixtures, not Ukai hydraulic predictions."
+    ],
+    "timings": {
+      "prepare_seconds": 0,
+      "solver_seconds": 1,
+      "package_check_seconds": 0,
+      "availability_seconds": 0,
+      "request_to_assets_seconds": 1,
+      "scope": "request_to_checked_asset_availability_not_browser_ready"
+    },
+    "numerical_diagnostics_checksum": "sha256:fa0358fa51e35c0fa70ba9098ab0babb4b7dfa6ce066b1b308fdb5222902f45e",
+    "native_results_checksum": "sha256:fa0358fa51e35c0fa70ba9098ab0babb4b7dfa6ce066b1b308fdb5222902f45e",
+    "velocity_definition": null,
+    "arrival_definition": {
+      "threshold_m": 0.1,
+      "origin": "elapsed_simulation_start",
+      "native_unit": "s",
+      "comparison_transform": "ceil(native_seconds/3600)*60",
+      "definition_compatible": true,
+      "unavailable_reason": null
+    },
+    "derived_grid": {
+      "crs": "EPSG:32643",
+      "width": 4,
+      "height": 4,
+      "transform": [
+        100,
+        0,
+        270000,
+        0,
+        -100,
+        2360000
+      ],
+      "nodata": -9999,
+      "mapping": "nearest_neighbour_with_validity_mask",
+      "target_reference_scenario_id": "synthetic-baseline-001"
+    },
+    "assets": {
+      "max_depth_cog": {
+        "url": "/api/v1/candidates/compute-v2/jobs/synthetic-job-001/assets/max_depth_cog",
+        "sha256": "sha256:182ec40dcdb05cc4bc80ba8351768cea90eaca126312c099d0a7acaa867a7511",
+        "bytes": 731,
+        "unit": "m"
+      },
+      "arrival_time_cog": {
+        "url": "/api/v1/candidates/compute-v2/jobs/synthetic-job-001/assets/arrival_time_cog",
+        "sha256": "sha256:6fbe949016c1d0ed9e42b6c6db9f86f7f57156c0f9b658e772510d72f61f5329",
+        "bytes": 720,
+        "unit": "min"
+      },
+      "max_velocity_cog": null,
+      "extent_geojson": {
+        "url": "/api/v1/candidates/compute-v2/jobs/synthetic-job-001/assets/extent_geojson",
+        "sha256": "sha256:37975c006d9eba9c7f221c06ca75265bb2a42d22a58535eba0d9b588874db621",
+        "bytes": 835,
+        "unit": "geographic_coordinates"
+      }
+    },
+    "unavailable_reasons": {
+      "max_depth_cog": null,
+      "arrival_time_cog": null,
+      "max_velocity_cog": "Synthetic fixture has no velocity product.",
+      "extent_geojson": null
+    }
+  },
+  "capabilities_enabled": {
+    "schema_version": "2.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "configuration_id": "synthetic-config-v01",
+    "configuration_checksum": "sha256:9ff0816bb16165978982153267cf85ec18325aab2b452235225ac2e6b0da5346",
+    "enabled": true,
+    "reason": null,
+    "peak_range_m3s": [
+      15000,
+      30000
+    ],
+    "available_roles": [
+      "max_depth_cog",
+      "arrival_time_cog",
+      "extent_geojson"
+    ],
+    "scientifically_validated": false
+  },
+  "capabilities_disabled": {
+    "schema_version": "2.0.0",
+    "input_family": "ukai-hyp-fixed-shape-v1",
+    "configuration_id": null,
+    "configuration_checksum": null,
+    "enabled": false,
+    "reason": "Native solver inputs unavailable.",
+    "peak_range_m3s": [
+      15000,
+      30000
+    ],
+    "available_roles": [],
+    "scientifically_validated": false
+  }
+}

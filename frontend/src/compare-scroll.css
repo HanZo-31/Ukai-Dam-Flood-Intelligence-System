@@ -1,0 +1,5 @@
+/* Keep absolutely positioned screen-reader table captions inside Compare's
+   scroll container. Without a containing block they extend the outer document
+   below the viewport, creating a second scrollbar and a large blank tail.
+   Do not hide content, limit result rows, or change map dimensions. */
+.compare-page { position: relative; }

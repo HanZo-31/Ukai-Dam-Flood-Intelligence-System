@@ -1,0 +1,126 @@
+{
+  "synthetic": true,
+  "baseline_depth": [
+    [
+      0,
+      1,
+      2,
+      -9999
+    ],
+    [
+      0.2,
+      0.05,
+      -9999,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      -9999,
+      1,
+      0,
+      0
+    ]
+  ],
+  "candidate_depth": [
+    [
+      0.2,
+      2,
+      0.05,
+      1
+    ],
+    [
+      0.05,
+      0.2,
+      -9999,
+      3
+    ],
+    [
+      0,
+      0.3,
+      1,
+      -9999
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "baseline_arrival_minutes": [
+    [
+      -9999,
+      60,
+      120,
+      -9999
+    ],
+    [
+      60,
+      -9999,
+      -9999,
+      180
+    ],
+    [
+      -9999,
+      -9999,
+      120,
+      240
+    ],
+    [
+      -9999,
+      60,
+      -9999,
+      -9999
+    ]
+  ],
+  "candidate_arrival_minutes": [
+    [
+      60,
+      60,
+      -9999,
+      120
+    ],
+    [
+      -9999,
+      60,
+      -9999,
+      120
+    ],
+    [
+      -9999,
+      60,
+      180,
+      -9999
+    ],
+    [
+      -9999,
+      120,
+      -9999,
+      -9999
+    ]
+  ],
+  "pixel_area_m2": 10000,
+  "oracle": {
+    "baseline_valid_cells": 13,
+    "candidate_valid_cells": 14,
+    "both_valid_cells": 12,
+    "baseline_only_valid_cells": 1,
+    "candidate_only_valid_cells": 2,
+    "both_wet_cells": 4,
+    "confirmed_gained_wet_cells": 3,
+    "confirmed_lost_wet_cells": 2,
+    "candidate_only_recorded_wet_cells": 4,
+    "baseline_only_recorded_wet_cells": 3,
+    "candidate_wet_in_unknown_baseline_cells": 1,
+    "baseline_wet_in_unknown_candidate_cells": 1,
+    "paired_arrival_cells": 4,
+    "mean_candidate_minus_baseline_minutes": 15,
+    "median_candidate_minus_baseline_minutes": 30,
+    "zone_arrival_rank_eligible": false
+  }
+}

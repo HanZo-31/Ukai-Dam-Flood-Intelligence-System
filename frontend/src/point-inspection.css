@@ -1,0 +1,27 @@
+/* Optional, read-only point inspection. No map colour/view/clock changes. */
+.point-drawer { position: relative; margin: 0; }
+.point-drawer > summary { min-height: 36px; padding: 8px 10px; border: 1px solid #dce6f2; border-radius: 8px; background: #fff; font-size: 12px; white-space: nowrap; cursor: pointer; }
+.point-drawer > .point-inspector { position: absolute; right: 0; top: calc(100% + 8px); width: min(450px,calc(100vw - 32px)); max-height: min(640px,calc(100dvh - 170px)); overflow: auto; z-index: 12; margin: 0; box-shadow: 0 5px 24px rgba(23,43,66,.16); }
+.point-inspector { min-width: 0; padding: 14px; border: 1px solid #e4eaf1; border-radius: 12px; background: #fff; font-size: 12px; }
+.point-inspector h3 { margin: 0 0 8px; font-size: 16px; }
+.point-inspector p { line-height: 1.5; margin: 8px 0; }
+.point-coordinate-form { display: flex; flex-wrap: wrap; align-items: end; gap: 8px; }
+.point-coordinate-form label { display: grid; gap: 4px; flex: 1; min-width: 120px; }
+.point-coordinate-form input { width: 100%; min-width: 0; border: 1px solid #c9d8e9; border-radius: 6px; padding: 6px 8px; }
+.point-coordinate-form .btn { min-height: 34px; font-size: 12px; }
+.point-location { font-weight: 600; overflow-wrap: anywhere; }
+.point-location small { display: block; font-weight: 400; color: #526479; }
+.point-caveat { padding: 8px 10px; border-left: 3px solid #d6aa48; background: #fff8e9; }
+.point-table-wrap { width: 100%; overflow: auto; }
+.point-table-wrap table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.point-table-wrap caption { text-align: left; font-weight: 600; padding: 6px 0; }
+.point-table-wrap th, .point-table-wrap td { padding: 8px 6px; vertical-align: top; text-align: left; overflow-wrap: anywhere; }
+.point-table-wrap small { display: block; margin-top: 4px; font-weight: 400; color: #526479; line-height: 1.4; }
+.point-read-status { color: #526479; }
+.point-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.point-comparison { margin: 16px 0; }
+@media (max-width:1120px) { .explore-toolbar { flex-wrap: wrap; } }
+@media (max-width:760px) {
+  .point-drawer > .point-inspector { left: 0; right: auto; width: min(340px,calc(100vw - 40px)); max-height: 55dvh; }
+  .point-comparison .point-table-wrap table { min-width: 540px; } /* table scroll only, never page overflow */
+}

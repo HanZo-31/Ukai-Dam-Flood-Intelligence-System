@@ -1,0 +1,369 @@
+{
+ "_note": "Independent numpy/tifffile expectations for compare-v1 and zone-rule-v1. Unit tests only.",
+ "pairs": [
+  {
+   "baseline": "h02",
+   "candidate": "h01",
+   "counts": {
+    "commonWet": 335050,
+    "newWet": 3,
+    "lostWet": 92736,
+    "baselineWet": 427786,
+    "candidateWet": 335053,
+    "bothValid": 342768,
+    "baselineOnlyValid": 92985,
+    "candidateOnlyValid": 3
+   },
+   "km2": {
+    "newWet": 0.0025228318077002605,
+    "lostWet": 77.98577683963046,
+    "commonWet": 281.75826572332414
+   },
+   "depthMeanDiff": -0.9321258619425458,
+   "arrival": {
+    "pairedCells": 334243,
+    "meanDiffH": 4.452981812633324,
+    "medianDiffH": 4.0,
+    "earlier": 13,
+    "later": 315741,
+    "same": 18489
+   },
+   "zones": {
+    "count": 133,
+    "totalNewCells": 3,
+    "totalLostCells": 92736,
+    "totalCells": 3145728,
+    "rankedIds": [
+     "Z-E0265-N2350",
+     "Z-E0270-N2345",
+     "Z-E0325-N2345"
+    ],
+    "rankedCount": 3,
+    "group1Count": 3,
+    "top3": [
+     {
+      "id": "Z-E0265-N2350",
+      "newCells": 1,
+      "median": -6.0
+     },
+     {
+      "id": "Z-E0270-N2345",
+      "newCells": 1,
+      "median": -2.0
+     },
+     {
+      "id": "Z-E0325-N2345",
+      "newCells": 1,
+      "median": -2.0
+     }
+    ]
+   }
+  },
+  {
+   "baseline": "h02",
+   "candidate": "h03",
+   "counts": {
+    "commonWet": 427784,
+    "newWet": 107750,
+    "lostWet": 2,
+    "baselineWet": 427786,
+    "candidateWet": 535534,
+    "bothValid": 435752,
+    "baselineOnlyValid": 1,
+    "candidateOnlyValid": 107247
+   },
+   "km2": {
+    "newWet": 90.61170909323437,
+    "lostWet": 0.001681887871800174,
+    "commonWet": 359.7423606750828
+   },
+   "depthMeanDiff": 1.2376060181847572,
+   "arrival": {
+    "pairedCells": 426585,
+    "meanDiffH": -5.098336791026408,
+    "medianDiffH": -5.0,
+    "earlier": 414500,
+    "later": 0,
+    "same": 12085
+   },
+   "zones": {
+    "count": 133,
+    "totalNewCells": 107750,
+    "totalLostCells": 2,
+    "totalCells": 3145728,
+    "rankedIds": [
+     "Z-E0305-N2350",
+     "Z-E0280-N2345",
+     "Z-E0285-N2350",
+     "Z-E0285-N2355",
+     "Z-E0300-N2355",
+     "Z-E0275-N2345",
+     "Z-E0300-N2350",
+     "Z-E0320-N2350",
+     "Z-E0290-N2355",
+     "Z-E0295-N2355",
+     "Z-E0320-N2345",
+     "Z-E0315-N2345"
+    ],
+    "rankedCount": 54,
+    "group1Count": 54,
+    "top3": [
+     {
+      "id": "Z-E0305-N2350",
+      "newCells": 6204,
+      "median": 5.0
+     },
+     {
+      "id": "Z-E0280-N2345",
+      "newCells": 6058,
+      "median": 8.0
+     },
+     {
+      "id": "Z-E0285-N2350",
+      "newCells": 5740,
+      "median": 6.0
+     }
+    ]
+   }
+  },
+  {
+   "baseline": "h02",
+   "candidate": "2006",
+   "counts": {
+    "commonWet": 427783,
+    "newWet": 67919,
+    "lostWet": 3,
+    "baselineWet": 427786,
+    "candidateWet": 495702,
+    "bothValid": 435751,
+    "baselineOnlyValid": 2,
+    "candidateOnlyValid": 67538
+   },
+   "km2": {
+    "newWet": 57.116071182398,
+    "lostWet": 0.0025228318077002605,
+    "commonWet": 359.74151973114687
+   },
+   "depthMeanDiff": 0.7817257301319562,
+   "arrival": {
+    "pairedCells": 426585,
+    "meanDiffH": 3.6297760118147613,
+    "medianDiffH": 6.0,
+    "earlier": 114011,
+    "later": 304445,
+    "same": 8129
+   },
+   "zones": {
+    "count": 133,
+    "totalNewCells": 67919,
+    "totalLostCells": 3,
+    "totalCells": 3145728,
+    "rankedIds": [
+     "Z-E0305-N2350",
+     "Z-E0280-N2345",
+     "Z-E0285-N2350",
+     "Z-E0285-N2355",
+     "Z-E0275-N2345",
+     "Z-E0300-N2355",
+     "Z-E0300-N2350",
+     "Z-E0290-N2355",
+     "Z-E0295-N2355",
+     "Z-E0280-N2350",
+     "Z-E0270-N2340",
+     "Z-E0320-N2345"
+    ],
+    "rankedCount": 54,
+    "group1Count": 54,
+    "top3": [
+     {
+      "id": "Z-E0305-N2350",
+      "newCells": 4094,
+      "median": -7.0
+     },
+     {
+      "id": "Z-E0280-N2345",
+      "newCells": 3954,
+      "median": -7.0
+     },
+     {
+      "id": "Z-E0285-N2350",
+      "newCells": 3752,
+      "median": -6.0
+     }
+    ]
+   }
+  },
+  {
+   "baseline": "h01",
+   "candidate": "h03",
+   "counts": {
+    "commonWet": 335051,
+    "newWet": 200483,
+    "lostWet": 2,
+    "baselineWet": 335053,
+    "candidateWet": 535534,
+    "bothValid": 342770,
+    "baselineOnlyValid": 1,
+    "candidateOnlyValid": 200229
+   },
+   "km2": {
+    "newWet": 168.59496310105712,
+    "lostWet": 0.001681887871800174,
+    "commonWet": 281.75910666725997
+   },
+   "depthMeanDiff": 2.118028807749874,
+   "arrival": {
+    "pairedCells": 334244,
+    "meanDiffH": -8.205664125608838,
+    "medianDiffH": -7.0,
+    "earlier": 327441,
+    "later": 0,
+    "same": 6803
+   },
+   "zones": {
+    "count": 133,
+    "totalNewCells": 200483,
+    "totalLostCells": 2,
+    "totalCells": 3145728,
+    "rankedIds": [
+     "Z-E0280-N2345",
+     "Z-E0270-N2340",
+     "Z-E0305-N2350",
+     "Z-E0285-N2350",
+     "Z-E0285-N2355",
+     "Z-E0290-N2355",
+     "Z-E0300-N2355",
+     "Z-E0275-N2345",
+     "Z-E0280-N2350",
+     "Z-E0295-N2355",
+     "Z-E0300-N2350",
+     "Z-E0275-N2340"
+    ],
+    "rankedCount": 54,
+    "group1Count": 54,
+    "top3": [
+     {
+      "id": "Z-E0280-N2345",
+      "newCells": 11039,
+      "median": null
+     },
+     {
+      "id": "Z-E0270-N2340",
+      "newCells": 10805,
+      "median": null
+     },
+     {
+      "id": "Z-E0305-N2350",
+      "newCells": 10794,
+      "median": 7.0
+     }
+    ]
+   }
+  },
+  {
+   "baseline": "h02",
+   "candidate": "h02",
+   "counts": {
+    "commonWet": 427786,
+    "newWet": 0,
+    "lostWet": 0,
+    "baselineWet": 427786,
+    "candidateWet": 427786,
+    "bothValid": 435753,
+    "baselineOnlyValid": 0,
+    "candidateOnlyValid": 0
+   },
+   "km2": {
+    "newWet": 0.0,
+    "lostWet": 0.0,
+    "commonWet": 359.7440425629545
+   },
+   "depthMeanDiff": 0.0,
+   "arrival": {
+    "pairedCells": 426586,
+    "meanDiffH": 0.0,
+    "medianDiffH": 0.0,
+    "earlier": 0,
+    "later": 0,
+    "same": 426586
+   },
+   "zones": {
+    "count": 133,
+    "totalNewCells": 0,
+    "totalLostCells": 0,
+    "totalCells": 3145728,
+    "rankedIds": [],
+    "rankedCount": 0,
+    "group1Count": 0,
+    "top3": []
+   }
+  },
+  {
+   "baseline": "h01",
+   "candidate": "h02",
+   "counts": {
+    "commonWet": 335050,
+    "newWet": 92736,
+    "lostWet": 3,
+    "baselineWet": 335053,
+    "candidateWet": 427786,
+    "bothValid": 342768,
+    "baselineOnlyValid": 3,
+    "candidateOnlyValid": 92985
+   },
+   "km2": {
+    "newWet": 77.98577683963046,
+    "lostWet": 0.0025228318077002605,
+    "commonWet": 281.75826572332414
+   },
+   "depthMeanDiff": 0.9321258619425458,
+   "arrival": {
+    "pairedCells": 334243,
+    "meanDiffH": -4.452981812633324,
+    "medianDiffH": -4.0,
+    "earlier": 315741,
+    "later": 13,
+    "same": 18489
+   },
+   "zones": {
+    "count": 133,
+    "totalNewCells": 92736,
+    "totalLostCells": 3,
+    "totalCells": 3145728,
+    "rankedIds": [
+     "Z-E0270-N2340",
+     "Z-E0280-N2345",
+     "Z-E0290-N2355",
+     "Z-E0285-N2350",
+     "Z-E0305-N2350",
+     "Z-E0275-N2340",
+     "Z-E0285-N2355",
+     "Z-E0275-N2345",
+     "Z-E0280-N2350",
+     "Z-E0270-N2350",
+     "Z-E0300-N2355",
+     "Z-E0295-N2355"
+    ],
+    "rankedCount": 53,
+    "group1Count": 53,
+    "top3": [
+     {
+      "id": "Z-E0270-N2340",
+      "newCells": 8104,
+      "median": null
+     },
+     {
+      "id": "Z-E0280-N2345",
+      "newCells": 4981,
+      "median": 9.0
+     },
+     {
+      "id": "Z-E0290-N2355",
+      "newCells": 4899,
+      "median": 4.0
+     }
+    ]
+   }
+  }
+ ]
+}

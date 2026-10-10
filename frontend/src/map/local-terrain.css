@@ -1,0 +1,8 @@
+.terrain-control { position: absolute; left: 10px; bottom: 6px; z-index: 5; display: flex; align-items: center; gap: 7px; padding: 4px 7px; background: rgba(255,255,255,.94); border: 1px solid #dce6de; border-radius: 6px; font-size: 11px; color: #425b50; max-width: calc(100% - 20px); }
+.terrain-control label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+.terrain-control input { margin: 0; accent-color: #1677ef; }
+.terrain-control summary { cursor: pointer; }
+.terrain-control details[open] { max-width: 280px; }
+.terrain-control details p { margin: 5px 0 0; line-height: 1.5; }
+/* Keep the attribution separate from the existing right-side coordinate readout. */
+@media (max-width: 600px) { .terrain-control { bottom: 25px; } }

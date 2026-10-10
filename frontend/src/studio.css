@@ -1,0 +1,285 @@
+/* Reference-image layout. Presentation only: no new basemap, flood colours,
+   scientific thresholds or changes to the raster/timeline implementation. */
+.shell { grid-template-columns: 220px minmax(0,1fr); }
+.sidebar { padding: 18px 12px; gap: 8px; }
+.sidebar .brand { padding: 2px 8px 16px; font-size: 18px; gap: 12px; }
+.sidebar .brand > svg { width: 37px; height: 37px; }
+.sidebar .nav { min-height: 42px; padding: 10px 12px; font-size: 14px; }
+.sidebar .nav > svg { width: 22px; height: 22px; }
+.sidebar .side-title { border-top: 1px solid #e4eaf1; padding-top: 16px; margin-top: 10px; letter-spacing: .035em; }
+.sidebar .scen { padding: 10px 12px; min-height: 56px; }
+.sidebar .scen strong { font-size: 15px; }
+.sidebar .scen span { font-size: 12px; }
+.topbar { padding: 12px 24px; flex-shrink: 0; }
+.topbar .top-title { font-size: 24px; line-height: 1.2; font-weight: 750; color: #102a4c; }
+.top-subtitle { margin: 4px 0 0; font-size: 13px; line-height: 1.4; color: #526479; }
+.topbar .api { font-size: 12px; gap: 8px; }
+
+.explore.explore-studio {
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: auto minmax(0,1fr) auto;
+  gap: 0;
+  padding: 0;
+  flex: 1 1 0%;
+  min-height: 0;
+}
+/* Fit the Explore workspace to the available screen, including browser zoom.
+   Other pages retain their original scroll behavior. */
+.workspace > main:has(> .explore-studio) { overflow: hidden; }
+.explore-studio > .explore-main { grid-column: 1; grid-row: 2; gap: 0; min-width: 0; }
+.explore-studio .studio-map { border: 0; border-radius: 0; min-height: 0; }
+.explore-studio .studio-map > .legend {
+  left: 16px; bottom: 24px; width: min(300px,calc(100% - 86px));
+  border-radius: 11px; padding: 9px 12px; background: rgba(255,255,255,.97); font-size: 11px;
+  box-shadow: 0 3px 16px rgba(23,43,66,.07);
+}
+.explore-studio .studio-map > .legend .legend-bar { height: 13px; }
+.explore-studio .studio-map > .legend .legend-note { font-size: 10.5px; }
+.explore-studio .studio-map > .coord { right: 8px; bottom: 4px; }
+.explore-studio .ol-zoom {
+  top: 18px; left: auto; right: 18px; padding: 0; border: 1px solid #e4eaf1;
+  border-radius: 10px; overflow: hidden; background: #fff;
+  box-shadow: 0 3px 12px rgba(23,43,66,.09);
+}
+.explore-studio .ol-zoom button { width: 39px; height: 39px; margin: 0; background: #fff; color: #102a4c; font-size: 24px; border-radius: 0; }
+.explore-studio .ol-zoom button + button { border-top: 1px solid #e4eaf1; }
+.explore-studio .ol-zoom button:hover { background: #eaf4ff; }
+.floating-layers {
+  position: absolute; z-index: 4; top: 16px; left: 16px; width: 184px;
+  padding: 12px 14px 10px; background: rgba(255,255,255,.98);
+  border: 1px solid #e4eaf1; border-radius: 13px;
+  box-shadow: 0 4px 18px rgba(23,43,66,.1);
+}
+.floating-layers h2 { margin: 0 0 10px; display: flex; align-items: center; gap: 8px; font-size: 14px; color: #102a4c; }
+.floating-layers fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 8px; }
+.layer-choice { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 13px; min-height: 22px; }
+.layer-choice input { width: 17px; height: 17px; margin: 0; accent-color: #0878ff; flex-shrink: 0; }
+.reveal-choice { display: flex; align-items: center; gap: 8px; font-size: 12px; margin: 0; cursor: pointer; }
+.reveal-choice input { width: 15px; height: 15px; margin: 0; accent-color: #0878ff; }
+.extent-choice { background: none; border: 0; border-radius: 5px; padding: 6px 0; color: #1357b5; font-size: 12px; cursor: pointer; }
+.extent-choice.selected { font-weight: 700; text-decoration: underline; }
+.layer-help { font-size: 11px; color: #526479; line-height: 1.5; margin: 6px 0; }
+.layer-settings { margin: 10px 0 0; border-top: 1px solid #e4eaf1; padding-top: 8px; font-size: 11.5px; color: #526479; }
+.layer-settings summary { font-weight: 400; cursor: pointer; }
+.layer-settings-body { position: absolute; left: calc(100% + 8px); top: 0; width: 215px; padding: 12px; border: 1px solid #e4eaf1; border-radius: 11px; background: #fff; box-shadow: 0 4px 16px rgba(23,43,66,.1); }
+.layer-settings .opacity-setting { display: flex; flex-direction: column; align-items: stretch; gap: 6px; margin-top: 6px; }
+.layer-settings input { width: 115px; min-width: 0; }
+.studio-fit { position: absolute; top: 109px; right: 18px; z-index: 4; width: 41px; height: 41px; display: grid; place-items: center; padding: 0; border: 1px solid #e4eaf1; border-radius: 10px; background: #fff; color: #102a4c; cursor: pointer; box-shadow: 0 3px 12px rgba(23,43,66,.09); }
+.studio-fit:hover { background: #eaf4ff; }
+
+.scenario-panel { grid-column: 2; grid-row: 1; padding: 14px 12px; overflow: auto; min-height: 0; }
+.scenario-panel-card { border: 1px solid #e4eaf1; border-radius: 14px; background: #fff; padding: 14px 13px 10px; }
+.scenario-panel-card > h2 { margin: 0; padding-bottom: 12px; border-bottom: 1px solid #e4eaf1; font-size: 15px; line-height: 1.45; letter-spacing: -.025em; color: #102a4c; }
+.scenario-panel-card > h2 > span:first-child { color: #0878ff; font-size: 22px; font-weight: 750; }
+.scenario-divider { color: #102a4c; }
+.scenario-facts { padding: 4px 0; }
+.scenario-facts > div { display: grid; grid-template-columns: 24px minmax(0,1fr); column-gap: 12px; padding: 9px 0; }
+.scenario-facts svg { grid-column: 1; grid-row: 1 / span 3; color: #102a4c; margin-top: 3px; }
+.scenario-facts dt { grid-column: 2; font-size: 12px; margin-bottom: 3px; }
+.scenario-facts dd { grid-column: 2; font-size: 17px; font-weight: 650; line-height: 1.35; color: #102a4c; }
+.scenario-facts dd small { font-size: 16px; }
+.scenario-facts .scenario-kind { font-size: 15px; font-weight: 400; }
+.scenario-facts p { grid-column: 2; margin: 5px 0 0; font-size: 11px; line-height: 1.5; color: #526479; }
+/* The same clock context is already shown in the dock/details; keep the
+   scenario hint accessible without repeating it in the compact card. */
+.scenario-facts p { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0; }
+.scenario-science { margin: 3px 0 10px; padding-top: 9px; border-top: 1px solid #e4eaf1; font-size: 10.5px; line-height: 1.5; color: #526479; }
+.scenario-evidence { display: flex; align-items: center; justify-content: space-between; gap: 7px; width: 100%; min-height: 38px; border: 1px solid #dce6f2; border-radius: 9px; padding: 8px; background: #f7faff; color: #102a4c; font-size: 11.5px; cursor: pointer; }
+.scenario-evidence:hover { border-color: #1357b5; background: #eaf4ff; }
+.scenario-evidence svg { flex-shrink: 0; }
+.scenario-more { margin: 8px 0 0; font-size: 11.5px; color: #526479; }
+.scenario-more > summary { font-weight: 500; }
+.scenario-more .summary-row { grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
+.scenario-more .card { padding: 9px; }
+.scenario-more .card-value { font-size: 17px; }
+.scenario-more .inspector { padding: 0; border: 0; border-radius: 0; overflow: visible; color: #172b42; }
+.scenario-more .inspector .kv { grid-template-columns: 90px minmax(0,1fr); font-size: 12px; }
+
+.studio-timeline-dock { grid-column: 1 / -1; grid-row: 2; padding: 8px 12px 10px; background: #f4f7fb; }
+.studio-timeline-dock > .timeline {
+  display: grid; grid-template-columns: 48px 174px minmax(100px,1fr) 82px;
+  gap: 6px 14px; align-items: center; padding: 10px 14px; border-radius: 13px;
+}
+.studio-timeline-dock .timeline-head { grid-column: 1 / -1; grid-row: 1; font-size: 11px; line-height: 1.5; color: #526479; }
+.studio-timeline-dock .timeline-row { display: contents; }
+.studio-timeline-dock .timeline-row > button:first-child, .timeline-enable { grid-column: 1; grid-row: 2; width: 56px; height: 56px; justify-content: center; padding: 0; border-radius: 50%; background: #0878ff; border: 1px solid #0878ff; color: #fff; font-size: 0; cursor: pointer; }
+.studio-timeline-dock .timeline-row > button:first-child svg { width: 23px; height: 23px; }
+.studio-timeline-dock .timeline-row > input { grid-column: 3; grid-row: 2; min-width: 0; width: 100%; accent-color: #0878ff; }
+.studio-timeline-dock .timeline-row > button:last-child { grid-column: 4; grid-row: 2; justify-content: center; min-height: 42px; }
+.studio-timeline-dock .timeline-label { grid-column: 2; grid-row: 2; font-size: 14px; line-height: 1.55; }
+.studio-timeline-dock .timeline-label strong { color: #102a4c; font-size: 20px; }
+.studio-timeline-dock .timeline-label > span { display: block; font-size: 10px; }
+.studio-timeline-dock .timeline-by { grid-column: 3 / -1; grid-row: 3; font-size: 11px; }
+.studio-timeline-dock .timeline-by select { font-size: 11px; padding: 4px 8px; }
+.studio-timeline-dock .timeline-note { grid-column: 1 / -1; grid-row: 4; font-size: 11px; }
+.timeline-inactive { display: grid; grid-template-columns: 56px minmax(190px,auto) minmax(80px,1fr) auto; align-items: center; gap: 18px; padding: 18px; border: 1px solid #e4eaf1; border-radius: 13px; background: #fff; }
+.timeline-inactive .timeline-enable { display: grid; place-items: center; grid-row: 1; }
+.timeline-enable:disabled { opacity: .5; cursor: not-allowed; }
+.timeline-inactive strong { color: #102a4c; font-size: 13px; }
+.timeline-inactive p { margin: 4px 0 0; color: #526479; font-size: 11px; line-height: 1.5; }
+.inactive-track { height: 6px; border-radius: 5px; background: #e1e8f2; }
+.inactive-track span { display: block; height: 100%; width: 0; background: #0878ff; }
+.timeline-duration { color: #526479; font-size: 12px; }
+
+/* Compact presentation reuses TimelinePanel's unchanged timer and handlers. */
+.studio-timeline-dock .timeline-compact .timeline-row > button:first-child { width: 48px; height: 48px; grid-row: 1; }
+.studio-timeline-dock .timeline-compact .timeline-row > input,
+.studio-timeline-dock .timeline-compact .timeline-row > button:last-child,
+.studio-timeline-dock .timeline-compact .timeline-label { grid-row: 1; }
+.studio-timeline-dock .timeline-compact .timeline-label { font-size: 12px; }
+.studio-timeline-dock .timeline-compact .timeline-label strong { font-size: 18px; }
+.studio-timeline-dock .timeline-compact .timeline-details { grid-column: 1 / -1; grid-row: 2; margin: 0; font-size: 11px; color: #526479; }
+.timeline-details > summary { cursor: pointer; width: fit-content; }
+.timeline-details[open] > .timeline-head { margin-top: 8px; }
+.timeline-details[open] > .timeline-by { margin-top: 6px; }
+.studio-timeline-dock .timeline-compact .timeline-note { grid-row: 3; }
+.timeline-inactive { grid-template-columns: 48px minmax(180px,auto) minmax(60px,1fr) auto; padding: 12px 14px; gap: 14px; }
+.timeline-inactive .timeline-enable { width: 48px; height: 48px; }
+
+@media (min-width:761px) and (max-height:800px) {
+  .sidebar { padding-top: 16px; padding-bottom: 12px; gap: 8px; }
+  .sidebar .brand { padding-bottom: 14px; font-size: 18px; }
+  .sidebar .nav { min-height: 40px; padding: 8px 12px; }
+  .sidebar .side-title { margin-top: 10px; padding-top: 15px; }
+  .sidebar .scen { padding: 9px 10px; min-height: 52px; }
+  .scenario-panel { padding: 12px 10px; }
+  .scenario-panel-card { padding: 14px 12px 10px; }
+  .scenario-panel-card > h2 { padding-bottom: 12px; font-size: 16px; }
+  .scenario-panel-card > h2 > span:first-child { font-size: 22px; }
+  .scenario-facts { padding: 0; }
+  .scenario-facts > div { padding: 7px 0; }
+  .scenario-facts dt { font-size: 12px; }
+  .scenario-facts dd { font-size: 16px; }
+  .scenario-facts p { font-size: 10px; margin-top: 4px; line-height: 1.4; }
+  .scenario-science { padding-top: 8px; margin: 4px 0 10px; font-size: 10.5px; }
+  .scenario-evidence { min-height: 40px; padding: 8px; }
+  .scenario-more { margin-top: 8px; }
+}
+
+@media (min-width:761px) and (max-width:1120px) {
+  .shell { grid-template-columns: 190px minmax(0,1fr); }
+  .scenario-panel { padding: 12px 10px; }
+  .scenario-panel-card { padding: 14px 12px; }
+  .floating-layers { width: 172px; left: 12px; padding: 12px; }
+  .scenario-panel-card > h2 { font-size: 15px; }
+  .studio-timeline-dock > .timeline { grid-template-columns: 48px 150px minmax(90px,1fr) 78px; gap: 6px 10px; padding: 10px 12px; }
+}
+@media (max-width:760px) {
+  .shell { grid-template-columns: minmax(0,1fr); }
+  .sidebar { padding: 10px; gap: 8px; }
+  .sidebar .brand { font-size: 17px; padding: 4px; gap: 10px; }
+  .sidebar .brand > svg { width: 29px; height: 29px; }
+  .sidebar .nav { font-size: 13px; min-height: 40px; padding: 9px 10px; }
+  .sidebar .scen { padding: 8px 10px; min-height: 55px; }
+  .sidebar .scen strong { font-size: 14px; }
+  .sidebar .scen span { font-size: 11px; }
+  .topbar { padding: 14px 16px; gap: 8px; }
+  .topbar .top-title { font-size: 23px; }
+  .top-subtitle { font-size: 12px; }
+  .explore.explore-studio { grid-template-columns: minmax(0,1fr); grid-template-rows: auto auto auto; min-height: 0; flex: 1 0 auto; }
+  .workspace > main:has(> .explore-studio) { overflow: visible; }
+  .explore-studio .studio-map { height: 480px; min-height: 480px; }
+  .floating-layers { left: 12px; top: 12px; width: 172px; padding: 12px; }
+  .layer-settings-body { left: 0; top: calc(100% + 6px); width: 215px; }
+  .explore-studio .studio-map > .legend { left: 12px; width: min(280px,calc(100% - 74px)); padding: 9px 12px; }
+  .explore-studio .studio-map > .legend .legend-note { display: block; font-size: 10px; }
+  .scenario-panel { grid-column: 1; grid-row: 3; padding: 12px; overflow: visible; }
+  .scenario-panel-card { max-width: none; }
+  .studio-timeline-dock { grid-column: 1; grid-row: 2; padding: 10px 12px; }
+  .studio-timeline-dock > .timeline { grid-template-columns: 46px minmax(100px,1fr) 82px; gap: 8px 10px; padding: 12px; }
+  .studio-timeline-dock .timeline-row > button:first-child { width: 46px; height: 46px; }
+  .studio-timeline-dock .timeline-label { grid-column: 2; }
+  .studio-timeline-dock .timeline-row > button:last-child { grid-column: 3; }
+  .studio-timeline-dock .timeline-row > input { grid-column: 1 / -1; grid-row: 3; }
+  .studio-timeline-dock .timeline-by { grid-column: 1 / -1; grid-row: 4; flex-wrap: wrap; }
+  .studio-timeline-dock .timeline-note { grid-row: 5; }
+  .studio-timeline-dock .timeline-compact .timeline-row > button:first-child,
+  .studio-timeline-dock .timeline-compact .timeline-label,
+  .studio-timeline-dock .timeline-compact .timeline-row > button:last-child { grid-row: 1; }
+  .studio-timeline-dock .timeline-compact .timeline-row > input { grid-row: 2; }
+  .studio-timeline-dock .timeline-compact .timeline-details { grid-row: 3; }
+  .studio-timeline-dock .timeline-compact .timeline-note { grid-row: 4; }
+  .timeline-inactive { grid-template-columns: 46px minmax(0,1fr); gap: 12px; padding: 12px; }
+  .timeline-inactive .timeline-enable { width: 46px; height: 46px; }
+  .inactive-track { grid-column: 1 / -1; }
+  .timeline-duration { grid-column: 2; }
+}
+
+/* The layer navbar and the page-corner scale sit outside the map canvas.
+   Removing the permanent inspector column gives the desktop map full width. */
+.explore-toolbar { grid-column: 1; grid-row: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 12px; background: #fff; border-bottom: 1px solid #e4eaf1; z-index: 8; min-width: 0; }
+.layer-navbar { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.layer-navbar fieldset { display: flex; min-width: 0; padding: 0; margin: 0; border: 1px solid #dce6f2; border-radius: 9px; background: #f6f9fd; overflow: hidden; }
+.layer-navbar .layer-choice { position: relative; min-height: 38px; padding: 8px 16px; color: #526479; white-space: nowrap; }
+.layer-navbar .layer-choice + .layer-choice { border-left: 1px solid #dce6f2; }
+.layer-navbar .layer-choice:has(input:checked) { background: #e7f2ff; color: #0969dc; font-weight: 650; }
+.layer-navbar .layer-choice:has(input:focus-visible) { outline: 3px solid #172b42; outline-offset: -3px; }
+.layer-navbar .layer-choice input { position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip: rect(0 0 0 0); }
+.layer-navbar .layer-settings { position: relative; margin: 0; padding: 0; border: 0; }
+.layer-navbar .layer-settings > summary, .layer-fit, .scenario-drawer > summary { min-height: 36px; border: 1px solid #dce6f2; border-radius: 8px; padding: 8px 10px; background: #fff; color: #172b42; font-size: 12px; cursor: pointer; white-space: nowrap; }
+.layer-navbar .layer-settings-body { left: 0; top: calc(100% + 8px); width: 235px; z-index: 10; }
+.layer-navbar .layer-settings .reveal-choice input { width: 15px; height: 15px; flex-shrink: 0; }
+.layer-navbar .layer-settings .opacity-setting input { width: 100%; min-width: 0; }
+.layer-fit { display: flex; align-items: center; gap: 6px; }
+.layer-fit:hover, .scenario-drawer > summary:hover, .layer-navbar .layer-settings > summary:hover { background: #f5f9ff; }
+.scenario-drawer { position: relative; margin: 0; flex-shrink: 0; }
+.scenario-drawer > .scenario-panel { position: absolute; top: calc(100% + 8px); right: 0; width: 285px; max-height: min(580px,calc(100dvh - 175px)); overflow: auto; padding: 0; z-index: 10; border-radius: 14px; box-shadow: 0 6px 25px rgba(23,43,66,.14); }
+.explore-footer { grid-column: 1; grid-row: 3; display: grid; grid-template-columns: minmax(0,1fr) 300px; gap: 10px; align-items: start; padding: 8px 12px 10px; background: #f4f7fb; min-width: 0; }
+.explore-footer > .studio-timeline-dock { grid-column: 1; grid-row: 1; padding: 0; background: none; min-width: 0; }
+.page-legend-corner { grid-column: 2; grid-row: 1; min-width: 0; }
+.page-legend-corner > .legend { position: static; width: 100%; margin: 0; padding: 9px 12px; border-radius: 11px; background: #fff; font-size: 11px; }
+.page-legend-corner .legend-bar { height: 13px; }
+.page-legend-corner .legend-note { font-size: 10.5px; }
+.explore-footer .timeline-inactive { grid-template-columns: 48px minmax(0,1fr) minmax(35px,.5fr); }
+.explore-footer .timeline-duration { grid-column: 2 / -1; font-size: 10.5px; }
+
+@media (min-width:761px) and (max-width:1120px) {
+  .explore-toolbar { gap: 8px; padding: 7px 10px; }
+  .layer-navbar { gap: 8px; }
+  .layer-navbar .layer-choice { padding: 8px 11px; }
+  .explore-footer { grid-template-columns: minmax(0,1fr) 270px; gap: 8px; padding-left: 10px; padding-right: 10px; }
+  .explore-footer .studio-timeline-dock > .timeline { grid-template-columns: 42px 125px minmax(60px,1fr) 72px; gap: 6px 8px; }
+  .explore-footer .studio-timeline-dock .timeline-compact .timeline-row > button:first-child { width: 42px; height: 42px; }
+}
+@media (max-width:900px) {
+  .explore-toolbar { flex-wrap: wrap; }
+}
+@media (max-width:760px) {
+  .explore-toolbar { gap: 8px; padding: 8px 10px; }
+  .layer-navbar { flex-wrap: wrap; flex: 1 0 100%; gap: 8px; }
+  .layer-navbar fieldset { flex: 1 0 100%; }
+  .layer-navbar .layer-choice { justify-content: center; flex: 1; min-width: 0; padding: 8px 6px; font-size: 12px; }
+  .scenario-drawer { margin-left: auto; }
+  .scenario-drawer > .scenario-panel { width: min(285px,calc(100vw - 24px)); max-height: 55dvh; }
+  .explore-footer { grid-template-columns: minmax(0,1fr); padding: 10px; }
+  .page-legend-corner { grid-column: 1; grid-row: 2; }
+  .page-legend-corner > .legend { width: min(100%,360px); margin-left: auto; }
+  .explore-footer .timeline-inactive { grid-template-columns: 46px minmax(0,1fr); }
+  .explore-footer .inactive-track { grid-column: 1 / -1; }
+}
+
+@media (min-width:761px) and (max-height:650px) {
+  .sidebar { gap: 6px; }
+  .sidebar nav { gap: 4px; }
+  .sidebar .scen-list { gap: 6px; }
+  .topbar { padding-top: 10px; padding-bottom: 10px; }
+  .topbar .top-title { font-size: 22px; }
+  .sidebar .brand { font-size: 17px; padding-bottom: 10px; }
+  .sidebar .brand > svg { width: 30px; height: 30px; }
+  .sidebar .nav { min-height: 36px; padding: 7px 12px; }
+  .sidebar .side-title { padding-top: 10px; margin-top: 6px; }
+  .sidebar .scen { min-height: 44px; padding: 6px 10px; }
+  .sidebar .scen span { font-size: 11px; }
+  .sidebar .side-foot { font-size: 10px; padding-top: 6px; padding-bottom: 0; }
+  .scenario-panel { padding: 10px 8px; }
+  .scenario-panel-card { padding: 10px; }
+  .scenario-panel-card > h2 { padding-bottom: 6px; }
+  .scenario-facts { margin-top: 2px; margin-bottom: 2px; }
+  .scenario-facts > div { padding: 2px 0; }
+  .scenario-facts svg { width: 21px; height: 21px; }
+  .scenario-facts dd { font-size: 15px; }
+  .scenario-facts dd small { font-size: 13px; }
+  .scenario-facts .scenario-kind { font-size: 13px; }
+  .scenario-evidence { min-height: 38px; }
+  .scenario-science { margin-bottom: 8px; }
+}
